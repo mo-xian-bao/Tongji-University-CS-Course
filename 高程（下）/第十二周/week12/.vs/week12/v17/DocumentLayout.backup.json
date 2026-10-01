@@ -1,0 +1,174 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78931DA2-00DC-418C-8EBC-C093FDD1520E}|16-b4\\16-b4.vcxproj|D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b4\\16-b4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{78931DA2-00DC-418C-8EBC-C093FDD1520E}|16-b4\\16-b4.vcxproj|solutionrelative:16-b4\\16-b4.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78931DA2-00DC-418C-8EBC-C093FDD1520E}|16-b4\\16-b4.vcxproj|D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b4\\16-b4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{78931DA2-00DC-418C-8EBC-C093FDD1520E}|16-b4\\16-b4.vcxproj|solutionrelative:16-b4\\16-b4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78931DA2-00DC-418C-8EBC-C093FDD1520E}|16-b4\\16-b4.vcxproj|D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b4\\16-b4-main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{78931DA2-00DC-418C-8EBC-C093FDD1520E}|16-b4\\16-b4.vcxproj|solutionrelative:16-b4\\16-b4-main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{10B0F104-941F-4E70-81C6-F8FAD8E07F35}|16-b3-2\\16-b3-2.vcxproj|D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b3-2\\16-b3-2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{10B0F104-941F-4E70-81C6-F8FAD8E07F35}|16-b3-2\\16-b3-2.vcxproj|solutionrelative:16-b3-2\\16-b3-2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D5649EC-AD68-4FC4-A9DB-17AE56805B59}|16-b3-1\\16-b3-1.vcxproj|D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b3-1\\16-b3-1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4D5649EC-AD68-4FC4-A9DB-17AE56805B59}|16-b3-1\\16-b3-1.vcxproj|solutionrelative:16-b3-1\\16-b3-1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8C506FF-017B-4AF2-A75B-9365F4297743}|16-b2-2\\16-b2-2.vcxproj|D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b2-2\\16-b2-2.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E8C506FF-017B-4AF2-A75B-9365F4297743}|16-b2-2\\16-b2-2.vcxproj|solutionrelative:16-b2-2\\16-b2-2.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8C506FF-017B-4AF2-A75B-9365F4297743}|16-b2-2\\16-b2-2.vcxproj|D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b2-2\\16-b2-2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E8C506FF-017B-4AF2-A75B-9365F4297743}|16-b2-2\\16-b2-2.vcxproj|solutionrelative:16-b2-2\\16-b2-2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE8C05F3-FC52-4E3E-B788-6C32557C6480}|16-b2-1\\16-b2-1.vcxproj|D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b2-1\\16-b2-1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FE8C05F3-FC52-4E3E-B788-6C32557C6480}|16-b2-1\\16-b2-1.vcxproj|solutionrelative:16-b2-1\\16-b2-1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE8C05F3-FC52-4E3E-B788-6C32557C6480}|16-b2-1\\16-b2-1.vcxproj|D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b2-1\\16-b2-1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FE8C05F3-FC52-4E3E-B788-6C32557C6480}|16-b2-1\\16-b2-1.vcxproj|solutionrelative:16-b2-1\\16-b2-1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "16-b4-main.cpp",
+              "DocumentMoniker": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b4\\16-b4-main.cpp",
+              "RelativeDocumentMoniker": "16-b4\\16-b4-main.cpp",
+              "ToolTip": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b4\\16-b4-main.cpp",
+              "RelativeToolTip": "16-b4\\16-b4-main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-24T03:33:17.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "16-b4.cpp",
+              "DocumentMoniker": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b4\\16-b4.cpp",
+              "RelativeDocumentMoniker": "16-b4\\16-b4.cpp",
+              "ToolTip": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b4\\16-b4.cpp",
+              "RelativeToolTip": "16-b4\\16-b4.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-24T03:33:16.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "16-b4.h",
+              "DocumentMoniker": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b4\\16-b4.h",
+              "RelativeDocumentMoniker": "16-b4\\16-b4.h",
+              "ToolTip": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b4\\16-b4.h",
+              "RelativeToolTip": "16-b4\\16-b4.h",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-24T03:33:14.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "16-b3-2.cpp",
+              "DocumentMoniker": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b3-2\\16-b3-2.cpp",
+              "RelativeDocumentMoniker": "16-b3-2\\16-b3-2.cpp",
+              "ToolTip": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b3-2\\16-b3-2.cpp",
+              "RelativeToolTip": "16-b3-2\\16-b3-2.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-24T03:30:50.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "16-b3-1.cpp",
+              "DocumentMoniker": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b3-1\\16-b3-1.cpp",
+              "RelativeDocumentMoniker": "16-b3-1\\16-b3-1.cpp",
+              "ToolTip": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b3-1\\16-b3-1.cpp",
+              "RelativeToolTip": "16-b3-1\\16-b3-1.cpp",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-24T03:30:35.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "16-b2-2.cpp",
+              "DocumentMoniker": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b2-2\\16-b2-2.cpp",
+              "RelativeDocumentMoniker": "16-b2-2\\16-b2-2.cpp",
+              "ToolTip": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b2-2\\16-b2-2.cpp",
+              "RelativeToolTip": "16-b2-2\\16-b2-2.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-23T15:16:42.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "16-b2-2.hpp",
+              "DocumentMoniker": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b2-2\\16-b2-2.hpp",
+              "RelativeDocumentMoniker": "16-b2-2\\16-b2-2.hpp",
+              "ToolTip": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b2-2\\16-b2-2.hpp",
+              "RelativeToolTip": "16-b2-2\\16-b2-2.hpp",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAFAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-23T15:16:16.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "16-b2-1.h",
+              "DocumentMoniker": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b2-1\\16-b2-1.h",
+              "RelativeDocumentMoniker": "16-b2-1\\16-b2-1.h",
+              "ToolTip": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b2-1\\16-b2-1.h",
+              "RelativeToolTip": "16-b2-1\\16-b2-1.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-23T14:52:22.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "16-b2-1.cpp",
+              "DocumentMoniker": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b2-1\\16-b2-1.cpp",
+              "RelativeDocumentMoniker": "16-b2-1\\16-b2-1.cpp",
+              "ToolTip": "D:\\desktop\\oop\\\u7B2C\u5341\u4E8C\u5468\\week12\\16-b2-1\\16-b2-1.cpp",
+              "RelativeToolTip": "16-b2-1\\16-b2-1.cpp",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAACUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-23T14:50:24.59Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

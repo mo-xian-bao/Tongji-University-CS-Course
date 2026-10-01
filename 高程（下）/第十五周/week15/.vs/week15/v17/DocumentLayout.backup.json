@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\desktop\\oop\\\u7B2C\u5341\u4E94\u5468\\week15\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8F6460CE-A707-4DE1-A787-1E39DAFB49FB}|test\\test.vcxproj|D:\\desktop\\oop\\\u7B2C\u5341\u4E94\u5468\\week15\\test\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8F6460CE-A707-4DE1-A787-1E39DAFB49FB}|test\\test.vcxproj|solutionrelative:test\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Microsoft Visual Studio\\2022\\VC\\Tools\\MSVC\\14.42.34433\\crt\\src\\vcruntime\\delete_scalar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "delete_scalar.cpp",
+              "DocumentMoniker": "D:\\Microsoft Visual Studio\\2022\\VC\\Tools\\MSVC\\14.42.34433\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Microsoft Visual Studio\\2022\\VC\\Tools\\MSVC\\14.42.34433\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "ToolTip": "D:\\Microsoft Visual Studio\\2022\\VC\\Tools\\MSVC\\14.42.34433\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "RelativeToolTip": "..\\..\\..\\..\\Microsoft Visual Studio\\2022\\VC\\Tools\\MSVC\\14.42.34433\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-14T15:18:56.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "test.cpp",
+              "DocumentMoniker": "D:\\desktop\\oop\\\u7B2C\u5341\u4E94\u5468\\week15\\test\\test.cpp",
+              "RelativeDocumentMoniker": "test\\test.cpp",
+              "ToolTip": "D:\\desktop\\oop\\\u7B2C\u5341\u4E94\u5468\\week15\\test\\test.cpp",
+              "RelativeToolTip": "test\\test.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-14T15:17:57.869Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
