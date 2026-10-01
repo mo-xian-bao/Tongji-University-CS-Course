@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__gitlab__search_repositories",
+      "Bash(curl:*)",
+      "Bash(dir:*)",
+      "mcp__chrome-devtools__take_screenshot",
+      "Bash(python -m pytest tests/ -v)",
+      "Bash(pip install *)",
+      "Bash(python -m pytest tests/test_integration.py -v --tb=short)",
+      "Bash(python -m pytest tests/test_integration.py tests/test_api_surface.py -v --tb=short)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,75 @@
+stages:
+  - setup
+  - build
+  - deploy
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+  NODE_ENV: production
+  FLASK_APP: backend.app
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .cache/pip/
+    - node_modules/
+
+setup_python:
+  image: python:3.10
+  stage: setup
+  script:
+    - python3 -V
+    - python3 -m pip install --upgrade pip setuptools wheel
+    - python3 -m pip install -r backend/requirements.txt
+  artifacts:
+    paths:
+      - .cache/pip/
+  rules:
+    - if: $CI_COMMIT_BRANCH
+
+build_frontend:
+  image: node:18
+  stage: build
+  variables:
+    NODE_ENV: development   # 覆盖全局，确保安装 devDependencies（如 vite）
+  script:
+    - node -v
+    - npm ci --include=dev
+    - npx vite build     # 使用本地安装的 vite，避免 PATH 问题
+  artifacts:
+    paths:
+      - dist/
+  rules:
+    - if: $CI_COMMIT_BRANCH
+
+# New job: run backend unit tests (pytest)
+run_backend_tests:
+  image: python:3.10
+  stage: build
+  variables:
+    FLASK_APP: backend.app
+  script:
+    - python3 -V
+    - python3 -m pip install --upgrade pip
+    - python3 -m pip install -r backend/requirements.txt || true
+    - python3 -m pip install pytest
+    - python3 -m pytest -q backend/tests
+  rules:
+    - if: $CI_COMMIT_BRANCH
+
+prepare_db:
+  image: python:3.10
+  stage: setup
+  variables:
+    FLASK_APP: app
+    SQLALCHEMY_DATABASE_URI: "sqlite:///ci_test.db"
+  script:
+    - python3 -m pip install -r backend/requirements.txt
+    - 'echo Python version: $(python -V)'
+    - 'echo Working dir: $(pwd)'
+    - python3 backend/init_db.py
+  rules:
+    - if: '$CI_COMMIT_BRANCH'
+
+
+

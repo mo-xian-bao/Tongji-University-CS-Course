@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__gitlab__search_repositories",
+      "Bash(curl:*)",
+      "Bash(dir:*)",
+      "mcp__chrome-devtools__take_screenshot"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
