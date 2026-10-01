@@ -1,0 +1,75 @@
+MiniOB `CREATE TABLE` 功能源码分析报告
+
+1. 引言
+   `CREATE TABLE` 是 SQL 中用于定义新表结构的核心命令。在 MiniOB 数据库系统中，该功能的实现涉及多个模块，从 SQL 解析到元数据管理，再到存储层的文件创建。本报告旨在简要分析其主要流程和关键组件。
+
+2. SQL 解析阶段
+   当用户输入 `CREATE TABLE` 语句时，MiniOB 首先通过词法分析器 (lex) 和语法分析器 (yacc) 进行处理。
+   - 语法规则定义在 `src/observer/sql/parser/yacc_sql.y` 中。`create_table_stmt` 规则指定了 `CREATE TABLE` 语句的结构，包括表名、列定义列表和可选的主键及存储格式。
+   - 列定义 `attr_def` 规则解析出每个列的名称 (`ID`)、类型 (`type`，如 INT_T, FLOAT_T, STRING_T) 和可选的长度 (`number`)。
+   - 解析的结果是一个 `ParsedSqlNode`，其 `create_table` 成员是一个 `CreateTableSqlNode` 结构体 (定义于 `src/observer/sql/parser/parse_defs.h`)。
+   - `CreateTableSqlNode` 包含：
+     - `relation_name`: 表名 (string)。
+     - `attr_infos`: 一个 `vector<AttrInfoSqlNode>`，存储所有列的定义。
+     - `primary_keys`: 一个 `vector<string>`，存储主键列名。
+     - `storage_format`: 存储格式字符串。
+   - `AttrInfoSqlNode` (定义于 `src/observer/sql/parser/parse_defs.h`) 包含：
+     - `type`: 列的数据类型 (`AttrType` 枚举)。
+     - `name`: 列名 (string)。
+     - `length`: 列的长度 (size_t)。
+
+3. 语句对象构建阶段
+   解析得到的 `CreateTableSqlNode` 随后被转换为一个更结构化的语句对象 `CreateTableStmt`。
+   - 这个转换通常在 `Stmt::create_stmt` (位于 `src/observer/sql/stmt/stmt.cpp`) 方法中被调用，该方法根据 `ParsedSqlNode` 的标志 (如 `SCF_CREATE_TABLE`) 分发给相应的静态创建方法。
+   - `CreateTableStmt::create` (位于 `src/observer/sql/stmt/create_table_stmt.cpp`) 负责接收 `CreateTableSqlNode`，并构造一个 `CreateTableStmt` 对象。
+   - `CreateTableStmt` 类 (定义于 `src/observer/sql/stmt/create_table_stmt.h`) 持有表名、`attr_infos` 向量、主键列表以及解析后的 `StorageFormat` 枚举。它本身不执行创建逻辑，而是作为数据载体传递给执行层。
+
+4. 执行与调度
+   `CreateTableStmt` 对象创建后，会被传递给 SQL 执行引擎进行处理。
+   - 例如，在 `SQLHandler::handle_stmt` (或类似的中央调度逻辑) 中，会识别出语句类型为 `StmtType::CREATE_TABLE`。
+   - 之后，通常会调用数据库核心接口来执行建表操作，例如调用 `Db` 对象的相应方法。
+
+5. 数据库层核心处理 (`Db` 类)
+   `Db` 类 (位于 `src/observer/storage/db/db.h` 和 `.cpp`) 代表一个数据库实例，负责管理其中的所有表。
+   - `Db::create_table` (或类似名称的方法) 是实际执行建表操作的入口。
+   - 此方法首先会检查同名表是否已存在于数据库的目录或元数据中，如果存在则报错 (`RC::SCHEMA_TABLE_EXIST`)。
+   - 它会确定新表的元数据文件路径和数据文件路径。
+   - 然后，它会实例化一个 `Table` 对象，并调用其 `create` 方法。
+
+6. 表对象与元数据处理 (`Table` 和 `TableMeta` 类)
+   `Table` 类 (位于 `src/observer/storage/table/table.h` 和 `.cpp`) 代表一个具体的表。
+   - `Table::create` 方法接收数据库对象 (`Db*`)、表ID、元数据文件路径、表名、列定义 (`AttrInfoSqlNode` 列表)、主键、存储格式和存储引擎类型等参数。
+   - 核心步骤之一是初始化表元数据 `TableMeta`。`table_meta_.init()` (方法位于 `TableMeta` 类) 会被调用。
+   - `TableMeta::init` (位于 `src/observer/storage/table/table_meta.cpp`):
+     - 遍历传入的 `AttrInfoSqlNode` 列表。
+     - 对每个 `AttrInfoSqlNode`，创建一个 `FieldMeta` 对象 (定义于 `src/observer/storage/field/field_meta.h`) 来描述列的详细元数据 (类型、名称、长度、在记录中的偏移量等)。
+     - 存储主键信息、表名、表ID、存储格式和引擎。
+     - 计算记录的总大小。
+   - 元数据初始化完成后，`TableMeta::serialize` 方法会将 `TableMeta` 对象的内容序列化并写入到指定的元数据文件中 (通常是 `表名.table` 或类似格式)。这个文件使得数据库在后续启动时可以加载表结构。
+
+7. 存储引擎交互与文件创建
+   MiniOB 使用 `TableEngine` 抽象存储引擎的具体实现。
+   - 在 `Table::create` 过程中，会根据指定的存储引擎类型 (如 `StorageEngine::HEAP`) 创建相应的 `TableEngine` 实例 (如 `HeapTableEngine`)。
+   - `TableEngine::open` (或 `init`) 方法会被调用，这通常涉及到：
+     - 创建表的数据文件 (例如，`表名.dat`)。这可能通过底层的 `BufferPoolManager` 或文件系统接口完成。
+     - 初始化与该表数据文件相关的内部结构。
+   - 例如，`HeapTableEngine` 可能会初始化记录管理器 (`RecordFileHandler`) 来管理堆文件中的记录。
+
+8. 关键数据结构总结
+   - `CreateTableSqlNode`: SQL解析器直接生成的原始表定义信息。
+   - `AttrInfoSqlNode`: 单个列的原始定义信息。
+   - `CreateTableStmt`: 经过初步处理的、更结构化的建表语句对象。
+   - `TableMeta`: 表的完整元数据描述，包括所有字段 (`FieldMeta`)、主键、存储格式等。是表在内存中的“蓝图”。
+   - `FieldMeta`: 单个字段（列）的详细元数据，如类型、长度、偏移量。
+   - `Table`: 代表一个表的对象，封装了元数据和对表数据的操作。
+   - `Db`: 代表数据库实例，管理所有表。
+
+9. 总结
+   MiniOB 中的 `CREATE TABLE` 功能是一个多阶段的过程：
+   1. SQL 语句被解析成 `CreateTableSqlNode`。
+   2. `CreateTableSqlNode` 被转换为 `CreateTableStmt` 对象。
+   3. 执行器调度 `Db` 类来创建表。
+   4. `Db` 类调用 `Table::create`，后者初始化 `TableMeta`（包含多个 `FieldMeta`）。
+   5. `TableMeta` 被序列化到磁盘。
+   6. 通过 `TableEngine` 创建实际的数据存储文件和结构。
+   这个流程确保了表定义的正确解析、元数据的持久化以及存储空间的准备。
