@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Fri Jul 11 02:21:27 2025">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="77fb59e78f904239bdc7288a61a76175" type="ProjectID"/>
+<property name="ProjectIteration" value="4" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="6" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="1" type="JavaHandler"/>
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="CoreView" value="4" type="JavaHandler"/>
+<property name="CustomizeCore" value="4" type="JavaHandler"/>
+<property name="EditDelete" value="2" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="6" type="JavaHandler"/>
+<property name="ManageCompositeTargets" value="1" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="8" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="2" type="JavaHandler"/>
+<property name="ProgramDevice" value="6" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="23" type="JavaHandler"/>
+<property name="RecustomizeCore" value="6" type="JavaHandler"/>
+<property name="ReportClockNetworks" value="1" type="JavaHandler"/>
+<property name="ReportTimingSummary" value="9" type="JavaHandler"/>
+<property name="RunBitgen" value="1" type="JavaHandler"/>
+<property name="RunImplementation" value="2" type="JavaHandler"/>
+<property name="RunSynthesis" value="4" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
+<property name="ShowView" value="11" type="JavaHandler"/>
+<property name="SimulationRun" value="54" type="JavaHandler"/>
+<property name="TimingConstraintsWizard" value="1" type="JavaHandler"/>
+<property name="ViewTaskRTLAnalysis" value="2" type="JavaHandler"/>
+<property name="ViewTaskSynthesis" value="3" type="JavaHandler"/>
+<property name="XdcCreateClock" value="2" type="JavaHandler"/>
+<property name="XdcSetInputDelay" value="2" type="JavaHandler"/>
+<property name="XdcSetOutputDelay" value="2" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, Auto Connect" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Program and Debug, Hardware Manager, Open Target], 47, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Program and Debug, Hardware Manager, Program Device], 48, false" value="6" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Program and Debug, Open Hardware Manager], 46, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProgramDebugTab_OPEN_RECENTLY_OPENED_TARGET, Recent Targets" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProgramFpgaDialog_CHECK_END_OF_STARTUP, Enable end of startup check, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProgramFpgaDialog_CHECK_END_OF_STARTUP, Enable end of startup check, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProgramFpgaDialog_PROGRAM, Program" value="3" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="5" type="GuiResourceData"/>
+<property name="sccomp_dataflow.v, 327, 455" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="106" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="93" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/barrelshifter32/barrelshifter32.srcs/sources_1/new/barrelshifter32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrelshifter32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/barrelshifter32/barrelshifter32.srcs/sim_1/new/barrelshifter32_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module barrelshifter32_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/barrelshifter32/barrelshifter32.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

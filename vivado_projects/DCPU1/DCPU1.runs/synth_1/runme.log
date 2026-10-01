@@ -1,0 +1,252 @@
+
+*** Running vivado
+    with args -log top_board.vds -m64 -mode batch -messageDb vivado.pb -notrace -source top_board.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source top_board.tcl -notrace
+Command: synth_design -top top_board -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 29192 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 330.332 ; gain = 123.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_board' [D:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/new/top_borad.v:22]
+INFO: [Synth 8-638] synthesizing module 'Divider' [D:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/new/Divider.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Divider' (1#1) [D:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/new/Divider.v:1]
+INFO: [Synth 8-638] synthesizing module 'DCPU' [D:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/new/DCPU.v:12]
+	Parameter OP_RTYPE bound to: 6'b000000 
+	Parameter FUNC_SLL bound to: 6'b000000 
+	Parameter FUNC_SRL bound to: 6'b000010 
+	Parameter FUNC_SRA bound to: 6'b000011 
+INFO: [Synth 8-638] synthesizing module 'IMEM' [D:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/new/IMEM.v:8]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [d:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/ip/dist_mem_gen_0/synth/dist_mem_gen_0.vhd:66]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 2048 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: dist_mem_gen_0.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_10' declared at 'd:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_v8_0_10/hdl/dist_mem_gen_v8_0.vhd:78' bound to instance 'U0' of component 'dist_mem_gen_v8_0_10' [d:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/ip/dist_mem_gen_0/synth/dist_mem_gen_0.vhd:132]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 2048 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: dist_mem_gen_0.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 2048 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: dist_mem_gen_0.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 0 - type: integer 
+	Parameter c_addr_width bound to: 11 - type: integer 
+	Parameter c_depth bound to: 2048 - type: integer 
+	Parameter c_width bound to: 32 - type: integer 
+	Parameter c_default_data bound to: 0 - type: string 
+	Parameter c_mem_init_file bound to: dist_mem_gen_0.mif - type: string 
+	Parameter c_elaboration_dir bound to: ./ - type: string 
+	Parameter c_read_mif bound to: 1 - type: integer 
+	Parameter c_reg_a_d_inputs bound to: 0 - type: integer 
+	Parameter c_has_clk bound to: 0 - type: integer 
+	Parameter c_has_qspo_ce bound to: 0 - type: integer 
+	Parameter c_has_qspo_rst bound to: 0 - type: integer 
+	Parameter c_has_qspo_srst bound to: 0 - type: integer 
+	Parameter c_has_spo bound to: 1 - type: integer 
+	Parameter c_has_qspo bound to: 0 - type: integer 
+	Parameter c_sync_enable bound to: 1 - type: integer 
+	Parameter c_parser_type bound to: 0 - type: integer 
+	Parameter c_addr_width bound to: 11 - type: integer 
+	Parameter c_depth bound to: 2048 - type: integer 
+	Parameter c_width bound to: 32 - type: integer 
+	Parameter c_default_data bound to: 0 - type: string 
+	Parameter c_mem_init_file bound to: dist_mem_gen_0.mif - type: string 
+	Parameter c_elaboration_dir bound to: ./ - type: string 
+	Parameter c_read_mif bound to: 1 - type: integer 
+	Parameter c_reg_a_d_inputs bound to: 0 - type: integer 
+	Parameter c_has_clk bound to: 0 - type: integer 
+	Parameter c_has_qspo_ce bound to: 0 - type: integer 
+	Parameter c_has_qspo_rst bound to: 0 - type: integer 
+	Parameter c_has_qspo_srst bound to: 0 - type: integer 
+	Parameter c_has_spo bound to: 1 - type: integer 
+	Parameter c_has_qspo bound to: 0 - type: integer 
+	Parameter c_sync_enable bound to: 1 - type: integer 
+	Parameter c_parser_type bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (5#1) [d:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/ip/dist_mem_gen_0/synth/dist_mem_gen_0.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'IMEM' (6#1) [D:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/new/IMEM.v:8]
+INFO: [Synth 8-638] synthesizing module 'Controller' [D:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/new/Controller.v:8]
+	Parameter OP_RTYPE bound to: 6'b000000 
+	Parameter OP_ADDI bound to: 6'b001000 
+	Parameter OP_ADDIU bound to: 6'b001001 
+	Parameter OP_ANDI bound to: 6'b001100 
+	Parameter OP_ORI bound to: 6'b001101 
+	Parameter OP_XORI bound to: 6'b001110 
+	Parameter OP_SLTI bound to: 6'b001010 
+	Parameter OP_SLTIU bound to: 6'b001011 
+	Parameter OP_LUI bound to: 6'b001111 
+	Parameter OP_BEQ bound to: 6'b000100 
+	Parameter OP_BNE bound to: 6'b000101 
+	Parameter OP_BGEZ bound to: 6'b000001 
+	Parameter OP_J bound to: 6'b000010 
+	Parameter OP_JAL bound to: 6'b000011 
+	Parameter OP_LW bound to: 6'b100011 
+	Parameter OP_LH bound to: 6'b100001 
+	Parameter OP_LHU bound to: 6'b100101 
+	Parameter OP_LB bound to: 6'b100000 
+	Parameter OP_LBU bound to: 6'b100100 
+	Parameter OP_SW bound to: 6'b101011 
+	Parameter OP_SH bound to: 6'b101001 
+	Parameter OP_SB bound to: 6'b101000 
+	Parameter OP_COP0 bound to: 6'b010000 
+	Parameter OP_SPECIAL2 bound to: 6'b011100 
+	Parameter FUNC_ADD bound to: 6'b100000 
+	Parameter FUNC_ADDU bound to: 6'b100001 
+	Parameter FUNC_SUB bound to: 6'b100010 
+	Parameter FUNC_SUBU bound to: 6'b100011 
+	Parameter FUNC_AND bound to: 6'b100100 
+	Parameter FUNC_OR bound to: 6'b100101 
+	Parameter FUNC_XOR bound to: 6'b100110 
+	Parameter FUNC_NOR bound to: 6'b100111 
+	Parameter FUNC_SLT bound to: 6'b101010 
+	Parameter FUNC_SLTU bound to: 6'b101011 
+	Parameter FUNC_SLL bound to: 6'b000000 
+	Parameter FUNC_SRL bound to: 6'b000010 
+	Parameter FUNC_SRA bound to: 6'b000011 
+	Parameter FUNC_SLLV bound to: 6'b000100 
+	Parameter FUNC_SRLV bound to: 6'b000110 
+	Parameter FUNC_SRAV bound to: 6'b000111 
+	Parameter FUNC_JR bound to: 6'b001000 
+	Parameter FUNC_JALR bound to: 6'b001001 
+	Parameter FUNC_MULT bound to: 6'b011000 
+	Parameter FUNC_MULTU bound to: 6'b011001 
+	Parameter FUNC_DIV bound to: 6'b011010 
+	Parameter FUNC_DIVU bound to: 6'b011011 
+	Parameter FUNC_MFHI bound to: 6'b010000 
+	Parameter FUNC_MFLO bound to: 6'b010010 
+	Parameter FUNC_MTHI bound to: 6'b010001 
+	Parameter FUNC_MTLO bound to: 6'b010011 
+	Parameter FUNC_SYSCALL bound to: 6'b001100 
+	Parameter FUNC_BREAK bound to: 6'b001101 
+	Parameter FUNC_TEQ bound to: 6'b110100 
+	Parameter FUNC_CLZ bound to: 6'b100000 
+	Parameter FUNC_ERET bound to: 6'b011000 
+	Parameter ALU_ADD bound to: 4'b0010 
+	Parameter ALU_ADDU bound to: 4'b0000 
+	Parameter ALU_SUB bound to: 4'b0011 
+	Parameter ALU_SUBU bound to: 4'b0001 
+	Parameter ALU_AND bound to: 4'b0100 
+	Parameter ALU_OR bound to: 4'b0101 
+	Parameter ALU_XOR bound to: 4'b0110 
+	Parameter ALU_NOR bound to: 4'b0111 
+	Parameter ALU_SLT bound to: 4'b1011 
+	Parameter ALU_SLTU bound to: 4'b1010 
+	Parameter ALU_SLL bound to: 4'b1110 
+	Parameter ALU_SRL bound to: 4'b1101 
+	Parameter ALU_SRA bound to: 4'b1100 
+	Parameter ALU_LUI bound to: 4'b1000 
+	Parameter ALU_CLZ bound to: 4'b1111 
+	Parameter BR_BEQ bound to: 3'b000 
+	Parameter BR_BNE bound to: 3'b001 
+	Parameter BR_BGEZ bound to: 3'b010 
+	Parameter BR_NONE bound to: 3'b111 
+INFO: [Synth 8-256] done synthesizing module 'Controller' (7#1) [D:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/new/Controller.v:8]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/new/ALU.v:8]
+INFO: [Synth 8-226] default block is never used [D:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/new/ALU.v:27]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (8#1) [D:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/new/ALU.v:8]
+INFO: [Synth 8-638] synthesizing module 'MDU' [D:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/new/MDU.v:1]
+	Parameter MDU_MULT bound to: 2'b00 
+	Parameter MDU_MULTU bound to: 2'b01 
+	Parameter MDU_DIV bound to: 2'b10 
+	Parameter MDU_DIVU bound to: 2'b11 
+	Parameter S_IDLE bound to: 2'b00 
+	Parameter S_CALC bound to: 2'b01 
+	Parameter S_DONE bound to: 2'b10 
+INFO: [Synth 8-256] done synthesizing module 'MDU' (9#1) [D:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/new/MDU.v:1]
+INFO: [Synth 8-638] synthesizing module 'DMEM' [D:/vivado_projects/DCPU1/DCPU1.srcs/sources_1/new/DMEM.v:8]
+Abnormal program termination (EXCEPTION_ACCESS_VIOLATION)
+Please check 'D:/vivado_projects/DCPU1/DCPU1.runs/synth_1/hs_err_pid25656.log' for details

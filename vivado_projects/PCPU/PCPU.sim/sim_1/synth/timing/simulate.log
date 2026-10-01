@@ -1,0 +1,97 @@
+# do {PCPU_tb_drop_eggs_simulate.do}
+# vsim -voptargs=""+acc"" "+transport_int_delays" "+pulse_r/0" "+pulse_int_r/0" -L simprims_ver -L secureip -L xil_defaultlib -lib xil_defaultlib xil_defaultlib.PCPU_tb_drop_eggs xil_defaultlib.glbl 
+# Start time: 16:56:38 on Nov 15,2025
+# //  ModelSim PE 10.4c Jul 20 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading xil_defaultlib.PCPU_tb_drop_eggs
+# Loading xil_defaultlib.PCPU
+# Loading simprims_ver.LUT6
+# Loading simprims_ver.LUT4
+# Loading simprims_ver.LUT3
+# Loading simprims_ver.LUT5
+# Loading simprims_ver.LUT2
+# Loading simprims_ver.FDCE
+# Loading simprims_ver.CARRY4
+# Loading simprims_ver.FDPE
+# Loading simprims_ver.LUT1
+# Loading simprims_ver.OBUF
+# Loading simprims_ver.BUFG
+# Loading simprims_ver.IBUF
+# Loading xil_defaultlib.DMEM
+# Loading xil_defaultlib.RAM32X1S_UNIQ_BASE_
+# Loading simprims_ver.RAMS32
+# Loading xil_defaultlib.RAM32X1S_HD63
+# Loading xil_defaultlib.RAM32X1S_HD64
+# Loading xil_defaultlib.RAM32X1S_HD65
+# Loading xil_defaultlib.RAM32X1S_HD66
+# Loading xil_defaultlib.RAM32X1S_HD67
+# Loading xil_defaultlib.RAM32X1S_HD68
+# Loading xil_defaultlib.RAM32X1S_HD69
+# Loading xil_defaultlib.RAM32X1S_HD70
+# Loading xil_defaultlib.RAM32X1S_HD71
+# Loading xil_defaultlib.RAM32X1S_HD72
+# Loading xil_defaultlib.RAM32X1S_HD73
+# Loading xil_defaultlib.RAM32X1S_HD74
+# Loading xil_defaultlib.RAM32X1S_HD75
+# Loading xil_defaultlib.RAM32X1S_HD76
+# Loading xil_defaultlib.RAM32X1S_HD77
+# Loading xil_defaultlib.RAM32X1S_HD78
+# Loading xil_defaultlib.RAM32X1S_HD79
+# Loading xil_defaultlib.RAM32X1S_HD80
+# Loading xil_defaultlib.RAM32X1S_HD81
+# Loading xil_defaultlib.RAM32X1S_HD82
+# Loading xil_defaultlib.RAM32X1S_HD83
+# Loading xil_defaultlib.RAM32X1S_HD84
+# Loading xil_defaultlib.RAM32X1S_HD85
+# Loading xil_defaultlib.RAM32X1S_HD86
+# Loading xil_defaultlib.RAM32X1S_HD87
+# Loading xil_defaultlib.RAM32X1S_HD88
+# Loading xil_defaultlib.RAM32X1S_HD89
+# Loading xil_defaultlib.RAM32X1S_HD90
+# Loading xil_defaultlib.RAM32X1S_HD91
+# Loading xil_defaultlib.RAM32X1S_HD92
+# Loading xil_defaultlib.RAM32X1S_HD93
+# Loading xil_defaultlib.IMEM
+# Loading xil_defaultlib.dist_mem_gen_0
+# Loading xil_defaultlib.dist_mem_gen_0_dist_mem_gen_v8_0_10
+# Loading simprims_ver.GND
+# Loading xil_defaultlib.dist_mem_gen_0_dist_mem_gen_v8_0_10_synth
+# Loading xil_defaultlib.dist_mem_gen_0_rom
+# Loading xil_defaultlib.RegFile
+# Loading simprims_ver.MUXF7
+# Loading xil_defaultlib.seg7x16
+# Loading xil_defaultlib.glbl
+# SDF 10.4c Compiler 2015.07 Jul 20 2015
+# 
+# Loading instances from PCPU_tb_drop_eggs_time_synth.sdf
+# ** Warning: (vsim-3008) ../../../../PCPU.srcs/sim_1/new/PCPU_tb.v(63): [CNNODP] - Component name (array_reg) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /PCPU_tb_drop_eggs File: ../../../../PCPU.srcs/sim_1/new/PCPU_tb.v
+# ** Error: (vsim-3043) ../../../../PCPU.srcs/sim_1/new/PCPU_tb.v(63): Unresolved reference to 'array_reg' in uut.regfile.array_reg.
+#    Time: 0 ps  Iteration: 0  Instance: /PCPU_tb_drop_eggs File: ../../../../PCPU.srcs/sim_1/new/PCPU_tb.v
+# ** Warning: (vsim-3017) ../../../../PCPU.srcs/sim_1/new/PCPU_tb.v(13): [TFMPC] - Too few port connections. Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /PCPU_tb_drop_eggs/uut File: PCPU_tb_drop_eggs_time_synth.v
+# ** Warning: (vsim-3722) ../../../../PCPU.srcs/sim_1/new/PCPU_tb.v(13): [TFMPC] - Missing connection for port 'seg'.
+# ** Warning: (vsim-3722) ../../../../PCPU.srcs/sim_1/new/PCPU_tb.v(13): [TFMPC] - Missing connection for port 'an'.
+# Loading simprims_ver.x_lut3_mux4
+# Loading simprims_ver.x_lut2_mux4
+# Loading simprims_ver.ffsrce_fdce
+# Loading simprims_ver.ffsrce_fdpe
+# Loading simprims_ver.x_lut1_mux2
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./PCPU_tb_drop_eggs_simulate.do PAUSED at line 9
+# End time: 19:18:24 on Nov 15,2025, Elapsed time: 2:21:46
+# Errors: 1, Warnings: 4

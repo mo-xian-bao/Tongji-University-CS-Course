@@ -1,0 +1,39 @@
+Exception at PC 0x00007FF92B43BB93
+Printing stacktrace...
+
+Unable to capture context for thread 37632 in process 46328, can not generate back trace
+Unable to capture context for thread 42432 in process 46328, can not generate back trace
+Exception at PC 0x00007FFA369E85EA
+Unable to capture context for thread 39928 in process 46328, can not generate back trace
+Exception at PC 0x00007FFA369E85EA
+Exception at PC 0x00007FFA369E85EA
+[0]  [0x00007FF92B43BB93]
+[1]  [0x00007FF92B43BB93]
+[2]  [0x00007FF92B43B4A1]
+[3]  [0x00007FF92B43B459]
+[4]  [0x00007FF92B4219FE]
+[5]  [0x00007FF92B420ED1]
+[6]  [0x00007FF92B420D76]
+[7]  [0x00007FF92B3C79F6]
+[8]  [0x00007FF92B3B7AFB]
+[9]  [0x00007FF92B4DE90A]
+[10]  [0x00007FF92B4F9F87]
+[11]  [0x00007FF92B4FA05F]
+[12] (BaseThreadInitThunk+0x17) [0x00007FFA37FDE8D7]
+[13] (RtlUserThreadStart+0x2c) [0x00007FFA3949C34C]
+Done
+Exception at PC 0x00007FFA369E85EA
+Exception at PC 0x00007FFA369E85EA
+Exception at PC 0x00007FFA369E85EA
+Exception at PC 0x00007FFA369E85EA
+Exception at PC 0x00007FFA369E85EA
+Exception at PC 0x00007FFA369E85EA
+Exception at PC 0x00007FFA369E85EA
+Exception at PC 0x00007FFA369E85EA
+Exception at PC 0x00007FFA369E85EA
+Exception at PC 0x00007FFA369E85EA
+Exception at PC 0x00007FFA369E85EA
+Exception at PC 0x00007FFA369E85EA
+Exception at PC 0x00007FFA369E85EA
+Exception at PC 0x00007FFA369E85EA
+Exception at PC 0x00007FFA369E85EA

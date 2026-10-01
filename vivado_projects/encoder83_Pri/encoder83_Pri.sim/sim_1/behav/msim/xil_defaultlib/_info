@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/vivado_projects/encoder83_Pri/encoder83_Pri.sim/sim_1/behav
+vencoder83_Pri
+!s10a 1728726217
+!s110 1728726496
+!i10b 1
+!s100 O<[jl5D_e>WFfK__Z>L132
+IFo1X[4XVzBTf^NV;]22g20
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1728726217
+8../../../encoder83_Pri.srcs/sources_1/new/encoder83_Pri.v
+F../../../encoder83_Pri.srcs/sources_1/new/encoder83_Pri.v
+Z2 L0 23
+Z3 OP;L;10.4c;61
+r1
+!s85 0
+31
+!s108 1728726496.000000
+Z4 !s107 ../../../encoder83_Pri.srcs/sim_1/new/encoder83_Pri_tb.v|../../../encoder83_Pri.srcs/sources_1/new/encoder83_Pri.v|
+Z5 !s90 -64|-incr|-work|xil_defaultlib|../../../encoder83_Pri.srcs/sources_1/new/encoder83_Pri.v|../../../encoder83_Pri.srcs/sim_1/new/encoder83_Pri_tb.v|
+!i113 1
+Z6 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+nencoder83_@pri
+vencoder83_Pri_tb
+!s110 1728726653
+!i10b 1
+!s100 2O?6e6_c?i3LUW:I5lWFm0
+IM[HjSB`093i]Qb;Y4kN2N0
+R1
+R0
+w1728726643
+8../../../encoder83_Pri.srcs/sim_1/new/encoder83_Pri_tb.v
+F../../../encoder83_Pri.srcs/sim_1/new/encoder83_Pri_tb.v
+R2
+R3
+r1
+!s85 0
+31
+Z7 !s108 1728726653.000000
+R4
+R5
+!i113 1
+R6
+nencoder83_@pri_tb
+vglbl
+!s110 1728726654
+!i10b 1
+!s100 g=dL3UKAkhNRkQ:7=fPzF1
+IkJ@CGO[n5[_3E=ZkTzmEk2
+R1
+R0
+w1464879896
+8glbl.v
+Fglbl.v
+L0 6
+R3
+r1
+!s85 0
+31
+R7
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 1
+R6

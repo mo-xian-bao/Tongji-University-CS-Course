@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../EP1-89Inst.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" \
+"../../../../EP1-89Inst.srcs/sources_1/new/ALU.v" \
+"../../../../EP1-89Inst.srcs/sources_1/new/CP0.v" \
+"../../../../EP1-89Inst.srcs/sources_1/new/Controller.v" \
+"../../../../EP1-89Inst.srcs/sources_1/new/DCPU.v" \
+"../../../../EP1-89Inst.srcs/sources_1/new/DMEM.v" \
+"../../../../EP1-89Inst.srcs/sources_1/new/Divider.v" \
+"../../../../EP1-89Inst.srcs/sources_1/new/ForwardUnit.v" \
+"../../../../EP1-89Inst.srcs/sources_1/new/HazardUnit.v" \
+"../../../../EP1-89Inst.srcs/sources_1/new/IMEM.v" \
+"../../../../EP1-89Inst.srcs/sources_1/new/MDU.v" \
+"../../../../EP1-89Inst.srcs/sources_1/new/RegFile.v" \
+"../../../../EP1-89Inst.srcs/sources_1/new/seg7x16.v" \
+"../../../../EP1-89Inst.srcs/sources_1/new/top_borad.v" \
+"../../../../EP1-89Inst.srcs/sim_1/new/tb_top_board.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

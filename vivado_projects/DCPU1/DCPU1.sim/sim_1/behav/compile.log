@@ -1,0 +1,58 @@
+# do {DCPU_tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# ** Warning: (vlib-34) Library already exists at "msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "msim/dist_mem_gen_v8_0_10".
+# 
+# ** Warning: (vlib-34) Library already exists at "msim/xil_defaultlib".
+# 
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap dist_mem_gen_v8_0_10 msim/dist_mem_gen_v8_0_10 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap xil_defaultlib msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# 
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 12:33:53 on Dec 16,2025
+# vlog -64 -incr -work dist_mem_gen_v8_0_10 ../../../DCPU1.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v 
+# -- Skipping module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# End time: 12:33:54 on Dec 16,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# 
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 12:33:54 on Dec 16,2025
+# vlog -64 -incr -work xil_defaultlib ../../../DCPU1.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v ../../../DCPU1.srcs/sources_1/new/Controller.v ../../../DCPU1.srcs/sources_1/new/IMEM.v ../../../DCPU1.srcs/sources_1/new/HazardUnit.v ../../../DCPU1.srcs/sources_1/new/ForwardUnit.v ../../../DCPU1.srcs/sources_1/new/DMEM.v ../../../DCPU1.srcs/sources_1/new/MDU.v ../../../DCPU1.srcs/sources_1/new/ALU.v ../../../DCPU1.srcs/sources_1/new/RegFile.v ../../../DCPU1.srcs/sources_1/new/CP0.v ../../../DCPU1.srcs/sources_1/new/seg7x16.v ../../../DCPU1.srcs/sources_1/new/DCPU.v ../../../DCPU1.srcs/sim_1/new/DCPU_tb.v 
+# -- Skipping module dist_mem_gen_0
+# -- Skipping module Controller
+# -- Skipping module IMEM
+# -- Skipping module HazardUnit
+# -- Skipping module ForwardUnit
+# -- Skipping module DMEM
+# -- Skipping module MDU
+# -- Skipping module ALU
+# -- Skipping module RegFile
+# -- Skipping module CPO
+# -- Skipping module seg7x16
+# -- Skipping module DCPU
+# -- Compiling module DCPU_tb
+# 
+# Top level modules:
+# 	DCPU_tb
+# End time: 12:33:54 on Dec 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 12:33:54 on Dec 16,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 12:33:54 on Dec 16,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

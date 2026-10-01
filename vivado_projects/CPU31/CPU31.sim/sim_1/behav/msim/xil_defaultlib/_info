@@ -1,0 +1,269 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/desktop/CPU31/CPU31.sim/sim_1/behav
+v_246tb_ex9_tb
+!s10a 1747232984
+!s110 1747233014
+!i10b 1
+!s100 Lm]n1B^Sk`QdjW3Bf=Gfc1
+I:^7]L93o@QzkiCXXm^OLY2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1747232984
+8../../../CPU31.srcs/sim_1/new/_246tb_ex9_tb.v
+F../../../CPU31.srcs/sim_1/new/_246tb_ex9_tb.v
+L0 3
+Z2 OP;L;10.4c;61
+r1
+!s85 0
+31
+!s108 1747233014.000000
+Z3 !s107 ../../../CPU31.srcs/sim_1/new/_246tb_ex9_tb.v|../../../CPU31.srcs/sources_1/new/sccomp_dataflow.v|../../../CPU31.srcs/sources_1/new/CPU.v|../../../CPU31.srcs/sources_1/new/DMEM.v|../../../CPU31.srcs/sources_1/new/IMEM.v|../../../CPU31.srcs/sources_1/new/PC.v|../../../CPU31.srcs/sources_1/new/CU.v|../../../CPU31.srcs/sources_1/new/ALU.v|../../../CPU31.srcs/sources_1/new/RegFile.v|../../../CPU31.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v|
+Z4 !s90 -64|-incr|-work|xil_defaultlib|../../../CPU31.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v|../../../CPU31.srcs/sources_1/new/RegFile.v|../../../CPU31.srcs/sources_1/new/ALU.v|../../../CPU31.srcs/sources_1/new/CU.v|../../../CPU31.srcs/sources_1/new/PC.v|../../../CPU31.srcs/sources_1/new/IMEM.v|../../../CPU31.srcs/sources_1/new/DMEM.v|../../../CPU31.srcs/sources_1/new/CPU.v|../../../CPU31.srcs/sources_1/new/sccomp_dataflow.v|../../../CPU31.srcs/sim_1/new/_246tb_ex9_tb.v|
+!i113 1
+Z5 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@_246tb_ex9_tb
+vALU
+!s10a 1746958208
+Z6 !s110 1747051700
+!i10b 1
+!s100 6dml59j;DNSJ;l92M9BX40
+I>@Om:IS]O8n>cmC1fB;j_0
+R1
+R0
+w1746958208
+8../../../CPU31.srcs/sources_1/new/ALU.v
+F../../../CPU31.srcs/sources_1/new/ALU.v
+L0 1
+R2
+r1
+!s85 0
+31
+Z7 !s108 1747051700.000000
+Z8 !s107 ../../../CPU31.srcs/sim_1/new/test_tb.v|../../../CPU31.srcs/sources_1/new/sccomp_dataflow.v|../../../CPU31.srcs/sources_1/new/CPU.v|../../../CPU31.srcs/sources_1/new/DMEM.v|../../../CPU31.srcs/sources_1/new/IMEM.v|../../../CPU31.srcs/sources_1/new/PC.v|../../../CPU31.srcs/sources_1/new/RegFile.v|../../../CPU31.srcs/sources_1/new/CU.v|../../../CPU31.srcs/sources_1/new/ALU.v|../../../CPU31.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v|
+Z9 !s90 -64|-incr|-work|xil_defaultlib|../../../CPU31.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v|../../../CPU31.srcs/sources_1/new/ALU.v|../../../CPU31.srcs/sources_1/new/CU.v|../../../CPU31.srcs/sources_1/new/RegFile.v|../../../CPU31.srcs/sources_1/new/PC.v|../../../CPU31.srcs/sources_1/new/IMEM.v|../../../CPU31.srcs/sources_1/new/DMEM.v|../../../CPU31.srcs/sources_1/new/CPU.v|../../../CPU31.srcs/sources_1/new/sccomp_dataflow.v|../../../CPU31.srcs/sim_1/new/test_tb.v|
+!i113 1
+R5
+n@a@l@u
+vCPU
+!s10a 1747152673
+Z10 !s110 1747195862
+!i10b 1
+!s100 I?RR8C<MP7^0Z^BcXa41N1
+ITmdgVVIC5@a]g_[hjHLCP1
+R1
+R0
+w1747152673
+8../../../CPU31.srcs/sources_1/new/CPU.v
+F../../../CPU31.srcs/sources_1/new/CPU.v
+L0 1
+R2
+r1
+!s85 0
+31
+Z11 !s108 1747195862.000000
+R3
+R4
+!i113 1
+R5
+n@c@p@u
+vCU
+!s10a 1747116315
+R10
+!i10b 1
+!s100 hna7^@_Ae0MnQzB0>>XH;0
+Idf?jQ1f?3on0?_MkE7ClS0
+R1
+R0
+w1747116315
+8../../../CPU31.srcs/sources_1/new/CU.v
+F../../../CPU31.srcs/sources_1/new/CU.v
+L0 2
+R2
+r1
+!s85 0
+31
+R11
+R3
+R4
+!i113 1
+R5
+n@c@u
+vdist_mem_gen_0
+!s10a 1747116399
+R6
+!i10b 1
+!s100 1GjGNR?^_YejMjWJYfGVA2
+Imib4@UP`bCDafb4m[Z@?N3
+R1
+R0
+w1747034622
+8../../../CPU31.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v
+F../../../CPU31.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v
+L0 56
+R2
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R5
+vDMEM
+!s10a 1746946199
+R6
+!i10b 1
+!s100 XRg`JDblMRI68^i:;:m>i2
+I2<3X1knTl=A0fe5h8fA_a1
+R1
+R0
+w1746946199
+8../../../CPU31.srcs/sources_1/new/DMEM.v
+F../../../CPU31.srcs/sources_1/new/DMEM.v
+L0 1
+R2
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R5
+n@d@m@e@m
+vglbl
+!s110 1747236654
+!i10b 1
+!s100 g=dL3UKAkhNRkQ:7=fPzF1
+IkJ@CGO[n5[_3E=ZkTzmEk2
+R1
+R0
+w1464879896
+8glbl.v
+Fglbl.v
+L0 6
+R2
+r1
+!s85 0
+31
+!s108 1747236653.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 1
+R5
+vIMEM
+!s10a 1746945750
+R6
+!i10b 1
+!s100 NFMmRK@2<[<bMm@d1aBcj0
+IF71bgdZE?[cJ2=KBAgX1A1
+R1
+R0
+w1746945750
+8../../../CPU31.srcs/sources_1/new/IMEM.v
+F../../../CPU31.srcs/sources_1/new/IMEM.v
+L0 1
+R2
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R5
+n@i@m@e@m
+vPC
+!s10a 1747112655
+R10
+!i10b 1
+!s100 [i28UG^k=PbMXYfJhea3U2
+I^7c[]?VmENgEFi1?mo7D20
+R1
+R0
+w1747112655
+8../../../CPU31.srcs/sources_1/new/PC.v
+F../../../CPU31.srcs/sources_1/new/PC.v
+L0 1
+R2
+r1
+!s85 0
+31
+R11
+R3
+R4
+!i113 1
+R5
+n@p@c
+vRegFile
+!s10a 1747151549
+R10
+!i10b 1
+!s100 5H5bC1zgknO;G:R=o>[jV3
+IF<S`CJgY[fmIV6:YIiUTB1
+R1
+R0
+w1747151549
+8../../../CPU31.srcs/sources_1/new/RegFile.v
+F../../../CPU31.srcs/sources_1/new/RegFile.v
+L0 1
+R2
+r1
+!s85 0
+31
+R11
+R3
+R4
+!i113 1
+R5
+n@reg@file
+vsccomp_dataflow
+!s10a 1747233112
+!s110 1747233124
+!i10b 1
+!s100 :2]BThH23zTQCcND?VkGN3
+ISi[Efk2:6M=OMH[;R@]KY0
+R1
+R0
+w1747233112
+8../../../CPU31.srcs/sources_1/new/sccomp_dataflow.v
+F../../../CPU31.srcs/sources_1/new/sccomp_dataflow.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1747233123.000000
+R3
+R4
+!i113 1
+R5
+vtest_tb
+!s10a 1747102909
+!s110 1747102930
+!i10b 1
+!s100 mOKN6a?RzS_`^=H:S7=P=3
+I:J<dioV8V`7`ZcL`kji>f1
+R1
+R0
+w1747102909
+8../../../CPU31.srcs/sim_1/new/test_tb.v
+F../../../CPU31.srcs/sim_1/new/test_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1747102930.000000
+!s107 ../../../CPU31.srcs/sim_1/new/test_tb.v|../../../CPU31.srcs/sources_1/new/sccomp_dataflow.v|../../../CPU31.srcs/sources_1/new/CPU.v|../../../CPU31.srcs/sources_1/new/DMEM.v|../../../CPU31.srcs/sources_1/new/IMEM.v|../../../CPU31.srcs/sources_1/new/PC.v|../../../CPU31.srcs/sources_1/new/CU.v|../../../CPU31.srcs/sources_1/new/ALU.v|../../../CPU31.srcs/sources_1/new/RegFile.v|../../../CPU31.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v|
+!s90 -64|-incr|-work|xil_defaultlib|../../../CPU31.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v|../../../CPU31.srcs/sources_1/new/RegFile.v|../../../CPU31.srcs/sources_1/new/ALU.v|../../../CPU31.srcs/sources_1/new/CU.v|../../../CPU31.srcs/sources_1/new/PC.v|../../../CPU31.srcs/sources_1/new/IMEM.v|../../../CPU31.srcs/sources_1/new/DMEM.v|../../../CPU31.srcs/sources_1/new/CPU.v|../../../CPU31.srcs/sources_1/new/sccomp_dataflow.v|../../../CPU31.srcs/sim_1/new/test_tb.v|
+!i113 1
+R5

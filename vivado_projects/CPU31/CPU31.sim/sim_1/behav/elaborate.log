@@ -1,0 +1,38 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xlinix/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto ffe0ca16773649b9946b8fed8dc2e73b --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_10 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot _246tb_ex9_tb_behav xil_defaultlib._246tb_ex9_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/sccomp_dataflow.v" Line 2. Module sccomp_dataflow doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/CPU.v" Line 1. Module CPU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/PC.v" Line 1. Module PC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/ALU.v" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/CU.v" Line 2. Module CU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/RegFile.v" Line 1. Module RegFile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/IMEM.v" Line 1. Module IMEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/DMEM.v" Line 1. Module DMEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/sccomp_dataflow.v" Line 2. Module sccomp_dataflow doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/CPU.v" Line 1. Module CPU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/PC.v" Line 1. Module PC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/ALU.v" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/CU.v" Line 2. Module CU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/RegFile.v" Line 1. Module RegFile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/IMEM.v" Line 1. Module IMEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/desktop/CPU31/CPU31.srcs/sources_1/new/DMEM.v" Line 1. Module DMEM doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CU
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.CPU
+Compiling module dist_mem_gen_v8_0_10.dist_mem_gen_v8_0_10(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.IMEM
+Compiling module xil_defaultlib.DMEM
+Compiling module xil_defaultlib.sccomp_dataflow
+Compiling module xil_defaultlib._246tb_ex9_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot _246tb_ex9_tb_behav

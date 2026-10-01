@@ -1,0 +1,39 @@
+Exception at PC 0x00007FFF51DDBB93
+Printing stacktrace...
+
+Unable to capture context for thread 29212 in process 25268, can not generate back trace
+Unable to capture context for thread 27384 in process 25268, can not generate back trace
+Exception at PC 0x00007FF84509933A
+Unable to capture context for thread 27728 in process 25268, can not generate back trace
+Exception at PC 0x00007FF84509933A
+Exception at PC 0x00007FF84509933A
+[0]  [0x00007FFF51DDBB93]
+[1]  [0x00007FFF51DDBB93]
+[2]  [0x00007FFF51DDB4A1]
+[3]  [0x00007FFF51DDB459]
+[4]  [0x00007FFF51DC19FE]
+[5]  [0x00007FFF51DC0ED1]
+[6]  [0x00007FFF51DC0D76]
+[7]  [0x00007FFF51D679F6]
+[8]  [0x00007FFF51D57AFB]
+[9]  [0x00007FFF51E7E90A]
+[10]  [0x00007FFF51E99F87]
+[11]  [0x00007FFF51E9A05F]
+[12] (BaseThreadInitThunk+0x17) [0x00007FF84668E8D7]
+[13] (RtlUserThreadStart+0x2c) [0x00007FF8478314FC]
+Done
+Exception at PC 0x00007FF84509933A
+Exception at PC 0x00007FF84509933A
+Exception at PC 0x00007FF84509933A
+Exception at PC 0x00007FF84509933A
+Exception at PC 0x00007FF84509933A
+Exception at PC 0x00007FF84509933A
+Exception at PC 0x00007FF84509933A
+Exception at PC 0x00007FF84509933A
+Exception at PC 0x00007FF84509933A
+Exception at PC 0x00007FF84509933A
+Exception at PC 0x00007FF84509933A
+Exception at PC 0x00007FF84509933A
+Exception at PC 0x00007FF84509933A
+Exception at PC 0x00007FF84509933A
+Exception at PC 0x00007FF84509933A

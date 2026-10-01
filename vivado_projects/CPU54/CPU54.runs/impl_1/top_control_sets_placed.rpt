@@ -1,0 +1,156 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Fri Jul 11 01:38:39 2025
+| Host         : LAPTOP-V0AHCU9H running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   103 |
+| Unused register locations in slices containing registers |    25 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              66 |           22 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            2589 |         1282 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------+----------------------------------------------------+------------------+------------------+----------------+
+|    Clock Signal   |                    Enable Signal                   | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-------------------+----------------------------------------------------+------------------+------------------+----------------+
+|  print/seg7_clk   |                                                    | reset_IBUF       |                1 |              3 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[13][6]_i_1_n_0          | reset_IBUF       |                2 |              5 |
+|  clk_1hz_BUFG     | sd/sccpu/mdu_inst/calc_delay[5]_i_1_n_0            | reset_IBUF       |                2 |              6 |
+|  clk_1hz_BUFG     |                                                    | reset_IBUF       |                7 |              8 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[13][31]_i_1_n_0         | reset_IBUF       |                9 |             27 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[6][31]_i_1_n_0          | reset_IBUF       |               21 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[7][31]_i_1_n_0          | reset_IBUF       |               19 |             32 |
+|  clk_1hz_BUFG     | sd/cu_inst/MDR_in                                  | reset_IBUF       |               12 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[8][31]_i_1_n_0          | reset_IBUF       |               21 |             32 |
+|  clk_1hz_BUFG     | sd/cu_inst/E[0]                                    | reset_IBUF       |               20 |             32 |
+|  clk_1hz_BUFG     | sd/cu_inst/cp0_regs_reg[12][0][0]                  | reset_IBUF       |                9 |             32 |
+|  clk_1hz_BUFG     | sd/cu_inst/cp0_regs_reg[21][0][0]                  | reset_IBUF       |               10 |             32 |
+|  clk_1hz_BUFG     | sd/cu_inst/hi_reg_reg[31][0]                       | reset_IBUF       |               15 |             32 |
+|  clk_1hz_BUFG     | sd/cu_inst/lo_reg_reg[31]_0[0]                     | reset_IBUF       |               23 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[0][31]_i_1_n_0          | reset_IBUF       |               17 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[10][31]_i_1_n_0         | reset_IBUF       |               15 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[11][31]_i_1_n_0         | reset_IBUF       |               15 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[14][31]_i_1_n_0         | reset_IBUF       |               10 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[15][31]_i_1_n_0         | reset_IBUF       |               12 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[16][31]_i_1_n_0         | reset_IBUF       |               15 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[17][31]_i_1_n_0         | reset_IBUF       |               10 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[18][31]_i_1_n_0         | reset_IBUF       |               12 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[19][31]_i_1_n_0         | reset_IBUF       |               12 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[1][31]_i_1_n_0          | reset_IBUF       |               13 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[20][31]_i_1_n_0         | reset_IBUF       |               11 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[22][31]_i_1_n_0         | reset_IBUF       |               11 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[23][31]_i_1_n_0         | reset_IBUF       |               19 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[24][31]_i_1_n_0         | reset_IBUF       |               16 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[25][31]_i_1_n_0         | reset_IBUF       |               13 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[26][31]_i_1_n_0         | reset_IBUF       |                9 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[27][31]_i_1_n_0         | reset_IBUF       |               20 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[28][31]_i_1_n_0         | reset_IBUF       |               16 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[29][31]_i_1_n_0         | reset_IBUF       |               12 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[2][31]_i_1_n_0          | reset_IBUF       |                9 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[30][31]_i_1_n_0         | reset_IBUF       |               16 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[31][31]_i_1_n_0         | reset_IBUF       |               24 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[3][31]_i_1_n_0          | reset_IBUF       |               10 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[4][31]_i_1_n_0          | reset_IBUF       |               10 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[5][31]_i_1_n_0          | reset_IBUF       |               13 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[6][31]_i_1_n_0          | reset_IBUF       |               11 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[7][31]_i_1_n_0          | reset_IBUF       |               17 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[8][31]_i_1_n_0          | reset_IBUF       |               22 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cp0_inst/cp0_regs[9][31]_i_1_n_0          | reset_IBUF       |               22 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_0_255_0_0_i_1_n_0       |                  |                8 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[9][31]_i_1_n_0          | reset_IBUF       |               17 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_0_255_8_8_i_1_n_0       |                  |                8 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_1024_1279_0_0_i_1_n_0   |                  |                8 |             32 |
+|  clk_in_IBUF_BUFG | clk_1hz_BUFG                                       | reset_IBUF       |               19 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_1024_1279_8_8_i_1_n_0   |                  |                8 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_1280_1535_0_0_i_1_n_0   |                  |                8 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_1280_1535_8_8_i_1_n_0   |                  |                8 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_1536_1791_0_0_i_1_n_0   |                  |                8 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_1536_1791_8_8_i_1_n_0   |                  |                8 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_1792_2047_0_0_i_1_n_0   |                  |                8 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_1792_2047_8_8_i_1_n_0   |                  |                8 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_256_511_0_0_i_1_n_0     |                  |                8 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_256_511_8_8_i_1_n_0     |                  |                8 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_512_767_0_0_i_1_n_0     |                  |                8 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_512_767_8_8_i_1_n_0     |                  |                8 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_768_1023_0_0_i_1_n_0    |                  |                8 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_768_1023_8_8_i_1_n_0    |                  |                8 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/mux4_inst/Latch_PC4_in_M4                 | reset_IBUF       |                9 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg                         | reset_IBUF       |               18 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[10][31]_i_1_n_0         | reset_IBUF       |               20 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[11][31]_i_1_n_0         | reset_IBUF       |               23 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[12][31]_i_1_n_0         | reset_IBUF       |               22 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[13][31]_i_1_n_0         | reset_IBUF       |               21 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[14][31]_i_1_n_0         | reset_IBUF       |               20 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[15][31]_i_1_n_0         | reset_IBUF       |               15 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[18][31]_i_1_n_0         | reset_IBUF       |               18 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[16][31]_i_1_n_0         | reset_IBUF       |               12 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[17][31]_i_1_n_0         | reset_IBUF       |               17 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[19][31]_i_1_n_0         | reset_IBUF       |               17 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[1][31]_i_1_n_0          | reset_IBUF       |               15 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[20][31]_i_1_n_0         | reset_IBUF       |               14 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[21][31]_i_1_n_0         | reset_IBUF       |               16 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[22][31]_i_1_n_0         | reset_IBUF       |               17 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[23][31]_i_1_n_0         | reset_IBUF       |               15 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[24][31]_i_1_n_0         | reset_IBUF       |               17 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[25][31]_i_1_n_0         | reset_IBUF       |               18 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[26][31]_i_1_n_0         | reset_IBUF       |               15 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[27][31]_i_1_n_0         | reset_IBUF       |               19 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[28][31]_i_1_n_0         | reset_IBUF       |               21 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[29][31]_i_1_n_0         | reset_IBUF       |               15 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[2][31]_i_1_n_0          | reset_IBUF       |               18 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[30][31]_i_1_n_0         | reset_IBUF       |               20 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[3][31]_i_1_n_0          | reset_IBUF       |               18 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[4][31]_i_1_n_0          | reset_IBUF       |               15 |             32 |
+|  clk_1hz_BUFG     | sd/sccpu/cpu_ref/array_reg[5][31]_i_1_n_0          | reset_IBUF       |               20 |             32 |
+|  clk_1hz_BUFG     | sd/cu_inst/IR_in                                   | reset_IBUF       |               24 |             44 |
+|  clk_in_IBUF_BUFG |                                                    | reset_IBUF       |               14 |             55 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_0_255_16_16_i_1_n_0     |                  |               16 |             64 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_1024_1279_16_16_i_1_n_0 |                  |               16 |             64 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_256_511_16_16_i_1_n_0   |                  |               16 |             64 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_1536_1791_16_16_i_1_n_0 |                  |               16 |             64 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_768_1023_16_16_i_1_n_0  |                  |               16 |             64 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_1792_2047_16_16_i_1_n_0 |                  |               16 |             64 |
+|  clk_1hz_BUFG     | sd/sccpu/mdu_inst/HI[31]_i_1_n_0                   | reset_IBUF       |               39 |             64 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_1280_1535_16_16_i_1_n_0 |                  |               16 |             64 |
+|  clk_1hz_BUFG     | sd/sccpu/mdu_inst/result[63]_i_1_n_0               | reset_IBUF       |               27 |             64 |
+|  clk_1hz_BUFG     | sd/sccpu/dmem_inst/mem_reg_512_767_16_16_i_1_n_0   |                  |               16 |             64 |
+|  clk_1hz_BUFG     | sd/cu_inst/ACC_in                                  | reset_IBUF       |               44 |             88 |
+|  clk_1hz_BUFG     | sd/cu_inst/RtReg_in                                | reset_IBUF       |               52 |            115 |
++-------------------+----------------------------------------------------+------------------+------------------+----------------+
+
+

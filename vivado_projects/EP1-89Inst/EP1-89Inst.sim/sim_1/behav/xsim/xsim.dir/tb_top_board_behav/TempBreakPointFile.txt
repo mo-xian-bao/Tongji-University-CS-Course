@@ -1,0 +1,3 @@
+Breakpoint File Version 1.0
+27 true D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sim_1/new/tb_top_board.v
+22 true D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sim_1/new/tb_top_board.v

@@ -1,0 +1,27 @@
+module logic_gates_1(iA,iB,oAnd,oOr,oNot); 
+input iA, iB; 
+output oAnd,oOr,oNot; 
+and and_inst(oAnd, iA,iB); 
+or or_inst(oOr, iA,iB); 
+not not_inst(oNot, iA); 
+endmodule
+
+module logic_gates_2(iA,iB,oAnd,oOr,oNot); 
+input iA, iB; 
+output oAnd,oOr,oNot; 
+assign oAnd = iA & iB; 
+assign oOr = iA | iB; 
+assign oNot = ~iA; 
+endmodule
+
+module logic_gates_3(iA,iB,oAnd,oOr,oNot); 
+input iA, iB; 
+output oAnd,oOr,oNot; 
+reg oAnd, oOr, ONot; 
+always @ (*) 
+begin 
+oAnd = iA & iB; 
+oOr = iA | iB; 
+oNot = ~ iA; 
+end 
+endmodule

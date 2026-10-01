@@ -1,0 +1,1164 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Apr 10 17:47:26 2026
+| Host         : LAPTOP-V0AHCU9H running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_board_control_sets_placed.rpt
+| Design       : top_board
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |  1096 |
+| Unused register locations in slices containing registers |    30 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      3 |            1 |
+|      5 |            1 |
+|      8 |         1024 |
+|    16+ |           69 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              92 |           35 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |            8192 |         2874 |
+| Yes          | No                    | Yes                    |            2622 |         1398 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+----------------------------------+------------------+------------------+----------------+
+|      Clock Signal      |           Enable Signal          | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------------+----------------------------------+------------------+------------------+----------------+
+|  clk_cpu_BUFG          |                                  | rst_IBUF         |                2 |              2 |
+|  seg7_display/seg7_clk |                                  | rst_IBUF         |                2 |              3 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[13][6]_i_1_n_0  | rst_IBUF         |                2 |              5 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[9][7]_i_1_n_0    |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[53][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[56][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[69][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[57][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[71][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[72][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[79][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[80][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[89][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[8][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[95][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[66][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[59][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[61][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[63][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[76][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[77][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[86][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[87][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[54][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[6][7]_i_1_n_0    |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[4][7]_i_1_n_0    |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[51][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[55][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[68][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[60][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[5][7]_i_1_n_0    |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[70][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[75][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[85][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[50][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[90][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/i___0_n_0               |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[91][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[106][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[108][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[109][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[104][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[10][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[110][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[102][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[111][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[112][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[103][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[113][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[114][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[115][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[116][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[100][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[105][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[101][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[107][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[139][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[143][7]_i_1_n_0  |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[144][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[141][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[117][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[133][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[127][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[145][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[146][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[129][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[118][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[147][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[148][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[11][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[131][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[149][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[14][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[119][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[122][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[123][7]_i_1_n_0  |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[128][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[134][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[136][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[126][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[130][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[125][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[13][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[12][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[135][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[120][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[132][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[140][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[142][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[124][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[137][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[138][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[121][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[172][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[155][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[164][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[162][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[156][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[154][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[174][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[159][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[161][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[160][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[163][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[168][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[151][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[15][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[169][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[157][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[153][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[176][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[165][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[170][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[150][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[179][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[166][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[167][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[180][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[171][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[177][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[178][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[17][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[158][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[152][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[181][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[16][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[173][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[175][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[182][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[188][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[18][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[190][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[191][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[197][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[198][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[1][7]_i_1_n_0    |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[200][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[202][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[210][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[194][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[203][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[201][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[204][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[20][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[211][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[207][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[185][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[196][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[19][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[209][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[212][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[206][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[213][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[186][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[214][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[189][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[187][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[183][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[193][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[215][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[184][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[208][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[217][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[195][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[205][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[192][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[199][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[218][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[216][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[245][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[249][7]_i_1_n_0  |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[238][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[240][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[251][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[252][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[253][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[239][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[233][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[250][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[229][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[242][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[254][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[22][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[23][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[235][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[227][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[241][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[226][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[243][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[225][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[230][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[248][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[224][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[221][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[232][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[21][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[237][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[244][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[222][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[247][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[234][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[220][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[228][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[219][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[231][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[246][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[24][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[223][7]_i_1_n_0  |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[236][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[45][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[31][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[28][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[42][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[2][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[52][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[54][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[32][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[34][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[37][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[50][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[40][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[26][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[41][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[56][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[57][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[35][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[33][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[46][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[51][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[25][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[47][7]_i_1_n_0   |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[43][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[4][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[53][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[48][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[55][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[38][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[39][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[30][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[27][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[29][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[36][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[255][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[44][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[49][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[3][7]_i_1_n_0    |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[93][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[74][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[63][7]_i_1_n_0   |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[71][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[58][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[69][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[6][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[72][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[76][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[68][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[61][7]_i_1_n_0   |                  |                7 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[60][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[64][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[67][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[77][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[78][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[80][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[81][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[59][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[79][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[5][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[70][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[82][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[85][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[87][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[65][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[83][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[89][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[8][7]_i_1_n_0    |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[90][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[91][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[92][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[73][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[75][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[7][7]_i_1_n_0    |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[66][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[84][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[86][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[62][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[88][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[95][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[97][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[98][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[0][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[9][7]_i_1_n_0    |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[99][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[102][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[103][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[104][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[94][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[100][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[106][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[105][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[101][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b0[96][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[107][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[108][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[135][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[147][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[109][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[114][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[130][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[132][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[134][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[131][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[12][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[13][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[141][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[125][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[123][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[121][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[136][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[142][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[144][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[11][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[126][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[138][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[139][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[129][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[111][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[127][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[113][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[140][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[145][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[146][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[137][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[148][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[149][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[117][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[122][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[118][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[120][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[112][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[133][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[14][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[143][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[151][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[10][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[115][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[119][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[124][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[116][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[128][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[150][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[152][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[110][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[166][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[169][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[155][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[181][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[156][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[168][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[154][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[175][7]_i_1_n_0  |                  |                7 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[165][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[159][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[16][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[177][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[153][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[17][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[174][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[180][7]_i_1_n_0  |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[170][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[191][7]_i_1_n_0  |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[167][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[15][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[162][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[184][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[160][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[158][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[182][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[189][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[187][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[163][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[176][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[179][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[185][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[157][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[188][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[161][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[18][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[173][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[171][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[190][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[178][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[183][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[192][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[164][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[172][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[193][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[186][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[223][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[211][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[208][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[203][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[218][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[226][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[227][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[20][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[19][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[230][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[231][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[195][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[233][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[213][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[221][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[222][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[228][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[238][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[194][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[23][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[239][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[240][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[241][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[242][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[200][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[204][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[202][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[209][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[225][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[234][7]_i_1_n_0  |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[199][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[201][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[206][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[224][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[196][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[205][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[212][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[217][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[220][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[229][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[214][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[22][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[232][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[235][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[198][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[210][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[215][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[216][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[236][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[237][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[1][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[219][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[21][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[207][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[197][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[244][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[46][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[41][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[27][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[28][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[33][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[47][7]_i_1_n_0   |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[35][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[5][7]_i_1_n_0    |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[55][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[45][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[24][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[253][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[44][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[25][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[247][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[29][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[36][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[2][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[38][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[39][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[50][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[30][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[32][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[254][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[246][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[31][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[34][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[40][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[3][7]_i_1_n_0    |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[42][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[43][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[52][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[245][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[53][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[250][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[58][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[59][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[49][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[249][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[243][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[37][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[60][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[255][7]_i_1_n_0  |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[251][7]_i_1_n_0  |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[252][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[26][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[48][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[4][7]_i_1_n_0    |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[51][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[54][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[56][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[248][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[57][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[91][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[82][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[99][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[7][7]_i_1_n_0    |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[9][7]_i_1_n_0    |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[85][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[93][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[70][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[97][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[98][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[8][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[71][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[90][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[86][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[64][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[6][7]_i_1_n_0    |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[67][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[80][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[74][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[65][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[72][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[78][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[79][7]_i_1_n_0   |                  |                7 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[83][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[89][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[92][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[63][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[75][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[84][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[95][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[68][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[69][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[87][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[66][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[77][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[81][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[62][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[61][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[73][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[88][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[94][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[96][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b1[76][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[144][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[104][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[105][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[103][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[106][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[108][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[111][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[112][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[100][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[114][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[102][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[101][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[119][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[115][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[10][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[113][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[117][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[11][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[118][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[120][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[121][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[124][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[125][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[126][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[128][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[123][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[107][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[129][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[12][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[130][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[131][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[116][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[127][7]_i_1_n_0  |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[132][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[133][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[0][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[134][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[135][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[136][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[137][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[138][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[109][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[110][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[139][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[13][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[140][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[141][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[142][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[143][7]_i_1_n_0  |                  |                8 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[122][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[179][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[181][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[147][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[188][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[149][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[148][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[184][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[146][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[190][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[191][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[193][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[164][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[152][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[145][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[194][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[157][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[195][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[197][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[156][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[198][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[199][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[19][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[1][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[171][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[196][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[186][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[183][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[160][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[159][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[173][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[175][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[177][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[182][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[185][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[158][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[187][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[189][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[150][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[154][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[165][7]_i_1_n_0  |                  |                7 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[161][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[168][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[169][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[170][7]_i_1_n_0  |                  |                8 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[174][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[178][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[18][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[192][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[163][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[166][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[14][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[151][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[153][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[16][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[17][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[15][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[167][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[155][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[176][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[180][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[172][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[162][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[249][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[250][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[208][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[251][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[252][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[255][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[230][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[229][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[212][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[237][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[222][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[211][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[218][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[201][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[223][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[239][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[219][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[205][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[210][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[248][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[25][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[238][7]_i_1_n_0  |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[27][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[217][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[224][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[20][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[227][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[214][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[202][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[221][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[21][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[225][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[244][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[246][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[24][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[200][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[253][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[254][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[26][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[23][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[228][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[213][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[22][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[232][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[234][7]_i_1_n_0  |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[215][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[216][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[203][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[235][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[236][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[220][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[226][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[206][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[240][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[233][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[242][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[207][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[231][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[241][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[209][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[243][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[247][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[204][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[245][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[30][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[50][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[3][7]_i_1_n_0    |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[59][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[44][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[48][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[4][7]_i_1_n_0    |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[2][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[32][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[28][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[47][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[57][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[34][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[51][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[60][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[62][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[63][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[45][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[42][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[38][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[43][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[33][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[56][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[61][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[52][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[41][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[66][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[71][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[72][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[53][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[68][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[5][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[69][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[76][7]_i_1_n_0   |                  |                7 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[77][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[67][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[31][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[7][7]_i_1_n_0    |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[81][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[35][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[36][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[46][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[65][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[82][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[74][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[78][7]_i_1_n_0   |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[49][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[83][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[84][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[6][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[70][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[54][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[58][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[75][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[80][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[39][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[64][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[55][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[37][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[40][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[73][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[79][7]_i_1_n_0   |                  |                7 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[29][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[110][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[90][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[88][7]_i_1_n_0   |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[111][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[114][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[89][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[9][7]_i_1_n_0    |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[109][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[86][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[91][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[101][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[107][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[112][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[115][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[0][7]_i_1_n_0    |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[99][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[95][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[93][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[103][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[10][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[108][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[92][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[113][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[116][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[117][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[118][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[119][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[87][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[96][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[106][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[11][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[85][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[98][7]_i_1_n_0   |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[100][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[102][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[94][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[8][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[104][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[105][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b2[97][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[138][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[142][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[150][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[127][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[124][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[125][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[145][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[147][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[153][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[156][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[158][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[15][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[140][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[141][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[160][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[122][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[126][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[163][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[164][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[129][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[167][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[152][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[168][7]_i_1_n_0  |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[169][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[16][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[132][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[170][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[134][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[144][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[13][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[151][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[155][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[128][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[143][7]_i_1_n_0  |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[154][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[146][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[149][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[14][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[136][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[137][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[120][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[133][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[162][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[130][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[165][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[166][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[123][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[12][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[139][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[159][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[135][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[148][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[157][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[121][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[131][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[161][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[203][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[215][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[18][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[216][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[172][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[175][7]_i_1_n_0  |                  |                7 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[174][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[181][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[171][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[191][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[193][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[178][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[173][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[184][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[197][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[198][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[199][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[19][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[185][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[188][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[1][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[205][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[206][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[179][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[208][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[202][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[210][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[192][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[211][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[212][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[213][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[217][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[219][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[183][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[196][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[204][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[201][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[186][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[218][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[21][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[209][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[221][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[189][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[176][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[220][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[17][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[182][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[177][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[195][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[214][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[194][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[200][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[187][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[190][7]_i_1_n_0  |                  |                6 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[20][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[207][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[180][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[244][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[26][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[29][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[36][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[37][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[44][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[247][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[45][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[24][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[241][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[28][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[32][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[224][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[27][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[33][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[226][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[222][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[223][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[230][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[233][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[234][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[23][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[242][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[228][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[238][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[245][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[253][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[239][7]_i_1_n_0  |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[31][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[34][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[236][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[3][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[40][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[43][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[46][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[47][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[229][7]_i_1_n_0  |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[48][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[243][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[49][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[225][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[251][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[249][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[232][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[250][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[252][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[246][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[231][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[227][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[255][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[22][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[25][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[2][7]_i_1_n_0    |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[30][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[35][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[38][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[248][7]_i_1_n_0  |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[237][7]_i_1_n_0  |                  |                7 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[254][7]_i_1_n_0  |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[240][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[39][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[235][7]_i_1_n_0  |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[41][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[42][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[78][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[88][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[92][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[94][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[81][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[67][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[74][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[64][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[62][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[83][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[82][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[84][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[52][7]_i_1_n_0   |                  |                1 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[58][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[65][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[73][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[93][7]_i_1_n_0   |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[96][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[97][7]_i_1_n_0   |                  |                2 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[7][7]_i_1_n_0    |                  |                5 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[98][7]_i_1_n_0   |                  |                4 |              8 |
+|  clk_cpu_BUFG          | cpu/dmem/mem_b3[99][7]_i_1_n_0   |                  |                3 |              8 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[13][31]_i_1_n_0 | rst_IBUF         |               18 |             27 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[15][31]_i_1_n_0 | rst_IBUF         |               13 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[0][31]_i_1_n_0  | rst_IBUF         |               24 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[10][31]_i_1_n_0 | rst_IBUF         |               17 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[11][31]_i_1_n_0 | rst_IBUF         |               11 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[12][31]_i_1_n_0 | rst_IBUF         |               12 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[14][31]_i_1_n_0 | rst_IBUF         |                8 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[16][31]_i_1_n_0 | rst_IBUF         |               14 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[17][31]_i_1_n_0 | rst_IBUF         |               15 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[20][31]_i_1_n_0 | rst_IBUF         |               18 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[27][31]_i_1_n_0 | rst_IBUF         |               16 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[29][31]_i_1_n_0 | rst_IBUF         |               18 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[3][31]_i_1_n_0  | rst_IBUF         |               19 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[23][31]_i_1_n_0 | rst_IBUF         |               18 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[1][31]_i_1_n_0  | rst_IBUF         |               20 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[9][0]_i_1_n_0   | rst_IBUF         |                8 |             32 |
+|  clk_cpu_BUFG          | cpu/LO_reg[31]_i_1_n_0           | rst_IBUF         |               20 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[22][31]_i_1_n_0 | rst_IBUF         |               13 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[5][31]_i_1_n_0  | rst_IBUF         |               24 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[8][31]_i_1_n_0  | rst_IBUF         |               21 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[18][31]_i_1_n_0 | rst_IBUF         |               15 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[21][31]_i_1_n_0 | rst_IBUF         |               15 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[2][31]_i_1_n_0  | rst_IBUF         |               20 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[24][31]_i_1_n_0 | rst_IBUF         |               17 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[30][31]_i_1_n_0 | rst_IBUF         |               19 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[31][31]_i_1_n_0 | rst_IBUF         |               15 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[19][31]_i_1_n_0 | rst_IBUF         |               17 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[6][31]_i_1_n_0  | rst_IBUF         |               23 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[4][31]_i_1_n_0  | rst_IBUF         |               21 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[26][31]_i_1_n_0 | rst_IBUF         |               18 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[7][31]_i_1_n_0  | rst_IBUF         |               19 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[25][31]_i_1_n_0 | rst_IBUF         |               19 |             32 |
+|  clk_cpu_BUFG          | cpu/cp0/cp0_regs[28][31]_i_1_n_0 | rst_IBUF         |               17 |             32 |
+|  clk_cpu_BUFG          | cpu/HI_reg[31]_i_1_n_0           | rst_IBUF         |               23 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[21][31]_i_1_n_0 | rst_IBUF         |               16 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[24][31]_i_1_n_0 | rst_IBUF         |               16 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[22][31]_i_1_n_0 | rst_IBUF         |               23 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[23][31]_i_1_n_0 | rst_IBUF         |               25 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[1][31]_i_1_n_0  | rst_IBUF         |               18 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[2][31]_i_1_n_0  | rst_IBUF         |               15 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[31][31]_i_1_n_0 | rst_IBUF         |               23 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[27][31]_i_1_n_0 | rst_IBUF         |               14 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[14][31]_i_1_n_0 | rst_IBUF         |               21 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[29][31]_i_1_n_0 | rst_IBUF         |               18 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[3][31]_i_1_n_0  | rst_IBUF         |               20 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[4][31]_i_1_n_0  | rst_IBUF         |               18 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[6][31]_i_1_n_0  | rst_IBUF         |               21 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[7][31]_i_1_n_0  | rst_IBUF         |               23 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[8][31]_i_1_n_0  | rst_IBUF         |               20 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[25][31]_i_1_n_0 | rst_IBUF         |               19 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[15][31]_i_1_n_0 | rst_IBUF         |               23 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[13][31]_i_1_n_0 | rst_IBUF         |               21 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[18][31]_i_1_n_0 | rst_IBUF         |               20 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[9][31]_i_1_n_0  | rst_IBUF         |               22 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[26][31]_i_1_n_0 | rst_IBUF         |               19 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[10][31]_i_1_n_0 | rst_IBUF         |               21 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[28][31]_i_1_n_0 | rst_IBUF         |               20 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[16][31]_i_1_n_0 | rst_IBUF         |               17 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[19][31]_i_1_n_0 | rst_IBUF         |               17 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[11][31]_i_1_n_0 | rst_IBUF         |               20 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[30][31]_i_1_n_0 | rst_IBUF         |               15 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[5][31]_i_1_n_0  | rst_IBUF         |               21 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[20][31]_i_1_n_0 | rst_IBUF         |               21 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[0][31]_i_1_n_0  | rst_IBUF         |               14 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[12][31]_i_1_n_0 | rst_IBUF         |               20 |             32 |
+|  clk_cpu_BUFG          | cpu/regfile/regs[17][31]_i_1_n_0 | rst_IBUF         |               18 |             32 |
+|  clk_IBUF_BUFG         |                                  | rst_IBUF         |               31 |             87 |
+|  clk_cpu_BUFG          | cpu/PC0                          | rst_IBUF         |               43 |            105 |
+|  clk_cpu_BUFG          | cpu/ena                          | rst_IBUF         |              149 |            405 |
++------------------------+----------------------------------+------------------+------------------+----------------+
+
+

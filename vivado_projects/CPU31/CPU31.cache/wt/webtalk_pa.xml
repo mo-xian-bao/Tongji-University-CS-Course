@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Fri Jul 11 01:05:24 2025">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="cab1ae956a7a470eabe84cf1d7052bb1" type="ProjectID"/>
+<property name="ProjectIteration" value="7" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="9" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="4" type="JavaHandler"/>
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="CoreView" value="1" type="JavaHandler"/>
+<property name="CustomizeCore" value="1" type="JavaHandler"/>
+<property name="EditDelete" value="5" type="JavaHandler"/>
+<property name="EditPaste" value="2" type="JavaHandler"/>
+<property name="EditProperties" value="2" type="JavaHandler"/>
+<property name="EditUndo" value="7" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="4" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="OpenExample" value="2" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="9" type="JavaHandler"/>
+<property name="OpenProject" value="1" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="4" type="JavaHandler"/>
+<property name="ProgramDevice" value="4" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="42" type="JavaHandler"/>
+<property name="RecustomizeCore" value="45" type="JavaHandler"/>
+<property name="ReportClockNetworks" value="1" type="JavaHandler"/>
+<property name="ReportIPStatus" value="1" type="JavaHandler"/>
+<property name="ReportTimingSummary" value="6" type="JavaHandler"/>
+<property name="RunBitgen" value="3" type="JavaHandler"/>
+<property name="RunImplementation" value="3" type="JavaHandler"/>
+<property name="RunSynthesis" value="4" type="JavaHandler"/>
+<property name="SaveDesign" value="2" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
+<property name="ShowProductGuide" value="1" type="JavaHandler"/>
+<property name="ShowView" value="13" type="JavaHandler"/>
+<property name="SimulationClose" value="1" type="JavaHandler"/>
+<property name="SimulationRun" value="86" type="JavaHandler"/>
+<property name="ViewTaskSynthesis" value="1" type="JavaHandler"/>
+<property name="XdcCreateClock" value="3" type="JavaHandler"/>
+<property name="XdcSetInputDelay" value="4" type="JavaHandler"/>
+<property name="XdcSetOutputDelay" value="6" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Coefficient Files, 2_add.coe], 6, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Coefficient Files], 3, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Coefficient Files], 3, true, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, top (top.v" value="5" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_OPEN_PROJECT, Open Project" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="107" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="93" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

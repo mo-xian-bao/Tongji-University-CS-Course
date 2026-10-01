@@ -1,0 +1,7 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xlinix/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 2def659b3aba4e76a8173b9484406b33 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot logic_gates_tb_behav xil_defaultlib.logic_gates_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <logic_gates_1> not found while processing module instance <logic_gates_inst> [D:/vivado_projects/experiment1.1/experiment1.1.srcs/sources_1/new/experiment1.1.2:26]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

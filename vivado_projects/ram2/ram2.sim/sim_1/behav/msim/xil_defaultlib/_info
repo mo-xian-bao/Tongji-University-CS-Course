@@ -1,0 +1,71 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/vivado_projects/ram2/ram2.sim/sim_1/behav
+vglbl
+Z1 !s110 1732290701
+!i10b 1
+!s100 g=dL3UKAkhNRkQ:7=fPzF1
+IkJ@CGO[n5[_3E=ZkTzmEk2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1464879896
+8glbl.v
+Fglbl.v
+L0 6
+Z3 OP;L;10.4c;61
+r1
+!s85 0
+31
+Z4 !s108 1732290701.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 1
+Z5 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vram2
+R1
+!i10b 1
+!s100 ?G]f;d]Pk;UhWd;c4Cz:?2
+IQD@3`W8O6BCZli9ZF0=mU1
+R2
+R0
+w1732290693
+8../../../ram2.srcs/sources_1/new/ram2.v
+F../../../ram2.srcs/sources_1/new/ram2.v
+L0 21
+R3
+r1
+!s85 0
+31
+R4
+Z6 !s107 ../../../ram2.srcs/sim_1/new/ram2_tb.v|../../../ram2.srcs/sources_1/new/ram2.v|
+Z7 !s90 -64|-incr|-work|xil_defaultlib|../../../ram2.srcs/sources_1/new/ram2.v|../../../ram2.srcs/sim_1/new/ram2_tb.v|
+!i113 1
+R5
+vram2_tb
+!s10a 1732287632
+!s110 1732287643
+!i10b 1
+!s100 `X1gc43DoOEZhRdg4IYc10
+I2AII33H;A0KHdmi6LabzR1
+R2
+R0
+w1732287632
+8../../../ram2.srcs/sim_1/new/ram2_tb.v
+F../../../ram2.srcs/sim_1/new/ram2_tb.v
+L0 23
+R3
+r1
+!s85 0
+31
+!s108 1732287643.000000
+R6
+R7
+!i113 1
+R5

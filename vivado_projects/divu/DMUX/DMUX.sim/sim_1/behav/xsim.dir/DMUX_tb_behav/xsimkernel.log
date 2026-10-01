@@ -1,0 +1,7 @@
+Running: xsim.dir/DMUX_tb_behav/xsimk.exe -simmode gui -wdb DMUX_tb_behav.wdb -simrunnum 0 -socket 50576
+Design successfully loaded
+Design Loading Memory Usage: 10400 KB (Peak: 10400 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 10996 KB (Peak: 10996 KB)
+Simulation CPU Usage: 15 ms

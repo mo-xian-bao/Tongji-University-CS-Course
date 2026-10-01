@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/encoder83_Pri/encoder83_Pri.srcs/sources_1/new/encoder83_Pri.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder83_Pri
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/encoder83_Pri/encoder83_Pri.srcs/sim_1/new/encoder83_Pri_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encoder83_Pri_tb
+ERROR: [VRFC 10-1280] procedural assignment to a non-register oEO is not permitted, left-hand side should be reg/integer/time/genvar [D:/vivado_projects/encoder83_Pri/encoder83_Pri.srcs/sim_1/new/encoder83_Pri_tb.v:33]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register oEO is not permitted, left-hand side should be reg/integer/time/genvar [D:/vivado_projects/encoder83_Pri/encoder83_Pri.srcs/sim_1/new/encoder83_Pri_tb.v:33]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register oEO is not permitted, left-hand side should be reg/integer/time/genvar [D:/vivado_projects/encoder83_Pri/encoder83_Pri.srcs/sim_1/new/encoder83_Pri_tb.v:35]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register oEO is not permitted, left-hand side should be reg/integer/time/genvar [D:/vivado_projects/encoder83_Pri/encoder83_Pri.srcs/sim_1/new/encoder83_Pri_tb.v:35]
+ERROR: [VRFC 10-1040] module encoder83_Pri_tb ignored due to previous errors [D:/vivado_projects/encoder83_Pri/encoder83_Pri.srcs/sim_1/new/encoder83_Pri_tb.v:23]

@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/data_selecter41/data_selecter41.srcs/sources_1/new/data_selecter41.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_selecter41
+WARNING: [VRFC 10-1315] redeclaration of ansi port oZ is not allowed [D:/vivado_projects/data_selecter41/data_selecter41.srcs/sources_1/new/data_selecter41.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/data_selecter41/data_selecter41.srcs/sim_1/new/data_selecter41_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_selecter41_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/data_selecter41/data_selecter41.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

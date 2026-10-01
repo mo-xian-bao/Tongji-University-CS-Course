@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/mult/mult.srcs/sources_1/new/MULT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULT
+ERROR: [VRFC 10-1280] procedural assignment to a non-register z is not permitted, left-hand side should be reg/integer/time/genvar [D:/vivado_projects/mult/mult.srcs/sources_1/new/MULT.v:46]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register z is not permitted, left-hand side should be reg/integer/time/genvar [D:/vivado_projects/mult/mult.srcs/sources_1/new/MULT.v:46]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register z is not permitted, left-hand side should be reg/integer/time/genvar [D:/vivado_projects/mult/mult.srcs/sources_1/new/MULT.v:48]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register z is not permitted, left-hand side should be reg/integer/time/genvar [D:/vivado_projects/mult/mult.srcs/sources_1/new/MULT.v:48]
+ERROR: [VRFC 10-1040] module MULT ignored due to previous errors [D:/vivado_projects/mult/mult.srcs/sources_1/new/MULT.v:3]

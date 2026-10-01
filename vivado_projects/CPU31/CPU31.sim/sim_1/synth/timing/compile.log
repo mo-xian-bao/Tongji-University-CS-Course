@@ -1,0 +1,66 @@
+# do {_246tb_ex9_tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# ** Warning: (vlib-34) Library already exists at "msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "msim/xil_defaultlib".
+# 
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap xil_defaultlib msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# 
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 22:58:40 on May 18,2025
+# vlog -64 -incr -work xil_defaultlib _246tb_ex9_tb_time_synth.v ../../../../CPU31.srcs/sim_1/new/_246tb_ex9_tb.v 
+# -- Skipping module RAM32X1S_UNIQ_BASE_
+# -- Skipping module RAM32X1S_HD1
+# -- Skipping module RAM32X1S_HD10
+# -- Skipping module RAM32X1S_HD11
+# -- Skipping module RAM32X1S_HD12
+# -- Skipping module RAM32X1S_HD13
+# -- Skipping module RAM32X1S_HD14
+# -- Skipping module RAM32X1S_HD15
+# -- Skipping module RAM32X1S_HD16
+# -- Skipping module RAM32X1S_HD17
+# -- Skipping module RAM32X1S_HD18
+# -- Skipping module RAM32X1S_HD19
+# -- Skipping module RAM32X1S_HD2
+# -- Skipping module RAM32X1S_HD20
+# -- Skipping module RAM32X1S_HD21
+# -- Skipping module RAM32X1S_HD22
+# -- Skipping module RAM32X1S_HD23
+# -- Skipping module RAM32X1S_HD24
+# -- Skipping module RAM32X1S_HD25
+# -- Skipping module RAM32X1S_HD26
+# -- Skipping module RAM32X1S_HD27
+# -- Skipping module RAM32X1S_HD28
+# -- Skipping module RAM32X1S_HD29
+# -- Skipping module RAM32X1S_HD3
+# -- Skipping module RAM32X1S_HD30
+# -- Skipping module RAM32X1S_HD31
+# -- Skipping module RAM32X1S_HD4
+# -- Skipping module RAM32X1S_HD5
+# -- Skipping module RAM32X1S_HD6
+# -- Skipping module RAM32X1S_HD7
+# -- Skipping module RAM32X1S_HD8
+# -- Skipping module RAM32X1S_HD9
+# -- Skipping module dist_mem_gen_0
+# -- Skipping module ALU
+# -- Skipping module CPU
+# -- Skipping module DMEM
+# -- Skipping module IMEM
+# -- Skipping module PC
+# -- Skipping module RegFile
+# -- Skipping module sccomp_dataflow
+# -- Skipping module dist_mem_gen_0_dist_mem_gen_v8_0_10
+# -- Skipping module dist_mem_gen_0_dist_mem_gen_v8_0_10_synth
+# -- Skipping module dist_mem_gen_0_rom
+# -- Skipping module glbl
+# -- Skipping module _246tb_ex9_tb
+# 
+# Top level modules:
+# 	glbl
+# 	_246tb_ex9_tb
+# End time: 22:58:40 on May 18,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1

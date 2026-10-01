@@ -1,0 +1,355 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/vivado_projects/DCPU2/DCPU2.sim/sim_1/behav
+vALU
+!s10a 1765892897
+Z1 !s110 1765969286
+!i10b 1
+!s100 ebKhj2U=?QJ]@@jI385eY0
+IBnz1az@HPY[Ebcn]Hn;c<2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1765892897
+8../../../DCPU2.srcs/sources_1/new/ALU.v
+F../../../DCPU2.srcs/sources_1/new/ALU.v
+L0 3
+Z3 OP;L;10.4c;61
+r1
+!s85 0
+31
+Z4 !s108 1765969286.000000
+Z5 !s107 ../../../DCPU2.srcs/sim_1/new/DCPU_tb.v|../../../DCPU2.srcs/sources_1/new/seg7x16.v|../../../DCPU2.srcs/sources_1/new/DCPU.v|../../../DCPU2.srcs/sources_1/new/ALU.v|../../../DCPU2.srcs/sources_1/new/ForwardUnit.v|../../../DCPU2.srcs/sources_1/new/CP0.v|../../../DCPU2.srcs/sources_1/new/Controller.v|../../../DCPU2.srcs/sources_1/new/MDU.v|../../../DCPU2.srcs/sources_1/new/DMEM.v|../../../DCPU2.srcs/sources_1/new/HazardUnit.v|../../../DCPU2.srcs/sources_1/new/RegFile.v|../../../DCPU2.srcs/sources_1/new/IMEM.v|../../../DCPU2.srcs/sources_1/ip/dist_mem_gen_0_1/sim/dist_mem_gen_0.v|
+Z6 !s90 -64|-incr|-work|xil_defaultlib|../../../DCPU2.srcs/sources_1/ip/dist_mem_gen_0_1/sim/dist_mem_gen_0.v|../../../DCPU2.srcs/sources_1/new/IMEM.v|../../../DCPU2.srcs/sources_1/new/RegFile.v|../../../DCPU2.srcs/sources_1/new/HazardUnit.v|../../../DCPU2.srcs/sources_1/new/DMEM.v|../../../DCPU2.srcs/sources_1/new/MDU.v|../../../DCPU2.srcs/sources_1/new/Controller.v|../../../DCPU2.srcs/sources_1/new/CP0.v|../../../DCPU2.srcs/sources_1/new/ForwardUnit.v|../../../DCPU2.srcs/sources_1/new/ALU.v|../../../DCPU2.srcs/sources_1/new/DCPU.v|../../../DCPU2.srcs/sources_1/new/seg7x16.v|../../../DCPU2.srcs/sim_1/new/DCPU_tb.v|
+!i113 1
+Z7 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@a@l@u
+vController
+!s10a 1765892908
+R1
+!i10b 1
+!s100 _U4AfNERE05KclUX6EEjW3
+I7Ao@k8o@h1JzHCK:<b>lU3
+R2
+R0
+w1765892908
+8../../../DCPU2.srcs/sources_1/new/Controller.v
+F../../../DCPU2.srcs/sources_1/new/Controller.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@controller
+vCPO
+!s10a 1765729949
+Z8 !s110 1765880117
+!i10b 1
+!s100 ?^g=GlC434]3_Lk7[Q6`J3
+I6AY8EJXkYISY_SDl`ZdNP1
+R2
+R0
+w1765729949
+8../../../DCPU2.srcs/sources_1/new/CP0.v
+F../../../DCPU2.srcs/sources_1/new/CP0.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1765880117.000000
+Z10 !s107 ../../../DCPU2.srcs/sources_1/new/top_borad.v|../../../DCPU2.srcs/sources_1/new/seg7x16.v|../../../DCPU2.srcs/sources_1/new/DCPU.v|../../../DCPU2.srcs/sources_1/new/Divider.v|../../../DCPU2.srcs/sources_1/new/ALU.v|../../../DCPU2.srcs/sources_1/new/ForwardUnit.v|../../../DCPU2.srcs/sources_1/new/CP0.v|../../../DCPU2.srcs/sources_1/new/Controller.v|../../../DCPU2.srcs/sources_1/new/MDU.v|../../../DCPU2.srcs/sources_1/new/DMEM.v|../../../DCPU2.srcs/sources_1/new/HazardUnit.v|../../../DCPU2.srcs/sources_1/new/RegFile.v|../../../DCPU2.srcs/sources_1/new/IMEM.v|../../../DCPU2.srcs/sources_1/ip/dist_mem_gen_0_1/sim/dist_mem_gen_0.v|
+Z11 !s90 -64|-incr|-work|xil_defaultlib|../../../DCPU2.srcs/sources_1/ip/dist_mem_gen_0_1/sim/dist_mem_gen_0.v|../../../DCPU2.srcs/sources_1/new/IMEM.v|../../../DCPU2.srcs/sources_1/new/RegFile.v|../../../DCPU2.srcs/sources_1/new/HazardUnit.v|../../../DCPU2.srcs/sources_1/new/DMEM.v|../../../DCPU2.srcs/sources_1/new/MDU.v|../../../DCPU2.srcs/sources_1/new/Controller.v|../../../DCPU2.srcs/sources_1/new/CP0.v|../../../DCPU2.srcs/sources_1/new/ForwardUnit.v|../../../DCPU2.srcs/sources_1/new/ALU.v|../../../DCPU2.srcs/sources_1/new/Divider.v|../../../DCPU2.srcs/sources_1/new/DCPU.v|../../../DCPU2.srcs/sources_1/new/seg7x16.v|../../../DCPU2.srcs/sources_1/new/top_borad.v|
+!i113 1
+R7
+n@c@p@o
+vDCPU
+!s10a 1765969158
+R1
+!i10b 1
+!s100 =45?:bzhiXcSG:Wg1gN1z3
+IRX]Q]H9Dh?1_O]CmCTfeR1
+R2
+R0
+w1765969158
+8../../../DCPU2.srcs/sources_1/new/DCPU.v
+F../../../DCPU2.srcs/sources_1/new/DCPU.v
+L0 12
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@d@c@p@u
+vDCPU_tb
+!s10a 1765892886
+R1
+!i10b 1
+!s100 ;22IVN5`MelKg3JC7K;im3
+In3R8HDZQ`94IJCPl_NXfg1
+R2
+R0
+w1765892886
+8../../../DCPU2.srcs/sim_1/new/DCPU_tb.v
+F../../../DCPU2.srcs/sim_1/new/DCPU_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@d@c@p@u_tb
+vdist_mem_gen_0
+!s10a 1766545492
+R8
+!i10b 1
+!s100 1GjGNR?^_YejMjWJYfGVA2
+IhlX2C<fL9z>4h]BkkK5422
+R2
+R0
+w1765871941
+8../../../DCPU2.srcs/sources_1/ip/dist_mem_gen_0_1/sim/dist_mem_gen_0.v
+F../../../DCPU2.srcs/sources_1/ip/dist_mem_gen_0_1/sim/dist_mem_gen_0.v
+L0 56
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R7
+vDivider
+R8
+!i10b 1
+!s100 jUi3L[_ee[cW^DmW:jN`z1
+I>UehXj;YC0l?Nma9hD>Hd0
+R2
+R0
+w1747582173
+8../../../DCPU2.srcs/sources_1/new/Divider.v
+F../../../DCPU2.srcs/sources_1/new/Divider.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R7
+n@divider
+vDMEM
+!s10a 1765892937
+R8
+!i10b 1
+!s100 Im4V?;z^Si>ghhDThlC1o3
+ImaQ]fM11^emH`KN]k6LP_2
+R2
+R0
+w1765872147
+8../../../DCPU2.srcs/sources_1/new/DMEM.v
+F../../../DCPU2.srcs/sources_1/new/DMEM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R7
+n@d@m@e@m
+vForwardUnit
+!s10a 1765970749
+!s110 1765970770
+!i10b 1
+!s100 1kUCO<X];16[HbBzg0o`=0
+I1EJj=XC?A67?XWRj`Klea1
+R2
+R0
+w1765970749
+8../../../DCPU2.srcs/sources_1/new/ForwardUnit.v
+F../../../DCPU2.srcs/sources_1/new/ForwardUnit.v
+L0 9
+R3
+r1
+!s85 0
+31
+!s108 1765970769.000000
+R5
+R6
+!i113 1
+R7
+n@forward@unit
+vglbl
+!s110 1766545507
+!i10b 1
+!s100 g=dL3UKAkhNRkQ:7=fPzF1
+IkJ@CGO[n5[_3E=ZkTzmEk2
+R2
+R0
+w1464879896
+8glbl.v
+Fglbl.v
+L0 6
+R3
+r1
+!s85 0
+31
+!s108 1766545507.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 1
+R7
+vHazardUnit
+!s10a 1765969179
+R1
+!i10b 1
+!s100 U`4C0jS2;FRZf8_i5bb^D2
+IaWLzzj6W<<R4D:zh=TKFF1
+R2
+R0
+w1765969179
+8../../../DCPU2.srcs/sources_1/new/HazardUnit.v
+F../../../DCPU2.srcs/sources_1/new/HazardUnit.v
+L0 11
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@hazard@unit
+vIMEM
+!s10a 1765892990
+R1
+!i10b 1
+!s100 nW51eC1zdHAGbHGfUD?m_2
+IQ[Ze15iSNKM9Umali0m0z2
+R2
+R0
+w1765892990
+8../../../DCPU2.srcs/sources_1/new/IMEM.v
+F../../../DCPU2.srcs/sources_1/new/IMEM.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@i@m@e@m
+vMDU
+!s10a 1766031565
+!s110 1765988904
+!i10b 1
+!s100 oEKFU:Ok48Kz?OD;<gk3L2
+I3J_BJTRg6YBdd69g3RGBW3
+R2
+R0
+w1765988884
+8../../../DCPU2.srcs/sources_1/new/MDU.v
+F../../../DCPU2.srcs/sources_1/new/MDU.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1765988904.000000
+R5
+R6
+!i113 1
+R7
+n@m@d@u
+vRegFile
+!s10a 1765893009
+R1
+!i10b 1
+!s100 jaOU?3f<SV:194AYU87ef3
+IeAm7HDJT9<B3ZB<OzMBV[0
+R2
+R0
+w1765893009
+8../../../DCPU2.srcs/sources_1/new/RegFile.v
+F../../../DCPU2.srcs/sources_1/new/RegFile.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@reg@file
+vseg7x16
+!s10a 1763204453
+Z12 !s110 1765880118
+!i10b 1
+!s100 VSY>iEWcaUFjkD82dCOlc1
+I>Cf]I;nF]R:@1KflSNMF]2
+R2
+R0
+w1763204453
+8../../../DCPU2.srcs/sources_1/new/seg7x16.v
+F../../../DCPU2.srcs/sources_1/new/seg7x16.v
+L0 21
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R7
+vtop_board
+R12
+!i10b 1
+!s100 PLCgHMH3N8h59dR`fo40X1
+I>=<:8PCRF>FBmPM<U>E9D2
+R2
+R0
+w1765808651
+8../../../DCPU2.srcs/sources_1/new/top_borad.v
+F../../../DCPU2.srcs/sources_1/new/top_borad.v
+L0 22
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R7

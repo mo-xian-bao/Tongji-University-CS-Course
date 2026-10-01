@@ -1,0 +1,72 @@
+# do {PCPU_tb_drop_eggs_simulate.do}
+# vsim -voptargs=""+acc"" -L unisims_ver -L unimacro_ver -L secureip -L dist_mem_gen_v8_0_10 -L xil_defaultlib -lib xil_defaultlib xil_defaultlib.PCPU_tb_drop_eggs xil_defaultlib.glbl 
+# Start time: 09:21:47 on Dec 24,2025
+# //  ModelSim PE 10.4c Jul 20 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading xil_defaultlib.PCPU_tb_drop_eggs
+# Loading xil_defaultlib.PCPU
+# Loading xil_defaultlib.IMEM
+# Loading xil_defaultlib.dist_mem_gen_0
+# Loading dist_mem_gen_v8_0_10.dist_mem_gen_v8_0_10
+# Loading xil_defaultlib.RegFile
+# Loading xil_defaultlib.ALU
+# Loading xil_defaultlib.DMEM
+# Loading xil_defaultlib.Hazard_Unit
+# Loading xil_defaultlib.glbl
+# ** Warning: (vsim-3017) ../../../PCPU.srcs/sim_1/new/PCPU_tb.v(15): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /PCPU_tb_drop_eggs/uut File: ../../../PCPU.srcs/sources_1/new/PCPU.v
+# ** Warning: (vsim-3722) ../../../PCPU.srcs/sim_1/new/PCPU_tb.v(15): [TFMPC] - Missing connection for port 'instr_out'.
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 42 of file "dist_mem_gen_0.mif". Expected 2048, found 41.    : ../../../PCPU.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /PCPU_tb_drop_eggs/uut/imem/Instr_mem/inst
+# ============================================================
+#   PCPU Egg Drop Problem Test
+# ============================================================
+# Parameters: 100 floors, secret threshold = 37
+# ============================================================
+# 
+# [20000 ns] CPU started
+# [1605000 ns] CPU halted after 159 cycles
+#          Dynamic instruction count: 109
+#          Throughput (TP) = 109 / 159 = 0.686
+#          CPI (Cycles Per Instruction) = 159 / 109 = 1.459
+# 
+# ============================================================
+#   Register File Contents (Results)
+# ============================================================
+# Reg  | Decimal Value | Hex Value  | Description
+# -----|---------------|------------|---------------------------
+# $s0  |            37 | 0x00000025 | SECRET_THRESHOLD
+# $s1  |           100 | 0x00000064 | TOTAL_FLOORS
+# $s2  |            38 | 0x00000026 | low
+# $s3  |            37 | 0x00000025 | [OUT] Threshold found
+# $s4  |            37 | 0x00000025 | current_floor
+# $s5  |            68 | 0x00000044 | [OUT] m_up
+# $s6  |            31 | 0x0000001f | [OUT] n_down
+# $s7  |             2 | 0x00000002 | [OUT] h_broken
+# $t8  |             0 | 0x00000000 | [OUT] last_drop_broken
+# $t9  |           175 | 0x000000af | [OUT] Cost1 (f1)
+# $t0  |           307 | 0x00000133 | [OUT] Cost2 (f2)
+# ============================================================
+# 
+# ** Note: $finish    : ../../../PCPU.srcs/sim_1/new/PCPU_tb.v(101)
+#    Time: 1705 ns  Iteration: 1  Instance: /PCPU_tb_drop_eggs
+# 1
+# Break in Module PCPU_tb_drop_eggs at ../../../PCPU.srcs/sim_1/new/PCPU_tb.v line 101
+# End time: 09:22:18 on Dec 24,2025, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 3

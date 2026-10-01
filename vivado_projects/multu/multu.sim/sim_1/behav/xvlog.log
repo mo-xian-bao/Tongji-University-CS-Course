@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/multu/multu.srcs/sources_1/new/MULTU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTU
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [D:/vivado_projects/multu/multu.srcs/sources_1/new/MULTU.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/multu/multu.srcs/sim_1/new/MULTU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MULTU_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/multu/multu.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

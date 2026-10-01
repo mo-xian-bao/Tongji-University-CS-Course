@@ -1,0 +1,692 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28800 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 306.305 ; gain = 98.758
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/top.v:22]
+INFO: [Synth 8-638] synthesizing module 'Divider' [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/Divider.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Divider' (1#1) [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/Divider.v:1]
+INFO: [Synth 8-638] synthesizing module 'PCPU' [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/PCPU.v:22]
+	Parameter OP_NOP bound to: 6'b000000 
+	Parameter OP_HALT bound to: 6'b000001 
+	Parameter OP_ADD bound to: 6'b000010 
+	Parameter OP_SUB bound to: 6'b000011 
+	Parameter OP_AND bound to: 6'b000100 
+	Parameter OP_OR bound to: 6'b000101 
+	Parameter OP_XOR bound to: 6'b000110 
+	Parameter OP_SLL bound to: 6'b000111 
+	Parameter OP_SRL bound to: 6'b001000 
+	Parameter OP_SRA bound to: 6'b001001 
+	Parameter OP_CMP bound to: 6'b001010 
+	Parameter OP_LOAD bound to: 6'b001011 
+	Parameter OP_STORE bound to: 6'b001100 
+	Parameter OP_ADDI bound to: 6'b001101 
+	Parameter OP_BZ bound to: 6'b001110 
+	Parameter OP_BN bound to: 6'b001111 
+	Parameter OP_JMP bound to: 6'b010000 
+	Parameter ALU_ADD bound to: 4'b0010 
+	Parameter ALU_SUB bound to: 4'b0011 
+	Parameter ALU_AND bound to: 4'b0100 
+	Parameter ALU_OR bound to: 4'b0101 
+	Parameter ALU_XOR bound to: 4'b0110 
+	Parameter ALU_SLL bound to: 4'b1110 
+	Parameter ALU_SRL bound to: 4'b1101 
+	Parameter ALU_SRA bound to: 4'b1100 
+INFO: [Synth 8-638] synthesizing module 'IMEM' [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/IMEM.v:23]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [D:/vivado_projects/PCPU/PCPU.runs/synth_1/.Xil/Vivado-3680-LAPTOP-V0AHCU9H/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (2#1) [D:/vivado_projects/PCPU/PCPU.runs/synth_1/.Xil/Vivado-3680-LAPTOP-V0AHCU9H/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'IMEM' (3#1) [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/IMEM.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/Regfile.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (4#1) [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/Regfile.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (5#1) [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'DMEM' [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/DMEM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DMEM' (6#1) [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/DMEM.v:23]
+INFO: [Synth 8-638] synthesizing module 'Hazard_Unit' [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/Hazard_Unit.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Hazard_Unit' (7#1) [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/Hazard_Unit.v:21]
+INFO: [Synth 8-256] done synthesizing module 'PCPU' (8#1) [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/PCPU.v:22]
+INFO: [Synth 8-638] synthesizing module 'seg7x16' [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/seg7x16.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/seg7x16.v:86]
+INFO: [Synth 8-256] done synthesizing module 'seg7x16' (9#1) [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/seg7x16.v:21]
+INFO: [Synth 8-256] done synthesizing module 'top' (10#1) [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/top.v:22]
+WARNING: [Synth 8-3331] design Hazard_Unit has unconnected port ID_EX_rt[4]
+WARNING: [Synth 8-3331] design Hazard_Unit has unconnected port ID_EX_rt[3]
+WARNING: [Synth 8-3331] design Hazard_Unit has unconnected port ID_EX_rt[2]
+WARNING: [Synth 8-3331] design Hazard_Unit has unconnected port ID_EX_rt[1]
+WARNING: [Synth 8-3331] design Hazard_Unit has unconnected port ID_EX_rt[0]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[31]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[30]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[29]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[28]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[27]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[26]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[25]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[24]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[23]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[22]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[21]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[20]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[19]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[18]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[17]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[16]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[15]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[14]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[13]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[1]
+WARNING: [Synth 8-3331] design IMEM has unconnected port PC[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 342.840 ; gain = 135.293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 342.840 ; gain = 135.293
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_mem_gen_0' instantiated as 'cpu/imem/Instr_mem' [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/IMEM.v:32]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/vivado_projects/PCPU/PCPU.runs/synth_1/.Xil/Vivado-3680-LAPTOP-V0AHCU9H/dcp/dist_mem_gen_0_in_context.xdc] for cell 'cpu/imem/Instr_mem'
+Finished Parsing XDC File [D:/vivado_projects/PCPU/PCPU.runs/synth_1/.Xil/Vivado-3680-LAPTOP-V0AHCU9H/dcp/dist_mem_gen_0_in_context.xdc] for cell 'cpu/imem/Instr_mem'
+Parsing XDC File [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/icf.xdc]
+Finished Parsing XDC File [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/icf.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/icf.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 655.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 655.168 ; gain = 447.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 655.168 ; gain = 447.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 655.168 ; gain = 447.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "array_reg_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "r" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "carry" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "halt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "get_alu_op" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "o_seg_r" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'r_reg' [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/ALU.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'zero_reg' [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/ALU.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'carry_reg' [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/ALU.v:42]
+WARNING: [Synth 8-327] inferring latch for variable 'negative_reg' [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/ALU.v:44]
+WARNING: [Synth 8-327] inferring latch for variable 'overflow_reg' [D:/vivado_projects/PCPU/PCPU.srcs/sources_1/new/ALU.v:55]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 655.168 ; gain = 447.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 44    
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	   3 Input     32 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 71    
+	   8 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module RegFile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 33    
+	   8 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 4     
+Module DMEM 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module Hazard_Unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module PCPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 10    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   3 Input     32 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module seg7x16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 655.168 ; gain = 447.621
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "carry" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divider_cpu/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divider_cpu/clk_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 655.168 ; gain = 447.621
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 655.168 ; gain = 447.621
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives      | 
++------------+------------------+-----------+----------------------+-----------------+
+|top         | cpu/dmem/mem_reg | Implied   | 32 x 32              | RAM32X1S x 32   | 
++------------+------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_shamt_reg[0]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[6]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_shamt_reg[1]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[7]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_shamt_reg[2]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_shamt_reg[3]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[9]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_shamt_reg[4]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[15]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[16]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[16]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[17]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[17]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[18]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[18]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[19]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[19]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[20]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[20]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[21]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[21]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[22]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[22]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[23]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[23]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[24]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[24]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[25]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[25]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[26]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[26]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[27]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[27]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[28]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[28]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[29]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[30]'
+INFO: [Synth 8-3886] merging instance 'cpu/ID_EX_imm_ext_reg[30]' (FDCE) to 'cpu/ID_EX_imm_ext_reg[31]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\seg7_display/o_seg_r_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (zero_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (carry_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (negative_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (overflow_reg) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/IF_ID_PC_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/PC_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_imm_ext_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (seg7_display/o_seg_r_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_shamt_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_shamt_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_shamt_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_shamt_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/ID_EX_shamt_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (r_reg[31]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[30]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[29]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[28]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[27]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[26]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[25]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[24]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[23]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[22]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[21]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[20]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[19]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[18]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[17]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[16]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[15]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[14]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[13]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[12]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[11]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[10]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[9]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[8]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[7]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[6]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[5]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[4]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[3]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[2]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[1]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (r_reg[0]) is unused and will be removed from module ALU.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 655.168 ; gain = 447.621
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 655.168 ; gain = 447.621
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 655.168 ; gain = 447.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 660.191 ; gain = 452.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\cpu/regfile/array_reg_reg[0][30] )
+WARNING: [Synth 8-3332] Sequential element (cpu/regfile/array_reg_reg[0][31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (cpu/regfile/array_reg_reg[0][30]) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 691.707 ; gain = 484.160
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 691.707 ; gain = 484.160
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 691.707 ; gain = 484.160
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 691.707 ; gain = 484.160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 691.707 ; gain = 484.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 691.707 ; gain = 484.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 691.707 ; gain = 484.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 691.707 ; gain = 484.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:33 . Memory (MB): peak = 691.707 ; gain = 484.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |dist_mem_gen_0 |     1|
+|2     |BUFG           |     2|
+|3     |CARRY4         |    49|
+|4     |LUT1           |    59|
+|5     |LUT2           |   119|
+|6     |LUT3           |   139|
+|7     |LUT4           |   193|
+|8     |LUT5           |   395|
+|9     |LUT6           |   940|
+|10    |MUXF7          |   256|
+|11    |RAM32X1S       |    32|
+|12    |FDCE           |  1388|
+|13    |FDPE           |     7|
+|14    |IBUF           |     2|
+|15    |OBUF           |    17|
++------+---------------+------+
+
+Report Instance Areas: 
++------+---------------+--------+------+
+|      |Instance       |Module  |Cells |
++------+---------------+--------+------+
+|1     |top            |        |  3630|
+|2     |  cpu          |PCPU    |  3346|
+|3     |    dmem       |DMEM    |    66|
+|4     |    imem       |IMEM    |    32|
+|5     |    regfile    |RegFile |  2035|
+|6     |  divider_cpu  |Divider |   113|
+|7     |  seg7_display |seg7x16 |   150|
++------+---------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 691.707 ; gain = 484.160
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 135 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 691.707 ; gain = 143.746
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:33 . Memory (MB): peak = 691.707 ; gain = 484.160
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 83 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+146 Infos, 132 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 691.707 ; gain = 460.504
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 691.707 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 24 09:30:36 2025...

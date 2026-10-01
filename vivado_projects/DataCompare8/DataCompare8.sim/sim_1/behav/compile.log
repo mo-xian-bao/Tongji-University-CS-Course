@@ -1,0 +1,32 @@
+# do {DataCompare8_tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# ** Warning: (vlib-34) Library already exists at "msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "msim/xil_defaultlib".
+# 
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap xil_defaultlib msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# 
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 16:15:18 on Oct 21,2024
+# vlog -64 -incr -work xil_defaultlib ../../../../DataCompare4/DataCompare4.srcs/sources_1/new/DataCompare4.v ../../../DataCompare8.srcs/sources_1/new/DataCompare8.v ../../../DataCompare8.srcs/sim_1/new/DataCompare8_tb.v 
+# -- Skipping module DataCompare4
+# -- Skipping module DataCompare8
+# -- Compiling module DataCompare8_tb
+# 
+# Top level modules:
+# 	DataCompare8_tb
+# End time: 16:15:18 on Oct 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 16:15:18 on Oct 21,2024
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 16:15:18 on Oct 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

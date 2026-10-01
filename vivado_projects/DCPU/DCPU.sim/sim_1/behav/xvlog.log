@@ -1,0 +1,27 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/DCPU/DCPU.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_10
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/DCPU/DCPU.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/DCPU/DCPU.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/DCPU/DCPU.srcs/sources_1/new/MDU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MDU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/DCPU/DCPU.srcs/sources_1/new/HazardUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HazardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/DCPU/DCPU.srcs/sources_1/new/ForwardUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/DCPU/DCPU.srcs/sources_1/new/DMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/DCPU/DCPU.srcs/sources_1/new/CP0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPO
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/DCPU/DCPU.srcs/sources_1/new/Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/DCPU/DCPU.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/DCPU/DCPU.srcs/sources_1/new/IMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/DCPU/DCPU.srcs/sources_1/new/DCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DCPU
+INFO: [VRFC 10-2458] undeclared symbol exc_occur, assumed default net type wire [D:/vivado_projects/DCPU/DCPU.srcs/sources_1/new/DCPU.v:296]
+ERROR: [VRFC 10-2071] exc_occur is already implicitly declared on line 296 [D:/vivado_projects/DCPU/DCPU.srcs/sources_1/new/DCPU.v:398]
+ERROR: [VRFC 10-1040] module DCPU ignored due to previous errors [D:/vivado_projects/DCPU/DCPU.srcs/sources_1/new/DCPU.v:12]

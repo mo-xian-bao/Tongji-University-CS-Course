@@ -1,0 +1,368 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/desktop/计算机系统实验/实验二
+vcp0_reg
+Z0 !s110 1781840708
+!i10b 1
+!s100 J^b_k]NEhE7X4P[K?6l`;0
+IWAGnX21fha@M>=fJ:Gc^H0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/TEMP/USER_TEMP/codex_msim_check
+Z3 w1763881990
+8X:\OpenMIPS\cp0_reg.v
+FX:\OpenMIPS\cp0_reg.v
+L0 3
+Z4 OP;L;10.4c;61
+r1
+!s85 0
+31
+Z5 !s108 1781840708.000000
+Z6 !s107 X:\OpenMIPS/defines.vh|X:\openmips_min_sopc.v|X:\OpenMIPS\wishbone_bus_if.v|X:\OpenMIPS\regfile.v|X:\OpenMIPS\pc_reg.v|X:\OpenMIPS\openmips.v|X:\OpenMIPS\mem_wb.v|X:\OpenMIPS\mem.v|X:\OpenMIPS\LLbit_reg.v|X:\OpenMIPS\if_id.v|X:\OpenMIPS\id_ex.v|X:\OpenMIPS\id.v|X:\OpenMIPS\hilo_reg.v|X:\OpenMIPS\ex_mem.v|X:\OpenMIPS\ex.v|X:\OpenMIPS\div.v|X:\OpenMIPS\ctrl.v|X:\OpenMIPS\cp0_reg.v|
+Z7 !s90 -work|work|-lint|-quiet|-mfcu=macro|+incdir+X:\OpenMIPS|+incdir+X:\gpio|+incdir+X:\uart|+incdir+X:\wb_conmax|X:\OpenMIPS\cp0_reg.v|X:\OpenMIPS\ctrl.v|X:\OpenMIPS\div.v|X:\OpenMIPS\ex.v|X:\OpenMIPS\ex_mem.v|X:\OpenMIPS\hilo_reg.v|X:\OpenMIPS\id.v|X:\OpenMIPS\id_ex.v|X:\OpenMIPS\if_id.v|X:\OpenMIPS\LLbit_reg.v|X:\OpenMIPS\mem.v|X:\OpenMIPS\mem_wb.v|X:\OpenMIPS\openmips.v|X:\OpenMIPS\pc_reg.v|X:\OpenMIPS\regfile.v|X:\OpenMIPS\wishbone_bus_if.v|X:\openmips_min_sopc.v|
+!i113 1
+Z8 o-quiet -work work -lint -mfcu=macro -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 -quiet -work work -lint -mfcu=macro {+incdir+X:\OpenMIPS} {+incdir+X:\gpio} {+incdir+X:\uart} {+incdir+X:\wb_conmax} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vctrl
+R0
+!i10b 1
+!s100 L0?WJH0Gj7?]dhbO[8a]L0
+IoED>Pd_RWFkWiE6<bb]3:3
+R1
+R2
+w1781840354
+8X:\OpenMIPS\ctrl.v
+FX:\OpenMIPS\ctrl.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vdiv
+R0
+!i10b 1
+!s100 XXabUXIOncI1?5lD67b3f0
+I5MHK?<bY?dzY7L0AHPF7Q0
+R1
+R2
+R3
+8X:\OpenMIPS\div.v
+FX:\OpenMIPS\div.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vex
+R0
+!i10b 1
+!s100 Nc;M5@V_i;TU4LTdaU:]X1
+IB7^TH]8@Eo]bT5oTJa1eh0
+R1
+R2
+R3
+8X:\OpenMIPS\ex.v
+FX:\OpenMIPS\ex.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vex_mem
+R0
+!i10b 1
+!s100 <^7jn8I0Z`bJS3Jk<V3Ok3
+IZA3mY=>9XlfF:B9M]1Ki;3
+R1
+R2
+R3
+8X:\OpenMIPS\ex_mem.v
+FX:\OpenMIPS\ex_mem.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vhilo_reg
+R0
+!i10b 1
+!s100 RR`hG:?RV2M@6UGB_C;[k3
+I_Mm=5:P^aDYXa087eoG_N2
+R1
+R2
+R3
+8X:\OpenMIPS\hilo_reg.v
+FX:\OpenMIPS\hilo_reg.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vid
+R0
+!i10b 1
+!s100 3cN>]J5b^^QK=2V[Zk8R72
+IQAd8?>0j3VLdkNfObRQBJ0
+R1
+R2
+R3
+8X:\OpenMIPS\id.v
+FX:\OpenMIPS\id.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vid_ex
+R0
+!i10b 1
+!s100 `F<3R]P3j[O036WRAE:7H2
+IH3nHWF]L]Um_j?nI42iM]1
+R1
+R2
+R3
+8X:\OpenMIPS\id_ex.v
+FX:\OpenMIPS\id_ex.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vif_id
+R0
+!i10b 1
+!s100 h_Jz^jD9z?hRgdlgQC<VI1
+InC[d>E4::FHC=;CD9B8892
+R1
+R2
+w1781840435
+8X:\OpenMIPS\if_id.v
+FX:\OpenMIPS\if_id.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vLLbit_reg
+R0
+!i10b 1
+!s100 AHZFNGP9cG;fkd3GoII8`1
+I86Z0<024`N<9g<G_HC:N02
+R1
+R2
+R3
+8X:\OpenMIPS\LLbit_reg.v
+FX:\OpenMIPS\LLbit_reg.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+n@l@lbit_reg
+vmem
+R0
+!i10b 1
+!s100 3m>T`Dd2Y^IWU7UaCMW>[1
+IZIFWF`UU@zcCO19DBPTLh2
+R1
+R2
+R3
+8X:\OpenMIPS\mem.v
+FX:\OpenMIPS\mem.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vmem_wb
+R0
+!i10b 1
+!s100 RZoZ5KF^fg_kRjOCLkm<D1
+I=V]kP;J^McGbg2;m4zGM;1
+R1
+R2
+R3
+8X:\OpenMIPS\mem_wb.v
+FX:\OpenMIPS\mem_wb.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vopenmips
+R0
+!i10b 1
+!s100 KUd;TNzE3MP?d]_?;@Pgg1
+I<R7[h]>95[3L>^FlKG4QF0
+R1
+R2
+w1781840290
+8X:\OpenMIPS\openmips.v
+FX:\OpenMIPS\openmips.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vopenmips_min_sopc
+R0
+!i10b 1
+!s100 kcO`=@=h6?6chBJ?20NCJ3
+IJZ]76B]_=NfLd9B:FfZiN3
+R1
+R2
+w1781840280
+8X:\openmips_min_sopc.v
+FX:\openmips_min_sopc.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vpc_reg
+R0
+!i10b 1
+!s100 J:5c;O9?TYcR92YlPcOR[3
+I1zadU_KecXkBnbaAIh;^B2
+R1
+R2
+w1781840400
+8X:\OpenMIPS\pc_reg.v
+FX:\OpenMIPS\pc_reg.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vregfile
+R0
+!i10b 1
+!s100 jZiX;8cV1h8N[CX:iWazE3
+IYSmIGjGU=[R6=F=:5BUb?0
+R1
+R2
+R3
+8X:\OpenMIPS\regfile.v
+FX:\OpenMIPS\regfile.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9
+vwishbone_bus_if
+R0
+!i10b 1
+!s100 =`QYfI;W06fTilVMUnnXX0
+IHjP73k8^5f4^HaDl]K9760
+R1
+R2
+w1781840312
+8X:\OpenMIPS\wishbone_bus_if.v
+FX:\OpenMIPS\wishbone_bus_if.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+R9

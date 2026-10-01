@@ -1,0 +1,55 @@
+# do {_246tb_ex9_tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# ** Warning: (vlib-34) Library already exists at "msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "msim/dist_mem_gen_v8_0_10".
+# 
+# ** Warning: (vlib-34) Library already exists at "msim/xil_defaultlib".
+# 
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap dist_mem_gen_v8_0_10 msim/dist_mem_gen_v8_0_10 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap xil_defaultlib msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# 
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 23:30:53 on May 14,2025
+# vlog -64 -incr -work dist_mem_gen_v8_0_10 ../../../CPU31.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v 
+# -- Skipping module dist_mem_gen_v8_0_10
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_10
+# End time: 23:30:53 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# 
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 23:30:53 on May 14,2025
+# vlog -64 -incr -work xil_defaultlib ../../../CPU31.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v ../../../CPU31.srcs/sources_1/new/RegFile.v ../../../CPU31.srcs/sources_1/new/ALU.v ../../../CPU31.srcs/sources_1/new/CU.v ../../../CPU31.srcs/sources_1/new/PC.v ../../../CPU31.srcs/sources_1/new/IMEM.v ../../../CPU31.srcs/sources_1/new/DMEM.v ../../../CPU31.srcs/sources_1/new/CPU.v ../../../CPU31.srcs/sources_1/new/sccomp_dataflow.v ../../../CPU31.srcs/sim_1/new/_246tb_ex9_tb.v 
+# -- Skipping module dist_mem_gen_0
+# -- Skipping module RegFile
+# -- Skipping module ALU
+# -- Skipping module CU
+# -- Skipping module PC
+# -- Skipping module IMEM
+# -- Skipping module DMEM
+# -- Skipping module CPU
+# -- Skipping module sccomp_dataflow
+# -- Skipping module _246tb_ex9_tb
+# 
+# Top level modules:
+# 	_246tb_ex9_tb
+# End time: 23:30:53 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 23:30:53 on May 14,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 23:30:54 on May 14,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

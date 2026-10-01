@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/divu/divu.srcs/sources_1/new/DIVU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIVU
+ERROR: [VRFC 10-529] concurrent assignment to a non-net r is not permitted [D:/vivado_projects/divu/divu.srcs/sources_1/new/DIVU.v:30]
+ERROR: [VRFC 10-529] concurrent assignment to a non-net q is not permitted [D:/vivado_projects/divu/divu.srcs/sources_1/new/DIVU.v:32]
+ERROR: [VRFC 10-1040] module DIVU ignored due to previous errors [D:/vivado_projects/divu/divu.srcs/sources_1/new/DIVU.v:3]

@@ -1,0 +1,294 @@
+# do {DCPU_tb_simulate.do}
+# vsim -voptargs=""+acc"" -L unisims_ver -L unimacro_ver -L secureip -L dist_mem_gen_v8_0_10 -L xil_defaultlib -lib xil_defaultlib xil_defaultlib.DCPU_tb xil_defaultlib.glbl 
+# Start time: 21:17:18 on Dec 15,2025
+# //  ModelSim PE 10.4c Jul 20 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading xil_defaultlib.DCPU_tb
+# Loading xil_defaultlib.DCPU
+# Loading xil_defaultlib.IMEM
+# Loading xil_defaultlib.dist_mem_gen_0
+# Loading dist_mem_gen_v8_0_10.dist_mem_gen_v8_0_10
+# Loading xil_defaultlib.Controller
+# Loading xil_defaultlib.ALU
+# Loading xil_defaultlib.MDU
+# Loading xil_defaultlib.DMEM
+# Loading xil_defaultlib.CPO
+# Loading xil_defaultlib.RegFile
+# Loading xil_defaultlib.ForwardUnit
+# Loading xil_defaultlib.HazardUnit
+# Loading xil_defaultlib.glbl
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: maoxingbo  Hostname: LAPTOP-V0AHCU9H  ProcessID: 12944
+# 
+#           Attempting to use alternate WLF file "./wlftb5r3r0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftb5r3r0
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 61 of file "dist_mem_gen_0.mif". Expected 2048, found 60.    : ../../../DCPU.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /DCPU_tb/uut/imem/Instr_mem/inst
+# Time scale of (DCPU_tb) is  1ns /  1ps
+# Time=20000 | [Test] Reset released, CPU started.
+# Time=35000 | [CPU Status] Entered Exception Handler at 0x00400004
+# Time=115000 | Write Memory: Addr=00000000, Data=00000000 (         0)
+# Time=135000 | Write Memory: Addr=00000100, Data=00000001 (         1)
+# Time=265000 | Write Memory: Addr=00000004, Data=00000001 (         1)
+# Time=425000 | Write Memory: Addr=00000104, Data=00000004 (         4)
+# Time=515000 | Write Memory: Addr=00000204, Data=00000001 (         1)
+# Time=535000 | Write Memory: Addr=00000304, Data=00000004 (         4)
+# Time=665000 | Write Memory: Addr=00000008, Data=00000003 (         3)
+# Time=825000 | Write Memory: Addr=00000108, Data=0000000a (        10)
+# Time=915000 | Write Memory: Addr=00000208, Data=00000003 (         3)
+# Time=935000 | Write Memory: Addr=00000308, Data=0000000a (        10)
+# Time=1065000 | Write Memory: Addr=0000000c, Data=00000006 (         6)
+# Time=1225000 | Write Memory: Addr=0000010c, Data=00000013 (        19)
+# Time=1315000 | Write Memory: Addr=0000020c, Data=00000006 (         6)
+# Time=1335000 | Write Memory: Addr=0000030c, Data=00000013 (        19)
+# Time=1465000 | Write Memory: Addr=00000010, Data=0000000a (        10)
+# Time=1625000 | Write Memory: Addr=00000110, Data=0000001f (        31)
+# Time=1715000 | Write Memory: Addr=00000210, Data=0000000a (        10)
+# Time=1735000 | Write Memory: Addr=00000310, Data=0000001f (        31)
+# Time=1865000 | Write Memory: Addr=00000014, Data=0000000f (        15)
+# Time=2020000 | [Test] Asserting Interrupt Signal (intr = 1)
+# Time=2025000 | Write Memory: Addr=00000114, Data=0000002e (        46)
+# DEBUG: Time=2025000 | intr=1 | IE=1 | irq_req=1 | exc_occur=0 | PC=00400098 | Status=00000001 | Cause(Reg)=00000000
+# DEBUG: Time=2035000 | intr=1 | IE=1 | irq_req=1 | exc_occur=1 | PC=00400098 | Status=00000001 | Cause(Reg)=00000000
+# Time=2045000 | [CPU Status] Entered Exception Handler at 0x00400004
+# DEBUG: Time=2045000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400004 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2055000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400008 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2065000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040000c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2075000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400010 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2085000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400014 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2095000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400018 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2105000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040001c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2115000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2125000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2135000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400024 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2145000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400028 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2155000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040002c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2165000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400030 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2175000 | intr=1 | IE=1 | irq_req=1 | exc_occur=1 | PC=00400094 | Status=00000001 | Cause(Reg)=00000000
+# Time=2185000 | [CPU Status] Entered Exception Handler at 0x00400004
+# DEBUG: Time=2185000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400004 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2195000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400008 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2205000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040000c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2215000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400010 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2225000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400014 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2235000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400018 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2245000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040001c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2255000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2265000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2275000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400024 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2285000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400028 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2295000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040002c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2305000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400030 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2315000 | intr=1 | IE=1 | irq_req=1 | exc_occur=1 | PC=00000004 | Status=00000001 | Cause(Reg)=00000000
+# Time=2325000 | [CPU Status] Entered Exception Handler at 0x00400004
+# DEBUG: Time=2325000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400004 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2335000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400008 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2345000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040000c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2355000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400010 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2365000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400014 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2375000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400018 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2385000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040001c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2395000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2405000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2415000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400024 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2425000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400028 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2435000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040002c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2445000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400030 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2455000 | intr=1 | IE=1 | irq_req=1 | exc_occur=1 | PC=00000004 | Status=00000001 | Cause(Reg)=00000000
+# Time=2465000 | [CPU Status] Entered Exception Handler at 0x00400004
+# DEBUG: Time=2465000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400004 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2475000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400008 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2485000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040000c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2495000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400010 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2505000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400014 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2515000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400018 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2525000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040001c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2535000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2545000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2555000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400024 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2565000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400028 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2575000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040002c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2585000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400030 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2595000 | intr=1 | IE=1 | irq_req=1 | exc_occur=1 | PC=00000004 | Status=00000001 | Cause(Reg)=00000000
+# Time=2605000 | [CPU Status] Entered Exception Handler at 0x00400004
+# DEBUG: Time=2605000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400004 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2615000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400008 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2625000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040000c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2635000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400010 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2645000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400014 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2655000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400018 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2665000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040001c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2675000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2685000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2695000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400024 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2705000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400028 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2715000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040002c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2725000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400030 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2735000 | intr=1 | IE=1 | irq_req=1 | exc_occur=1 | PC=00000004 | Status=00000001 | Cause(Reg)=00000000
+# Time=2745000 | [CPU Status] Entered Exception Handler at 0x00400004
+# DEBUG: Time=2745000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400004 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2755000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400008 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2765000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040000c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2775000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400010 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2785000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400014 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2795000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400018 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2805000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040001c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2815000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2825000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2835000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400024 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2845000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400028 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2855000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040002c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2865000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400030 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2875000 | intr=1 | IE=1 | irq_req=1 | exc_occur=1 | PC=00000004 | Status=00000001 | Cause(Reg)=00000000
+# Time=2885000 | [CPU Status] Entered Exception Handler at 0x00400004
+# DEBUG: Time=2885000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400004 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2895000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400008 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2905000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040000c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2915000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400010 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2925000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400014 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2935000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400018 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2945000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040001c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2955000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2965000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2975000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400024 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2985000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400028 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=2995000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040002c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3005000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400030 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3015000 | intr=1 | IE=1 | irq_req=1 | exc_occur=1 | PC=00000004 | Status=00000001 | Cause(Reg)=00000000
+# Time=3025000 | [CPU Status] Entered Exception Handler at 0x00400004
+# DEBUG: Time=3025000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400004 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3035000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400008 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3045000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040000c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3055000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400010 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3065000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400014 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3075000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400018 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3085000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040001c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3095000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3105000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3115000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400024 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3125000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400028 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3135000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040002c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3145000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400030 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3155000 | intr=1 | IE=1 | irq_req=1 | exc_occur=1 | PC=00000004 | Status=00000001 | Cause(Reg)=00000000
+# Time=3165000 | [CPU Status] Entered Exception Handler at 0x00400004
+# DEBUG: Time=3165000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400004 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3175000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400008 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3185000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040000c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3195000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400010 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3205000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400014 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3215000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400018 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3225000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040001c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3235000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3245000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3255000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400024 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3265000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400028 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3275000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040002c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3285000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400030 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3295000 | intr=1 | IE=1 | irq_req=1 | exc_occur=1 | PC=00000004 | Status=00000001 | Cause(Reg)=00000000
+# Time=3305000 | [CPU Status] Entered Exception Handler at 0x00400004
+# DEBUG: Time=3305000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400004 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3315000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400008 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3325000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040000c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3335000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400010 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3345000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400014 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3355000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400018 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3365000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040001c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3375000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3385000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3395000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400024 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3405000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400028 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3415000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040002c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3425000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400030 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3435000 | intr=1 | IE=1 | irq_req=1 | exc_occur=1 | PC=00000004 | Status=00000001 | Cause(Reg)=00000000
+# Time=3445000 | [CPU Status] Entered Exception Handler at 0x00400004
+# DEBUG: Time=3445000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400004 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3455000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400008 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3465000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040000c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3475000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400010 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3485000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400014 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3495000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400018 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3505000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040001c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3515000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3525000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3535000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400024 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3545000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400028 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3555000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040002c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3565000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400030 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3575000 | intr=1 | IE=1 | irq_req=1 | exc_occur=1 | PC=00000004 | Status=00000001 | Cause(Reg)=00000000
+# Time=3585000 | [CPU Status] Entered Exception Handler at 0x00400004
+# DEBUG: Time=3585000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400004 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3595000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400008 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3605000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040000c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3615000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400010 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3625000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400014 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3635000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400018 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3645000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040001c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3655000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3665000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3675000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400024 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3685000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400028 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3695000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040002c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3705000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400030 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3715000 | intr=1 | IE=1 | irq_req=1 | exc_occur=1 | PC=00000004 | Status=00000001 | Cause(Reg)=00000000
+# Time=3725000 | [CPU Status] Entered Exception Handler at 0x00400004
+# DEBUG: Time=3725000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400004 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3735000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400008 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3745000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040000c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3755000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400010 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3765000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400014 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3775000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400018 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3785000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040001c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3795000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3805000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3815000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400024 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3825000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400028 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3835000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040002c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3845000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400030 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3855000 | intr=1 | IE=1 | irq_req=1 | exc_occur=1 | PC=00000004 | Status=00000001 | Cause(Reg)=00000000
+# Time=3865000 | [CPU Status] Entered Exception Handler at 0x00400004
+# DEBUG: Time=3865000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400004 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3875000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400008 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3885000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040000c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3895000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400010 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3905000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400014 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3915000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400018 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3925000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040001c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3935000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3945000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400020 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3955000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400024 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3965000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400028 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3975000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=0040002c | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3985000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400030 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=3995000 | intr=1 | IE=1 | irq_req=1 | exc_occur=1 | PC=00000004 | Status=00000001 | Cause(Reg)=00000000
+# Time=4005000 | [CPU Status] Entered Exception Handler at 0x00400004
+# DEBUG: Time=4005000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400004 | Status=00000020 | Cause(Reg)=00000000
+# DEBUG: Time=4015000 | intr=1 | IE=0 | irq_req=0 | exc_occur=0 | PC=00400008 | Status=00000020 | Cause(Reg)=00000000
+# Time=4020000 | [Test] De-asserting Interrupt Signal (intr = 0)
+add wave -position insertpoint  \
+sim:/DCPU_tb/uut/dmem/mem
+# End time: 21:43:48 on Dec 15,2025, Elapsed time: 0:26:30
+# Errors: 0, Warnings: 3
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      # End time: 21:43:43 on Dec 15,2025, Elapsed time: 1:01:33
+# Errors: 0, Warnings: 1
+                                                                                                                                                                                                       # End time: 21:43:46 on Dec 15,2025, Elapsed time: 0:48:30
+# Errors: 0, Warnings: 3

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/transmission8/transmission8.srcs/sources_1/new/transmission8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmission8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/transmission8/transmission8.srcs/sim_1/new/transmission8_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmission8_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/transmission8/transmission8.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

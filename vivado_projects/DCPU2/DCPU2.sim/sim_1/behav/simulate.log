@@ -1,0 +1,299 @@
+# do {DCPU_tb_simulate.do}
+# vsim -voptargs=""+acc"" -L unisims_ver -L unimacro_ver -L secureip -L dist_mem_gen_v8_0_10 -L xil_defaultlib -lib xil_defaultlib xil_defaultlib.DCPU_tb xil_defaultlib.glbl 
+# Start time: 11:05:22 on Dec 24,2025
+# //  ModelSim PE 10.4c Jul 20 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading xil_defaultlib.DCPU_tb
+# Loading xil_defaultlib.DCPU
+# Loading xil_defaultlib.IMEM
+# Loading xil_defaultlib.dist_mem_gen_0
+# Loading dist_mem_gen_v8_0_10.dist_mem_gen_v8_0_10
+# Loading xil_defaultlib.Controller
+# Loading xil_defaultlib.ALU
+# Loading xil_defaultlib.MDU
+# Loading xil_defaultlib.DMEM
+# Loading xil_defaultlib.CPO
+# Loading xil_defaultlib.RegFile
+# Loading xil_defaultlib.ForwardUnit
+# Loading xil_defaultlib.HazardUnit
+# Loading xil_defaultlib.seg7x16
+# Loading xil_defaultlib.glbl
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 55 of file "dist_mem_gen_0.mif". Expected 2048, found 54.    : ../../../DCPU2.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /DCPU_tb/uut/imem/Instr_mem/inst
+# Time scale of (DCPU_tb) is  1ns /  1ps
+# Simulation Start. CPU Running...
+# Time=285000 | Reg28 Updated: 00000001
+# Time=355000 | Reg28 Updated: 00000004
+# Time=415000 | Reg28 Updated: 00000001
+# Time=425000 | Reg28 Updated: 00000004
+# Time=625000 | Reg28 Updated: 00000003
+# Time=695000 | Reg28 Updated: 0000000a
+# Time=755000 | Reg28 Updated: 00000003
+# Time=765000 | Reg28 Updated: 0000000a
+# Time=965000 | Reg28 Updated: 00000006
+# Time=1035000 | Reg28 Updated: 00000013
+# Time=1095000 | Reg28 Updated: 00000006
+# Time=1105000 | Reg28 Updated: 00000013
+# Time=1305000 | Reg28 Updated: 0000000a
+# Time=1375000 | Reg28 Updated: 0000001f
+# Time=1435000 | Reg28 Updated: 0000000a
+# Time=1445000 | Reg28 Updated: 0000001f
+# Time=1645000 | Reg28 Updated: 0000000f
+# Time=1715000 | Reg28 Updated: 0000002e
+# Time=1775000 | Reg28 Updated: 0000000f
+# Time=1785000 | Reg28 Updated: 0000002e
+# Time=1985000 | Reg28 Updated: 00000015
+# Time=2020000: CPU Running. PC=00400078, Reg28=00000015
+# Time=2020000: [Action] Switch[0] -> 1 (PAUSE)
+# Time=2520000: Checking Pause State. PC=00400078
+# Time=2620000: CPU is PAUSED correctly.
+# Time=2620000: [Action] Switch[0] -> 0 (RESUME)
+# Time=2655000 | Reg28 Updated: 00000040
+# Time=2715000 | Reg28 Updated: 00000015
+# Time=2725000 | Reg28 Updated: 00000040
+# Time=2925000 | Reg28 Updated: 0000001c
+# Time=2995000 | Reg28 Updated: 00000055
+# Time=3055000 | Reg28 Updated: 0000001c
+# Time=3065000 | Reg28 Updated: 00000055
+# Time=3265000 | Reg28 Updated: 00000024
+# Time=3335000 | Reg28 Updated: 0000006d
+# Time=3395000 | Reg28 Updated: 00000024
+# Time=3405000 | Reg28 Updated: 0000006d
+# Time=3605000 | Reg28 Updated: 0000002d
+# Time=3675000 | Reg28 Updated: 00000088
+# Time=3735000 | Reg28 Updated: 0000002d
+# Time=3745000 | Reg28 Updated: 00000088
+# Time=3945000 | Reg28 Updated: 00000037
+# Time=4015000 | Reg28 Updated: 000000a6
+# Time=4075000 | Reg28 Updated: 00000037
+# Time=4085000 | Reg28 Updated: 000000a6
+# Time=4285000 | Reg28 Updated: 00000042
+# Time=4355000 | Reg28 Updated: 000000c7
+# Time=4415000 | Reg28 Updated: 00000042
+# Time=4425000 | Reg28 Updated: 000000c7
+# Time=4620000: CPU Resumed. PC=00400068
+# Time=4620000: [Action] Switch[1] -> 1 (Show PC)
+# Time=4625000 | Reg28 Updated: 0000004e
+# Time=4695000 | Reg28 Updated: 000000eb
+# Time=4720000: Display Data Source switched to PC. Current Display Input=004000b4
+# Time=4720000: [Action] Switch[1] -> 0 (Show Reg28)
+# Time=4755000 | Reg28 Updated: 0000004e
+# Time=4765000 | Reg28 Updated: 000000eb
+# Time=4820000: Display Data Source switched to Reg28. Current Display Input=000000eb
+# Time=4965000 | Reg28 Updated: 0000005b
+# Time=5035000 | Reg28 Updated: 00000112
+# Time=5095000 | Reg28 Updated: 0000005b
+# Time=5105000 | Reg28 Updated: 00000112
+# Time=5305000 | Reg28 Updated: 00000069
+# Time=5375000 | Reg28 Updated: 0000013c
+# Time=5435000 | Reg28 Updated: 00000069
+# Time=5445000 | Reg28 Updated: 0000013c
+# Time=5645000 | Reg28 Updated: 00000078
+# Time=5715000 | Reg28 Updated: 00000169
+# Time=5775000 | Reg28 Updated: 00000078
+# Time=5785000 | Reg28 Updated: 00000169
+# Time=5985000 | Reg28 Updated: 00000088
+# Time=6055000 | Reg28 Updated: 00000199
+# Time=6115000 | Reg28 Updated: 00000088
+# Time=6125000 | Reg28 Updated: 00000199
+# Time=6325000 | Reg28 Updated: 00000099
+# Time=6395000 | Reg28 Updated: 000001cc
+# Time=6455000 | Reg28 Updated: 00000099
+# Time=6465000 | Reg28 Updated: 000001cc
+# Time=6665000 | Reg28 Updated: 000000ab
+# Time=6735000 | Reg28 Updated: 00000202
+# Time=6795000 | Reg28 Updated: 000000ab
+# Time=6805000 | Reg28 Updated: 00000202
+# Time=7005000 | Reg28 Updated: 000000be
+# Time=7075000 | Reg28 Updated: 0000023b
+# Time=7135000 | Reg28 Updated: 000000be
+# Time=7145000 | Reg28 Updated: 0000023b
+# Time=7345000 | Reg28 Updated: 000000d2
+# Time=7415000 | Reg28 Updated: 00000277
+# Time=7485000 | Reg28 Updated: 00000349
+# Time=7495000 | Reg28 Updated: 0002b1e2
+# Time=7695000 | Reg28 Updated: 000000e7
+# Time=7765000 | Reg28 Updated: 000002b6
+# Time=7835000 | Reg28 Updated: 0000039d
+# Time=7845000 | Reg28 Updated: 000342ab
+# Time=8045000 | Reg28 Updated: 000000fd
+# Time=8115000 | Reg28 Updated: 000002f8
+# Time=8185000 | Reg28 Updated: 000003f5
+# Time=8195000 | Reg28 Updated: 0003e921
+# Time=8395000 | Reg28 Updated: 00000114
+# Time=8465000 | Reg28 Updated: 0000033d
+# Time=8535000 | Reg28 Updated: 00000451
+# Time=8545000 | Reg28 Updated: 0004a754
+# Time=8745000 | Reg28 Updated: 0000012c
+# Time=8815000 | Reg28 Updated: 00000385
+# Time=8885000 | Reg28 Updated: 000004b1
+# Time=8895000 | Reg28 Updated: 00057f6c
+# Time=9095000 | Reg28 Updated: 00000145
+# Time=9165000 | Reg28 Updated: 000003d0
+# Time=9235000 | Reg28 Updated: 00000515
+# Time=9245000 | Reg28 Updated: 000673a9
+# Time=9445000 | Reg28 Updated: 0000015f
+# Time=9515000 | Reg28 Updated: 0000041e
+# Time=9585000 | Reg28 Updated: 0000057d
+# Time=9595000 | Reg28 Updated: 00078663
+# Time=9795000 | Reg28 Updated: 0000017a
+# Time=9865000 | Reg28 Updated: 0000046f
+# Time=9935000 | Reg28 Updated: 000005e9
+# Time=9945000 | Reg28 Updated: 0008ba0a
+# Time=10145000 | Reg28 Updated: 00000196
+# Time=10215000 | Reg28 Updated: 000004c3
+# Time=10285000 | Reg28 Updated: 00000659
+# Time=10295000 | Reg28 Updated: 000a1126
+# Time=10495000 | Reg28 Updated: 000001b3
+# Time=10565000 | Reg28 Updated: 0000051a
+# Time=10635000 | Reg28 Updated: 000006cd
+# Time=10645000 | Reg28 Updated: 000b8e57
+# Time=10845000 | Reg28 Updated: 000001d1
+# Time=10915000 | Reg28 Updated: 00000574
+# Time=10985000 | Reg28 Updated: 00000745
+# Time=10995000 | Reg28 Updated: 000d3455
+# Time=11195000 | Reg28 Updated: 000001f0
+# Time=11265000 | Reg28 Updated: 000005d1
+# Time=11335000 | Reg28 Updated: 000007c1
+# Time=11345000 | Reg28 Updated: 000f05f0
+# Time=11545000 | Reg28 Updated: 00000210
+# Time=11615000 | Reg28 Updated: 00000631
+# Time=11685000 | Reg28 Updated: 00000841
+# Time=11695000 | Reg28 Updated: 00110610
+# Time=11895000 | Reg28 Updated: 00000231
+# Time=11965000 | Reg28 Updated: 00000694
+# Time=12035000 | Reg28 Updated: 000008c5
+# Time=12045000 | Reg28 Updated: 001337b5
+# Time=12245000 | Reg28 Updated: 00000253
+# Time=12315000 | Reg28 Updated: 000006fa
+# Time=12385000 | Reg28 Updated: 0000094d
+# Time=12395000 | Reg28 Updated: 00159df7
+# Time=12595000 | Reg28 Updated: 00000276
+# Time=12665000 | Reg28 Updated: 00000763
+# Time=12735000 | Reg28 Updated: 000009d9
+# Time=12745000 | Reg28 Updated: 00183c06
+# Time=12945000 | Reg28 Updated: 0000029a
+# Time=13015000 | Reg28 Updated: 000007cf
+# Time=13085000 | Reg28 Updated: 00000a69
+# Time=13095000 | Reg28 Updated: 001b152a
+# Time=13295000 | Reg28 Updated: 000002bf
+# Time=13365000 | Reg28 Updated: 0000083e
+# Time=13435000 | Reg28 Updated: 00000afd
+# Time=13445000 | Reg28 Updated: 001e2cc3
+# Time=13645000 | Reg28 Updated: 000002e5
+# Time=13715000 | Reg28 Updated: 000008b0
+# Time=13785000 | Reg28 Updated: 00000b95
+# Time=13795000 | Reg28 Updated: 00218649
+# Time=13995000 | Reg28 Updated: 0000030c
+# Time=14065000 | Reg28 Updated: 00000925
+# Time=14135000 | Reg28 Updated: 00000c31
+# Time=14145000 | Reg28 Updated: 0025254c
+# Time=14345000 | Reg28 Updated: 00000334
+# Time=14415000 | Reg28 Updated: 0000099d
+# Time=14515000 | Reg28 Updated: 001ecae4
+# Time=14525000 | Reg28 Updated: 280471d4
+# Time=14725000 | Reg28 Updated: 0000035d
+# Time=14795000 | Reg28 Updated: 00000a18
+# Time=14895000 | Reg28 Updated: 0021f2b8
+# Time=14905000 | Reg28 Updated: 56a9f140
+# Time=15105000 | Reg28 Updated: 00000387
+# Time=15175000 | Reg28 Updated: 00000a96
+# Time=15275000 | Reg28 Updated: 0025571a
+# Time=15285000 | Reg28 Updated: 8b480d3c
+# Time=15485000 | Reg28 Updated: 000003b2
+# Time=15555000 | Reg28 Updated: 00000b17
+# Time=15655000 | Reg28 Updated: 0028fafe
+# Time=15665000 | Reg28 Updated: c67776d2
+# Time=15865000 | Reg28 Updated: 000003de
+# Time=15935000 | Reg28 Updated: 00000b9b
+# Time=16035000 | Reg28 Updated: 002ce16a
+# Time=16045000 | Reg28 Updated: 08dc092e
+# Time=16245000 | Reg28 Updated: 0000040b
+# Time=16315000 | Reg28 Updated: 00000c22
+# Time=16415000 | Reg28 Updated: 00310d76
+# Time=16425000 | Reg28 Updated: 532551ac
+# Time=16625000 | Reg28 Updated: 00000439
+# Time=16695000 | Reg28 Updated: 00000cac
+# Time=16795000 | Reg28 Updated: 0035824c
+# Time=16805000 | Reg28 Updated: a60f1b10
+# Time=17005000 | Reg28 Updated: 00000468
+# Time=17075000 | Reg28 Updated: 00000d39
+# Time=17175000 | Reg28 Updated: 003a4328
+# Time=17185000 | Reg28 Updated: 0261fbe8
+# Time=17385000 | Reg28 Updated: 00000498
+# Time=17455000 | Reg28 Updated: 00000dc9
+# Time=17555000 | Reg28 Updated: 003f5358
+# Time=17565000 | Reg28 Updated: 68f3e818
+# Time=17765000 | Reg28 Updated: 000004c9
+# Time=17835000 | Reg28 Updated: 00000e5c
+# Time=17935000 | Reg28 Updated: 0044b63c
+# Time=17945000 | Reg28 Updated: daa8c590
+# Time=18145000 | Reg28 Updated: 000004fb
+# Time=18215000 | Reg28 Updated: 00000ef2
+# Time=18315000 | Reg28 Updated: 004a6f46
+# Time=18325000 | Reg28 Updated: 5873042c
+# Time=18525000 | Reg28 Updated: 0000052e
+# Time=18595000 | Reg28 Updated: 00000f8b
+# Time=18695000 | Reg28 Updated: 005081fa
+# Time=18705000 | Reg28 Updated: e35438be
+# Time=18905000 | Reg28 Updated: 00000562
+# Time=18975000 | Reg28 Updated: 00001027
+# Time=19075000 | Reg28 Updated: 0056f1ee
+# Time=19085000 | Reg28 Updated: 7c5dbb42
+# Time=19285000 | Reg28 Updated: 00000597
+# Time=19355000 | Reg28 Updated: 000010c6
+# Time=19455000 | Reg28 Updated: 005dc2ca
+# Time=19465000 | Reg28 Updated: 24b1483c
+# Time=19665000 | Reg28 Updated: 000005cd
+# Time=19735000 | Reg28 Updated: 00001168
+# Time=19835000 | Reg28 Updated: 0064f848
+# Time=19845000 | Reg28 Updated: dd81a540
+# Time=20045000 | Reg28 Updated: 00000604
+# Time=20115000 | Reg28 Updated: 0000120d
+# Time=20215000 | Reg28 Updated: 006c9634
+# Time=20225000 | Reg28 Updated: a81348a4
+# Time=20425000 | Reg28 Updated: 0000063c
+# Time=20495000 | Reg28 Updated: 000012b5
+# Time=20595000 | Reg28 Updated: 0074a06c
+# Time=20605000 | Reg28 Updated: 85bd045c
+# Time=20805000 | Reg28 Updated: 00000675
+# Time=20875000 | Reg28 Updated: 00001360
+# Time=20975000 | Reg28 Updated: 007d1ae0
+# Time=20985000 | Reg28 Updated: 77e8b400
+# Time=21185000 | Reg28 Updated: 000006af
+# Time=21255000 | Reg28 Updated: 0000140e
+# Time=21355000 | Reg28 Updated: 00860992
+# Time=21365000 | Reg28 Updated: 8013edfc
+# Time=21565000 | Reg28 Updated: 000006ea
+# Time=21635000 | Reg28 Updated: 000014bf
+# Time=21735000 | Reg28 Updated: 008f7096
+# Time=21745000 | Reg28 Updated: 9fd0b7ea
+# Detected Infinite Loop (End of Program). Stopping simulation.
+# ============================================================
+# Performance Statistics:
+# Total Cycles:        2179
+# Total Instructions (approx):        2119
+# Throughput (IPC): 0.972464
+# ============================================================
+# ** Note: $finish    : ../../../DCPU2.srcs/sim_1/new/DCPU_tb.v(149)
+#    Time: 21815 ns  Iteration: 1  Instance: /DCPU_tb
+# 1
+# Break in Module DCPU_tb at ../../../DCPU2.srcs/sim_1/new/DCPU_tb.v line 149
+# End time: 11:50:09 on Dec 24,2025, Elapsed time: 0:44:47
+# Errors: 0, Warnings: 1

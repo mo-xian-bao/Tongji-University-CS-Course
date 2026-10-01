@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/CP0/CP0.srcs/sources_1/new/CP0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPO
+ERROR: [VRFC 10-552] declarations not allowed in unnamed block [D:/vivado_projects/CP0/CP0.srcs/sources_1/new/CP0.v:43]
+WARNING: [VRFC 10-2167] variable masked must explicitly be declared as automatic or static [D:/vivado_projects/CP0/CP0.srcs/sources_1/new/CP0.v:44]
+ERROR: [VRFC 10-1040] module CPO ignored due to previous errors [D:/vivado_projects/CP0/CP0.srcs/sources_1/new/CP0.v:1]

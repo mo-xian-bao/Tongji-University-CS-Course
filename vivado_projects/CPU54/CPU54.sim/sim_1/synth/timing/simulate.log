@@ -1,0 +1,332 @@
+# do {_246tb_ex7_tb_simulate.do}
+# vsim -voptargs=""+acc"" "+transport_int_delays" "+pulse_r/0" "+pulse_int_r/0" -L simprims_ver -L secureip -L xil_defaultlib -lib xil_defaultlib xil_defaultlib._246tb_ex7_tb xil_defaultlib.glbl 
+# Start time: 01:03:09 on Jul 11,2025
+# //  ModelSim PE 10.4c Jul 20 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading xil_defaultlib._246tb_ex7_tb
+# Loading xil_defaultlib.sccomp_dataflow
+# Loading simprims_ver.BUFG
+# Loading simprims_ver.IBUF
+# Loading xil_defaultlib.CU
+# Loading simprims_ver.LUT6
+# Loading simprims_ver.LUT4
+# Loading simprims_ver.LUT3
+# Loading simprims_ver.LUT2
+# Loading simprims_ver.FDCE
+# Loading simprims_ver.LUT5
+# Loading simprims_ver.OBUF
+# Loading xil_defaultlib.datapath
+# Loading simprims_ver.MUXF7
+# Loading simprims_ver.CARRY4
+# Loading xil_defaultlib.CPO
+# Loading simprims_ver.MUXF8
+# Loading simprims_ver.FDPE
+# Loading xil_defaultlib.RegFile
+# Loading xil_defaultlib.DMEM_with_LDP
+# Loading xil_defaultlib.RAM256X1S_UNIQ_BASE_
+# Loading simprims_ver.RAMS64E
+# Loading xil_defaultlib.RAM256X1S_HD256
+# Loading xil_defaultlib.RAM256X1S_HD257
+# Loading xil_defaultlib.RAM256X1S_HD258
+# Loading xil_defaultlib.RAM256X1S_HD259
+# Loading xil_defaultlib.RAM256X1S_HD260
+# Loading xil_defaultlib.RAM256X1S_HD261
+# Loading xil_defaultlib.RAM256X1S_HD262
+# Loading xil_defaultlib.RAM256X1S_HD263
+# Loading xil_defaultlib.RAM256X1S_HD264
+# Loading xil_defaultlib.RAM256X1S_HD265
+# Loading xil_defaultlib.RAM256X1S_HD266
+# Loading xil_defaultlib.RAM256X1S_HD267
+# Loading xil_defaultlib.RAM256X1S_HD268
+# Loading xil_defaultlib.RAM256X1S_HD269
+# Loading xil_defaultlib.RAM256X1S_HD270
+# Loading xil_defaultlib.RAM256X1S_HD271
+# Loading xil_defaultlib.RAM256X1S_HD272
+# Loading xil_defaultlib.RAM256X1S_HD273
+# Loading xil_defaultlib.RAM256X1S_HD274
+# Loading xil_defaultlib.RAM256X1S_HD275
+# Loading xil_defaultlib.RAM256X1S_HD276
+# Loading xil_defaultlib.RAM256X1S_HD277
+# Loading xil_defaultlib.RAM256X1S_HD278
+# Loading xil_defaultlib.RAM256X1S_HD279
+# Loading xil_defaultlib.RAM256X1S_HD280
+# Loading xil_defaultlib.RAM256X1S_HD281
+# Loading xil_defaultlib.RAM256X1S_HD282
+# Loading xil_defaultlib.RAM256X1S_HD283
+# Loading xil_defaultlib.RAM256X1S_HD284
+# Loading xil_defaultlib.RAM256X1S_HD285
+# Loading xil_defaultlib.RAM256X1S_HD286
+# Loading xil_defaultlib.RAM256X1S_HD287
+# Loading xil_defaultlib.RAM256X1S_HD288
+# Loading xil_defaultlib.RAM256X1S_HD289
+# Loading xil_defaultlib.RAM256X1S_HD290
+# Loading xil_defaultlib.RAM256X1S_HD291
+# Loading xil_defaultlib.RAM256X1S_HD292
+# Loading xil_defaultlib.RAM256X1S_HD293
+# Loading xil_defaultlib.RAM256X1S_HD294
+# Loading xil_defaultlib.RAM256X1S_HD295
+# Loading xil_defaultlib.RAM256X1S_HD296
+# Loading xil_defaultlib.RAM256X1S_HD297
+# Loading xil_defaultlib.RAM256X1S_HD298
+# Loading xil_defaultlib.RAM256X1S_HD299
+# Loading xil_defaultlib.RAM256X1S_HD300
+# Loading xil_defaultlib.RAM256X1S_HD301
+# Loading xil_defaultlib.RAM256X1S_HD302
+# Loading xil_defaultlib.RAM256X1S_HD303
+# Loading xil_defaultlib.RAM256X1S_HD304
+# Loading xil_defaultlib.RAM256X1S_HD305
+# Loading xil_defaultlib.RAM256X1S_HD306
+# Loading xil_defaultlib.RAM256X1S_HD307
+# Loading xil_defaultlib.RAM256X1S_HD308
+# Loading xil_defaultlib.RAM256X1S_HD309
+# Loading xil_defaultlib.RAM256X1S_HD310
+# Loading xil_defaultlib.RAM256X1S_HD311
+# Loading xil_defaultlib.RAM256X1S_HD312
+# Loading xil_defaultlib.RAM256X1S_HD313
+# Loading xil_defaultlib.RAM256X1S_HD314
+# Loading xil_defaultlib.RAM256X1S_HD315
+# Loading xil_defaultlib.RAM256X1S_HD316
+# Loading xil_defaultlib.RAM256X1S_HD317
+# Loading xil_defaultlib.RAM256X1S_HD318
+# Loading xil_defaultlib.RAM256X1S_HD319
+# Loading xil_defaultlib.RAM256X1S_HD320
+# Loading xil_defaultlib.RAM256X1S_HD321
+# Loading xil_defaultlib.RAM256X1S_HD322
+# Loading xil_defaultlib.RAM256X1S_HD323
+# Loading xil_defaultlib.RAM256X1S_HD324
+# Loading xil_defaultlib.RAM256X1S_HD325
+# Loading xil_defaultlib.RAM256X1S_HD326
+# Loading xil_defaultlib.RAM256X1S_HD327
+# Loading xil_defaultlib.RAM256X1S_HD328
+# Loading xil_defaultlib.RAM256X1S_HD329
+# Loading xil_defaultlib.RAM256X1S_HD330
+# Loading xil_defaultlib.RAM256X1S_HD331
+# Loading xil_defaultlib.RAM256X1S_HD332
+# Loading xil_defaultlib.RAM256X1S_HD333
+# Loading xil_defaultlib.RAM256X1S_HD334
+# Loading xil_defaultlib.RAM256X1S_HD335
+# Loading xil_defaultlib.RAM256X1S_HD336
+# Loading xil_defaultlib.RAM256X1S_HD337
+# Loading xil_defaultlib.RAM256X1S_HD338
+# Loading xil_defaultlib.RAM256X1S_HD339
+# Loading xil_defaultlib.RAM256X1S_HD340
+# Loading xil_defaultlib.RAM256X1S_HD341
+# Loading xil_defaultlib.RAM256X1S_HD342
+# Loading xil_defaultlib.RAM256X1S_HD343
+# Loading xil_defaultlib.RAM256X1S_HD344
+# Loading xil_defaultlib.RAM256X1S_HD345
+# Loading xil_defaultlib.RAM256X1S_HD346
+# Loading xil_defaultlib.RAM256X1S_HD347
+# Loading xil_defaultlib.RAM256X1S_HD348
+# Loading xil_defaultlib.RAM256X1S_HD349
+# Loading xil_defaultlib.RAM256X1S_HD350
+# Loading xil_defaultlib.RAM256X1S_HD351
+# Loading xil_defaultlib.RAM256X1S_HD352
+# Loading xil_defaultlib.RAM256X1S_HD353
+# Loading xil_defaultlib.RAM256X1S_HD354
+# Loading xil_defaultlib.RAM256X1S_HD355
+# Loading xil_defaultlib.RAM256X1S_HD356
+# Loading xil_defaultlib.RAM256X1S_HD357
+# Loading xil_defaultlib.RAM256X1S_HD358
+# Loading xil_defaultlib.RAM256X1S_HD359
+# Loading xil_defaultlib.RAM256X1S_HD360
+# Loading xil_defaultlib.RAM256X1S_HD361
+# Loading xil_defaultlib.RAM256X1S_HD362
+# Loading xil_defaultlib.RAM256X1S_HD363
+# Loading xil_defaultlib.RAM256X1S_HD364
+# Loading xil_defaultlib.RAM256X1S_HD365
+# Loading xil_defaultlib.RAM256X1S_HD366
+# Loading xil_defaultlib.RAM256X1S_HD367
+# Loading xil_defaultlib.RAM256X1S_HD368
+# Loading xil_defaultlib.RAM256X1S_HD369
+# Loading xil_defaultlib.RAM256X1S_HD370
+# Loading xil_defaultlib.RAM256X1S_HD371
+# Loading xil_defaultlib.RAM256X1S_HD372
+# Loading xil_defaultlib.RAM256X1S_HD373
+# Loading xil_defaultlib.RAM256X1S_HD374
+# Loading xil_defaultlib.RAM256X1S_HD375
+# Loading xil_defaultlib.RAM256X1S_HD376
+# Loading xil_defaultlib.RAM256X1S_HD377
+# Loading xil_defaultlib.RAM256X1S_HD378
+# Loading xil_defaultlib.RAM256X1S_HD379
+# Loading xil_defaultlib.RAM256X1S_HD380
+# Loading xil_defaultlib.RAM256X1S_HD381
+# Loading xil_defaultlib.RAM256X1S_HD382
+# Loading xil_defaultlib.RAM256X1S_HD383
+# Loading xil_defaultlib.RAM256X1S_HD384
+# Loading xil_defaultlib.RAM256X1S_HD385
+# Loading xil_defaultlib.RAM256X1S_HD386
+# Loading xil_defaultlib.RAM256X1S_HD387
+# Loading xil_defaultlib.RAM256X1S_HD388
+# Loading xil_defaultlib.RAM256X1S_HD389
+# Loading xil_defaultlib.RAM256X1S_HD390
+# Loading xil_defaultlib.RAM256X1S_HD391
+# Loading xil_defaultlib.RAM256X1S_HD392
+# Loading xil_defaultlib.RAM256X1S_HD393
+# Loading xil_defaultlib.RAM256X1S_HD394
+# Loading xil_defaultlib.RAM256X1S_HD395
+# Loading xil_defaultlib.RAM256X1S_HD396
+# Loading xil_defaultlib.RAM256X1S_HD397
+# Loading xil_defaultlib.RAM256X1S_HD398
+# Loading xil_defaultlib.RAM256X1S_HD399
+# Loading xil_defaultlib.RAM256X1S_HD400
+# Loading xil_defaultlib.RAM256X1S_HD401
+# Loading xil_defaultlib.RAM256X1S_HD402
+# Loading xil_defaultlib.RAM256X1S_HD403
+# Loading xil_defaultlib.RAM256X1S_HD404
+# Loading xil_defaultlib.RAM256X1S_HD405
+# Loading xil_defaultlib.RAM256X1S_HD406
+# Loading xil_defaultlib.RAM256X1S_HD407
+# Loading xil_defaultlib.RAM256X1S_HD408
+# Loading xil_defaultlib.RAM256X1S_HD409
+# Loading xil_defaultlib.RAM256X1S_HD410
+# Loading xil_defaultlib.RAM256X1S_HD411
+# Loading xil_defaultlib.RAM256X1S_HD412
+# Loading xil_defaultlib.RAM256X1S_HD413
+# Loading xil_defaultlib.RAM256X1S_HD414
+# Loading xil_defaultlib.RAM256X1S_HD415
+# Loading xil_defaultlib.RAM256X1S_HD416
+# Loading xil_defaultlib.RAM256X1S_HD417
+# Loading xil_defaultlib.RAM256X1S_HD418
+# Loading xil_defaultlib.RAM256X1S_HD419
+# Loading xil_defaultlib.RAM256X1S_HD420
+# Loading xil_defaultlib.RAM256X1S_HD421
+# Loading xil_defaultlib.RAM256X1S_HD422
+# Loading xil_defaultlib.RAM256X1S_HD423
+# Loading xil_defaultlib.RAM256X1S_HD424
+# Loading xil_defaultlib.RAM256X1S_HD425
+# Loading xil_defaultlib.RAM256X1S_HD426
+# Loading xil_defaultlib.RAM256X1S_HD427
+# Loading xil_defaultlib.RAM256X1S_HD428
+# Loading xil_defaultlib.RAM256X1S_HD429
+# Loading xil_defaultlib.RAM256X1S_HD430
+# Loading xil_defaultlib.RAM256X1S_HD431
+# Loading xil_defaultlib.RAM256X1S_HD432
+# Loading xil_defaultlib.RAM256X1S_HD433
+# Loading xil_defaultlib.RAM256X1S_HD434
+# Loading xil_defaultlib.RAM256X1S_HD435
+# Loading xil_defaultlib.RAM256X1S_HD436
+# Loading xil_defaultlib.RAM256X1S_HD437
+# Loading xil_defaultlib.RAM256X1S_HD438
+# Loading xil_defaultlib.RAM256X1S_HD439
+# Loading xil_defaultlib.RAM256X1S_HD440
+# Loading xil_defaultlib.RAM256X1S_HD441
+# Loading xil_defaultlib.RAM256X1S_HD442
+# Loading xil_defaultlib.RAM256X1S_HD443
+# Loading xil_defaultlib.RAM256X1S_HD444
+# Loading xil_defaultlib.RAM256X1S_HD445
+# Loading xil_defaultlib.RAM256X1S_HD446
+# Loading xil_defaultlib.RAM256X1S_HD447
+# Loading xil_defaultlib.RAM256X1S_HD448
+# Loading xil_defaultlib.RAM256X1S_HD449
+# Loading xil_defaultlib.RAM256X1S_HD450
+# Loading xil_defaultlib.RAM256X1S_HD451
+# Loading xil_defaultlib.RAM256X1S_HD452
+# Loading xil_defaultlib.RAM256X1S_HD453
+# Loading xil_defaultlib.RAM256X1S_HD454
+# Loading xil_defaultlib.RAM256X1S_HD455
+# Loading xil_defaultlib.RAM256X1S_HD456
+# Loading xil_defaultlib.RAM256X1S_HD457
+# Loading xil_defaultlib.RAM256X1S_HD458
+# Loading xil_defaultlib.RAM256X1S_HD459
+# Loading xil_defaultlib.RAM256X1S_HD460
+# Loading xil_defaultlib.RAM256X1S_HD461
+# Loading xil_defaultlib.RAM256X1S_HD462
+# Loading xil_defaultlib.RAM256X1S_HD463
+# Loading xil_defaultlib.RAM256X1S_HD464
+# Loading xil_defaultlib.RAM256X1S_HD465
+# Loading xil_defaultlib.RAM256X1S_HD466
+# Loading xil_defaultlib.RAM256X1S_HD467
+# Loading xil_defaultlib.RAM256X1S_HD468
+# Loading xil_defaultlib.RAM256X1S_HD469
+# Loading xil_defaultlib.RAM256X1S_HD470
+# Loading xil_defaultlib.RAM256X1S_HD471
+# Loading xil_defaultlib.RAM256X1S_HD472
+# Loading xil_defaultlib.RAM256X1S_HD473
+# Loading xil_defaultlib.RAM256X1S_HD474
+# Loading xil_defaultlib.RAM256X1S_HD475
+# Loading xil_defaultlib.RAM256X1S_HD476
+# Loading xil_defaultlib.RAM256X1S_HD477
+# Loading xil_defaultlib.RAM256X1S_HD478
+# Loading xil_defaultlib.RAM256X1S_HD479
+# Loading xil_defaultlib.RAM256X1S_HD480
+# Loading xil_defaultlib.RAM256X1S_HD481
+# Loading xil_defaultlib.RAM256X1S_HD482
+# Loading xil_defaultlib.RAM256X1S_HD483
+# Loading xil_defaultlib.RAM256X1S_HD484
+# Loading xil_defaultlib.RAM256X1S_HD485
+# Loading xil_defaultlib.RAM256X1S_HD486
+# Loading xil_defaultlib.RAM256X1S_HD487
+# Loading xil_defaultlib.RAM256X1S_HD488
+# Loading xil_defaultlib.RAM256X1S_HD489
+# Loading xil_defaultlib.RAM256X1S_HD490
+# Loading xil_defaultlib.RAM256X1S_HD491
+# Loading xil_defaultlib.RAM256X1S_HD492
+# Loading xil_defaultlib.RAM256X1S_HD493
+# Loading xil_defaultlib.RAM256X1S_HD494
+# Loading xil_defaultlib.RAM256X1S_HD495
+# Loading xil_defaultlib.RAM256X1S_HD496
+# Loading xil_defaultlib.RAM256X1S_HD497
+# Loading xil_defaultlib.RAM256X1S_HD498
+# Loading xil_defaultlib.RAM256X1S_HD499
+# Loading xil_defaultlib.RAM256X1S_HD500
+# Loading xil_defaultlib.RAM256X1S_HD501
+# Loading xil_defaultlib.RAM256X1S_HD502
+# Loading xil_defaultlib.RAM256X1S_HD503
+# Loading xil_defaultlib.RAM256X1S_HD504
+# Loading xil_defaultlib.RAM256X1S_HD505
+# Loading xil_defaultlib.RAM256X1S_HD506
+# Loading xil_defaultlib.RAM256X1S_HD507
+# Loading xil_defaultlib.RAM256X1S_HD508
+# Loading xil_defaultlib.RAM256X1S_HD509
+# Loading xil_defaultlib.RAM256X1S_HD510
+# Loading xil_defaultlib.IMEM
+# Loading xil_defaultlib.dist_mem_gen_0
+# Loading xil_defaultlib.dist_mem_gen_0_dist_mem_gen_v8_0_10
+# Loading simprims_ver.GND
+# Loading xil_defaultlib.MDU
+# Loading simprims_ver.DSP48E1
+# Loading simprims_ver.LUT1
+# Loading xil_defaultlib.MUX4
+# Loading xil_defaultlib.MUX5
+# Loading xil_defaultlib.PC
+# Loading xil_defaultlib.glbl
+# SDF 10.4c Compiler 2015.07 Jul 20 2015
+# 
+# Loading instances from _246tb_ex7_tb_time_synth.sdf
+# Loading simprims_ver.x_lut3_mux4
+# Loading simprims_ver.x_lut2_mux4
+# Loading simprims_ver.ffsrce_fdce
+# Loading simprims_ver.ffsrce_fdpe
+# Loading simprims_ver.x_lut1_mux2
+# Loading timing data from _246tb_ex7_tb_time_synth.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /_246tb_ex7_tb File: ../../../../CPU54.srcs/sim_1/new/testbench_cpu54_multiple.v
+# ** Warning: (vsim-3316) No solution possible for some delayed timing check nets. 12851 negative limits were zeroed. Use +ntc_warn for more info.
+#    Time: 0 ps  Iteration: 0  Instance: /_246tb_ex7_tb File: ../../../../CPU54.srcs/sim_1/new/testbench_cpu54_multiple.v
+# ** Warning: (vsim-WLF-50# Break key hit
+# Break in Module CARRY4 at D:/Xlinix/Vivado/2016.2/data/verilog/src/unisims/CARRY4.v line 60
+# End time: 02:20:25 on Jul 11,2025, Elapsed time: 2:08:54
+# Errors: 0, Warnings: 1
+
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft711yhh
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# End time: 02:20:30 on Jul 11,2025, Elapsed time: 1:17:21
+# Errors: 0, Warnings: 3

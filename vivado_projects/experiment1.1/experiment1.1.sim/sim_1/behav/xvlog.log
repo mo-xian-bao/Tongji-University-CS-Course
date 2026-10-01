@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/experiment1.1/experiment1.1.srcs/sources_1/new/experiment1.1.2" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logic_gates_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/vivado_projects/experiment1.1/experiment1.1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

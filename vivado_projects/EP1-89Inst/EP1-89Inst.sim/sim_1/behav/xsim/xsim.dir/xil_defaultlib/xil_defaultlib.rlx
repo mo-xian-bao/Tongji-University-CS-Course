@@ -1,0 +1,20 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sim_1/new/tb_top_board.v,1775833543,verilog,,,,tb_top_board,,,,,,,,
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1775802657,verilog,,D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/ALU.v,,dist_mem_gen_0,,,,,,,,
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/ALU.v,1773228088,verilog,,D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/CP0.v,,ALU,,,,,,,,
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/CP0.v,1775808766,verilog,,D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/Controller.v,,CPO,,,,,,,,
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/Controller.v,1775805470,verilog,,D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/DCPU.v,,Controller,,,,,,,,
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/DCPU.v,1775811785,verilog,,D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/DMEM.v,,DCPU,,,,,,,,
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/DMEM.v,1775813202,verilog,,D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/Divider.v,,DMEM,,,,,,,,
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/Divider.v,1775814249,verilog,,D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/ForwardUnit.v,,Divider,,,,,,,,
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/ForwardUnit.v,1775805974,verilog,,D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/HazardUnit.v,,ForwardUnit,,,,,,,,
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/HazardUnit.v,1775805960,verilog,,D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/IMEM.v,,HazardUnit,,,,,,,,
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/IMEM.v,1765892990,verilog,,D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/MDU.v,,IMEM,,,,,,,,
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/MDU.v,1773228088,verilog,,D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/RegFile.v,,MDU,,,,,,,,
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/RegFile.v,1765893009,verilog,,D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/seg7x16.v,,RegFile,,,,,,,,
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/seg7x16.v,1763204453,verilog,,D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/top_borad.v,,seg7x16,,,,,,,,
+D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sources_1/new/top_borad.v,1775814253,verilog,,D:/vivado_projects/EP1-89Inst/EP1-89Inst.srcs/sim_1/new/tb_top_board.v,,top_board,,,,,,,,

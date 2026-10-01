@@ -1,0 +1,64 @@
+# do {PCPU_tb_drop_eggs_compile.do}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# ** Warning: (vlib-34) Library already exists at "msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "msim/xil_defaultlib".
+# 
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap xil_defaultlib msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# 
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 16:56:26 on Nov 15,2025
+# vlog -64 -incr -work xil_defaultlib PCPU_tb_drop_eggs_time_synth.v ../../../../PCPU.srcs/sim_1/new/PCPU_tb.v 
+# -- Skipping module RAM32X1S_UNIQ_BASE_
+# -- Skipping module RAM32X1S_HD63
+# -- Skipping module RAM32X1S_HD64
+# -- Skipping module RAM32X1S_HD65
+# -- Skipping module RAM32X1S_HD66
+# -- Skipping module RAM32X1S_HD67
+# -- Skipping module RAM32X1S_HD68
+# -- Skipping module RAM32X1S_HD69
+# -- Skipping module RAM32X1S_HD70
+# -- Skipping module RAM32X1S_HD71
+# -- Skipping module RAM32X1S_HD72
+# -- Skipping module RAM32X1S_HD73
+# -- Skipping module RAM32X1S_HD74
+# -- Skipping module RAM32X1S_HD75
+# -- Skipping module RAM32X1S_HD76
+# -- Skipping module RAM32X1S_HD77
+# -- Skipping module RAM32X1S_HD78
+# -- Skipping module RAM32X1S_HD79
+# -- Skipping module RAM32X1S_HD80
+# -- Skipping module RAM32X1S_HD81
+# -- Skipping module RAM32X1S_HD82
+# -- Skipping module RAM32X1S_HD83
+# -- Skipping module RAM32X1S_HD84
+# -- Skipping module RAM32X1S_HD85
+# -- Skipping module RAM32X1S_HD86
+# -- Skipping module RAM32X1S_HD87
+# -- Skipping module RAM32X1S_HD88
+# -- Skipping module RAM32X1S_HD89
+# -- Skipping module RAM32X1S_HD90
+# -- Skipping module RAM32X1S_HD91
+# -- Skipping module RAM32X1S_HD92
+# -- Skipping module RAM32X1S_HD93
+# -- Skipping module dist_mem_gen_0
+# -- Skipping module DMEM
+# -- Skipping module IMEM
+# -- Skipping module PCPU
+# -- Skipping module RegFile
+# -- Skipping module seg7x16
+# -- Skipping module dist_mem_gen_0_dist_mem_gen_v8_0_10
+# -- Skipping module dist_mem_gen_0_dist_mem_gen_v8_0_10_synth
+# -- Skipping module dist_mem_gen_0_rom
+# -- Skipping module glbl
+# -- Skipping module PCPU_tb_drop_eggs
+# 
+# Top level modules:
+# 	glbl
+# 	PCPU_tb_drop_eggs
+# End time: 16:56:26 on Nov 15,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1

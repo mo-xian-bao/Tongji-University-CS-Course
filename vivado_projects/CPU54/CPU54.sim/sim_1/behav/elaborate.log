@@ -1,0 +1,53 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xlinix/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 933c2d9c6cc34fd3af4ba20b28c0a83c --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_10 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot _246tb_ex7_tb_behav xil_defaultlib._246tb_ex7_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/sccomp_dataflow.v" Line 1. Module sccomp_dataflow doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/CU.v" Line 1. Module CU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/datapath.v" Line 1. Module datapath doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/PC.v" Line 1. Module PC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/IMEM.v" Line 1. Module IMEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/RegFile.v" Line 1. Module RegFile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/ALU.v" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/Extender.v" Line 2. Module Extender doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/DMEM.v" Line 1. Module DMEM_with_LDP doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/MDU.v" Line 1. Module MDU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/CP0.v" Line 1. Module CPO doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/MUX.v" Line 1. Module MUX4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/MUX.v" Line 49. Module MUX5 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/sccomp_dataflow.v" Line 1. Module sccomp_dataflow doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/CU.v" Line 1. Module CU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/datapath.v" Line 1. Module datapath doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/PC.v" Line 1. Module PC doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/IMEM.v" Line 1. Module IMEM doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/RegFile.v" Line 1. Module RegFile doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/ALU.v" Line 1. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/Extender.v" Line 2. Module Extender doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/DMEM.v" Line 1. Module DMEM_with_LDP doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/MDU.v" Line 1. Module MDU doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/CP0.v" Line 1. Module CPO doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/MUX.v" Line 1. Module MUX4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/vivado_projects/CPU54/CPU54.srcs/sources_1/new/MUX.v" Line 49. Module MUX5 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CU
+Compiling module xil_defaultlib.PC
+Compiling module dist_mem_gen_v8_0_10.dist_mem_gen_v8_0_10(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.IMEM
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Extender
+Compiling module xil_defaultlib.DMEM_with_LDP
+Compiling module xil_defaultlib.MDU
+Compiling module xil_defaultlib.CPO
+Compiling module xil_defaultlib.MUX4
+Compiling module xil_defaultlib.MUX5
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.sccomp_dataflow
+Compiling module xil_defaultlib._246tb_ex7_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot _246tb_ex7_tb_behav
