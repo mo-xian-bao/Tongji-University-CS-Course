@@ -1,0 +1,315 @@
+MiniOB `CREATE TABLE` 功能源码分析报告 (前六点，含代码示例)
+
+1. 引言
+   `CREATE TABLE` 是 SQL 中用于定义新表结构的核心命令。在 MiniOB 数据库系统中，该功能的实现涉及多个模块，从 SQL 解析到元数据管理，再到存储层的文件创建。本报告旨在简要分析其主要流程和关键组件的前六个阶段。
+
+2. SQL 解析阶段
+   当用户输入 `CREATE TABLE` 语句时，MiniOB 首先通过词法分析器 (lex) 和语法分析器 (yacc) 进行处理。
+   - 语法规则定义在 `实验/5/miniob-main/src/observer/sql/parser/yacc_sql.y` 中。`create_table_stmt` 规则用于解析整个建表语句，而 `attr_def_list` 和 `attr_def` 用于解析列定义：
+     ```yacc
+     create_table_stmt:    /*create table 语句的语法解析树*/
+         CREATE TABLE ID LBRACE attr_def attr_def_list primary_key RBRACE storage_format
+         {
+           $$ = new ParsedSqlNode(SCF_CREATE_TABLE);
+           CreateTableSqlNode &create_table = $$->create_table;
+           create_table.relation_name = $3;
+           // ... (处理 attr_def_list 和 primary_key) ...
+           if ($9 != nullptr) { // storage_format
+             create_table.storage_format = $9;
+           }
+         }
+         ;
+     
+     attr_def_list:
+         /* empty */ { $$ = nullptr; }
+         | attr_def_list COMMA attr_def
+         {
+           if ($1 != nullptr) { $$ = $1; } else { $$ = new vector<AttrInfoSqlNode>; }
+           $$->insert($$->begin(), *$3);
+           delete $3;
+         }
+         ;
+     
+     attr_def:
+         ID type LBRACE number RBRACE 
+         {
+           $$ = new AttrInfoSqlNode;
+           $$->type = (AttrType)$2;
+           $$->name = $1;
+           $$->length = $4;
+         }
+         | ID type
+         {
+           $$ = new AttrInfoSqlNode;
+           $$->type = (AttrType)$2;
+           $$->name = $1;
+           $$->length = 4; // Default length if not specified
+         }
+         ;
+
+     type:
+         INT_T      { $$ = static_cast<int>(AttrType::INTS); }
+         | STRING_T { $$ = static_cast<int>(AttrType::CHARS); }
+         | FLOAT_T  { $$ = static_cast<int>(AttrType::FLOATS); }
+         // ...
+         ;
+     ```
+   - 解析的结果存储在 `CreateTableSqlNode` 和 `AttrInfoSqlNode` 结构体中 (定义于 `实验/5/miniob-main/src/observer/sql/parser/parse_defs.h`)：
+     ```cpp
+     // From experiment/5/miniob-main/src/observer/sql/parser/parse_defs.h
+
+     /**
+      * @brief 描述一个属性
+      */
+     struct AttrInfoSqlNode
+     {
+       AttrType type;    ///< Type of attribute
+       string   name;    ///< Attribute name
+       size_t   length;  ///< Length of attribute
+     };
+
+     /**
+      * @brief 描述一个create table语句
+      */
+     struct CreateTableSqlNode
+     {
+       string                  relation_name;  ///< Relation name
+       vector<AttrInfoSqlNode> attr_infos;     ///< attributes
+       vector<string>          primary_keys;   ///< primary keys
+       string                  storage_format; ///< storage format
+       string                  storage_engine; ///< storage engine
+     };
+     ```
+
+3. 语句对象构建阶段
+   解析得到的 `CreateTableSqlNode` 随后被转换为一个更结构化的语句对象 `CreateTableStmt`。
+   - `CreateTableStmt::create` 静态方法 (位于 `实验/5/miniob-main/src/observer/sql/stmt/create_table_stmt.cpp`) 负责此转换：
+     ```cpp
+     // From experiment/5/miniob-main/src/observer/sql/stmt/create_table_stmt.cpp
+     RC CreateTableStmt::create(Db *db, const CreateTableSqlNode &create_table, Stmt *&stmt)
+     {
+       StorageFormat storage_format = get_storage_format(create_table.storage_format.c_str());
+       if (storage_format == StorageFormat::UNKNOWN_FORMAT) {
+         return RC::INVALID_ARGUMENT;
+       }
+       stmt = new CreateTableStmt(create_table.relation_name, create_table.attr_infos, create_table.primary_keys, storage_format);
+       sql_debug("create table statement: table name %s", create_table.relation_name.c_str());
+       return RC::SUCCESS;
+     }
+     ```
+   - `CreateTableStmt` 类 (定义于 `实验/5/miniob-main/src/observer/sql/stmt/create_table_stmt.h`) 持有建表所需的信息：
+     ```cpp
+     // From experiment/5/miniob-main/src/observer/sql/stmt/create_table_stmt.h
+     class CreateTableStmt : public Stmt
+     {
+     public:
+       CreateTableStmt(const string &table_name, const vector<AttrInfoSqlNode> &attr_infos, const vector<string> &pks,
+           StorageFormat storage_format)
+           : table_name_(table_name), attr_infos_(attr_infos), primary_keys_(pks), storage_format_(storage_format)
+       {}
+       virtual ~CreateTableStmt() = default;
+
+       StmtType type() const override { return StmtType::CREATE_TABLE; }
+
+       const string                  &table_name() const { return table_name_; }
+       const vector<AttrInfoSqlNode> &attr_infos() const { return attr_infos_; }
+       const vector<string>          &primary_keys() const { return primary_keys_; }
+       const StorageFormat            storage_format() const { return storage_format_; }
+
+       static RC            create(Db *db, const CreateTableSqlNode &create_table, Stmt *&stmt);
+       static StorageFormat get_storage_format(const char *format_str);
+
+     private:
+       string                  table_name_;
+       vector<AttrInfoSqlNode> attr_infos_;
+       vector<string>          primary_keys_;
+       StorageFormat           storage_format_;
+     };
+     ```
+
+4. 执行与调度
+   SQL 语句首先被解析成通用的 `ParsedSqlNode`，然后在 `Stmt::create_stmt` (位于 `实验/5/miniob-main/src/observer/sql/stmt/stmt.cpp`) 中，根据类型标志分发给特定语句的 `create` 方法来构建具体的语句对象 (如 `CreateTableStmt`)：
+     ```cpp
+     // From experiment/5/miniob-main/src/observer/sql/stmt/stmt.cpp
+     RC Stmt::create_stmt(Db *db, ParsedSqlNode &sql_node, Stmt *&stmt)
+     {
+       stmt = nullptr;
+
+       switch (sql_node.flag) {
+         // ... other cases ...
+         case SCF_CREATE_TABLE: {
+           return CreateTableStmt::create(db, sql_node.create_table, stmt);
+         }
+         // ... other cases ...
+         default: {
+           LOG_INFO("Command::type %d doesn't need to create statement.", sql_node.flag);
+         } break;
+       }
+       return RC::UNIMPLEMENTED; // Or appropriate RC for default
+     }
+     ```
+   构建好的 `CreateTableStmt` 对象随后会被传递给执行层。在 MiniOB 中，这通常涉及到 `SQLStageEvent` 和专门的 `CreateTableExecutor` (定义于 `实验/5/miniob-main/src/observer/sql/executor/create_table_executor.h` 和 `.cpp`)。
+   `CreateTableExecutor::execute` 方法会从 `SQLStageEvent` 中获取 `CreateTableStmt`，并从当前 `Session` 获取 `Db` 对象，然后调用 `Db::create_table`：
+     ```cpp
+     // From 实验/5/miniob-main/src/observer/sql/executor/create_table_executor.cpp
+     RC CreateTableExecutor::execute(SQLStageEvent *sql_event)
+     {
+       Stmt    *stmt    = sql_event->stmt();
+       Session *session = sql_event->session_event()->session();
+       // ... (ASSERT stmt->type() == StmtType::CREATE_TABLE) ...
+       CreateTableStmt *create_table_stmt = static_cast<CreateTableStmt *>(stmt);
+       
+       RC rc = session->get_current_db()->create_table(
+                   create_table_stmt->table_name().c_str(), 
+                   create_table_stmt->attr_infos(), 
+                   create_table_stmt->primary_keys(), 
+                   create_table_stmt->storage_format()
+                 );
+       return rc;
+     }
+     ```
+   此调用将流程转交给数据库核心层进行处理，即报告的第5点。
+
+5. 数据库层核心处理 (`Db` 类)
+   `Db` 类 (定义于 `实验/5/miniob-main/src/observer/storage/db/db.h` 和 `.cpp`) 代表一个数据库实例，并管理其中的表。
+   - `Db::create_table` 方法是处理建表请求的一个关键入口点：
+     ```cpp
+     // From experiment/5/miniob-main/src/observer/storage/db/db.cpp
+     RC Db::create_table(const char *table_name, span<const AttrInfoSqlNode> attributes, const vector<string>& primary_keys, const StorageFormat storage_format)
+     {
+       RC rc = RC::SUCCESS;
+       // check table_name
+       if (opened_tables_.count(table_name) != 0) {
+         LOG_WARN("%s has been opened before.", table_name);
+         return RC::SCHEMA_TABLE_EXIST;
+       }
+
+       // 文件路径可以移到Table模块
+       string  table_file_path = table_meta_file(path_.c_str(), table_name);
+       Table  *table           = new Table();
+       int32_t table_id        = next_table_id_++; // Assign a new table ID
+       // Call Table::create to do the actual work
+       rc = table->create(this, table_id, table_file_path.c_str(), table_name, path_.c_str(), attributes, primary_keys, storage_format,
+                          get_storage_engine());
+       if (rc != RC::SUCCESS) {
+         LOG_ERROR("Failed to create table %s.", table_name);
+         delete table;
+         return rc;
+       }
+
+       opened_tables_[table_name] = table; // Add to in-memory map of tables
+       LOG_INFO("Create table success. table name=%s, table_id:%d", table_name, table_id);
+       return RC::SUCCESS;
+     }
+     ```
+   它会检查表是否存在，分配表ID，并调用 `Table` 对象的创建逻辑。
+
+6. 表对象与元数据处理 (`Table` 和 `TableMeta` 类)
+   `Table` 类 (位于 `实验/5/miniob-main/src/observer/storage/table/table.h` 和 `.cpp`) 代表一个具体的表。
+   - `Table::create` 方法是实际执行表创建、元数据初始化和存储文件准备的核心：
+     ```cpp
+     // From experiment/5/miniob-main/src/observer/storage/table/table.cpp
+     RC Table::create(Db *db, int32_t table_id, const char *path, const char *name, const char *base_dir,
+         span<const AttrInfoSqlNode> attributes, const vector<string> &primary_keys, StorageFormat storage_format, StorageEngine storage_engine)
+     {
+       if (table_id < 0) { /* ... error handling ... */ return RC::INVALID_ARGUMENT; }
+       if (common::is_blank(name)) { /* ... error handling ... */ return RC::INVALID_ARGUMENT; }
+       if (attributes.size() == 0) { /* ... error handling ... */ return RC::INVALID_ARGUMENT; }
+
+       RC rc = RC::SUCCESS;
+
+       // Create/check meta file
+       int fd = ::open(path, O_WRONLY | O_CREAT | O_EXCL | O_CLOEXEC, 0600);
+       if (fd < 0) {
+         if (EEXIST == errno) { LOG_ERROR("Failed to create table file, it has been created. %s, EEXIST, %s", path, strerror(errno)); return RC::SCHEMA_TABLE_EXIST; }
+         LOG_ERROR("Create table file failed. filename=%s, errmsg=%d:%s", path, errno, strerror(errno)); return RC::IOERR_OPEN;
+       }
+       close(fd);
+
+       // Initialize TableMeta
+       const vector<FieldMeta> *trx_fields = db->trx_kit().trx_fields(); // For system transaction fields
+       if ((rc = table_meta_.init(table_id, name, trx_fields, attributes, primary_keys, storage_format, storage_engine)) != RC::SUCCESS) {
+         LOG_ERROR("Failed to init table meta. name:%s, ret:%d", name, rc);
+         return rc;
+       }
+
+       // Serialize TableMeta to disk
+       fstream fs;
+       fs.open(path, ios_base::out | ios_base::binary);
+       if (!fs.is_open()) { LOG_ERROR("Failed to open file for write. file name=%s, errmsg=%s", path, strerror(errno)); return RC::IOERR_OPEN; }
+       table_meta_.serialize(fs);
+       fs.close();
+
+       db_ = db;
+
+       // Create data file via BufferPoolManager and initialize TableEngine
+       string data_file = table_data_file(base_dir, name);
+       BufferPoolManager &bpm = db->buffer_pool_manager();
+       rc = bpm.create_file(data_file.c_str());
+       if (rc != RC::SUCCESS) { LOG_ERROR("Failed to create disk buffer pool of data file. file name=%s", data_file.c_str()); return rc; }
+       
+       if (table_meta_.storage_engine() == StorageEngine::HEAP) {
+         engine_ = make_unique<HeapTableEngine>(&table_meta_, db_, this);
+       } // ... else if for other engines ...
+       else { rc = RC::UNSUPPORTED; LOG_WARN("Unsupported storage engine type: %d", table_meta_.storage_engine()); return rc; }
+
+       if (OB_SUCC(rc)) {
+          rc = engine_->open(); // Initialize the storage engine part
+          if (rc != RC::SUCCESS) { LOG_WARN("Failed to open table %s due to engine open failed.", data_file.c_str()); }
+       }
+       if (OB_SUCC(rc)) { LOG_INFO("Successfully create table %s:%s", base_dir, name); }
+       return rc;
+     }
+     ```
+   - 此方法内部会调用 `TableMeta::init` (位于 `实验/5/miniob-main/src/observer/storage/table/table_meta.cpp`) 来根据 `AttrInfoSqlNode` 列表初始化表元数据 (`TableMeta`)，并为每一列创建 `FieldMeta` 对象：
+     ```cpp
+     // From experiment/5/miniob-main/src/observer/storage/table/table_meta.cpp
+     RC TableMeta::init(int32_t table_id, const char *name, const vector<FieldMeta> *trx_fields,
+                        span<const AttrInfoSqlNode> attributes, const vector<string> &primary_keys, StorageFormat storage_format,
+                        StorageEngine storage_engine)
+     {
+       if (common::is_blank(name)) { LOG_ERROR("Name cannot be empty"); return RC::INVALID_ARGUMENT; }
+       if (attributes.size() == 0) { LOG_ERROR("Invalid argument. name=%s, field_num=%d", name, attributes.size()); return RC::INVALID_ARGUMENT; }
+
+       RC rc = RC::SUCCESS;
+       int field_offset  = 0;
+       int trx_field_num = 0;
+
+       if (trx_fields != nullptr) { // Handle system transaction fields first
+         trx_fields_ = *trx_fields;
+         fields_.resize(attributes.size() + trx_fields->size());
+         for (size_t i = 0; i < trx_fields->size(); i++) {
+           const FieldMeta &field_meta = (*trx_fields)[i];
+           fields_[i] = FieldMeta(field_meta.name(), field_meta.type(), field_offset, field_meta.len(), false /*visible*/, field_meta.field_id());
+           field_offset += field_meta.len();
+         }
+         trx_field_num = static_cast<int>(trx_fields->size());
+       } else {
+         fields_.resize(attributes.size());
+       }
+       
+       // Initialize user-defined fields
+       for (size_t i = 0; i < attributes.size(); i++) {
+         const AttrInfoSqlNode &attr_info = attributes[i];
+         // fields_[i + trx_field_num] is the current FieldMeta to initialize
+         rc = fields_[i + trx_field_num].init(
+           attr_info.name.c_str(), attr_info.type, field_offset, attr_info.length, true /*visible*/, i /*col_id*/);
+         if (OB_FAIL(rc)) {
+           LOG_ERROR("Failed to init field meta. table name=%s, field name: %s", name, attr_info.name.c_str());
+           return rc;
+         }
+         field_offset += attr_info.length; // Accumulate offset
+       }
+
+       primary_keys_ = primary_keys;
+       record_size_ = field_offset; // Total size of a record
+
+       table_id_ = table_id;
+       name_     = name;
+       storage_format_ = storage_format;
+       storage_engine_ = storage_engine;
+       LOG_INFO("Sussessfully initialized table meta. table id=%d, name=%s", table_id, name);
+       return RC::SUCCESS;
+     }
+     ```
+   `FieldMeta` (定义于 `实验/5/miniob-main/src/observer/storage/field/field_meta.h`) 存储了列的详细属性，如类型、长度、名称以及在物理记录中的偏移量。 
