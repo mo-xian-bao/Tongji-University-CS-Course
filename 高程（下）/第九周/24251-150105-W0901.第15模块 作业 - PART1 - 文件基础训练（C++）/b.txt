@@ -1,0 +1,3 @@
+00000000  68 65 6c 6c 6f 20 41 42 - 43 44 45 46 47 48 49 4a     hello.ABCDEFGHIJ
+00000010  aa 4b 4c 4d 4e 4f 50 51 0d - 0a 52 53 54 55 56 57 58     KLMNOPQ..RSTUVWX
+00000020  59 5a                                                 YZ
