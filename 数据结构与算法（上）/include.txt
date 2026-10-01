@@ -1,0 +1,7 @@
+,
+                "d:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++",
+                "d:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++/mingw32",
+                "d:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include/c++/backward",
+                "d:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include",
+                "d:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/../../../../include",
+                "d:\\mingw\\bin\\../lib/gcc/mingw32/6.3.0/include-fixed"

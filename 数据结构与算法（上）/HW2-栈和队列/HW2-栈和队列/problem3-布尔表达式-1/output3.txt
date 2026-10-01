@@ -1,0 +1,10 @@
+Expression 1: F
+Expression 2: F
+Expression 3: F
+Expression 4: F
+Expression 5: V
+Expression 6: F
+Expression 7: F
+Expression 8: V
+Expression 9: F
+Expression 10: F

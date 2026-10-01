@@ -1,0 +1,15 @@
+{
+    "background.windowBackgrounds": [
+        "d:/desktop/微信图片_20241018124323.png"
+    ],
+    "background.backgroundSize": [
+        "Contain",
+        "Cover",
+        "Cover",
+        "Cover"
+    ],
+    "files.associations": {
+        "random": "cpp",
+        "string": "cpp"
+    }
+}

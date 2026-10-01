@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>独木桥 PV 操作可视化小游戏</title>
+  <style>
+    :root {
+      --bg: #f1f7fb;
+      --panel: rgba(255,255,255,.94);
+      --line: #d5e1ea;
+      --ink: #163046;
+      --muted: #68788d;
+      --blue: #1d63d8;
+      --green: #198a53;
+      --amber: #d88900;
+      --red: #cb3f3f;
+      --shadow: 0 18px 34px rgba(22, 48, 70, .12);
+      font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(90deg, rgba(37, 94, 136, .06) 1px, transparent 1px),
+        linear-gradient(rgba(37, 94, 136, .06) 1px, transparent 1px),
+        var(--bg);
+      background-size: 26px 26px;
+      color: var(--ink);
+    }
+
+    .app {
+      width: min(1460px, calc(100vw - 28px));
+      margin: 0 auto;
+      padding: 18px 0 22px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(260px, 1fr) auto;
+      gap: 16px;
+      align-items: end;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(24px, 3vw, 36px);
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .top-stats {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(84px, 1fr));
+      gap: 8px;
+      min-width: min(590px, 100%);
+    }
+
+    .stat {
+      background: rgba(255,255,255,.88);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px 10px;
+      box-shadow: 0 4px 12px rgba(20, 34, 58, .06);
+    }
+
+    .label {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+
+    .value {
+      font-size: 19px;
+      font-weight: 900;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 320px minmax(540px, 1fr) 336px;
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .panel-title {
+      padding: 11px 14px;
+      min-height: 44px;
+      border-bottom: 1px solid var(--line);
+      background: #f9fbfd;
+      font-weight: 900;
+    }
+
+    .panel-body {
+      padding: 12px 14px 14px;
+    }
+
+    .mode-list {
+      display: grid;
+      gap: 9px;
+    }
+
+    .mode-btn {
+      width: 100%;
+      min-height: 84px;
+      padding: 11px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      text-align: left;
+      color: var(--ink);
+      cursor: pointer;
+      transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    }
+
+    .mode-btn:hover {
+      transform: translateY(-1px);
+      border-color: #98b2c9;
+    }
+
+    .mode-btn.active {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(29, 99, 216, .15);
+    }
+
+    .mode-name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 15px;
+      font-weight: 900;
+      margin-bottom: 6px;
+      gap: 8px;
+    }
+
+    .mode-text {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 22px;
+      min-width: 56px;
+      padding: 0 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .pill.green { background: #ddf7e8; color: #0d7a49; }
+    .pill.blue { background: #dfeafe; color: #1d55c7; }
+    .pill.amber { background: #fff0d6; color: #945d00; }
+    .pill.gray { background: #edf2f8; color: #55657b; }
+
+    .controls {
+      display: grid;
+      gap: 12px;
+    }
+
+    .control-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .cmd, .spawn-btn, input[type="range"] { font: inherit; }
+
+    .cmd, .spawn-btn {
+      height: 40px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      cursor: pointer;
+      font-weight: 900;
+      transition: background .18s ease, border-color .18s ease;
+    }
+
+    .cmd:hover, .spawn-btn:hover {
+      background: #f4f8fc;
+      border-color: #9cb6cb;
+    }
+
+    .cmd.primary {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: #fff;
+    }
+
+    .cmd.danger {
+      border-color: #f0b6b6;
+      color: #b62626;
+    }
+
+    .spawn-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .spawn-btn.black {
+      background: #233243;
+      color: #fff;
+    }
+
+    .spawn-btn.white {
+      background: #fff;
+      color: #223043;
+      border-color: #b8c8d8;
+    }
+
+    .slider-row {
+      display: grid;
+      grid-template-columns: 76px 1fr 42px;
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--blue);
+    }
+
+    .stage-panel {
+      min-height: 724px;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    .stage-head {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      background: #f8fbfd;
+    }
+
+    .headline {
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .algorithm-note {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .status-badge {
+      min-width: 128px;
+      height: 34px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 900;
+      background: var(--green);
+      white-space: nowrap;
+    }
+
+    .status-badge.warn { background: var(--amber); }
+
+    .stage {
+      position: relative;
+      min-height: 666px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 17% 16%, rgba(40, 180, 99, .18), transparent 20%),
+        radial-gradient(circle at 82% 19%, rgba(240, 197, 85, .18), transparent 24%),
+        radial-gradient(circle at 18% 82%, rgba(65, 130, 212, .12), transparent 22%),
+        radial-gradient(circle at 86% 84%, rgba(40, 180, 99, .18), transparent 22%),
+        linear-gradient(180deg, #dff0d8 0%, #e7f6e5 38%, #e5eef7 38%, #d4e7f5 100%);
+    }
+
+    .river {
+      position: absolute;
+      inset: 36% 0 19% 0;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.2), rgba(255,255,255,0) 20%, rgba(255,255,255,.18) 50%, rgba(255,255,255,0) 80%),
+        linear-gradient(180deg, #4aa0df, #3b8fd3 55%, #347bc4);
+      box-shadow: inset 0 18px 26px rgba(255,255,255,.14), inset 0 -18px 24px rgba(0,0,0,.08);
+    }
+
+    .bank-label {
+      position: absolute;
+      top: 12%;
+      min-width: 82px;
+      height: 32px;
+      padding: 0 10px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      background: rgba(255,255,255,.92);
+      border: 1px solid var(--line);
+      box-shadow: 0 6px 16px rgba(20, 34, 58, .12);
+      z-index: 6;
+    }
+
+    .bank-east { left: 10%; }
+    .bank-west { right: 10%; }
+
+    .bridge {
+      position: absolute;
+      left: 22%;
+      right: 22%;
+      top: 43.5%;
+      height: 44px;
+      border-radius: 22px;
+      background:
+        linear-gradient(180deg, #c48a52, #9f6840);
+      border: 3px solid rgba(115, 71, 37, .38);
+      box-shadow: 0 8px 18px rgba(70, 48, 22, .24);
+      z-index: 5;
+    }
+
+    .bridge::before {
+      content: "";
+      position: absolute;
+      inset: 14px 12px;
+      border-top: 3px dashed rgba(255,255,255,.45);
+    }
+
+    .bridge-sign {
+      position: absolute;
+      top: 34%;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 152px;
+      height: 36px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.94);
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 18px rgba(20, 34, 58, .12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      z-index: 6;
+    }
+
+    .queue-zone {
+      position: absolute;
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      z-index: 4;
+      pointer-events: none;
+    }
+
+    .queue-east {
+      top: 51%;
+      left: 8%;
+      transform: translateY(-50%);
+    }
+
+    .queue-west {
+      top: 51%;
+      right: 8%;
+      transform: translateY(-50%);
+      flex-direction: row-reverse;
+    }
+
+    .sheep {
+      position: absolute;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 900;
+      box-shadow: 0 10px 18px rgba(0,0,0,.22);
+      z-index: 7;
+      transition: transform .08s linear, opacity .18s ease, filter .18s ease;
+    }
+
+    .sheep.black {
+      background: #1f2937;
+      color: #fff4e6;
+      border: 3px solid rgba(255,255,255,.76);
+    }
+
+    .sheep.white {
+      background: #fffdf7;
+      color: #1f2937;
+      border: 3px solid #d6dde7;
+    }
+
+    .sheep.waiting { filter: saturate(.7); opacity: .9; }
+    .sheep.crossing { box-shadow: 0 0 0 4px rgba(25, 138, 83, .2), 0 10px 18px rgba(0,0,0,.22); }
+
+    .mini-sheep {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,.84);
+      box-shadow: 0 3px 8px rgba(0,0,0,.18);
+    }
+
+    .mini-sheep.black { background: #1f2937; }
+    .mini-sheep.white { background: #fffef8; border-color: #d4dbe6; }
+
+    .event {
+      position: absolute;
+      left: 14px;
+      bottom: 14px;
+      width: min(540px, calc(100% - 28px));
+      min-height: 54px;
+      border-radius: 8px;
+      background: rgba(255,255,255,.92);
+      border: 1px solid var(--line);
+      box-shadow: 0 8px 18px rgba(20,34,58,.14);
+      padding: 10px 12px;
+      font-size: 13px;
+      line-height: 1.45;
+      z-index: 8;
+    }
+
+    .event strong { color: var(--blue); }
+
+    .bridge-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .bridge-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 9px 8px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .bridge-card .name {
+      font-size: 18px;
+      font-weight: 900;
+      margin-bottom: 4px;
+    }
+
+    .bridge-card .desc {
+      min-height: 18px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .queue-box {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .queue-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--line);
+      background: #f9fbfd;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .queue-body {
+      min-height: 42px;
+      padding: 8px 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-content: flex-start;
+    }
+
+    .ticket {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 34px;
+      height: 24px;
+      padding: 0 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .ticket.black {
+      background: #202d3f;
+      color: #fff;
+    }
+
+    .ticket.white {
+      background: #fff;
+      color: #203145;
+      border: 1px solid #bccada;
+    }
+
+    .log {
+      height: 176px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #101827;
+      color: #dfe7f5;
+      padding: 9px 10px;
+      font-family: Consolas, "Cascadia Mono", monospace;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .log-line { margin-bottom: 3px; }
+
+    .hint-list {
+      display: grid;
+      gap: 9px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .hint-list strong { color: var(--ink); }
+
+    @media (max-width: 1180px) {
+      header, .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .top-stats {
+        min-width: 0;
+      }
+
+      .stage-panel {
+        min-height: 640px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .app {
+        width: calc(100vw - 18px);
+        padding-top: 10px;
+      }
+
+      .top-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .control-row,
+      .spawn-grid,
+      .bridge-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .stage-head {
+        grid-template-columns: 1fr;
+      }
+
+      .stage {
+        min-height: 540px;
+      }
+
+      .bridge {
+        left: 14%;
+        right: 14%;
+      }
+
+      .bank-east { left: 4%; }
+      .bank-west { right: 4%; }
+
+      .queue-east { left: 3%; }
+      .queue-west { right: 3%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <h1>独木桥 PV 操作可视化小游戏</h1>
+        <p class="subtitle">观察黑羊、白羊如何争用独木桥，比较“同向成组”“一次一只”“一次一只且公平”三种解法。</p>
+      </div>
+      <div class="top-stats" aria-label="统计数据">
+        <div class="stat"><span class="label">黑羊已过</span><span class="value" id="passedBlack">0</span></div>
+        <div class="stat"><span class="label">白羊已过</span><span class="value" id="passedWhite">0</span></div>
+        <div class="stat"><span class="label">东侧等待</span><span class="value" id="waitingBlack">0</span></div>
+        <div class="stat"><span class="label">西侧等待</span><span class="value" id="waitingWhite">0</span></div>
+        <div class="stat"><span class="label">桥上数量</span><span class="value" id="onBridge">0</span></div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel">
+        <div class="panel-title">三种解法</div>
+        <div class="panel-body">
+          <div class="mode-list">
+            <button class="mode-btn active" data-mode="group">
+              <span class="mode-name">16-1 同向成组 <span class="pill green">无死锁</span></span>
+              <span class="mode-text">第一只同方向羊申请桥的方向使用权，后续同方向羊可以连续通过。</span>
+            </button>
+            <button class="mode-btn" data-mode="single">
+              <span class="mode-name">16-2 一次一只 <span class="pill amber">最直接</span></span>
+              <span class="mode-text">不区分黑羊白羊，谁拿到 bridge 谁先过，桥上同一时刻只允许一只羊。</span>
+            </button>
+            <button class="mode-btn" data-mode="fair">
+              <span class="mode-name">16-3 公平轮转 <span class="pill blue">防饥饿</span></span>
+              <span class="mode-text">桥上仍然一次一只，但双方都有人等时，根据 turn 轮流获得过桥机会。</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="panel-title">控制台</div>
+        <div class="panel-body controls">
+          <div class="control-row">
+            <button class="cmd primary" id="toggleAuto">开始自动放羊</button>
+            <button class="cmd" id="stepBtn">单步推进</button>
+          </div>
+          <div class="control-row">
+            <button class="cmd" id="burstBtn">对向冲突测试</button>
+            <button class="cmd danger" id="resetBtn">重置</button>
+          </div>
+          <div class="spawn-grid">
+            <button class="spawn-btn black" id="spawnBlack">放一只黑羊</button>
+            <button class="spawn-btn white" id="spawnWhite">放一只白羊</button>
+          </div>
+          <div class="slider-row">
+            <span>到达速度</span>
+            <input id="spawnRate" type="range" min="1" max="9" value="5">
+            <strong id="spawnRateLabel">5</strong>
+          </div>
+          <div class="slider-row">
+            <span>过桥速度</span>
+            <input id="crossRate" type="range" min="1" max="9" value="5">
+            <strong id="crossRateLabel">5</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel stage-panel">
+        <div class="stage-head">
+          <div>
+            <div class="headline" id="modeTitle">16-1 同方向可成组通过</div>
+            <div class="algorithm-note" id="modeNote">第一只黑羊或白羊占用 bridge，方向一致的后续羊可以连续通过；最后一只离开后再释放方向使用权。</div>
+          </div>
+          <div class="status-badge" id="statusBadge">运行正常</div>
+        </div>
+
+        <div class="stage" id="stage">
+          <div class="river"></div>
+          <div class="bank-label bank-east">河东 黑羊</div>
+          <div class="bank-label bank-west">河西 白羊</div>
+          <div class="bridge-sign" id="bridgeSign">桥空闲</div>
+          <div class="bridge"></div>
+          <div class="queue-zone queue-east" id="eastQueueStage"></div>
+          <div class="queue-zone queue-west" id="westQueueStage"></div>
+          <div class="event" id="eventBox"><strong>目标：</strong>切换三种解法，观察谁能上桥、谁要等待，以及公平策略何时切换 turn。</div>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <div class="panel-title">桥状态</div>
+        <div class="panel-body">
+          <div class="bridge-cards">
+            <div class="bridge-card">
+              <div class="name">bridge</div>
+              <div class="desc" id="bridgeOwnerText">空闲</div>
+            </div>
+            <div class="bridge-card">
+              <div class="name">turn</div>
+              <div class="desc" id="turnText">仅公平模式启用</div>
+            </div>
+          </div>
+
+          <div class="queue-box">
+            <div class="queue-head"><span>东侧黑羊队列</span><span id="eastQueueCount">0</span></div>
+            <div class="queue-body" id="eastQueue"></div>
+          </div>
+
+          <div class="queue-box">
+            <div class="queue-head"><span>西侧白羊队列</span><span id="westQueueCount">0</span></div>
+            <div class="queue-body" id="westQueue"></div>
+          </div>
+
+          <div class="log" id="log"></div>
+        </div>
+        <div class="panel-title">观察要点</div>
+        <div class="panel-body">
+          <div class="hint-list" id="hintList"></div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script>
+    const sideInfo = {
+      black: { label: "黑羊", direction: "河东→河西", colorClass: "black" },
+      white: { label: "白羊", direction: "河西→河东", colorClass: "white" }
+    };
+
+    const modeInfo = {
+      group: {
+        title: "16-1 同方向可成组通过",
+        note: "第一只黑羊或白羊占用 bridge，方向一致的后续羊可以连续通过；最后一只离开后再释放方向使用权。",
+        hints: [
+          ["方向使用权", "bridge 被某一侧占用后，对侧必须等待。"],
+          ["同向成组", "桥上可以同时存在多只同方向羊，所以效率较高。"],
+          ["无死锁但不绝对公平", "若某一侧持续来羊，另一侧可能长时间等不到桥。"]
+        ]
+      },
+      single: {
+        title: "16-2 一次只能过一只",
+        note: "黑羊、白羊都必须先申请同一个 bridge；谁先拿到，谁先独占桥直到走完。",
+        hints: [
+          ["单桥互斥", "桥上永远只有一只羊，最容易理解。"],
+          ["没有方向组队", "后续同方向羊也得一只一只重新申请。"],
+          ["不保证公平", "先抢到 bridge 的一侧可能连续占优。"]
+        ]
+      },
+      fair: {
+        title: "16-3 一次一只且公平轮转",
+        note: "occupied 表示桥是否被占用，turn 表示当双方都有人等待时，下一个应该优先让哪一侧上桥。",
+        hints: [
+          ["occupied", "桥上同一时刻仍然只允许一只羊。"],
+          ["turn", "如果对侧有人等待，当前羊离开后把机会交给对侧。"],
+          ["避免饥饿", "双方只要都在等，就会轮流获得过桥机会。"]
+        ]
+      }
+    };
+
+    const state = {
+      mode: "group",
+      sheep: [],
+      nextId: 1,
+      auto: false,
+      spawnTimer: 0,
+      bridgeOwner: null,
+      onBridgeBlack: 0,
+      onBridgeWhite: 0,
+      passedBlack: 0,
+      passedWhite: 0,
+      turn: "black",
+      lastTime: performance.now()
+    };
+
+    const stage = document.getElementById("stage");
+    const passedBlackEl = document.getElementById("passedBlack");
+    const passedWhiteEl = document.getElementById("passedWhite");
+    const waitingBlackEl = document.getElementById("waitingBlack");
+    const waitingWhiteEl = document.getElementById("waitingWhite");
+    const onBridgeEl = document.getElementById("onBridge");
+    const modeTitle = document.getElementById("modeTitle");
+    const modeNote = document.getElementById("modeNote");
+    const statusBadge = document.getElementById("statusBadge");
+    const bridgeSign = document.getElementById("bridgeSign");
+    const bridgeOwnerText = document.getElementById("bridgeOwnerText");
+    const turnText = document.getElementById("turnText");
+    const eventBox = document.getElementById("eventBox");
+    const logEl = document.getElementById("log");
+    const hintList = document.getElementById("hintList");
+    const eastQueue = document.getElementById("eastQueue");
+    const westQueue = document.getElementById("westQueue");
+    const eastQueueStage = document.getElementById("eastQueueStage");
+    const westQueueStage = document.getElementById("westQueueStage");
+    const eastQueueCount = document.getElementById("eastQueueCount");
+    const westQueueCount = document.getElementById("westQueueCount");
+    const spawnRate = document.getElementById("spawnRate");
+    const spawnRateLabel = document.getElementById("spawnRateLabel");
+    const crossRate = document.getElementById("crossRate");
+    const crossRateLabel = document.getElementById("crossRateLabel");
+    const toggleAuto = document.getElementById("toggleAuto");
+
+    function addLog(text) {
+      const line = document.createElement("div");
+      line.className = "log-line";
+      const time = new Date().toLocaleTimeString("zh-CN", { hour12: false });
+      line.textContent = `[${time}] ${text}`;
+      logEl.prepend(line);
+      while (logEl.children.length > 72) logEl.lastChild.remove();
+    }
+
+    function setEvent(html) {
+      eventBox.innerHTML = html;
+    }
+
+    function reset() {
+      for (const item of state.sheep) {
+        if (item.el) item.el.remove();
+      }
+      state.sheep = [];
+      state.nextId = 1;
+      state.spawnTimer = 0;
+      state.bridgeOwner = null;
+      state.onBridgeBlack = 0;
+      state.onBridgeWhite = 0;
+      state.passedBlack = 0;
+      state.passedWhite = 0;
+      state.turn = "black";
+      setEvent("<strong>已重置：</strong>你可以手动放黑羊、白羊，或者开启自动放羊观察桥资源如何变化。");
+      addLog("重置独木桥模拟器");
+      render();
+    }
+
+    function setMode(mode) {
+      state.mode = mode;
+      document.querySelectorAll(".mode-btn").forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.mode === mode);
+      });
+      modeTitle.textContent = modeInfo[mode].title;
+      modeNote.textContent = modeInfo[mode].note;
+      reset();
+      addLog(`切换到 ${modeInfo[mode].title}`);
+    }
+
+    function createSheep(type) {
+      const info = sideInfo[type];
+      const sheep = {
+        id: state.nextId++,
+        type,
+        phase: "waiting",
+        progress: 0,
+        waitAge: 0,
+        el: document.createElement("div")
+      };
+      sheep.el.className = `sheep ${info.colorClass} waiting`;
+      sheep.el.textContent = sheep.id;
+      stage.appendChild(sheep.el);
+      state.sheep.push(sheep);
+      addLog(`${info.label} #${sheep.id} 到达，方向 ${info.direction}`);
+      setEvent(`<strong>${info.label} #${sheep.id}</strong> 到达：准备申请独木桥。`);
+      tryStartSheep();
+      render();
+    }
+
+    function burstConflict() {
+      const pattern = ["black", "white", "black", "white", "black", "white"];
+      pattern.forEach((type, index) => setTimeout(() => createSheep(type), index * 110));
+    }
+
+    function waitingOf(type) {
+      return state.sheep.filter(item => item.type === type && item.phase === "waiting").length;
+    }
+
+    function startCrossing(sheep) {
+      sheep.phase = "crossing";
+      sheep.progress = 0;
+      sheep.el.classList.remove("waiting");
+      sheep.el.classList.add("crossing");
+      if (sheep.type === "black") {
+        state.onBridgeBlack += 1;
+      } else {
+        state.onBridgeWhite += 1;
+      }
+      state.bridgeOwner = sheep.type;
+      addLog(`${sideInfo[sheep.type].label} #${sheep.id} 上桥`);
+    }
+
+    function finishCrossing(sheep) {
+      if (sheep.type === "black") {
+        state.onBridgeBlack = Math.max(0, state.onBridgeBlack - 1);
+        state.passedBlack += 1;
+      } else {
+        state.onBridgeWhite = Math.max(0, state.onBridgeWhite - 1);
+        state.passedWhite += 1;
+      }
+
+      if (state.mode === "group") {
+        if (state.onBridgeBlack === 0 && state.onBridgeWhite === 0) {
+          state.bridgeOwner = null;
+        }
+      } else if (state.mode === "single") {
+        state.bridgeOwner = null;
+      } else {
+        state.bridgeOwner = null;
+        if (waitingOf(sheep.type === "black" ? "white" : "black") > 0) {
+          state.turn = sheep.type === "black" ? "white" : "black";
+        } else if (waitingOf(sheep.type) > 0) {
+          state.turn = sheep.type;
+        }
+      }
+
+      sheep.phase = "done";
+      sheep.el.style.opacity = "0";
+      setTimeout(() => sheep.el.remove(), 220);
+      state.sheep = state.sheep.filter(item => item !== sheep);
+      addLog(`${sideInfo[sheep.type].label} #${sheep.id} 过桥完成`);
+      setEvent(`<strong>${sideInfo[sheep.type].label} #${sheep.id}</strong> 已过桥，${state.bridgeOwner ? `当前桥方向仍由${sideInfo[state.bridgeOwner].label}占用。` : "独木桥重新可竞争。"} `);
+      tryStartSheep();
+    }
+
+    function tryStartSheep() {
+      if (state.mode === "group") {
+        for (const sheep of state.sheep) {
+          if (sheep.phase !== "waiting") continue;
+          if (state.bridgeOwner === null || state.bridgeOwner === sheep.type) {
+            startCrossing(sheep);
+          }
+        }
+        return;
+      }
+
+      if (state.mode === "single") {
+        if (state.bridgeOwner !== null) return;
+        const next = state.sheep.find(item => item.phase === "waiting");
+        if (next) startCrossing(next);
+        return;
+      }
+
+      if (state.bridgeOwner !== null) return;
+      const waiting = state.sheep.filter(item => item.phase === "waiting");
+      if (!waiting.length) return;
+      const preferred = waiting.find(item => item.type === state.turn);
+      const chosen = preferred || waiting[0];
+      startCrossing(chosen);
+    }
+
+    function sheepPosition(sheep) {
+      const p = sheep.phase === "crossing" ? sheep.progress : 0;
+      const waitShift = Math.min(9, sheep.waitAge / 900);
+      if (sheep.type === "black") {
+        if (sheep.phase === "waiting") return { x: 14 + waitShift, y: 51, rot: 0 };
+        return { x: 14 + p * 72, y: 51, rot: 0 };
+      }
+      if (sheep.phase === "waiting") return { x: 86 - waitShift, y: 51, rot: 180 };
+      return { x: 86 - p * 72, y: 51, rot: 180 };
+    }
+
+    function renderSheep() {
+      for (const sheep of state.sheep) {
+        const pos = sheepPosition(sheep);
+        sheep.el.style.left = `${pos.x}%`;
+        sheep.el.style.top = `${pos.y}%`;
+        sheep.el.style.transform = `translate(-50%, -50%) rotate(${pos.rot}deg)`;
+      }
+    }
+
+    function renderQueues() {
+      const blackWaiting = state.sheep.filter(item => item.type === "black" && item.phase === "waiting");
+      const whiteWaiting = state.sheep.filter(item => item.type === "white" && item.phase === "waiting");
+
+      eastQueue.innerHTML = "";
+      eastQueueStage.innerHTML = "";
+      blackWaiting.forEach(item => {
+        const ticket = document.createElement("span");
+        ticket.className = "ticket black";
+        ticket.textContent = `#${item.id}`;
+        eastQueue.appendChild(ticket);
+      });
+      blackWaiting.slice(0, 8).forEach(() => {
+        const mini = document.createElement("div");
+        mini.className = "mini-sheep black";
+        eastQueueStage.appendChild(mini);
+      });
+
+      westQueue.innerHTML = "";
+      westQueueStage.innerHTML = "";
+      whiteWaiting.forEach(item => {
+        const ticket = document.createElement("span");
+        ticket.className = "ticket white";
+        ticket.textContent = `#${item.id}`;
+        westQueue.appendChild(ticket);
+      });
+      whiteWaiting.slice(0, 8).forEach(() => {
+        const mini = document.createElement("div");
+        mini.className = "mini-sheep white";
+        westQueueStage.appendChild(mini);
+      });
+
+      eastQueueCount.textContent = blackWaiting.length;
+      westQueueCount.textContent = whiteWaiting.length;
+    }
+
+    function renderStats() {
+      const blackWaiting = waitingOf("black");
+      const whiteWaiting = waitingOf("white");
+      const bridgeCount = state.onBridgeBlack + state.onBridgeWhite;
+
+      passedBlackEl.textContent = state.passedBlack;
+      passedWhiteEl.textContent = state.passedWhite;
+      waitingBlackEl.textContent = blackWaiting;
+      waitingWhiteEl.textContent = whiteWaiting;
+      onBridgeEl.textContent = bridgeCount;
+
+      bridgeOwnerText.textContent = state.bridgeOwner ? `${sideInfo[state.bridgeOwner].label} 占用` : "空闲";
+      if (state.mode === "fair") {
+        turnText.textContent = state.turn === "black" ? "轮到黑羊优先" : "轮到白羊优先";
+      } else {
+        turnText.textContent = "仅公平模式启用";
+      }
+
+      if (state.bridgeOwner === null) {
+        bridgeSign.textContent = "桥空闲";
+      } else if (state.mode === "group") {
+        bridgeSign.textContent = `${sideInfo[state.bridgeOwner].label} 方向通行中`;
+      } else {
+        bridgeSign.textContent = `${sideInfo[state.bridgeOwner].label} 正在过桥`;
+      }
+
+      statusBadge.className = "status-badge";
+      const bothWaiting = blackWaiting > 0 && whiteWaiting > 0;
+      if (bothWaiting && bridgeCount > 0) {
+        statusBadge.classList.add("warn");
+        statusBadge.textContent = "双向排队";
+      } else {
+        statusBadge.textContent = "运行正常";
+      }
+    }
+
+    function renderHints() {
+      hintList.innerHTML = "";
+      for (const [title, text] of modeInfo[state.mode].hints) {
+        const row = document.createElement("div");
+        row.innerHTML = `<strong>${title}</strong>：${text}`;
+        hintList.appendChild(row);
+      }
+    }
+
+    function render() {
+      renderSheep();
+      renderQueues();
+      renderStats();
+      renderHints();
+    }
+
+    function step(dt) {
+      const crossSpeed = Number(crossRate.value);
+      const progressDelta = dt * (0.000085 + crossSpeed * 0.000022);
+
+      for (const sheep of [...state.sheep]) {
+        if (sheep.phase === "waiting") {
+          sheep.waitAge += dt;
+        }
+        if (sheep.phase === "crossing") {
+          sheep.progress += progressDelta;
+          if (sheep.progress >= 1) finishCrossing(sheep);
+        }
+      }
+
+      if (state.auto) {
+        const interval = 1900 - Number(spawnRate.value) * 155;
+        state.spawnTimer += dt;
+        while (state.spawnTimer >= interval) {
+          state.spawnTimer -= interval;
+          createSheep(Math.random() > 0.5 ? "black" : "white");
+        }
+      }
+
+      tryStartSheep();
+    }
+
+    function tick(now) {
+      const dt = Math.min(50, now - state.lastTime);
+      state.lastTime = now;
+      step(dt);
+      render();
+      requestAnimationFrame(tick);
+    }
+
+    document.querySelectorAll(".mode-btn").forEach(btn => {
+      btn.addEventListener("click", () => setMode(btn.dataset.mode));
+    });
+
+    document.getElementById("spawnBlack").addEventListener("click", () => createSheep("black"));
+    document.getElementById("spawnWhite").addEventListener("click", () => createSheep("white"));
+    document.getElementById("burstBtn").addEventListener("click", burstConflict);
+    document.getElementById("resetBtn").addEventListener("click", reset);
+    document.getElementById("stepBtn").addEventListener("click", () => {
+      step(380);
+      render();
+    });
+
+    toggleAuto.addEventListener("click", () => {
+      state.auto = !state.auto;
+      toggleAuto.textContent = state.auto ? "暂停自动放羊" : "开始自动放羊";
+      toggleAuto.classList.toggle("primary", !state.auto);
+      setEvent(state.auto
+        ? "<strong>自动放羊已开启：</strong>观察在持续到达压力下，桥的方向控制与公平性如何变化。"
+        : "<strong>自动放羊已暂停：</strong>现在可以手动安排黑羊和白羊的到达顺序。");
+    });
+
+    spawnRate.addEventListener("input", () => {
+      spawnRateLabel.textContent = spawnRate.value;
+    });
+    crossRate.addEventListener("input", () => {
+      crossRateLabel.textContent = crossRate.value;
+    });
+
+    function seed() {
+      render();
+      addLog("小游戏已加载");
+      ["black", "white", "black", "white"].forEach((type, index) => {
+        setTimeout(() => createSheep(type), index * 240);
+      });
+    }
+
+    seed();
+    requestAnimationFrame(tick);
+  </script>
+</body>
+</html>

@@ -1,0 +1,974 @@
+973
+push 9367
+pop
+push 6695
+push 9038
+push 5309
+push 7554
+push 5420
+pop
+push 247
+pop
+push 6212
+push 1193
+push 9102
+push 1634
+push 1533
+push 1930
+push 9714
+push 1037
+pop
+push 8662
+push 8662
+push 247
+push 3690
+push 6142
+push 4004
+push 5416
+push 2109
+push 5170
+push 3226
+push 1151
+push 3774
+push 3860
+push 1810
+push 1314
+push 4709
+push 9102
+push 711
+push 3584
+push 158
+push 9142
+push 4395
+push 8890
+push 3213
+push 6914
+push 3226
+push 7257
+push 3538
+push 7621
+push 6809
+push 2862
+pop
+push 7974
+push 133
+push 8264
+push 9142
+push 502
+pop
+push 3819
+pop
+pop
+push 1930
+push 4842
+pop
+push 6689
+push 6781
+push 3039
+push 8262
+push 5421
+push 9592
+push 3774
+push 5420
+push 6789
+push 5934
+push 4191
+push 7357
+push 8262
+push 8807
+push 1758
+push 8055
+push 4117
+push 3259
+push 1686
+push 3584
+push 2862
+push 3538
+push 1674
+pop
+push 3584
+push 408
+pop
+push 858
+pop
+push 1506
+push 9626
+push 1314
+push 2297
+push 6142
+push 3819
+push 7593
+push 3042
+push 5170
+push 8758
+pop
+push 3103
+pop
+push 3790
+push 5848
+push 8055
+push 2330
+push 8755
+pop
+push 2862
+push 8649
+pop
+pop
+push 5894
+push 246
+push 2639
+push 9986
+push 7357
+push 5379
+pop
+pop
+push 5416
+push 7938
+push 7357
+push 3709
+push 1238
+push 208
+push 2684
+pop
+push 2088
+push 2639
+push 133
+pop
+push 5934
+push 8149
+pop
+push 4117
+pop
+push 6694
+push 7492
+push 3070
+pop
+push 158
+push 4264
+push 4702
+push 2844
+push 5934
+push 4037
+push 9518
+push 1506
+pop
+push 3103
+push 8262
+push 8835
+push 7257
+push 792
+push 4709
+push 3989
+pop
+pop
+push 8262
+push 1686
+push 1396
+pop
+push 4702
+pop
+pop
+push 2259
+push 7938
+push 5326
+push 2768
+push 2970
+push 1990
+pop
+push 9498
+push 9262
+pop
+pop
+push 2684
+push 4004
+push 1938
+push 7624
+pop
+push 4191
+push 158
+pop
+push 9102
+push 1634
+push 2259
+pop
+pop
+push 7621
+push 502
+pop
+push 2927
+push 2927
+push 9262
+push 2312
+push 2218
+push 2844
+push 3774
+pop
+pop
+push 7593
+pop
+pop
+push 7943
+push 4105
+push 119
+push 6694
+push 6142
+push 8662
+push 2844
+push 6142
+pop
+pop
+push 4191
+pop
+push 5326
+push 502
+pop
+pop
+pop
+push 4037
+pop
+push 6487
+push 6715
+push 3709
+push 7554
+push 4191
+push 2297
+push 3584
+push 9262
+push 4117
+push 9770
+pop
+pop
+push 8203
+push 1314
+push 711
+push 381
+push 5934
+pop
+push 1810
+push 6623
+pop
+push 3709
+push 9592
+push 1686
+push 1990
+push 4702
+push 2088
+push 7624
+push 3860
+push 6789
+pop
+push 9668
+pop
+push 6487
+push 1674
+push 4117
+push 2684
+push 4227
+pop
+pop
+push 4769
+pop
+push 1396
+pop
+pop
+push 8835
+push 8264
+pop
+pop
+push 9038
+push 3690
+pop
+pop
+pop
+push 8890
+push 9038
+push 424
+push 7593
+pop
+push 9102
+push 2330
+pop
+push 7624
+pop
+push 7257
+push 2259
+push 1396
+pop
+pop
+push 1314
+push 6142
+push 8758
+push 2768
+push 7492
+push 792
+push 1836
+push 9498
+pop
+pop
+push 3070
+push 8149
+pop
+push 9142
+push 3819
+push 846
+pop
+pop
+push 9038
+push 1386
+push 9262
+push 4037
+pop
+push 247
+push 4105
+pop
+push 2610
+pop
+pop
+push 8158
+pop
+push 9102
+push 5894
+push 208
+push 5538
+push 4769
+push 4709
+push 5423
+push 1238
+push 9986
+push 208
+pop
+push 7456
+push 1093
+pop
+push 7956
+push 5795
+push 9770
+push 4227
+pop
+pop
+push 4117
+push 2330
+push 1963
+pop
+push 7621
+push 9518
+push 773
+push 4568
+pop
+pop
+push 2109
+pop
+pop
+push 2927
+pop
+pop
+push 8055
+push 7943
+pop
+push 3584
+pop
+push 8568
+push 3103
+push 2118
+push 837
+pop
+pop
+push 6623
+pop
+push 9498
+push 4917
+push 1533
+push 4769
+push 5934
+push 247
+push 7893
+push 1990
+push 2330
+push 7956
+push 2844
+pop
+push 4769
+push 2859
+push 5778
+pop
+push 846
+pop
+push 6163
+pop
+push 1990
+push 6142
+push 4769
+push 3989
+push 9102
+push 2088
+pop
+push 8812
+pop
+pop
+pop
+push 4454
+pop
+push 3446
+pop
+pop
+pop
+push 7336
+pop
+pop
+push 1386
+push 2294
+pop
+pop
+push 3989
+push 8890
+push 3213
+push 858
+pop
+push 217
+pop
+pop
+pop
+pop
+pop
+push 7554
+pop
+push 8955
+push 1990
+push 8812
+pop
+pop
+pop
+push 381
+pop
+pop
+push 7593
+push 7630
+push 8835
+push 8203
+push 4709
+push 4917
+pop
+push 1037
+push 6920
+pop
+pop
+pop
+push 3709
+pop
+pop
+pop
+pop
+pop
+push 8755
+pop
+pop
+push 2893
+push 907
+pop
+pop
+push 8649
+pop
+pop
+push 8526
+pop
+pop
+pop
+pop
+push 7943
+pop
+pop
+push 2259
+push 4227
+pop
+pop
+pop
+push 3790
+push 1938
+push 9714
+push 9102
+push 6715
+push 1686
+pop
+push 5894
+push 2970
+pop
+pop
+pop
+pop
+pop
+push 5340
+pop
+push 247
+pop
+push 7014
+pop
+pop
+push 1533
+pop
+pop
+pop
+push 1345
+pop
+pop
+pop
+pop
+pop
+pop
+push 3103
+push 1093
+push 6781
+pop
+push 3226
+pop
+push 2610
+push 5326
+push 8835
+pop
+push 1553
+pop
+push 1963
+push 9038
+push 9102
+push 9813
+pop
+push 9986
+pop
+push 9668
+push 1506
+pop
+push 408
+pop
+push 2297
+push 1692
+pop
+push 4568
+push 4293
+push 3709
+pop
+pop
+push 4322
+push 133
+push 8149
+pop
+push 3989
+push 3070
+push 9102
+pop
+push 7621
+push 208
+pop
+pop
+push 2844
+push 9498
+pop
+pop
+push 4322
+push 1938
+pop
+pop
+push 424
+push 2259
+pop
+pop
+push 5340
+push 4227
+pop
+push 1037
+pop
+pop
+pop
+pop
+pop
+push 5009
+pop
+push 5340
+push 4917
+pop
+push 1386
+pop
+pop
+push 158
+push 158
+pop
+pop
+pop
+push 4293
+pop
+pop
+push 5170
+pop
+push 2330
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+push 8890
+push 6142
+pop
+pop
+pop
+pop
+push 6781
+push 7492
+pop
+pop
+pop
+push 2859
+push 7257
+pop
+pop
+pop
+pop
+pop
+push 246
+pop
+push 9518
+pop
+pop
+push 381
+pop
+pop
+pop
+pop
+push 3790
+pop
+pop
+pop
+pop
+pop
+push 133
+pop
+push 2330
+push 4322
+push 502
+push 1692
+push 3860
+pop
+push 8807
+push 3042
+pop
+push 711
+push 8568
+pop
+pop
+pop
+pop
+push 2259
+pop
+push 907
+push 6715
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+push 243
+push 4264
+pop
+pop
+pop
+pop
+pop
+push 3584
+pop
+pop
+push 4454
+push 3774
+pop
+pop
+pop
+pop
+pop
+push 8890
+push 2259
+push 846
+pop
+pop
+push 7630
+pop
+push 5009
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+push 6914
+pop
+pop
+pop
+pop
+push 217
+pop
+pop
+pop
+pop
+push 7943
+pop
+pop
+pop
+pop
+pop
+pop
+push 4568
+pop
+pop
+push 2768
+pop
+pop
+pop
+push 7554
+push 887
+pop
+pop
+push 9367
+pop
+pop
+push 243
+pop
+push 5795
+pop
+pop
+pop
+pop
+push 2862
+push 6781
+pop
+pop
+push 1902
+pop
+push 247
+pop
+pop
+pop
+pop
+push 6163
+push 2294
+pop
+pop
+push 1345
+pop
+pop
+push 4842
+push 6689
+pop
+pop
+pop
+pop
+pop
+pop
+push 3538
+push 5309
+pop
+push 5421
+pop
+pop
+pop
+push 119
+push 1990
+pop
+push 5423
+pop
+pop
+pop
+pop
+pop
+push 2297
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+push 217
+pop
+pop
+push 2297
+pop
+pop
+pop
+pop
+push 7974
+pop
+pop
+push 2862
+pop
+pop
+pop
+pop
+push 6914
+pop
+pop
+push 5340
+push 4227
+pop
+pop
+pop
+push 5795
+pop
+pop
+push 5009
+pop
+pop
+pop
+push 1037
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+push 1692
+push 246
+pop
+push 5421
+pop
+push 3690
+push 5795
+pop
+pop
+push 158
+pop
+pop
+pop
+pop
+pop
+pop
+push 3989
+pop
+pop
+pop
+pop
+push 1314
+pop
+pop
+pop
+pop
+push 3989
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+push 1843
+pop
+pop
+pop
+pop
+pop
+push 8835
+pop
+push 4227
+pop
+pop
+pop
+pop
+push 4442
+push 1553
+push 502
+pop
+pop
+pop
+pop
+push 1930
+pop
+push 4004
+push 1843
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+push 2259
+pop
+pop
+pop
+pop
+push 3709
+pop
+pop
+pop
+push 408
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+push 3039
+pop
+pop
+pop
+push 6212
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+push 7257
+pop
+pop
+pop
+pop
+pop
+push 1345
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+pop
+push 6789

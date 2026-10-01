@@ -1,0 +1,7 @@
+3 3
+b f e
+i g c
+a d h
+i g h
+e d c
+b a f

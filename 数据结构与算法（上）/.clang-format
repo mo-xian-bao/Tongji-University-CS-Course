@@ -1,0 +1,6 @@
+Language: Cpp
+BasedOnStyle: Google
+UseTab: Never # 使用空格而不是制表符。
+IndentWidth: 4 # 缩进宽度为4个空格。
+TabWidth: 4 # Tab长度
+ColumnLimit: 80 # 单行的长度不超过80字符

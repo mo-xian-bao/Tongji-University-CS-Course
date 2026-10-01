@@ -1,0 +1,1074 @@
+100
+enqueue 940401526
+dequeue
+dequeue
+dequeue
+dequeue
+dequeue
+enqueue 940403519
+dequeue
+dequeue
+dequeue
+dequeue
+max
+max
+enqueue 940399655
+dequeue
+dequeue
+dequeue
+dequeue
+enqueue 940403362
+max
+enqueue 940406115
+dequeue
+enqueue 940399167
+enqueue 940397713
+dequeue
+enqueue 940404791
+dequeue
+dequeue
+dequeue
+dequeue
+dequeue
+dequeue
+dequeue
+dequeue
+dequeue
+dequeue
+dequeue
+dequeue
+dequeue
+max
+dequeue
+dequeue
+enqueue 940407414
+enqueue 940407416
+enqueue 940405874
+max
+dequeue
+dequeue
+enqueue 940402603
+enqueue 940402327
+dequeue
+enqueue 940405992
+enqueue 940398904
+enqueue 940404500
+enqueue 940405010
+max
+enqueue 940404170
+enqueue 940404104
+enqueue 940398081
+enqueue 940405484
+dequeue
+enqueue 940397437
+enqueue 940406368
+enqueue 940401035
+enqueue 940401022
+max
+enqueue 940406086
+max
+max
+enqueue 940405028
+enqueue 940405427
+max
+max
+enqueue 940400382
+dequeue
+enqueue 940398371
+enqueue 940406029
+enqueue 940399166
+enqueue 940401478
+dequeue
+max
+max
+enqueue 940403633
+enqueue 940405401
+dequeue
+enqueue 940397892
+enqueue 940405991
+enqueue 940405367
+enqueue 940406189
+enqueue 940401664
+max
+enqueue 940404200
+enqueue 940400912
+max
+dequeue
+enqueue 940400092
+enqueue 940407396
+enqueue 940400496
+max
+max
+enqueue 940402862
+max
+enqueue 940403770
+enqueue 940400499
+enqueue 940398596
+max
+max
+enqueue 940402876
+enqueue 940401100
+max
+enqueue 940402189
+enqueue 940404840
+dequeue
+enqueue 940400261
+enqueue 940400856
+enqueue 940399051
+max
+dequeue
+enqueue 940399290
+max
+max
+enqueue 940400923
+max
+enqueue 940402338
+enqueue 940402934
+enqueue 940399346
+enqueue 940406510
+enqueue 940406844
+enqueue 940400203
+max
+max
+enqueue 940397539
+enqueue 940400113
+enqueue 940400320
+enqueue 940402116
+max
+enqueue 940398148
+enqueue 940403044
+enqueue 940398046
+enqueue 940399262
+enqueue 940401810
+enqueue 940404692
+enqueue 940400826
+enqueue 940398147
+enqueue 940397763
+enqueue 940403949
+enqueue 940403454
+dequeue
+dequeue
+dequeue
+max
+enqueue 940401312
+enqueue 940401160
+max
+enqueue 940398467
+enqueue 940402515
+max
+max
+max
+dequeue
+max
+enqueue 940406912
+enqueue 940401625
+enqueue 940403449
+enqueue 940401413
+enqueue 940404905
+enqueue 940400645
+enqueue 940407105
+dequeue
+enqueue 940407155
+enqueue 940397686
+max
+enqueue 940404901
+enqueue 940404563
+max
+enqueue 940403844
+enqueue 940400326
+dequeue
+dequeue
+enqueue 940406178
+enqueue 940401507
+max
+enqueue 940399908
+dequeue
+enqueue 940400626
+enqueue 940397830
+enqueue 940403397
+dequeue
+enqueue 940400651
+enqueue 940399304
+max
+enqueue 940406716
+enqueue 940406325
+max
+enqueue 940404627
+enqueue 940398675
+enqueue 940404291
+max
+enqueue 940402738
+dequeue
+enqueue 940403966
+max
+enqueue 940399415
+enqueue 940399308
+enqueue 940401597
+enqueue 940405419
+max
+enqueue 940403737
+dequeue
+enqueue 940404303
+enqueue 940402036
+enqueue 940404679
+enqueue 940400605
+enqueue 940399876
+dequeue
+enqueue 940397348
+max
+max
+enqueue 940398209
+max
+enqueue 940406164
+dequeue
+enqueue 940404419
+max
+enqueue 940402245
+enqueue 940395672
+dequeue
+enqueue 940388166
+enqueue 940398216
+max
+enqueue 940397544
+enqueue 940390843
+dequeue
+max
+enqueue 940407057
+dequeue
+enqueue 940406479
+max
+enqueue 940402805
+max
+dequeue
+dequeue
+enqueue 940398052
+max
+enqueue 940405819
+max
+dequeue
+enqueue 940388449
+max
+dequeue
+enqueue 940405494
+dequeue
+enqueue 940403511
+dequeue
+enqueue 940406859
+max
+dequeue
+enqueue 940393461
+dequeue
+max
+enqueue 940403733
+enqueue 940392571
+max
+dequeue
+max
+enqueue 940396544
+max
+dequeue
+enqueue 940401657
+max
+dequeue
+dequeue
+dequeue
+enqueue 940393787
+enqueue 940406271
+enqueue 940394585
+max
+max
+dequeue
+enqueue 940396426
+dequeue
+dequeue
+max
+enqueue 940394183
+max
+enqueue 940396721
+dequeue
+enqueue 940393986
+dequeue
+enqueue 940392451
+max
+dequeue
+enqueue 940398556
+dequeue
+enqueue 940404175
+max
+dequeue
+max
+enqueue 940400749
+max
+dequeue
+max
+enqueue 940397485
+dequeue
+enqueue 940399741
+dequeue
+max
+enqueue 940392414
+max
+dequeue
+enqueue 940402000
+max
+dequeue
+max
+enqueue 940402257
+dequeue
+enqueue 940406507
+max
+dequeue
+enqueue 940396667
+dequeue
+enqueue 940396494
+max
+enqueue 940393568
+max
+max
+dequeue
+max
+max
+max
+enqueue 940403077
+max
+max
+max
+dequeue
+max
+enqueue 940406921
+max
+dequeue
+max
+enqueue 940400985
+enqueue 940390072
+dequeue
+enqueue 940390051
+dequeue
+max
+enqueue 940398691
+max
+dequeue
+max
+enqueue 940403596
+enqueue 940390986
+max
+dequeue
+max
+dequeue
+max
+enqueue 940391774
+max
+enqueue 940387466
+dequeue
+dequeue
+max
+enqueue 940395113
+max
+enqueue 940395201
+max
+dequeue
+max
+enqueue 940387425
+dequeue
+enqueue 940392109
+max
+dequeue
+enqueue 940397825
+max
+dequeue
+enqueue 940394799
+dequeue
+max
+enqueue 940404632
+enqueue 940395931
+max
+dequeue
+enqueue 940406522
+dequeue
+max
+max
+enqueue 940405402
+max
+dequeue
+dequeue
+enqueue 940400339
+max
+enqueue 940400621
+dequeue
+enqueue 940401267
+dequeue
+enqueue 940406090
+max
+dequeue
+max
+dequeue
+enqueue 940394659
+enqueue 940401706
+max
+max
+dequeue
+max
+max
+enqueue 940397542
+dequeue
+max
+enqueue 940397283
+dequeue
+dequeue
+enqueue 940400486
+dequeue
+enqueue 940400178
+enqueue 940392778
+max
+dequeue
+dequeue
+max
+enqueue 940405864
+enqueue 940394481
+max
+enqueue 940397062
+max
+enqueue 940390425
+dequeue
+enqueue 940397146
+dequeue
+enqueue 940395715
+max
+dequeue
+enqueue 940403082
+max
+dequeue
+enqueue 940390470
+max
+dequeue
+enqueue 940404111
+max
+enqueue 940404042
+dequeue
+enqueue 940405787
+dequeue
+max
+enqueue 940388947
+max
+dequeue
+max
+dequeue
+max
+enqueue 940396672
+max
+dequeue
+max
+dequeue
+max
+enqueue 940394998
+max
+enqueue 940391835
+max
+max
+enqueue 940400093
+dequeue
+enqueue 940397982
+dequeue
+enqueue 940404688
+dequeue
+max
+enqueue 940396349
+dequeue
+max
+enqueue 940397848
+max
+dequeue
+max
+enqueue 940400297
+dequeue
+dequeue
+max
+enqueue 940398852
+dequeue
+max
+enqueue 940392061
+enqueue 940398280
+max
+enqueue 940398922
+max
+dequeue
+enqueue 940389882
+enqueue 940404977
+max
+max
+enqueue 940387585
+enqueue 940402435
+max
+dequeue
+enqueue 940396865
+dequeue
+max
+enqueue 940404049
+max
+dequeue
+enqueue 940391503
+max
+dequeue
+enqueue 940402988
+dequeue
+enqueue 940399304
+max
+dequeue
+max
+enqueue 940405828
+dequeue
+dequeue
+enqueue 940388323
+max
+max
+enqueue 940405052
+dequeue
+max
+enqueue 940389432
+max
+dequeue
+max
+enqueue 940389174
+dequeue
+enqueue 940390190
+enqueue 940401960
+max
+dequeue
+max
+enqueue 940407135
+dequeue
+max
+dequeue
+enqueue 940405409
+max
+enqueue 940397979
+max
+max
+dequeue
+dequeue
+max
+max
+enqueue 940393207
+enqueue 940401056
+dequeue
+max
+dequeue
+dequeue
+enqueue 940393132
+enqueue 940402571
+dequeue
+max
+enqueue 940391193
+max
+enqueue 940389425
+dequeue
+enqueue 940395000
+max
+dequeue
+max
+dequeue
+max
+enqueue 940388038
+max
+enqueue 940396791
+max
+dequeue
+max
+enqueue 940391212
+dequeue
+enqueue 940397017
+max
+dequeue
+dequeue
+dequeue
+max
+enqueue 940392378
+max
+enqueue 940395439
+max
+enqueue 940395860
+max
+dequeue
+max
+enqueue 940390100
+enqueue 940405203
+max
+dequeue
+max
+max
+enqueue 940393718
+max
+dequeue
+enqueue 940406797
+max
+dequeue
+max
+enqueue 940401045
+dequeue
+enqueue 940405583
+max
+dequeue
+max
+dequeue
+max
+dequeue
+max
+dequeue
+dequeue
+enqueue 940400575
+dequeue
+max
+enqueue 940392987
+enqueue 940405289
+dequeue
+max
+enqueue 940389897
+max
+enqueue 940394265
+max
+enqueue 940394538
+max
+dequeue
+max
+enqueue 940388233
+max
+enqueue 940397055
+max
+dequeue
+max
+dequeue
+enqueue 940397792
+max
+dequeue
+dequeue
+max
+enqueue 940394786
+enqueue 940397740
+enqueue 940390025
+dequeue
+enqueue 940389686
+max
+dequeue
+enqueue 940401579
+max
+dequeue
+enqueue 940388141
+dequeue
+max
+enqueue 940398817
+max
+dequeue
+enqueue 940388066
+dequeue
+max
+enqueue 940403067
+dequeue
+dequeue
+enqueue 940392867
+max
+enqueue 940389846
+dequeue
+enqueue 940394407
+max
+dequeue
+max
+enqueue 940389687
+max
+dequeue
+dequeue
+enqueue 940396305
+max
+enqueue 940395899
+max
+dequeue
+enqueue 940399213
+enqueue 940396882
+max
+dequeue
+enqueue 940404164
+max
+dequeue
+enqueue 940391043
+max
+dequeue
+max
+dequeue
+max
+enqueue 940394739
+max
+enqueue 940393169
+dequeue
+max
+enqueue 940400008
+max
+enqueue 940397876
+dequeue
+enqueue 940406991
+dequeue
+max
+dequeue
+enqueue 940403431
+enqueue 940391940
+max
+enqueue 940387611
+max
+dequeue
+enqueue 940400778
+max
+dequeue
+max
+max
+dequeue
+max
+enqueue 940393279
+enqueue 940404729
+max
+enqueue 940405349
+dequeue
+max
+enqueue 940396903
+max
+enqueue 940396066
+max
+dequeue
+max
+enqueue 940395899
+dequeue
+dequeue
+enqueue 940402558
+enqueue 940392094
+max
+dequeue
+max
+enqueue 940394745
+max
+dequeue
+max
+dequeue
+enqueue 940398344
+enqueue 940395509
+max
+max
+enqueue 940401679
+dequeue
+enqueue 940404564
+dequeue
+max
+enqueue 940394351
+max
+dequeue
+dequeue
+enqueue 940389514
+max
+enqueue 940395601
+dequeue
+dequeue
+dequeue
+enqueue 940394352
+max
+enqueue 940391213
+enqueue 940404873
+dequeue
+max
+enqueue 940393389
+dequeue
+enqueue 940396301
+max
+dequeue
+max
+max
+enqueue 940401797
+max
+dequeue
+max
+enqueue 940407344
+dequeue
+max
+enqueue 940390602
+max
+dequeue
+enqueue 940405999
+max
+dequeue
+dequeue
+max
+enqueue 940394968
+enqueue 940402587
+dequeue
+max
+dequeue
+max
+dequeue
+enqueue 940398200
+enqueue 940395005
+max
+dequeue
+max
+enqueue 940390635
+enqueue 940400650
+max
+enqueue 940406369
+enqueue 940390584
+dequeue
+max
+enqueue 940405223
+max
+dequeue
+enqueue 940395555
+dequeue
+max
+enqueue 940404801
+dequeue
+max
+enqueue 940389341
+max
+dequeue
+max
+enqueue 940395923
+max
+dequeue
+max
+dequeue
+enqueue 940402507
+max
+enqueue 940401025
+dequeue
+max
+dequeue
+enqueue 940397785
+dequeue
+enqueue 940401360
+max
+enqueue 940401447
+dequeue
+dequeue
+enqueue 940389985
+dequeue
+max
+enqueue 940402714
+enqueue 940390484
+dequeue
+dequeue
+max
+enqueue 940391463
+dequeue
+max
+enqueue 940406847
+max
+enqueue 940399484
+max
+dequeue
+enqueue 940387691
+dequeue
+enqueue 940392293
+dequeue
+enqueue 940392706
+max
+enqueue 940390850
+dequeue
+enqueue 940390489
+max
+max
+max
+dequeue
+max
+enqueue 940393129
+dequeue
+max
+enqueue 940406176
+dequeue
+max
+enqueue 940394301
+max
+enqueue 940387912
+max
+dequeue
+dequeue
+enqueue 940395826
+enqueue 940400818
+max
+dequeue
+max
+enqueue 940407190
+dequeue
+max
+enqueue 940390336
+max
+dequeue
+enqueue 940407050
+dequeue
+enqueue 940406629
+dequeue
+max
+enqueue 940388233
+dequeue
+dequeue
+enqueue 940404994
+max
+enqueue 940405185
+max
+dequeue
+max
+enqueue 940400398
+max
+dequeue
+max
+enqueue 940398049
+max
+enqueue 940399644
+max
+dequeue
+max
+enqueue 940402962
+max
+dequeue
+enqueue 940396288
+dequeue
+enqueue 940389028
+max
+dequeue
+max
+enqueue 940388463
+dequeue
+enqueue 940394332
+dequeue
+max
+enqueue 940407198
+dequeue
+dequeue
+max
+enqueue 940397690
+max
+enqueue 940403791
+max
+dequeue
+enqueue 940396108
+dequeue
+max
+dequeue
+max
+dequeue
+max
+enqueue 940401026
+enqueue 940395791
+enqueue 940399138
+dequeue
+max
+enqueue 940388445
+dequeue
+enqueue 940393949
+max
+dequeue
+max
+enqueue 940390168
+max
+dequeue
+enqueue 940404472
+enqueue 940396459
+max
+enqueue 940389264
+max
+dequeue
+dequeue
+enqueue 940388519
+max
+enqueue 940388877
+dequeue
+dequeue
+dequeue
+dequeue
+enqueue 940407351
+max
+enqueue 940401276
+enqueue 940396708
+max
+enqueue 940394927
+max
+dequeue
+max
+enqueue 940394384
+enqueue 940401903
+max
+dequeue
+max
+enqueue 940398706
+dequeue
+enqueue 940402781
+max
+dequeue
+max
+enqueue 940398710
+dequeue
+dequeue
+enqueue 940394189
+enqueue 940398817
+dequeue
+max
+enqueue 940390370
+max
+dequeue
+enqueue 940405720
+dequeue
+enqueue 940401487
+dequeue
+max
+enqueue 940395234
+dequeue
+max
+enqueue 940405308
+max
+dequeue
+max
+enqueue 940403132
+dequeue
+max
+enqueue 940394235
+max
+dequeue
+max
+enqueue 940393442
+max
+enqueue 940396473
+max
+dequeue
+max
+enqueue 940395330
+max
+dequeue
+max
+dequeue
+dequeue
+enqueue 940390770
+enqueue 940397984
+max
+enqueue 940404195
+max
+dequeue
+max
+enqueue 940401405
+dequeue
+dequeue
+max
+enqueue 940398805
+max
+enqueue 940404938
+dequeue
+enqueue 940404276
+dequeue
+dequeue
+max
+enqueue 940402607
+max
+enqueue 940406533
+dequeue
+max
+enqueue 940388863
+max
+dequeue
+enqueue 940402551
+dequeue
+enqueue 940403375
+max
+dequeue
+enqueue 940394339
+quit

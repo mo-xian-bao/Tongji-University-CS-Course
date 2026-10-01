@@ -1,0 +1,15 @@
+14
+push 16
+push 16
+pop
+push 16
+push 0
+pop
+pop
+pop
+push 0
+push 0
+pop
+push 16
+pop
+pop

@@ -1,0 +1,1447 @@
+90 198
+bop______
+ CyD______
+  dNk______
+   ECx______
+    fWP______
+    Gwh______
+   hIu______
+    Inq______
+     jcn______
+     KcH______
+     lHu______
+    MGH______
+     neM______
+     OuA______
+   pIY______
+  Qqw______
+   rLh______
+    Ssg______
+    tzn______
+   UaY______
+    vOV______
+   Wqk______
+  xdD______
+   YgU______
+    zKv______
+     AuZbgM___
+      bRLbFN___
+      CUCbAR___
+       dfabLI___
+    EZCbMj___
+     fwlbrg___
+     GLKbeC___
+   hnxbWc___
+    IHZbNW___
+   jtUbnb___
+ KOjbMt___
+  lvIbGZ___
+   MKzbgT___
+    nUPbPz___
+     OgQbvV___
+      pbhbXK___
+       QnTbkx___
+        rzTbHq___
+     SeXbAB___
+    tIVbVe___
+     UqSbKU___
+      vIzbyN___
+       WTXbeP___
+        xEFbvR___
+        YIvbBs___
+        zAVbex___
+         AehCWF___
+         bVdCUw___
+          CfECco___
+         dwLCdY___
+          EgVCLd___
+       fyyCkb___
+        GjDCEx___
+         hqcCqZ___
+          IUXCrt___
+       jlQCbh___
+        KFNCcP___
+      lAXCBv___
+       MmqCuR___
+        nKaCHN___
+     ObrCdr___
+      pNCCkW___
+       QYKCZj___
+        rwRCAt___
+         SNRChQ___
+          tDYCMo___
+           UcHCCr___
+          volCpc___
+           WsSCiE___
+          xwyCwa___
+           YZLCnd___
+         zJZCvf___
+          AEvduV___
+          bvAdQb___
+           CkhdvA___
+       dlCdGd___
+       EvEdWs___
+      fyDdmU___
+       GJHdSV___
+      hOudOG___
+       ISWdjR___
+   jvmdij___
+    KcYdYn___
+   lupdKa___
+    MQKdBC___
+tDYCMo___ is an ancestor of GJHdSV___.
+zJZCvf___ is a sibling of MmqCuR___.
+jlQCbh___ is an ancestor of KFNCcP___.
+neM______ is a child of nKaCHN___.
+jcn______ is a child of Inq______.
+UcHCCr___ is a child of bop______.
+AEvduV___ is an ancestor of AEvduV___.
+ObrCdr___ is an ancestor of Ssg______.
+rwRCAt___ is an ancestor of CkhdvA___.
+GJHdSV___ is an ancestor of MQKdBC___.
+ECx______ is the parent of Gwh______.
+zAVbex___ is a child of KcYdYn___.
+Qqw______ is the parent of Wqk______.
+QnTbkx___ is a sibling of rzTbHq___.
+jvmdij___ is a child of MQKdBC___.
+xEFbvR___ is an ancestor of xEFbvR___.
+fwlbrg___ is a child of EZCbMj___.
+YZLCnd___ is a child of CyD______.
+WTXbeP___ is a sibling of CyD______.
+tzn______ is a sibling of Wqk______.
+Qqw______ is the parent of rLh______.
+Ssg______ is a descendant of bop______.
+dfabLI___ is a descendant of bop______.
+jtUbnb___ is the parent of jtUbnb___.
+jvmdij___ is the parent of vOV______.
+EgVCLd___ is the parent of EgVCLd___.
+fWP______ is the parent of fWP______.
+SNRChQ___ is the parent of xwyCwa___.
+GjDCEx___ is a descendant of bop______.
+UaY______ is the parent of vOV______.
+neM______ is the parent of neM______.
+xwyCwa___ is an ancestor of jvmdij___.
+Gwh______ is a child of ECx______.
+lupdKa___ is a child of MQKdBC___.
+SeXbAB___ is a child of nUPbPz___.
+nKaCHN___ is a child of MmqCuR___.
+IUXCrt___ is a child of Wqk______.
+UaY______ is the parent of vOV______.
+Ssg______ is a descendant of bop______.
+fyyCkb___ is an ancestor of bop______.
+jtUbnb___ is the parent of MQKdBC___.
+UqSbKU___ is a sibling of GJHdSV___.
+fwlbrg___ is a child of dfabLI___.
+KcYdYn___ is a descendant of bop______.
+zKv______ is an ancestor of dfabLI___.
+IHZbNW___ is an ancestor of IHZbNW___.
+hOudOG___ is an ancestor of ISWdjR___.
+zKv______ is an ancestor of bRLbFN___.
+MQKdBC___ is a sibling of pIY______.
+zKv______ is a descendant of xdD______.
+bRLbFN___ is a descendant of bop______.
+dlCdGd___ is a child of pNCCkW___.
+QnTbkx___ is a sibling of SeXbAB___.
+fwlbrg___ is a child of EZCbMj___.
+UaY______ is the parent of MQKdBC___.
+hIu______ is a child of jtUbnb___.
+YIvbBs___ is a child of nKaCHN___.
+dlCdGd___ is a child of pNCCkW___.
+tzn______ is an ancestor of MQKdBC___.
+KFNCcP___ is a sibling of IUXCrt___.
+Ssg______ is the parent of Ssg______.
+GLKbeC___ is the parent of GLKbeC___.
+KFNCcP___ is a sibling of rzTbHq___.
+EZCbMj___ is the parent of pIY______.
+zKv______ is a sibling of GLKbeC___.
+KcYdYn___ is an ancestor of KcYdYn___.
+hnxbWc___ is a descendant of tzn______.
+vOV______ is an ancestor of vOV______.
+QnTbkx___ is a descendant of SeXbAB___.
+hOudOG___ is a descendant of IHZbNW___.
+Ssg______ is a descendant of pIY______.
+jcn______ is a child of vOV______.
+Ssg______ is the parent of Ssg______.
+tIVbVe___ is a sibling of nUPbPz___.
+UcHCCr___ is a sibling of UcHCCr___.
+QnTbkx___ is a descendant of bop______.
+neM______ is the parent of neM______.
+fWP______ is a sibling of jtUbnb___.
+YgU______ is a descendant of SeXbAB___.
+UqSbKU___ is a descendant of lvIbGZ___.
+KOjbMt___ is a descendant of bop______.
+hqcCqZ___ is a child of SeXbAB___.
+lHu______ is a descendant of bop______.
+ObrCdr___ is the parent of fyDdmU___.
+xEFbvR___ is the parent of xEFbvR___.
+jvmdij___ is a sibling of OuA______.
+KcYdYn___ is an ancestor of KcYdYn___.
+jtUbnb___ is a descendant of jtUbnb___.
+OgQbvV___ is an ancestor of rzTbHq___.
+rzTbHq___ is the parent of jvmdij___.
+lAXCBv___ is the parent of MmqCuR___.
+AehCWF___ is an ancestor of AehCWF___.
+KOjbMt___ is a sibling of Qqw______.
+EgVCLd___ is a child of KcYdYn___.
+YZLCnd___ is an ancestor of YZLCnd___.
+Wqk______ is the parent of KcYdYn___.
+OuA______ is a sibling of OuA______.
+UaY______ is a child of Qqw______.
+zJZCvf___ is a child of ECx______.
+lHu______ is the parent of dfabLI___.
+UaY______ is a child of KOjbMt___.
+bVdCUw___ is the parent of CfECco___.
+EgVCLd___ is a sibling of ISWdjR___.
+AehCWF___ is the parent of AehCWF___.
+MmqCuR___ is a sibling of KcYdYn___.
+jcn______ is a sibling of pIY______.
+dfabLI___ is the parent of Qqw______.
+UqSbKU___ is a sibling of MQKdBC___.
+CyD______ is a child of bop______.
+MmqCuR___ is an ancestor of Gwh______.
+zJZCvf___ is a descendant of tzn______.
+vIzbyN___ is a sibling of MQKdBC___.
+Qqw______ is an ancestor of Wqk______.
+fyDdmU___ is a descendant of KcYdYn___.
+tIVbVe___ is a child of KcYdYn___.
+ECx______ is the parent of Gwh______.
+CUCbAR___ is a child of bRLbFN___.
+vIzbyN___ is a child of nKaCHN___.
+jlQCbh___ is a descendant of KcYdYn___.
+SNRChQ___ is a descendant of dlCdGd___.
+CUCbAR___ is an ancestor of dfabLI___.
+CUCbAR___ is the parent of dfabLI___.
+zJZCvf___ is a child of rzTbHq___.
+tIVbVe___ is a child of MKzbgT___.
+nKaCHN___ is a child of Wqk______.
+hOudOG___ is the parent of ISWdjR___.
+Inq______ is an ancestor of KcYdYn___.
+Wqk______ is a sibling of UqSbKU___.
+KOjbMt___ is a descendant of bop______.
+dNk______ is the parent of KcYdYn___.
+dNk______ is a descendant of KcYdYn___.
+lAXCBv___ is a child of UqSbKU___.
+hOudOG___ is a sibling of KOjbMt___.
+pbhbXK___ is a child of rzTbHq___.
+rwRCAt___ is the parent of SNRChQ___.
+pNCCkW___ is an ancestor of EvEdWs___.
+lHu______ is an ancestor of lHu______.
+dNk______ is an ancestor of jcn______.
+EvEdWs___ is a sibling of KcYdYn___.
+xwyCwa___ is a descendant of WsSCiE___.
+YIvbBs___ is an ancestor of MQKdBC___.
+GjDCEx___ is an ancestor of MQKdBC___.
+IHZbNW___ is the parent of IHZbNW___.
+ECx______ is an ancestor of fWP______.
+ObrCdr___ is a descendant of ObrCdr___.
+OuA______ is a descendant of KcYdYn___.
+WTXbeP___ is a sibling of SeXbAB___.
+hqcCqZ___ is the parent of IUXCrt___.
+QYKCZj___ is the parent of rwRCAt___.
+fyDdmU___ is an ancestor of MQKdBC___.
+lupdKa___ is a descendant of Ssg______.
+vOV______ is a child of UaY______.
+xdD______ is a child of CyD______.
+tDYCMo___ is an ancestor of zJZCvf___.
+bvAdQb___ is a sibling of IUXCrt___.
+OuA______ is a child of MGH______.
+bvAdQb___ is a child of zJZCvf___.
+OuA______ is a descendant of bop______.
+YZLCnd___ is a sibling of MQKdBC___.
+WTXbeP___ is a child of lvIbGZ___.
+AEvduV___ is an ancestor of AEvduV___.
+hnxbWc___ is a sibling of vOV______.
+hIu______ is a sibling of lupdKa___.
+AuZbgM___ is a descendant of IHZbNW___.
+lvIbGZ___ is a child of KOjbMt___.
+zAVbex___ is a sibling of KcYdYn___.
+rwRCAt___ is the parent of ISWdjR___.
+WTXbeP___ is a descendant of bop______.
+zJZCvf___ is a child of rwRCAt___.
+ObrCdr___ is the parent of hOudOG___.
+hnxbWc___ is a descendant of Ssg______.
+YgU______ is a descendant of bop______.
+GLKbeC___ is a child of IUXCrt___.
+ISWdjR___ is an ancestor of jtUbnb___.
+Inq______ is a sibling of tzn______.
+rzTbHq___ is the parent of rzTbHq___.
+hnxbWc___ is an ancestor of IHZbNW___.
+OuA______ is the parent of OuA______.
+fWP______ is a descendant of Wqk______.
+OuA______ is a descendant of hIu______.
+Inq______ is a sibling of tzn______.
+neM______ is a sibling of lvIbGZ___.
+AEvduV___ is a descendant of fwlbrg___.
+hnxbWc___ is a sibling of IHZbNW___.
+EZCbMj___ is an ancestor of IHZbNW___.
+AEvduV___ is a sibling of tIVbVe___.
+WsSCiE___ is a child of neM______.
+QYKCZj___ is a sibling of Wqk______.
+MKzbgT___ is an ancestor of nKaCHN___.
+AehCWF___ is a child of zAVbex___.
+KFNCcP___ is a descendant of bop______.
+KcYdYn___ is a sibling of KcYdYn___.
+fyDdmU___ is the parent of Wqk______.
+nKaCHN___ is the parent of CkhdvA___.
+zKv______ is a sibling of bRLbFN___.
+MKzbgT___ is a sibling of Wqk______.
+CfECco___ is a child of bVdCUw___.
+AEvduV___ is an ancestor of AEvduV___.
+98 195
+bop______
+ CyD______
+  dNk______
+   ECx______
+    fWP______
+     Gwh______
+      hIu______
+       Inq______
+        jcn______
+         KcH______
+         lHu______
+         MGH______
+        neM______
+         OuA______
+          pIY______
+           Qqw______
+            rLh______
+             Ssg______
+              tzn______
+               UaY______
+             vOV______
+              Wqk______
+               xdD______
+                YgU______
+                zKv______
+                 AuZbgM___
+                  bRLbFN___
+               CUCbAR___
+                dfabLI___
+                 EZCbMj___
+                 fwlbrg___
+                  GLKbeC___
+                   hnxbWc___
+                IHZbNW___
+                 jtUbnb___
+       KOjbMt___
+        lvIbGZ___
+         MKzbgT___
+          nUPbPz___
+           OgQbvV___
+            pbhbXK___
+             QnTbkx___
+              rzTbHq___
+              SeXbAB___
+              tIVbVe___
+             UqSbKU___
+              vIzbyN___
+             WTXbeP___
+              xEFbvR___
+               YIvbBs___
+                zAVbex___
+                AehCWF___
+                bVdCUw___
+              CfECco___
+              dwLCdY___
+            EgVCLd___
+             fyyCkb___
+             GjDCEx___
+              hqcCqZ___
+               IUXCrt___
+            jlQCbh___
+             KFNCcP___
+           lAXCBv___
+           MmqCuR___
+            nKaCHN___
+            ObrCdr___
+    pNCCkW___
+     QYKCZj___
+      rwRCAt___
+      SNRChQ___
+       tDYCMo___
+       UcHCCr___
+     volCpc___
+      WsSCiE___
+      xwyCwa___
+       YZLCnd___
+        zJZCvf___
+     AEvduV___
+      bvAdQb___
+      CkhdvA___
+       dlCdGd___
+        EvEdWs___
+       fyDdmU___
+   GJHdSV___
+    hOudOG___
+    ISWdjR___
+     jvmdij___
+      KcYdYn___
+       lupdKa___
+       MQKdBC___
+   nxBdSZ___
+    OdJdQo___
+     pRPdKu___
+      QnYdEP___
+      rrCdAL___
+     SXldDi___
+     teedSj___
+      URGdkx___
+jcn______ is a descendant of dNk______.
+neM______ is an ancestor of lHu______.
+KcYdYn___ is the parent of KcH______.
+tzn______ is a descendant of ECx______.
+volCpc___ is a descendant of bop______.
+bop______ is the parent of CyD______.
+rwRCAt___ is an ancestor of rwRCAt___.
+hqcCqZ___ is a descendant of CyD______.
+SNRChQ___ is the parent of CyD______.
+lHu______ is an ancestor of lHu______.
+GjDCEx___ is the parent of hqcCqZ___.
+YZLCnd___ is the parent of zJZCvf___.
+KFNCcP___ is a sibling of KFNCcP___.
+OuA______ is the parent of rwRCAt___.
+OdJdQo___ is an ancestor of URGdkx___.
+GLKbeC___ is an ancestor of hnxbWc___.
+tzn______ is a child of dNk______.
+AEvduV___ is a child of pNCCkW___.
+zJZCvf___ is a child of YZLCnd___.
+IUXCrt___ is an ancestor of YgU______.
+MmqCuR___ is a descendant of bop______.
+EgVCLd___ is a sibling of KFNCcP___.
+KcYdYn___ is a descendant of URGdkx___.
+Gwh______ is a child of URGdkx___.
+IUXCrt___ is the parent of WTXbeP___.
+MQKdBC___ is a child of KcYdYn___.
+SeXbAB___ is an ancestor of zJZCvf___.
+dfabLI___ is a sibling of Inq______.
+rzTbHq___ is the parent of pNCCkW___.
+KOjbMt___ is a sibling of SXldDi___.
+fyyCkb___ is a sibling of IUXCrt___.
+GLKbeC___ is a child of bRLbFN___.
+MKzbgT___ is a child of URGdkx___.
+CUCbAR___ is a sibling of fyyCkb___.
+SNRChQ___ is an ancestor of OuA______.
+lAXCBv___ is the parent of lAXCBv___.
+pNCCkW___ is the parent of hOudOG___.
+Qqw______ is a sibling of xdD______.
+lAXCBv___ is a sibling of hOudOG___.
+bop______ is an ancestor of lupdKa___.
+AehCWF___ is a child of ObrCdr___.
+bVdCUw___ is a descendant of MKzbgT___.
+Inq______ is a descendant of bop______.
+pNCCkW___ is a sibling of nxBdSZ___.
+xEFbvR___ is an ancestor of URGdkx___.
+IHZbNW___ is the parent of UaY______.
+rwRCAt___ is the parent of rwRCAt___.
+ISWdjR___ is the parent of jvmdij___.
+SeXbAB___ is a sibling of fyyCkb___.
+fwlbrg___ is the parent of MQKdBC___.
+rwRCAt___ is a sibling of UcHCCr___.
+KcH______ is a descendant of CyD______.
+CUCbAR___ is a descendant of CUCbAR___.
+OdJdQo___ is a descendant of bop______.
+zKv______ is a child of xdD______.
+UcHCCr___ is a descendant of UcHCCr___.
+OdJdQo___ is a child of SXldDi___.
+tIVbVe___ is a child of lAXCBv___.
+GjDCEx___ is an ancestor of IUXCrt___.
+zAVbex___ is an ancestor of lvIbGZ___.
+tIVbVe___ is a descendant of bop______.
+UqSbKU___ is a descendant of bop______.
+neM______ is an ancestor of QnYdEP___.
+nKaCHN___ is a child of SXldDi___.
+GJHdSV___ is an ancestor of lupdKa___.
+OdJdQo___ is a sibling of GJHdSV___.
+hIu______ is the parent of Inq______.
+IHZbNW___ is the parent of ObrCdr___.
+CUCbAR___ is a sibling of nxBdSZ___.
+EvEdWs___ is a sibling of SXldDi___.
+neM______ is a child of Inq______.
+Gwh______ is the parent of hIu______.
+lupdKa___ is a descendant of lupdKa___.
+vOV______ is an ancestor of MKzbgT___.
+rrCdAL___ is an ancestor of rrCdAL___.
+zKv______ is a descendant of SXldDi___.
+bRLbFN___ is the parent of dNk______.
+IUXCrt___ is a descendant of IUXCrt___.
+xdD______ is a descendant of bop______.
+GJHdSV___ is a descendant of MQKdBC___.
+QnTbkx___ is an ancestor of bop______.
+KOjbMt___ is a descendant of bop______.
+KOjbMt___ is an ancestor of UcHCCr___.
+bop______ is the parent of CyD______.
+pNCCkW___ is a descendant of bop______.
+fyDdmU___ is the parent of fyDdmU___.
+AEvduV___ is a sibling of zJZCvf___.
+neM______ is a descendant of bop______.
+bRLbFN___ is a sibling of lAXCBv___.
+jlQCbh___ is an ancestor of KFNCcP___.
+tzn______ is an ancestor of hOudOG___.
+jtUbnb___ is a child of IHZbNW___.
+EgVCLd___ is a descendant of pNCCkW___.
+bVdCUw___ is the parent of ObrCdr___.
+CkhdvA___ is a sibling of MQKdBC___.
+OgQbvV___ is a descendant of MQKdBC___.
+SXldDi___ is the parent of SXldDi___.
+CUCbAR___ is a descendant of neM______.
+ISWdjR___ is a descendant of bop______.
+Qqw______ is a sibling of ISWdjR___.
+xwyCwa___ is a descendant of bop______.
+tzn______ is the parent of UaY______.
+SeXbAB___ is a descendant of fWP______.
+tIVbVe___ is the parent of tIVbVe___.
+xEFbvR___ is the parent of YIvbBs___.
+pRPdKu___ is the parent of URGdkx___.
+URGdkx___ is a child of teedSj___.
+AuZbgM___ is the parent of bRLbFN___.
+fwlbrg___ is an ancestor of teedSj___.
+zJZCvf___ is a sibling of hIu______.
+tIVbVe___ is an ancestor of lAXCBv___.
+WsSCiE___ is a descendant of bop______.
+fyyCkb___ is an ancestor of fyyCkb___.
+EgVCLd___ is the parent of GjDCEx___.
+zJZCvf___ is the parent of SXldDi___.
+rrCdAL___ is the parent of lupdKa___.
+MKzbgT___ is a descendant of bop______.
+Inq______ is an ancestor of hOudOG___.
+tDYCMo___ is a child of lupdKa___.
+URGdkx___ is the parent of URGdkx___.
+GjDCEx___ is the parent of vIzbyN___.
+QYKCZj___ is a descendant of MQKdBC___.
+volCpc___ is a sibling of zJZCvf___.
+fyyCkb___ is the parent of fyyCkb___.
+xwyCwa___ is a child of URGdkx___.
+rrCdAL___ is a child of pRPdKu___.
+KcH______ is a descendant of hOudOG___.
+bRLbFN___ is an ancestor of lAXCBv___.
+nUPbPz___ is a child of tDYCMo___.
+xwyCwa___ is a descendant of lupdKa___.
+OuA______ is an ancestor of rwRCAt___.
+QnTbkx___ is a descendant of dNk______.
+Qqw______ is the parent of rLh______.
+KcYdYn___ is a descendant of UcHCCr___.
+lupdKa___ is a sibling of rrCdAL___.
+vIzbyN___ is a descendant of SXldDi___.
+xwyCwa___ is an ancestor of zJZCvf___.
+YgU______ is a descendant of Gwh______.
+EvEdWs___ is a child of GJHdSV___.
+GLKbeC___ is an ancestor of EvEdWs___.
+vIzbyN___ is a child of vIzbyN___.
+YZLCnd___ is a descendant of zJZCvf___.
+MKzbgT___ is a sibling of YgU______.
+lHu______ is a descendant of KcH______.
+jcn______ is the parent of MGH______.
+dlCdGd___ is a descendant of bop______.
+Qqw______ is a child of pIY______.
+hnxbWc___ is the parent of hnxbWc___.
+xEFbvR___ is a descendant of SXldDi___.
+pNCCkW___ is a child of QnYdEP___.
+Qqw______ is the parent of rLh______.
+YgU______ is the parent of SXldDi___.
+tDYCMo___ is a descendant of bop______.
+lAXCBv___ is a child of rrCdAL___.
+hnxbWc___ is a sibling of neM______.
+WsSCiE___ is a sibling of SXldDi___.
+bRLbFN___ is a descendant of bop______.
+KcH______ is a descendant of hIu______.
+IHZbNW___ is a child of CUCbAR___.
+pIY______ is a descendant of bop______.
+tzn______ is a child of Ssg______.
+OgQbvV___ is an ancestor of rzTbHq___.
+hOudOG___ is an ancestor of hOudOG___.
+MGH______ is the parent of MGH______.
+volCpc___ is a sibling of hOudOG___.
+AehCWF___ is a child of CyD______.
+SNRChQ___ is a sibling of hOudOG___.
+dwLCdY___ is a sibling of ObrCdr___.
+lAXCBv___ is the parent of lAXCBv___.
+QnYdEP___ is a sibling of KcH______.
+vIzbyN___ is a child of UqSbKU___.
+fWP______ is an ancestor of UaY______.
+dNk______ is the parent of lAXCBv___.
+CkhdvA___ is a child of AEvduV___.
+zAVbex___ is the parent of MGH______.
+tIVbVe___ is a sibling of KcH______.
+rzTbHq___ is a child of UcHCCr___.
+Qqw______ is a sibling of hOudOG___.
+YgU______ is an ancestor of hOudOG___.
+nxBdSZ___ is a child of lupdKa___.
+fyDdmU___ is an ancestor of hnxbWc___.
+pIY______ is a child of QnYdEP___.
+bvAdQb___ is a child of rrCdAL___.
+nxBdSZ___ is a descendant of bop______.
+dlCdGd___ is a child of hIu______.
+MmqCuR___ is a sibling of SXldDi___.
+zAVbex___ is the parent of zAVbex___.
+Wqk______ is a child of vOV______.
+GJHdSV___ is a sibling of hOudOG___.
+hnxbWc___ is the parent of hnxbWc___.
+KFNCcP___ is a descendant of dNk______.
+WTXbeP___ is a child of pbhbXK___.
+EZCbMj___ is a child of dfabLI___.
+jlQCbh___ is an ancestor of dNk______.
+nKaCHN___ is an ancestor of OdJdQo___.
+90 192
+bop______
+ CyD______
+  dNk______
+   ECx______
+    fWP______
+     Gwh______
+      hIu______
+      Inq______
+      jcn______
+     KcH______
+      lHu______
+       MGH______
+      neM______
+       OuA______
+     pIY______
+    Qqw______
+     rLh______
+      Ssg______
+       tzn______
+     UaY______
+      vOV______
+  Wqk______
+   xdD______
+    YgU______
+     zKv______
+     AuZbgM___
+     bRLbFN___
+    CUCbAR___
+     dfabLI___
+     EZCbMj___
+     fwlbrg___
+    GLKbeC___
+   hnxbWc___
+    IHZbNW___
+     jtUbnb___
+      KOjbMt___
+       lvIbGZ___
+        MKzbgT___
+         nUPbPz___
+        OgQbvV___
+        pbhbXK___
+       QnTbkx___
+        rzTbHq___
+         SeXbAB___
+          tIVbVe___
+           UqSbKU___
+           vIzbyN___
+          WTXbeP___
+           xEFbvR___
+            YIvbBs___
+             zAVbex___
+              AehCWF___
+              bVdCUw___
+              CfECco___
+           dwLCdY___
+            EgVCLd___
+          fyyCkb___
+           GjDCEx___
+         hqcCqZ___
+        IUXCrt___
+      jlQCbh___
+       KFNCcP___
+      lAXCBv___
+       MmqCuR___
+    nKaCHN___
+     ObrCdr___
+      pNCCkW___
+       QYKCZj___
+      rwRCAt___
+       SNRChQ___
+      tDYCMo___
+    UcHCCr___
+     volCpc___
+      WsSCiE___
+       xwyCwa___
+        YZLCnd___
+         zJZCvf___
+          AEvduV___
+           bvAdQb___
+           CkhdvA___
+            dlCdGd___
+            EvEdWs___
+         fyDdmU___
+          GJHdSV___
+          hOudOG___
+     ISWdjR___
+     jvmdij___
+      KcYdYn___
+       lupdKa___
+       MQKdBC___
+fyyCkb___ is an ancestor of OuA______.
+lAXCBv___ is a child of jtUbnb___.
+WTXbeP___ is a descendant of CyD______.
+hIu______ is a child of Gwh______.
+hIu______ is a sibling of bop______.
+ECx______ is a descendant of bop______.
+KcH______ is a descendant of hqcCqZ___.
+OuA______ is a sibling of Qqw______.
+YIvbBs___ is a child of xEFbvR___.
+nUPbPz___ is a sibling of nUPbPz___.
+lAXCBv___ is the parent of MmqCuR___.
+pNCCkW___ is a descendant of bop______.
+fWP______ is a sibling of tzn______.
+fyDdmU___ is the parent of jcn______.
+rLh______ is the parent of vOV______.
+pNCCkW___ is the parent of nUPbPz___.
+rzTbHq___ is a child of QnTbkx___.
+IUXCrt___ is a descendant of bop______.
+jcn______ is the parent of tDYCMo___.
+vOV______ is an ancestor of EZCbMj___.
+MmqCuR___ is an ancestor of tzn______.
+QnTbkx___ is a child of pIY______.
+jcn______ is the parent of jcn______.
+tDYCMo___ is the parent of xdD______.
+hOudOG___ is an ancestor of vOV______.
+AEvduV___ is a child of GjDCEx___.
+EgVCLd___ is the parent of EgVCLd___.
+lvIbGZ___ is a descendant of bop______.
+Inq______ is the parent of Inq______.
+zAVbex___ is the parent of tzn______.
+pIY______ is a descendant of dNk______.
+Ssg______ is a child of vOV______.
+YgU______ is a child of xdD______.
+zAVbex___ is the parent of bVdCUw___.
+Inq______ is the parent of Inq______.
+hOudOG___ is an ancestor of OuA______.
+fyDdmU___ is an ancestor of QYKCZj___.
+Qqw______ is an ancestor of tzn______.
+AuZbgM___ is a sibling of zKv______.
+ISWdjR___ is a sibling of tzn______.
+KFNCcP___ is the parent of KFNCcP___.
+tIVbVe___ is a sibling of Gwh______.
+pIY______ is a descendant of bop______.
+YgU______ is an ancestor of MGH______.
+zAVbex___ is a child of IUXCrt___.
+Ssg______ is a descendant of rLh______.
+YIvbBs___ is an ancestor of tzn______.
+jvmdij___ is the parent of KcYdYn___.
+Ssg______ is the parent of tzn______.
+tzn______ is the parent of dfabLI___.
+lAXCBv___ is the parent of CyD______.
+dNk______ is a child of zKv______.
+jlQCbh___ is a sibling of nUPbPz___.
+GJHdSV___ is the parent of ISWdjR___.
+ISWdjR___ is a child of vOV______.
+UqSbKU___ is a child of bop______.
+GjDCEx___ is an ancestor of GjDCEx___.
+dfabLI___ is a descendant of MQKdBC___.
+CkhdvA___ is the parent of pIY______.
+UaY______ is an ancestor of GLKbeC___.
+IHZbNW___ is a sibling of bop______.
+KcH______ is an ancestor of ECx______.
+dlCdGd___ is the parent of dlCdGd___.
+YZLCnd___ is a child of vOV______.
+rLh______ is a descendant of bop______.
+pbhbXK___ is a sibling of ISWdjR___.
+vOV______ is the parent of vOV______.
+rwRCAt___ is a child of jcn______.
+fyyCkb___ is a child of MmqCuR___.
+KOjbMt___ is the parent of IUXCrt___.
+fyDdmU___ is the parent of QYKCZj___.
+Ssg______ is a descendant of Inq______.
+jvmdij___ is a child of hOudOG___.
+MQKdBC___ is a descendant of SNRChQ___.
+EvEdWs___ is the parent of EvEdWs___.
+YIvbBs___ is the parent of zAVbex___.
+EZCbMj___ is the parent of jtUbnb___.
+xEFbvR___ is a sibling of fwlbrg___.
+rzTbHq___ is the parent of hqcCqZ___.
+ISWdjR___ is a sibling of hIu______.
+rLh______ is the parent of Ssg______.
+tDYCMo___ is a child of ObrCdr___.
+GJHdSV___ is an ancestor of GJHdSV___.
+rzTbHq___ is a descendant of Wqk______.
+KOjbMt___ is a descendant of KFNCcP___.
+QYKCZj___ is the parent of QYKCZj___.
+WTXbeP___ is a descendant of ISWdjR___.
+SNRChQ___ is the parent of SNRChQ___.
+vIzbyN___ is an ancestor of vIzbyN___.
+nUPbPz___ is a descendant of Inq______.
+nKaCHN___ is an ancestor of GLKbeC___.
+rzTbHq___ is the parent of QYKCZj___.
+rzTbHq___ is a descendant of CyD______.
+fyDdmU___ is a sibling of nKaCHN___.
+nKaCHN___ is an ancestor of tDYCMo___.
+GjDCEx___ is a descendant of bop______.
+Qqw______ is the parent of pIY______.
+fWP______ is a sibling of pIY______.
+rzTbHq___ is a sibling of dNk______.
+fyDdmU___ is the parent of QYKCZj___.
+IUXCrt___ is a child of jcn______.
+neM______ is a descendant of Gwh______.
+MKzbgT___ is a descendant of IUXCrt___.
+Qqw______ is a child of ECx______.
+QnTbkx___ is the parent of GLKbeC___.
+lAXCBv___ is a child of jtUbnb___.
+vIzbyN___ is a child of KFNCcP___.
+bvAdQb___ is the parent of bvAdQb___.
+bVdCUw___ is a descendant of bop______.
+pbhbXK___ is the parent of pbhbXK___.
+ISWdjR___ is a sibling of SNRChQ___.
+nKaCHN___ is the parent of CyD______.
+bop______ is the parent of QYKCZj___.
+GjDCEx___ is the parent of UqSbKU___.
+bRLbFN___ is the parent of Inq______.
+EgVCLd___ is a sibling of SeXbAB___.
+AehCWF___ is a sibling of AehCWF___.
+jcn______ is the parent of Inq______.
+CkhdvA___ is an ancestor of dlCdGd___.
+YgU______ is an ancestor of tzn______.
+tIVbVe___ is a sibling of KOjbMt___.
+ECx______ is the parent of tzn______.
+MKzbgT___ is an ancestor of EvEdWs___.
+tIVbVe___ is an ancestor of GjDCEx___.
+bvAdQb___ is a child of AEvduV___.
+tzn______ is the parent of tDYCMo___.
+Inq______ is a descendant of bop______.
+rwRCAt___ is a child of tDYCMo___.
+WTXbeP___ is a child of SeXbAB___.
+pIY______ is the parent of tzn______.
+bop______ is a descendant of bop______.
+AEvduV___ is an ancestor of EvEdWs___.
+bop______ is a sibling of pIY______.
+MGH______ is the parent of MGH______.
+SeXbAB___ is a descendant of hnxbWc___.
+KcYdYn___ is the parent of CUCbAR___.
+tzn______ is an ancestor of Inq______.
+ECx______ is an ancestor of zKv______.
+jvmdij___ is a descendant of MmqCuR___.
+KOjbMt___ is a descendant of bop______.
+WTXbeP___ is an ancestor of EgVCLd___.
+bRLbFN___ is a descendant of bop______.
+bop______ is a descendant of QYKCZj___.
+WsSCiE___ is an ancestor of WsSCiE___.
+rwRCAt___ is the parent of pIY______.
+GjDCEx___ is a child of fyyCkb___.
+fwlbrg___ is a child of CUCbAR___.
+EgVCLd___ is a child of volCpc___.
+dfabLI___ is a descendant of dfabLI___.
+zKv______ is an ancestor of zKv______.
+SeXbAB___ is a child of rzTbHq___.
+EvEdWs___ is the parent of EvEdWs___.
+bRLbFN___ is an ancestor of bop______.
+volCpc___ is a child of MmqCuR___.
+KcYdYn___ is a descendant of bop______.
+pbhbXK___ is the parent of pbhbXK___.
+lAXCBv___ is a descendant of lAXCBv___.
+fWP______ is an ancestor of pIY______.
+hqcCqZ___ is a descendant of SNRChQ___.
+AEvduV___ is a child of zJZCvf___.
+MmqCuR___ is a descendant of UcHCCr___.
+WsSCiE___ is a child of jcn______.
+GjDCEx___ is the parent of EZCbMj___.
+tIVbVe___ is a descendant of bop______.
+xdD______ is a child of pIY______.
+jlQCbh___ is an ancestor of KFNCcP___.
+GJHdSV___ is a sibling of bvAdQb___.
+IUXCrt___ is a child of QnTbkx___.
+Gwh______ is an ancestor of Inq______.
+SeXbAB___ is a descendant of vOV______.
+GJHdSV___ is an ancestor of GJHdSV___.
+fyDdmU___ is an ancestor of tzn______.
+ECx______ is a sibling of IHZbNW___.
+bop______ is a child of bop______.
+vIzbyN___ is a descendant of GLKbeC___.
+dfabLI___ is a sibling of fwlbrg___.
+GjDCEx___ is the parent of GjDCEx___.
+lvIbGZ___ is the parent of MKzbgT___.
+YgU______ is a child of Inq______.
+vIzbyN___ is a child of vOV______.
+MGH______ is a sibling of xdD______.
+fWP______ is an ancestor of MQKdBC___.
+IHZbNW___ is the parent of jtUbnb___.
+Gwh______ is a descendant of bop______.
+hIu______ is a descendant of dfabLI___.
+UcHCCr___ is the parent of ISWdjR___.
+lAXCBv___ is the parent of MmqCuR___.
+MKzbgT___ is a child of lvIbGZ___.
+hqcCqZ___ is a child of hqcCqZ___.
+nUPbPz___ is a child of MQKdBC___.
+pbhbXK___ is a sibling of tDYCMo___.
+YIvbBs___ is a child of xEFbvR___.
+90 198
+bop______
+ CyD______
+  dNk______
+   ECx______
+    fWP______
+     Gwh______
+     hIu______
+    Inq______
+     jcn______
+      KcH______
+      lHu______
+    MGH______
+     neM______
+      OuA______
+       pIY______
+        Qqw______
+         rLh______
+          Ssg______
+          tzn______
+         UaY______
+         vOV______
+   Wqk______
+    xdD______
+     YgU______
+      zKv______
+       AuZbgM___
+        bRLbFN___
+         CUCbAR___
+       dfabLI___
+        EZCbMj___
+       fwlbrg___
+        GLKbeC___
+         hnxbWc___
+    IHZbNW___
+     jtUbnb___
+     KOjbMt___
+      lvIbGZ___
+       MKzbgT___
+       nUPbPz___
+        OgQbvV___
+         pbhbXK___
+         QnTbkx___
+         rzTbHq___
+        SeXbAB___
+        tIVbVe___
+         UqSbKU___
+         vIzbyN___
+     WTXbeP___
+      xEFbvR___
+       YIvbBs___
+      zAVbex___
+       AehCWF___
+       bVdCUw___
+    CfECco___
+   dwLCdY___
+    EgVCLd___
+  fyyCkb___
+   GjDCEx___
+    hqcCqZ___
+     IUXCrt___
+      jlQCbh___
+       KFNCcP___
+        lAXCBv___
+        MmqCuR___
+     nKaCHN___
+      ObrCdr___
+    pNCCkW___
+     QYKCZj___
+    rwRCAt___
+     SNRChQ___
+      tDYCMo___
+       UcHCCr___
+      volCpc___
+   WsSCiE___
+   xwyCwa___
+    YZLCnd___
+     zJZCvf___
+      AEvduV___
+       bvAdQb___
+        CkhdvA___
+        dlCdGd___
+       EvEdWs___
+        fyDdmU___
+         GJHdSV___
+        hOudOG___
+       ISWdjR___
+      jvmdij___
+    KcYdYn___
+     lupdKa___
+      MQKdBC___
+QnTbkx___ is a descendant of bop______.
+CyD______ is a child of bop______.
+jvmdij___ is a sibling of YZLCnd___.
+QYKCZj___ is a child of pNCCkW___.
+nKaCHN___ is the parent of ObrCdr___.
+jtUbnb___ is a sibling of jtUbnb___.
+GJHdSV___ is the parent of GJHdSV___.
+jtUbnb___ is a descendant of bop______.
+hqcCqZ___ is the parent of IUXCrt___.
+neM______ is a descendant of MGH______.
+xwyCwa___ is the parent of YZLCnd___.
+jvmdij___ is a child of zJZCvf___.
+Ssg______ is an ancestor of Ssg______.
+zAVbex___ is a sibling of bRLbFN___.
+zJZCvf___ is the parent of jvmdij___.
+GJHdSV___ is a descendant of GJHdSV___.
+fyyCkb___ is the parent of EgVCLd___.
+WTXbeP___ is a descendant of IHZbNW___.
+lAXCBv___ is a descendant of lAXCBv___.
+fyyCkb___ is an ancestor of AehCWF___.
+nKaCHN___ is a child of WsSCiE___.
+lupdKa___ is an ancestor of MQKdBC___.
+neM______ is a descendant of bop______.
+UqSbKU___ is a sibling of hnxbWc___.
+tzn______ is an ancestor of tzn______.
+jcn______ is the parent of lHu______.
+hIu______ is a sibling of Gwh______.
+EZCbMj___ is a sibling of vOV______.
+MKzbgT___ is an ancestor of YIvbBs___.
+CfECco___ is a descendant of bop______.
+rwRCAt___ is the parent of SNRChQ___.
+vIzbyN___ is the parent of rzTbHq___.
+hIu______ is a sibling of MQKdBC___.
+hnxbWc___ is a sibling of MQKdBC___.
+rzTbHq___ is the parent of rzTbHq___.
+YgU______ is a descendant of bop______.
+volCpc___ is an ancestor of lHu______.
+dlCdGd___ is a descendant of WsSCiE___.
+nUPbPz___ is a descendant of bop______.
+bvAdQb___ is a child of AEvduV___.
+jtUbnb___ is an ancestor of jtUbnb___.
+hIu______ is a descendant of dNk______.
+pIY______ is the parent of Qqw______.
+tIVbVe___ is a sibling of KcH______.
+EZCbMj___ is a child of dfabLI___.
+nKaCHN___ is an ancestor of ObrCdr___.
+lvIbGZ___ is the parent of CyD______.
+UqSbKU___ is a descendant of EgVCLd___.
+rzTbHq___ is a sibling of SeXbAB___.
+OuA______ is the parent of pIY______.
+YZLCnd___ is a descendant of QnTbkx___.
+GJHdSV___ is an ancestor of GJHdSV___.
+OgQbvV___ is an ancestor of dNk______.
+EgVCLd___ is a child of CyD______.
+OuA______ is a descendant of bop______.
+CUCbAR___ is a sibling of jtUbnb___.
+GLKbeC___ is a child of MQKdBC___.
+AEvduV___ is a descendant of xwyCwa___.
+hnxbWc___ is a sibling of hnxbWc___.
+CUCbAR___ is a sibling of EZCbMj___.
+MmqCuR___ is an ancestor of MmqCuR___.
+zKv______ is a sibling of CfECco___.
+lupdKa___ is the parent of MQKdBC___.
+OuA______ is an ancestor of UaY______.
+jlQCbh___ is a sibling of volCpc___.
+dlCdGd___ is the parent of Wqk______.
+neM______ is the parent of ISWdjR___.
+jcn______ is an ancestor of lHu______.
+nUPbPz___ is the parent of KcH______.
+lAXCBv___ is a descendant of jtUbnb___.
+fWP______ is a sibling of jtUbnb___.
+UaY______ is a sibling of MGH______.
+MKzbgT___ is a child of lvIbGZ___.
+xwyCwa___ is a descendant of bop______.
+zJZCvf___ is the parent of WsSCiE___.
+QYKCZj___ is a sibling of EgVCLd___.
+fwlbrg___ is a child of zKv______.
+zAVbex___ is an ancestor of YZLCnd___.
+zKv______ is a descendant of bop______.
+MmqCuR___ is an ancestor of MmqCuR___.
+CUCbAR___ is an ancestor of CUCbAR___.
+xwyCwa___ is the parent of YZLCnd___.
+tIVbVe___ is an ancestor of jtUbnb___.
+CkhdvA___ is the parent of CkhdvA___.
+Inq______ is an ancestor of WsSCiE___.
+vIzbyN___ is a sibling of CyD______.
+MKzbgT___ is a child of lvIbGZ___.
+CUCbAR___ is a sibling of hnxbWc___.
+vOV______ is a child of Qqw______.
+fwlbrg___ is the parent of GLKbeC___.
+KcH______ is a child of MQKdBC___.
+lAXCBv___ is a descendant of SNRChQ___.
+EgVCLd___ is a descendant of bop______.
+YZLCnd___ is the parent of zJZCvf___.
+volCpc___ is a child of SNRChQ___.
+SeXbAB___ is the parent of EgVCLd___.
+ECx______ is the parent of WsSCiE___.
+hnxbWc___ is an ancestor of hnxbWc___.
+CUCbAR___ is the parent of GjDCEx___.
+fyyCkb___ is an ancestor of hOudOG___.
+ObrCdr___ is a descendant of CyD______.
+ECx______ is an ancestor of UcHCCr___.
+CyD______ is a child of jtUbnb___.
+ISWdjR___ is a descendant of bop______.
+OuA______ is a sibling of OuA______.
+hOudOG___ is a sibling of jvmdij___.
+KOjbMt___ is the parent of CyD______.
+tzn______ is a child of tzn______.
+fyDdmU___ is an ancestor of EgVCLd___.
+KcH______ is a sibling of KcH______.
+hqcCqZ___ is a descendant of EZCbMj___.
+GjDCEx___ is the parent of hqcCqZ___.
+AEvduV___ is a descendant of CyD______.
+fwlbrg___ is a child of zKv______.
+KFNCcP___ is a sibling of MmqCuR___.
+zAVbex___ is an ancestor of bVdCUw___.
+jlQCbh___ is an ancestor of lAXCBv___.
+neM______ is an ancestor of UaY______.
+SNRChQ___ is an ancestor of EgVCLd___.
+GjDCEx___ is the parent of hqcCqZ___.
+vIzbyN___ is a sibling of CfECco___.
+CyD______ is a child of bop______.
+KOjbMt___ is an ancestor of vOV______.
+CyD______ is an ancestor of MQKdBC___.
+bvAdQb___ is an ancestor of Gwh______.
+rzTbHq___ is a child of OgQbvV___.
+zJZCvf___ is a child of YZLCnd___.
+AehCWF___ is a child of zAVbex___.
+zJZCvf___ is the parent of WsSCiE___.
+GJHdSV___ is a sibling of WsSCiE___.
+lHu______ is a descendant of dNk______.
+tIVbVe___ is the parent of bop______.
+ObrCdr___ is the parent of ObrCdr___.
+MmqCuR___ is the parent of MmqCuR___.
+IHZbNW___ is the parent of jtUbnb___.
+bvAdQb___ is the parent of CkhdvA___.
+ObrCdr___ is a descendant of CyD______.
+SeXbAB___ is an ancestor of lHu______.
+Qqw______ is an ancestor of tzn______.
+YZLCnd___ is an ancestor of WsSCiE___.
+KFNCcP___ is a descendant of volCpc___.
+YIvbBs___ is a child of YIvbBs___.
+QnTbkx___ is an ancestor of lupdKa___.
+GJHdSV___ is the parent of bop______.
+xwyCwa___ is an ancestor of KOjbMt___.
+EgVCLd___ is the parent of EgVCLd___.
+pbhbXK___ is an ancestor of MmqCuR___.
+zJZCvf___ is an ancestor of jvmdij___.
+SeXbAB___ is a sibling of SeXbAB___.
+KcYdYn___ is the parent of lupdKa___.
+bvAdQb___ is a descendant of CkhdvA___.
+QYKCZj___ is an ancestor of QYKCZj___.
+pbhbXK___ is a child of OgQbvV___.
+tzn______ is an ancestor of Ssg______.
+IHZbNW___ is an ancestor of rLh______.
+EvEdWs___ is the parent of UcHCCr___.
+UcHCCr___ is an ancestor of UcHCCr___.
+YZLCnd___ is a descendant of WsSCiE___.
+EgVCLd___ is an ancestor of MmqCuR___.
+dNk______ is a descendant of bop______.
+neM______ is an ancestor of zJZCvf___.
+AuZbgM___ is the parent of CUCbAR___.
+AEvduV___ is the parent of WsSCiE___.
+KcYdYn___ is a child of xwyCwa___.
+nKaCHN___ is a descendant of jvmdij___.
+bvAdQb___ is a sibling of EgVCLd___.
+AehCWF___ is a child of zAVbex___.
+KcYdYn___ is the parent of MKzbgT___.
+UcHCCr___ is an ancestor of UcHCCr___.
+tDYCMo___ is a child of WsSCiE___.
+lvIbGZ___ is a descendant of EgVCLd___.
+xEFbvR___ is a sibling of YIvbBs___.
+EZCbMj___ is a descendant of QYKCZj___.
+jtUbnb___ is a sibling of CfECco___.
+xEFbvR___ is a child of WTXbeP___.
+vIzbyN___ is a child of tIVbVe___.
+lHu______ is a child of jcn______.
+CkhdvA___ is the parent of jvmdij___.
+lupdKa___ is a child of UcHCCr___.
+zJZCvf___ is a descendant of zJZCvf___.
+rzTbHq___ is a descendant of WsSCiE___.
+dNk______ is the parent of ECx______.
+MKzbgT___ is the parent of MKzbgT___.
+EgVCLd___ is an ancestor of bop______.
+WsSCiE___ is a descendant of fyyCkb___.
+fWP______ is an ancestor of Gwh______.
+CkhdvA___ is the parent of CfECco___.
+GJHdSV___ is a child of fyDdmU___.
+QnTbkx___ is a descendant of bop______.
+Qqw______ is a child of ISWdjR___.
+ECx______ is a descendant of KcH______.
+lAXCBv___ is an ancestor of lAXCBv___.
+lHu______ is a descendant of bop______.
+rLh______ is an ancestor of QYKCZj___.
+xEFbvR___ is the parent of YIvbBs___.
+lAXCBv___ is a sibling of dNk______.
+xEFbvR___ is a sibling of KcH______.
+dNk______ is a descendant of bop______.
+97 193
+bop______
+ CyD______
+  dNk______
+   ECx______
+    fWP______
+     Gwh______
+      hIu______
+       Inq______
+        jcn______
+         KcH______
+          lHu______
+        MGH______
+         neM______
+          OuA______
+       pIY______
+        Qqw______
+        rLh______
+         Ssg______
+        tzn______
+      UaY______
+       vOV______
+        Wqk______
+         xdD______
+          YgU______
+         zKv______
+        AuZbgM___
+         bRLbFN___
+         CUCbAR___
+          dfabLI___
+    EZCbMj___
+     fwlbrg___
+    GLKbeC___
+     hnxbWc___
+   IHZbNW___
+    jtUbnb___
+     KOjbMt___
+      lvIbGZ___
+       MKzbgT___
+        nUPbPz___
+         OgQbvV___
+         pbhbXK___
+       QnTbkx___
+        rzTbHq___
+         SeXbAB___
+          tIVbVe___
+         UqSbKU___
+         vIzbyN___
+       WTXbeP___
+        xEFbvR___
+         YIvbBs___
+         zAVbex___
+         AehCWF___
+        bVdCUw___
+         CfECco___
+        dwLCdY___
+         EgVCLd___
+      fyyCkb___
+       GjDCEx___
+        hqcCqZ___
+       IUXCrt___
+      jlQCbh___
+       KFNCcP___
+       lAXCBv___
+       MmqCuR___
+  nKaCHN___
+   ObrCdr___
+    pNCCkW___
+     QYKCZj___
+      rwRCAt___
+       SNRChQ___
+       tDYCMo___
+        UcHCCr___
+       volCpc___
+      WsSCiE___
+       xwyCwa___
+        YZLCnd___
+         zJZCvf___
+          AEvduV___
+          bvAdQb___
+         CkhdvA___
+          dlCdGd___
+         EvEdWs___
+      fyDdmU___
+  GJHdSV___
+   hOudOG___
+    ISWdjR___
+     jvmdij___
+    KcYdYn___
+    lupdKa___
+     MQKdBC___
+   nxBdSZ___
+    OdJdQo___
+     pRPdKu___
+   QnYdEP___
+    rrCdAL___
+    SXldDi___
+     teedSj___
+neM______ is a sibling of OuA______.
+jlQCbh___ is the parent of KFNCcP___.
+AuZbgM___ is an ancestor of dfabLI___.
+AEvduV___ is a child of SNRChQ___.
+QYKCZj___ is an ancestor of fyDdmU___.
+UaY______ is a sibling of IHZbNW___.
+Gwh______ is the parent of pRPdKu___.
+pRPdKu___ is a descendant of ObrCdr___.
+MQKdBC___ is a descendant of bop______.
+EgVCLd___ is a child of dwLCdY___.
+YgU______ is a child of KcYdYn___.
+SeXbAB___ is the parent of bop______.
+CUCbAR___ is a child of tzn______.
+AehCWF___ is the parent of teedSj___.
+OdJdQo___ is an ancestor of pRPdKu___.
+Ssg______ is a child of rLh______.
+Ssg______ is a sibling of UaY______.
+EZCbMj___ is a sibling of fwlbrg___.
+Gwh______ is a descendant of ECx______.
+dlCdGd___ is a sibling of SNRChQ___.
+pRPdKu___ is a sibling of nKaCHN___.
+fyyCkb___ is the parent of EgVCLd___.
+pNCCkW___ is a child of SNRChQ___.
+YZLCnd___ is an ancestor of dlCdGd___.
+zKv______ is a descendant of tzn______.
+MGH______ is a child of ECx______.
+nxBdSZ___ is a descendant of GJHdSV___.
+bRLbFN___ is a child of AuZbgM___.
+nKaCHN___ is a child of rrCdAL___.
+IUXCrt___ is a child of fyyCkb___.
+pIY______ is an ancestor of Qqw______.
+fWP______ is a descendant of Ssg______.
+CUCbAR___ is an ancestor of dfabLI___.
+UcHCCr___ is a sibling of volCpc___.
+WTXbeP___ is a child of dNk______.
+EvEdWs___ is a descendant of ObrCdr___.
+jvmdij___ is a descendant of CyD______.
+YZLCnd___ is a child of xwyCwa___.
+jtUbnb___ is an ancestor of MQKdBC___.
+xwyCwa___ is a child of WsSCiE___.
+vOV______ is a descendant of bop______.
+OdJdQo___ is an ancestor of OdJdQo___.
+rzTbHq___ is a descendant of CfECco___.
+MQKdBC___ is the parent of MQKdBC___.
+dwLCdY___ is a descendant of rrCdAL___.
+OgQbvV___ is a child of IHZbNW___.
+YIvbBs___ is a child of xEFbvR___.
+WsSCiE___ is a descendant of bop______.
+rwRCAt___ is an ancestor of dlCdGd___.
+CfECco___ is an ancestor of KcYdYn___.
+UqSbKU___ is a sibling of teedSj___.
+YIvbBs___ is a descendant of ObrCdr___.
+volCpc___ is a sibling of zJZCvf___.
+KOjbMt___ is a descendant of bop______.
+IHZbNW___ is a descendant of bop______.
+QnYdEP___ is a sibling of OgQbvV___.
+lvIbGZ___ is a sibling of pNCCkW___.
+jlQCbh___ is a child of KOjbMt___.
+jcn______ is an ancestor of EvEdWs___.
+GJHdSV___ is a child of pRPdKu___.
+AehCWF___ is the parent of SNRChQ___.
+lupdKa___ is a child of hOudOG___.
+UqSbKU___ is a sibling of dlCdGd___.
+WTXbeP___ is a sibling of IUXCrt___.
+CyD______ is an ancestor of KcYdYn___.
+tIVbVe___ is the parent of tIVbVe___.
+bVdCUw___ is an ancestor of CfECco___.
+AehCWF___ is an ancestor of AehCWF___.
+lupdKa___ is a sibling of pRPdKu___.
+OuA______ is an ancestor of fwlbrg___.
+vOV______ is an ancestor of pIY______.
+fyyCkb___ is a child of KOjbMt___.
+ECx______ is a sibling of CyD______.
+volCpc___ is the parent of fyDdmU___.
+AuZbgM___ is a child of vOV______.
+nKaCHN___ is the parent of ObrCdr___.
+jcn______ is an ancestor of lHu______.
+KFNCcP___ is the parent of bvAdQb___.
+WTXbeP___ is the parent of OgQbvV___.
+fWP______ is a child of ECx______.
+bRLbFN___ is an ancestor of bRLbFN___.
+CkhdvA___ is the parent of AEvduV___.
+rrCdAL___ is a sibling of rrCdAL___.
+tzn______ is a sibling of UcHCCr___.
+zKv______ is a descendant of Gwh______.
+CUCbAR___ is an ancestor of dfabLI___.
+QYKCZj___ is a child of pNCCkW___.
+tzn______ is a child of pIY______.
+jtUbnb___ is the parent of KOjbMt___.
+dNk______ is the parent of ECx______.
+jcn______ is an ancestor of lHu______.
+hOudOG___ is a descendant of OuA______.
+UcHCCr___ is a child of tDYCMo___.
+MQKdBC___ is a descendant of bop______.
+fyyCkb___ is a descendant of pRPdKu___.
+zJZCvf___ is an ancestor of YZLCnd___.
+rrCdAL___ is an ancestor of volCpc___.
+SNRChQ___ is an ancestor of OuA______.
+CUCbAR___ is an ancestor of CUCbAR___.
+WTXbeP___ is a sibling of hnxbWc___.
+GLKbeC___ is a child of ECx______.
+xwyCwa___ is an ancestor of jvmdij___.
+KcYdYn___ is a descendant of hOudOG___.
+KcYdYn___ is the parent of KcYdYn___.
+YZLCnd___ is a child of pRPdKu___.
+pbhbXK___ is a descendant of dNk______.
+ISWdjR___ is a descendant of GJHdSV___.
+MQKdBC___ is an ancestor of MQKdBC___.
+lupdKa___ is a sibling of lvIbGZ___.
+neM______ is an ancestor of fyDdmU___.
+EZCbMj___ is an ancestor of fwlbrg___.
+lupdKa___ is a child of hOudOG___.
+lAXCBv___ is a child of jlQCbh___.
+CyD______ is a child of fyDdmU___.
+hqcCqZ___ is the parent of hqcCqZ___.
+AehCWF___ is a descendant of YgU______.
+YIvbBs___ is the parent of dwLCdY___.
+volCpc___ is an ancestor of CyD______.
+Qqw______ is an ancestor of Qqw______.
+jcn______ is a descendant of bop______.
+WsSCiE___ is a descendant of bop______.
+Inq______ is a child of fyDdmU___.
+bop______ is the parent of neM______.
+jvmdij___ is a child of GJHdSV___.
+OgQbvV___ is a descendant of vIzbyN___.
+EvEdWs___ is a child of EvEdWs___.
+fyyCkb___ is a descendant of vIzbyN___.
+QnTbkx___ is a sibling of teedSj___.
+EgVCLd___ is a child of Gwh______.
+pbhbXK___ is a descendant of fwlbrg___.
+ObrCdr___ is a sibling of ObrCdr___.
+GJHdSV___ is a descendant of bop______.
+YgU______ is a descendant of KFNCcP___.
+KcH______ is a sibling of lHu______.
+QnTbkx___ is a sibling of ECx______.
+rLh______ is the parent of Ssg______.
+CkhdvA___ is a descendant of SNRChQ___.
+lHu______ is a sibling of lHu______.
+EvEdWs___ is an ancestor of pRPdKu___.
+xEFbvR___ is an ancestor of AehCWF___.
+hqcCqZ___ is a sibling of vIzbyN___.
+CyD______ is a descendant of CyD______.
+AEvduV___ is a descendant of EvEdWs___.
+volCpc___ is an ancestor of volCpc___.
+Gwh______ is a sibling of xdD______.
+OdJdQo___ is a sibling of pRPdKu___.
+OuA______ is the parent of OuA______.
+Inq______ is an ancestor of lHu______.
+rLh______ is a descendant of rLh______.
+MmqCuR___ is a descendant of bop______.
+Wqk______ is an ancestor of zKv______.
+dwLCdY___ is a descendant of fwlbrg___.
+QnYdEP___ is a descendant of volCpc___.
+fyDdmU___ is an ancestor of fyDdmU___.
+vIzbyN___ is a sibling of vIzbyN___.
+jtUbnb___ is a child of IHZbNW___.
+AuZbgM___ is a child of dfabLI___.
+neM______ is an ancestor of OuA______.
+pIY______ is the parent of Qqw______.
+EZCbMj___ is a sibling of EvEdWs___.
+zKv______ is a child of lHu______.
+Qqw______ is the parent of Qqw______.
+QnTbkx___ is a descendant of fyDdmU___.
+tzn______ is an ancestor of tzn______.
+volCpc___ is a sibling of UcHCCr___.
+bVdCUw___ is a child of WTXbeP___.
+dfabLI___ is a sibling of dfabLI___.
+CUCbAR___ is the parent of dfabLI___.
+tIVbVe___ is a child of SeXbAB___.
+pRPdKu___ is an ancestor of pRPdKu___.
+QnYdEP___ is a child of fwlbrg___.
+jcn______ is the parent of KcH______.
+rrCdAL___ is a sibling of SNRChQ___.
+ECx______ is the parent of fwlbrg___.
+rrCdAL___ is the parent of rrCdAL___.
+lAXCBv___ is an ancestor of lAXCBv___.
+hIu______ is a child of Gwh______.
+KOjbMt___ is the parent of hqcCqZ___.
+xdD______ is the parent of YgU______.
+MGH______ is a sibling of OuA______.
+ObrCdr___ is an ancestor of KOjbMt___.
+dlCdGd___ is a descendant of AEvduV___.
+bVdCUw___ is the parent of MmqCuR___.
+xdD______ is a sibling of pIY______.
+xdD______ is a descendant of MmqCuR___.
+bvAdQb___ is a descendant of bop______.
+ISWdjR___ is a child of hOudOG___.
+rzTbHq___ is an ancestor of jlQCbh___.
+AEvduV___ is a sibling of volCpc___.
+YIvbBs___ is a descendant of MmqCuR___.
+pRPdKu___ is a descendant of hOudOG___.
+OdJdQo___ is a descendant of bop______.
+jlQCbh___ is a sibling of lvIbGZ___.
+0 0

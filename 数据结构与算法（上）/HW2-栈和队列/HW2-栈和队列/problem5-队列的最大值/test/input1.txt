@@ -1,0 +1,1040 @@
+100
+enqueue 553001291
+enqueue 553001145
+dequeue
+dequeue
+dequeue
+max
+dequeue
+dequeue
+enqueue 553002009
+dequeue
+dequeue
+dequeue
+dequeue
+enqueue 552998654
+dequeue
+enqueue 553006278
+dequeue
+enqueue 553006687
+max
+enqueue 553005905
+dequeue
+dequeue
+dequeue
+dequeue
+dequeue
+dequeue
+dequeue
+dequeue
+enqueue 553003645
+max
+enqueue 553004955
+dequeue
+enqueue 553006423
+dequeue
+dequeue
+enqueue 552999866
+dequeue
+dequeue
+enqueue 553006248
+enqueue 553005179
+dequeue
+dequeue
+dequeue
+dequeue
+dequeue
+enqueue 552999195
+dequeue
+enqueue 552999663
+dequeue
+enqueue 553000159
+enqueue 553006555
+enqueue 553006055
+enqueue 553000592
+max
+max
+enqueue 553001485
+max
+enqueue 553000680
+dequeue
+enqueue 553003807
+enqueue 553000089
+enqueue 553001741
+enqueue 553001904
+max
+dequeue
+enqueue 553007888
+enqueue 553008163
+dequeue
+max
+max
+enqueue 553007488
+enqueue 553004092
+enqueue 553002101
+max
+enqueue 553003136
+enqueue 552998483
+enqueue 553003893
+enqueue 553004859
+enqueue 553001286
+enqueue 552999163
+max
+max
+enqueue 553001864
+enqueue 552999466
+enqueue 553002430
+enqueue 552998487
+max
+enqueue 553003717
+enqueue 552999931
+max
+enqueue 553005422
+enqueue 553003294
+enqueue 553003752
+enqueue 553004011
+max
+max
+enqueue 553001494
+enqueue 553004414
+enqueue 553006584
+max
+enqueue 553001040
+enqueue 552999091
+max
+enqueue 553008370
+enqueue 553006119
+enqueue 552998658
+enqueue 552999536
+max
+max
+enqueue 553007999
+enqueue 552999290
+enqueue 553003363
+max
+dequeue
+enqueue 553008232
+dequeue
+enqueue 553007873
+enqueue 553003481
+enqueue 553000714
+enqueue 553003795
+max
+enqueue 552998752
+enqueue 552998600
+enqueue 553008246
+max
+enqueue 553008353
+max
+enqueue 552999004
+enqueue 553006785
+enqueue 552999465
+max
+enqueue 552999713
+max
+dequeue
+enqueue 553002925
+dequeue
+enqueue 553003647
+enqueue 553001498
+max
+enqueue 553007193
+enqueue 553004788
+max
+enqueue 552999582
+max
+max
+enqueue 553003344
+enqueue 553008152
+max
+enqueue 553001768
+dequeue
+max
+enqueue 553005243
+dequeue
+enqueue 553000783
+enqueue 553000352
+enqueue 553005764
+enqueue 553008027
+dequeue
+enqueue 553004322
+dequeue
+enqueue 553007175
+max
+enqueue 552998683
+max
+enqueue 553005581
+max
+enqueue 553004912
+enqueue 552999156
+dequeue
+enqueue 552998879
+enqueue 552998564
+dequeue
+enqueue 552999418
+enqueue 553007098
+enqueue 553006897
+enqueue 553005528
+max
+enqueue 553004087
+enqueue 553002901
+enqueue 553000760
+enqueue 553008315
+enqueue 552998844
+max
+max
+enqueue 553008086
+max
+enqueue 553004455
+max
+dequeue
+max
+max
+enqueue 553008107
+enqueue 553002943
+enqueue 552999274
+enqueue 553006741
+enqueue 553004141
+enqueue 553003454
+enqueue 553004489
+enqueue 553004377
+enqueue 553004976
+enqueue 553002488
+enqueue 553004403
+max
+max
+enqueue 553002733
+enqueue 553007326
+enqueue 553005917
+enqueue 552999332
+max
+enqueue 552995823
+enqueue 553007345
+dequeue
+max
+enqueue 552997890
+dequeue
+enqueue 552998119
+max
+dequeue
+max
+enqueue 552989941
+max
+dequeue
+enqueue 553007548
+max
+enqueue 553005944
+enqueue 552997440
+enqueue 553007236
+dequeue
+max
+enqueue 552994870
+dequeue
+max
+enqueue 553004625
+dequeue
+enqueue 553000070
+enqueue 552989651
+enqueue 553008315
+max
+enqueue 553007752
+max
+enqueue 553003441
+enqueue 552992901
+max
+dequeue
+dequeue
+max
+enqueue 553000490
+dequeue
+enqueue 552999969
+enqueue 552993601
+max
+dequeue
+max
+enqueue 552997336
+dequeue
+max
+dequeue
+max
+enqueue 553001284
+max
+enqueue 553005726
+max
+dequeue
+dequeue
+dequeue
+dequeue
+enqueue 553008024
+max
+enqueue 553007525
+dequeue
+max
+dequeue
+enqueue 553004497
+max
+enqueue 553008269
+max
+enqueue 553007500
+max
+max
+enqueue 552996458
+dequeue
+max
+dequeue
+enqueue 552990032
+max
+max
+enqueue 553005567
+max
+dequeue
+enqueue 552988936
+dequeue
+max
+enqueue 553006329
+dequeue
+enqueue 553001441
+enqueue 552995326
+max
+enqueue 552996621
+max
+dequeue
+max
+enqueue 552991551
+max
+dequeue
+max
+dequeue
+max
+enqueue 552993116
+dequeue
+max
+enqueue 553002250
+dequeue
+enqueue 553001461
+enqueue 552996978
+max
+dequeue
+enqueue 553008182
+dequeue
+enqueue 553008260
+max
+dequeue
+enqueue 552994561
+max
+enqueue 552991724
+dequeue
+max
+enqueue 553002340
+max
+dequeue
+max
+max
+enqueue 552995079
+dequeue
+max
+enqueue 552999449
+enqueue 552997977
+max
+dequeue
+dequeue
+max
+dequeue
+max
+enqueue 553008185
+enqueue 552994001
+enqueue 553007042
+max
+dequeue
+enqueue 552989901
+enqueue 553005625
+dequeue
+enqueue 553002575
+dequeue
+enqueue 553002702
+enqueue 552993547
+max
+dequeue
+dequeue
+enqueue 552991571
+dequeue
+dequeue
+max
+enqueue 552990138
+max
+enqueue 552995744
+enqueue 553003274
+max
+enqueue 553003611
+dequeue
+max
+enqueue 552995189
+max
+dequeue
+enqueue 553005776
+dequeue
+enqueue 553003530
+dequeue
+max
+enqueue 552992281
+max
+max
+max
+dequeue
+max
+enqueue 552990180
+max
+dequeue
+enqueue 553002400
+max
+dequeue
+max
+enqueue 553007489
+dequeue
+max
+dequeue
+max
+enqueue 552996495
+max
+enqueue 552996498
+dequeue
+max
+enqueue 553006435
+dequeue
+enqueue 553006828
+max
+enqueue 553005078
+dequeue
+max
+enqueue 552989956
+max
+dequeue
+max
+enqueue 552989579
+max
+max
+enqueue 553006739
+max
+dequeue
+max
+enqueue 553003910
+dequeue
+enqueue 553007866
+dequeue
+max
+enqueue 552991900
+max
+dequeue
+enqueue 553006447
+dequeue
+max
+enqueue 552995099
+max
+dequeue
+enqueue 553000704
+max
+enqueue 553001958
+dequeue
+enqueue 553000552
+enqueue 552993456
+max
+dequeue
+max
+dequeue
+enqueue 553001255
+max
+enqueue 553007820
+dequeue
+enqueue 553006289
+max
+dequeue
+enqueue 552995471
+dequeue
+enqueue 552995864
+max
+max
+dequeue
+enqueue 552989364
+max
+dequeue
+dequeue
+max
+enqueue 553006263
+dequeue
+enqueue 553004353
+dequeue
+enqueue 553004135
+enqueue 552989395
+dequeue
+max
+enqueue 553001993
+dequeue
+dequeue
+max
+enqueue 553005500
+max
+enqueue 553005684
+dequeue
+enqueue 553004413
+max
+enqueue 553003633
+dequeue
+dequeue
+max
+dequeue
+enqueue 552997211
+enqueue 553000148
+dequeue
+enqueue 553006977
+max
+dequeue
+enqueue 552990612
+max
+enqueue 552996347
+max
+dequeue
+dequeue
+max
+enqueue 553002938
+max
+dequeue
+enqueue 552996942
+max
+enqueue 552993832
+max
+dequeue
+max
+enqueue 552991031
+dequeue
+enqueue 552997496
+dequeue
+dequeue
+max
+dequeue
+max
+enqueue 552994728
+enqueue 553001385
+enqueue 552995479
+max
+dequeue
+max
+enqueue 552993954
+max
+dequeue
+enqueue 553001687
+max
+dequeue
+max
+enqueue 553007654
+dequeue
+enqueue 553007243
+dequeue
+enqueue 553002029
+max
+dequeue
+enqueue 552991701
+max
+enqueue 552996148
+enqueue 553007955
+dequeue
+enqueue 553006831
+max
+dequeue
+dequeue
+dequeue
+dequeue
+max
+enqueue 552991214
+max
+enqueue 552995569
+max
+enqueue 552991950
+enqueue 553003181
+dequeue
+max
+dequeue
+max
+enqueue 552996232
+max
+enqueue 552995596
+max
+enqueue 552998139
+dequeue
+dequeue
+max
+dequeue
+max
+enqueue 552993261
+enqueue 553005399
+max
+enqueue 553002473
+dequeue
+max
+enqueue 552996083
+max
+enqueue 552992799
+dequeue
+enqueue 552998278
+max
+dequeue
+enqueue 553002181
+dequeue
+enqueue 553007821
+dequeue
+enqueue 553005249
+dequeue
+enqueue 553003348
+dequeue
+enqueue 553001964
+max
+dequeue
+dequeue
+enqueue 553001469
+max
+dequeue
+max
+dequeue
+enqueue 552991670
+enqueue 553008293
+enqueue 552995240
+dequeue
+enqueue 552994841
+dequeue
+enqueue 552996371
+max
+dequeue
+max
+enqueue 552994079
+max
+dequeue
+enqueue 553005196
+dequeue
+max
+enqueue 552996680
+max
+dequeue
+enqueue 553003253
+max
+dequeue
+dequeue
+dequeue
+enqueue 552997608
+enqueue 553005417
+max
+enqueue 553005538
+max
+dequeue
+max
+dequeue
+enqueue 552994879
+max
+dequeue
+max
+max
+enqueue 553007478
+enqueue 552992457
+max
+dequeue
+max
+enqueue 552995632
+dequeue
+max
+enqueue 553007890
+dequeue
+max
+enqueue 552996824
+dequeue
+max
+dequeue
+enqueue 552995309
+max
+enqueue 552989209
+max
+dequeue
+enqueue 553000153
+max
+enqueue 553001165
+dequeue
+enqueue 553004843
+dequeue
+enqueue 553002447
+dequeue
+dequeue
+max
+max
+dequeue
+max
+enqueue 552992925
+max
+enqueue 552995252
+max
+dequeue
+enqueue 553001645
+enqueue 552988438
+dequeue
+enqueue 552994495
+max
+enqueue 552994397
+dequeue
+max
+enqueue 553002580
+max
+dequeue
+enqueue 552995119
+max
+dequeue
+max
+dequeue
+dequeue
+max
+enqueue 552998472
+enqueue 552993261
+enqueue 553003079
+max
+dequeue
+enqueue 552989333
+max
+dequeue
+dequeue
+enqueue 552989074
+max
+enqueue 552989318
+dequeue
+max
+enqueue 553003191
+max
+dequeue
+max
+enqueue 553005434
+max
+enqueue 553005512
+max
+dequeue
+enqueue 552994969
+dequeue
+max
+dequeue
+enqueue 552994386
+max
+dequeue
+enqueue 553001064
+max
+enqueue 553003240
+dequeue
+max
+enqueue 552995070
+dequeue
+max
+enqueue 553002159
+max
+dequeue
+max
+dequeue
+dequeue
+max
+dequeue
+enqueue 553000109
+max
+enqueue 553005493
+enqueue 552993196
+dequeue
+dequeue
+max
+enqueue 552996316
+enqueue 553001650
+enqueue 552988695
+max
+dequeue
+max
+enqueue 552993903
+dequeue
+max
+enqueue 553004633
+dequeue
+dequeue
+enqueue 552994609
+max
+enqueue 552990689
+max
+dequeue
+enqueue 553001698
+max
+dequeue
+enqueue 552994971
+dequeue
+max
+enqueue 552999480
+enqueue 552991032
+max
+dequeue
+max
+dequeue
+max
+dequeue
+max
+enqueue 552990708
+enqueue 553003044
+max
+enqueue 553004383
+dequeue
+max
+enqueue 552997203
+dequeue
+max
+enqueue 552998837
+dequeue
+max
+enqueue 552991322
+max
+dequeue
+max
+enqueue 552997665
+dequeue
+enqueue 552991646
+dequeue
+dequeue
+dequeue
+enqueue 552992112
+enqueue 553004804
+dequeue
+max
+dequeue
+max
+enqueue 552988540
+max
+enqueue 552997116
+enqueue 553007516
+dequeue
+max
+enqueue 552988778
+dequeue
+enqueue 552994381
+dequeue
+max
+enqueue 553004910
+max
+dequeue
+enqueue 552995673
+dequeue
+max
+enqueue 553006087
+max
+dequeue
+max
+enqueue 553006132
+max
+dequeue
+enqueue 552998111
+max
+enqueue 552997561
+max
+dequeue
+max
+enqueue 552997651
+max
+dequeue
+enqueue 552999518
+dequeue
+max
+enqueue 552998287
+max
+dequeue
+max
+enqueue 552990657
+max
+dequeue
+max
+enqueue 552997225
+dequeue
+max
+enqueue 553004157
+enqueue 552991869
+dequeue
+max
+enqueue 552998838
+dequeue
+max
+dequeue
+max
+enqueue 552997942
+max
+enqueue 552989985
+dequeue
+max
+enqueue 553005154
+max
+dequeue
+enqueue 552998357
+max
+dequeue
+max
+enqueue 552998380
+max
+dequeue
+max
+enqueue 552992090
+dequeue
+enqueue 552989693
+max
+dequeue
+max
+enqueue 552990727
+dequeue
+enqueue 552998108
+max
+dequeue
+max
+enqueue 552990289
+max
+dequeue
+max
+enqueue 552995257
+max
+dequeue
+max
+enqueue 552996065
+max
+enqueue 552990516
+dequeue
+max
+enqueue 553002225
+dequeue
+enqueue 553000936
+max
+dequeue
+max
+enqueue 553005636
+max
+dequeue
+max
+dequeue
+max
+dequeue
+enqueue 552996696
+enqueue 553005336
+enqueue 552991340
+dequeue
+enqueue 552989068
+dequeue
+max
+max
+enqueue 552995234
+dequeue
+max
+enqueue 553008131
+dequeue
+enqueue 553006839
+max
+dequeue
+enqueue 552988714
+max
+dequeue
+enqueue 553003149
+max
+dequeue
+enqueue 552991684
+max
+dequeue
+max
+enqueue 552998107
+max
+max
+dequeue
+enqueue 552992118
+dequeue
+dequeue
+max
+enqueue 552992596
+max
+enqueue 552994958
+max
+dequeue
+max
+enqueue 552994112
+max
+dequeue
+max
+max
+enqueue 553003462
+max
+dequeue
+enqueue 552996097
+dequeue
+max
+enqueue 552999156
+max
+dequeue
+max
+enqueue 553001409
+max
+dequeue
+dequeue
+max
+enqueue 552996532
+max
+enqueue 552995288
+dequeue
+dequeue
+enqueue 553006706
+dequeue
+max
+enqueue 552989173
+dequeue
+max
+dequeue
+max
+enqueue 553000330
+max
+enqueue 553001639
+max
+dequeue
+max
+enqueue 553007340
+max
+enqueue 553007273
+max
+dequeue
+max
+enqueue 553008145
+max
+dequeue
+max
+enqueue 553007166
+dequeue
+max
+enqueue 552993397
+dequeue
+max
+enqueue 553002463
+dequeue
+dequeue
+max
+enqueue 553004011
+max
+enqueue 553007540
+dequeue
+max
+enqueue 552990675
+max
+dequeue
+max
+enqueue 552990638
+dequeue
+enqueue 552996692
+max
+dequeue
+max
+enqueue 552992300
+max
+dequeue
+enqueue 553001777
+max
+dequeue
+max
+enqueue 553002431
+dequeue
+max
+enqueue 552997919
+enqueue 553004371
+max
+quit

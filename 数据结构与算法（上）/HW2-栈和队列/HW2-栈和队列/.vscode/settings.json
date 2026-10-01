@@ -1,0 +1,16 @@
+{
+    "editor.copyWithSyntaxHighlighting": true,
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp"
+    },
+    "background.backgroundSize": [
+        "Contain",
+        "Cover",
+        "Cover",
+        "Cover"
+    ],
+    "background.windowBackgrounds": [
+        "d:/desktop/微信图片_20241018124323.png"
+    ]
+}

@@ -1,0 +1,61 @@
+
+// 带最大值栈类的弹出操作
+Status Stack_pro::Pop(ElemType& elem) {
+    ElemType temp;
+    if (value.StackEmpty())   
+        // 栈为空，返回空状态
+    value.Pop(elem);
+    max_value.PeekTop(temp);
+    if (elem == temp) 
+        // 如果弹出的元素是最大值，则弹出最大值栈
+    return OK;
+}
+
+
+// 带最大值栈类的压入操作
+Status Stack_pro::Push(ElemType elem) {
+    ElemType temp;
+    max_value.PeekTop(temp);
+
+    if (value.Push(elem) == FULL) {
+        return FULL;
+    }
+    if (max_value.StackEmpty() || elem >= temp)    
+        // 如果栈为空或新元素大于等于栈顶元素，则压入最大值栈
+    return OK;
+}
+
+// 栈队列类获取最大值的方法
+Status Stack_pro_max::GetMaxValue(ElemType& elem) {
+    elem = 0X80000000;  // 最大值初始化为ElemType的最小值
+    if (num <= 0) {
+        return EMPTY;
+    }
+    ElemType temp=0X80000000;  // 临时变量初始化为ElemType的最小值
+    if (!b.StackEmpty()) {  // 如果栈b不为空，则获取栈b的最大值
+        b.GetMaxValue(elem);
+    }
+    if (!a.StackEmpty()) {  // 如果栈a不为空，则获取栈a的最大值
+        a.GetMaxValue(temp);
+        elem = (elem > temp) ? elem : temp;  // 取最大值
+    }
+    return OK;
+}
+
+
+// 栈队列的出队操作
+Status Stack_pro_max::DeQueue(ElemType& elem) {
+    if (num <= 0) {
+        return EMPTY;
+    }
+    if (b.StackEmpty()) {  // 如果栈b为空，则将栈a中的元素全部弹出并压入栈b
+        ElemType temp;
+        while (!a.StackEmpty()) {
+            a.Pop(temp);
+            b.Push(temp);
+        }
+    }
+    b.Pop(elem);
+    num--;
+    return OK;
+}

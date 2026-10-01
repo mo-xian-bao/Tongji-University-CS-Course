@@ -1,0 +1,20 @@
+{
+    "background.windowBackgrounds": [
+        "d:/desktop/数据结构/微信图片_20241018124323.png"
+    ],
+    "background.backgroundSize": [
+        "Contain",
+        "Cover",
+        "Cover",
+        "Cover"
+    ],
+    "files.associations": {
+        "array": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "initializer_list": "cpp",
+        "map": "cpp"
+    }
+}
