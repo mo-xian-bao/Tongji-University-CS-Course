@@ -1,0 +1,593 @@
+module CU(
+    input clk,
+    input rst,
+
+    input [31:0] Instr, // 输入指令
+    input [31:0] ACC, // 输入ACC寄存器值
+    input ZF, // 零标志
+    input SF, // 符号标志
+    input [31:0] CP0_status, // CP0状态寄存器值
+    input MDU_busy, // MDU忙信号
+
+    // 控制信号输出
+    output reg PC_in,           // PC写使能
+    output reg IR_in,           // 指令寄存器写使能
+    output reg ACC_in,          // ACC寄存器写使能
+    output reg [3:0] ALUc,      // ALU控制信号
+    output reg [1:0] MDUc,      // MDU控制信号
+    output reg DM_r,            // 数据存储器读使能
+    output reg DM_w,            // 数据存储器写使能
+    output reg [2:0] byte_out_c, // 字节输出控制信号
+    output reg [3:0] byte_in_ena, // 字节输入使能信号
+    output reg HI_w,            // HI寄存器写使能
+    output reg LO_w,            // LO寄存器写使能
+    output reg M1,              // 多路选择器M1控制信号
+    output reg M2,              // 多路选择器M2控制信号
+    output reg M3,              // 多路选择器M3控制信号
+    output reg [2:0] M4,        // 多路选择器M4控制信号
+    output reg [2:0] M5,        // 多路选择器M5控制信号
+    output reg M6,              // 多路选择器M6控制信号
+    output reg M7,              // 多路选择器M7控制信号
+    output reg mfc0,            // CP0读控制信号
+    output reg mtc0,            // CP0写控制信号
+    output reg eret,            // 异常返回信号
+    output reg exception,       // 异常信号
+    output reg [4:0] cause,     // 异常原因码
+    output reg MDR_in,          // MDR寄存器写使能
+    output reg EXT_c,           // 扩展控制信号
+    output reg Reg_in,          // 寄存器堆写使能
+    output reg RsReg_in,        // Rs寄存器写使能
+    output reg RtReg_in,        // Rt寄存器写使能
+    output reg MDU_start,       // MDU启动信号
+    output reg Latch_PC4_in_M4  // PC4寄存器写使能(MUX4)
+);
+
+    // 指令字段解析
+    wire [5:0] op = Instr[31:26];      // 操作码
+    wire [4:0] rs = Instr[25:21];      // 源寄存器1
+    wire [4:0] rt = Instr[20:16];      // 源寄存器2
+    wire [4:0] rd = Instr[15:11];      // 目标寄存器
+    wire [4:0] shamt = Instr[10:6];    // 移位量
+    wire [5:0] func = Instr[5:0];      // 功能码
+    wire [15:0] imm = Instr[15:0];     // 立即数
+    wire [25:0] addr = Instr[25:0];    // 跳转地址
+    
+    // 状态定义
+    // 基础状态
+    localparam S_IF          = 5'd0;  // 00000: 取指
+    localparam S_ID          = 5'd1;  // 00001: 译码
+
+    // ALU 指令路径 (R-Type / I-Type)
+    localparam S_EX_ALU      = 5'd2;  // 00010: ALU执行
+    localparam S_WB_ALU      = 5'd3;  // 00011: ALU结果写回
+
+    // 访存指令路径 (Load / Store)
+    localparam S_EX_ADDR     = 5'd4;  // 00100: 计算访存地址
+    localparam S_MEM_READ    = 5'd5;  // 00101: 读数据存储器
+    localparam S_MEM_WRITE   = 5'd6;  // 00110: 写数据存储器
+    localparam S_WB_LOAD     = 5'd7;  // 00111: 加载指令写回
+
+    // 跳转与分支指令路径
+    localparam S_EX_BRANCH   = 5'd8;  // 01000: 执行分支
+    localparam S_EX_JUMP     = 5'd9;  // 01001: 执行跳转
+
+    // MDU 指令路径
+    localparam S_MDU_START   = 5'd10; // 01010: 启动MDU
+    localparam S_MDU_WAIT    = 5'd11; // 01011: 等待MDU
+    localparam S_MDU_DONE    = 5'd12; // 01100: MDU结果写入HI/LO
+
+    // HI/LO 寄存器访问路径
+    localparam S_WB_FROM_HILO = 5'd13; // 01101: 从HI/LO写回RegFile
+    localparam S_EX_TO_HILO   = 5'd14; // 01110: 写入HI/LO寄存器
+
+    // 异常与CP0指令路径
+    localparam S_EXCEPTION    = 5'd15; // 01111: 异常处理
+    localparam S_EX_TO_CP0    = 5'd16; // 10000: 写入CP0
+    localparam S_WB_FROM_CP0  = 5'd17; // 10001: 从CP0写回RegFile
+    localparam S_EX_ERET      = 5'd18; // 10010: 执行eret
+    
+    // 状态寄存器
+    reg [4:0] state; // 当前状态
+    reg [4:0] next_state; // 下一个状态
+
+    // 状态机逻辑
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            state <= S_IF; // 复位时进入取指状态
+        end else begin
+            state <= next_state; // 更新状态
+        end
+    end
+
+    // 状态转移逻辑
+    always @(*) begin
+        case (state)
+            S_IF: begin
+                next_state = S_ID;
+            end
+            
+            S_ID: begin
+                // 根据指令类型决定下一状态
+                case (op)
+                    6'b000000: begin // R型指令
+                        case (func)
+                            6'b011000, 6'b011001, 6'b011010, 6'b011011: //mult,multu, div, divu
+                                next_state = S_MDU_START;
+                            6'b010000, 6'b010010: // mfhi, mflo
+                                next_state = S_WB_FROM_HILO;
+                            6'b010001, 6'b010011: // mthi, mtlo
+                                next_state = S_EX_TO_HILO;
+                            6'b001001: // jalr
+                                next_state = S_EX_JUMP;
+                            6'b001000: // jr
+                                next_state = S_EX_JUMP;
+                            6'b001100, 6'b001101, 6'b110100: // syscall, break, teq
+                                next_state = S_EXCEPTION;
+                            default: // 其他R型指令
+                                next_state = S_EX_ALU;
+                        endcase
+                    end
+                    //mul
+                    6'b011100: begin // (clz)
+                        case (func)
+                            6'b100000: // clz
+                                next_state = S_EX_ALU;
+                            default:
+                                next_state = S_IF;
+                        endcase
+                    end
+                    6'b001000, 6'b001001, 6'b001100, 6'b001101, 6'b001010, 6'b001011, 6'b001111, 6'b001110: // I型ALU指令
+                        next_state = S_EX_ALU;
+                    6'b100000, 6'b100001, 6'b100011, 6'b100100, 6'b100101: // 加载指令
+                        next_state = S_EX_ADDR;
+                    6'b101000, 6'b101001, 6'b101011: // 存储指令
+                        next_state = S_EX_ADDR;
+                    6'b000010, 6'b000011: // j, jal
+                        next_state = S_EX_JUMP;
+                    6'b000100, 6'b000101, 6'b000001: // beq, bne, bgez
+                        next_state = S_EX_BRANCH;
+                    6'b010000: begin // CP0指令
+                        case (rs)
+                            5'b00000: next_state = S_WB_FROM_CP0; // mfc0
+                            5'b00100: next_state = S_EX_TO_CP0;   // mtc0
+                            default: begin
+                                if (func == 6'b011000) // eret
+                                    next_state = S_EX_ERET;
+                                else
+                                    next_state = S_IF;
+                            end
+                        endcase
+                    end
+                    default: next_state = S_IF;
+                endcase
+            end
+            
+            S_EX_ALU: begin
+                next_state = S_WB_ALU;
+            end
+            
+            S_WB_ALU: begin
+                next_state = S_IF;
+            end
+            
+            S_EX_ADDR: begin
+                case (op)
+                    6'b100000, 6'b100001, 6'b100011, 6'b100100, 6'b100101: // 加载指令
+                        next_state = S_MEM_READ;
+                    6'b101000, 6'b101001, 6'b101011: // 存储指令
+                        next_state = S_MEM_WRITE;
+                    default: next_state = S_IF;
+                endcase
+            end
+            
+            S_MEM_READ: begin
+                next_state = S_WB_LOAD;
+            end
+            
+            S_MEM_WRITE: begin
+                next_state = S_IF;
+            end
+            
+            S_WB_LOAD: begin
+                next_state = S_IF;
+            end
+            
+            S_EX_BRANCH: begin
+                next_state = S_IF;
+            end
+            
+            S_EX_JUMP: begin
+                next_state = S_IF;
+            end
+            
+            S_MDU_START: begin
+                next_state = S_MDU_WAIT; // 无条件转移到等待状态
+            end
+            
+            S_MDU_WAIT: begin
+                if (MDU_busy)
+                    next_state = S_MDU_WAIT;
+                else
+                    next_state = S_MDU_DONE;
+            end
+            
+            S_MDU_DONE: begin
+                next_state = S_IF; // MDU指令完成后返回取指状态
+            end
+            
+            S_WB_FROM_HILO: begin
+                next_state = S_IF;
+            end
+            
+            S_EX_TO_HILO: begin
+                next_state = S_IF;
+            end
+            
+            S_EXCEPTION: begin
+                next_state = S_IF;
+            end
+            
+            S_EX_TO_CP0: begin
+                next_state = S_IF;
+            end
+            
+            S_WB_FROM_CP0: begin
+                next_state = S_IF;
+            end
+            
+            S_EX_ERET: begin
+                next_state = S_IF;
+            end
+            
+            default: begin
+                next_state = S_IF;
+            end
+        endcase
+    end
+
+    // 控制信号生成逻辑
+    always @(*) begin
+        // 默认值
+        PC_in = 0; IR_in = 0; ACC_in = 0;
+        ALUc = 4'b0000; MDUc = 2'b00;
+        DM_r = 0; DM_w = 0; HI_w = 0; LO_w = 0;
+        M1 = 0; M2 = 0; M3 = 0; M4 = 3'b010; M5 = 3'b010;
+        M6 = 0; M7 = 0; mfc0 = 0; mtc0 = 0; eret = 0;
+        exception = 0; cause = 5'b00000; MDR_in = 0;
+        byte_out_c = 3'b000; byte_in_ena = 4'b0000; EXT_c = 0; Reg_in = 0;
+        RsReg_in = 0; RtReg_in = 0; Latch_PC4_in_M4 = 0; MDU_start = 0;
+        
+        case (state)
+            S_IF: begin // t1周期
+                PC_in = 0;  // 在取指阶段不更新PC
+                IR_in = 1;
+                M5 = 3'b010; // PC+4 (为后续使用准备)
+            end
+            
+            S_ID: begin // t2周期
+                RsReg_in = 1;
+                RtReg_in = 1;
+                // mfc0指令在译码阶段发出读取信号
+                if (op == 6'b010000 && rs == 5'b00000) begin // mfc0
+                    mfc0 = 1;
+                end
+                // jal和jalr指令在译码阶段锁存PC+4
+                if (op == 6'b000011 || (op == 6'b000000 && func == 6'b001001)) begin // jal或jalr
+                    Latch_PC4_in_M4 = 1;
+                end
+            end
+            
+            S_EX_ALU: begin // t3周期
+                ACC_in = 1;
+                case (op)
+                    6'b000000: begin // R型指令
+                        case (func)
+                            6'b100000: ALUc = 4'b0010; // add
+                            6'b100001: ALUc = 4'b0000; // addu
+                            6'b100010: ALUc = 4'b0011; // sub
+                            6'b100011: ALUc = 4'b0001; // subu
+                            6'b100100: ALUc = 4'b0100; // and
+                            6'b100101: ALUc = 4'b0101; // or
+                            6'b100110: ALUc = 4'b0110; // xor
+                            6'b100111: ALUc = 4'b0111; // nor
+                            6'b101010: ALUc = 4'b1011; // slt
+                            6'b101011: ALUc = 4'b1010; // sltu
+                            6'b000000: begin // sll
+                                ALUc = 4'b1110;
+                                M1 = 1; // 使用shamt
+                            end
+                            6'b000010: begin // srl
+                                ALUc = 4'b1101;
+                                M1 = 1; // 使用shamt
+                            end
+                            6'b000011: begin // sra
+                                ALUc = 4'b1100;
+                                M1 = 1; // 使用shamt
+                            end
+                            6'b000100: ALUc = 4'b1110; // sllv
+                            6'b000110: ALUc = 4'b1101; // srlv
+                            6'b000111: ALUc = 4'b1100; // srav
+                            default: ALUc = 4'b0000;
+                        endcase
+                        M3 = 0; // 选择rd
+                    end
+                    6'b001000: begin // addi
+                        ALUc = 4'b0010;
+                        M1 = 0; M3 = 1; EXT_c = 1;
+                    end
+                    6'b001001: begin // addiu
+                        ALUc = 4'b0000;
+                        M1 = 0; M3 = 1; EXT_c = 1;
+                    end
+                    6'b001100: begin // andi
+                        ALUc = 4'b0100;
+                        M1 = 0; M3 = 1; EXT_c = 0;
+                    end
+                    6'b001101: begin // ori
+                        ALUc = 4'b0101;
+                        M1 = 0; M3 = 1; EXT_c = 0;
+                    end
+                    6'b001110: begin // xori
+                        ALUc = 4'b0110;
+                        M1 = 0; M3 = 1; EXT_c = 0;
+                    end
+                    6'b001010: begin // slti
+                        ALUc = 4'b1011;
+                        M1 = 0; M3 = 1; EXT_c = 1;
+                    end
+                    6'b001011: begin // sltiu
+                        ALUc = 4'b1010;
+                        M1 = 0; M3 = 1; EXT_c = 1;
+                    end
+                    6'b001111: begin // lui
+                        ALUc = 4'b1000;
+                        M1 = 0; M3 = 1;
+                    end
+                    6'b011100: begin // clz
+                        case (func)
+                            6'b100000: begin // clz
+                                ALUc = 4'b1111;
+                                M1 = 0; M3 = 0; // 使用rs寄存器作为输入，目标寄存器是rd
+                            end
+                        endcase
+                    end
+                endcase
+            end
+            
+            S_WB_ALU: begin // t4周期
+                PC_in = 1;  // 在写回阶段更新PC
+                M5 = 3'b010; // 普通指令：PC+4
+                Reg_in = 1;
+                M4 = 3'b101; // ACC到寄存器写入
+                if (op == 6'b000000) begin // R型指令
+                    M2 = 0; // 目标寄存器是rd
+                end else if (op == 6'b011100) begin // clz指令
+                    M2 = 0; // clz目标寄存器是rd
+                end else begin // I型指令
+                    M2 = 1; // 目标寄存器是rt
+                end
+            end
+            
+            S_EX_ADDR: begin // t3周期
+                ACC_in = 1;
+                ALUc = 4'b0000; // addu
+                M1 = 0; M3 = 1; EXT_c = 1; // 立即数符号扩展
+            end
+            
+            S_MEM_READ: begin // t4周期
+                DM_r = 1;
+                MDR_in = 1;
+                case (op)
+                    6'b100000: byte_out_c = 3'b001; // lb (字节有符号)
+                    6'b100100: byte_out_c = 3'b010; // lbu (字节无符号)
+                    6'b100001: byte_out_c = 3'b011; // lh (半字有符号)
+                    6'b100101: byte_out_c = 3'b100; // lhu (半字无符号)
+                    6'b100011: byte_out_c = 3'b000; // lw (全字)
+                    default: byte_out_c = 3'b000;
+                endcase
+            end
+            
+            S_MEM_WRITE: begin // t4周期
+                PC_in = 1;  // 在存储阶段更新PC
+                M5 = 3'b010; // 普通指令：PC+4
+                case (op)
+                    6'b101011: begin // sw (全字)
+                        DM_w = 1;
+                        byte_in_ena = 4'b1111; // 写入所有4个字节
+                    end
+                    6'b101001: begin // sh (半字)
+                        DM_w = 1;
+                        byte_in_ena = 4'b0011; // 写入低2个字节
+                    end
+                    6'b101000: begin // sb (字节)
+                        DM_w = 1;
+                        byte_in_ena = 4'b0001; // 写入最低字节
+                    end
+                endcase
+            end
+            
+            S_WB_LOAD: begin // t5周期
+                PC_in = 1;  // 在写回阶段更新PC
+                M5 = 3'b010; // 普通指令：PC+4
+                Reg_in = 1;
+                M2 = 1; // 加载指令目标寄存器是rt
+                M4 = 3'b100; // MDR到寄存器写入
+            end
+            
+            S_EX_JUMP: begin // t3周期
+                PC_in = 1;
+                case (op)
+                    6'b000010: begin // j
+                        M5 = 3'b100; // PC跳转地址
+                    end
+                    6'b000011: begin // jal
+                        M5 = 3'b100; // PC跳转地址
+                        M4 = 3'b011; // 使用锁存的PC+4保存到$31
+                        // M2不需要设置，因为jal固定写入$31寄存器
+                        Reg_in = 1;
+                    end
+                    6'b000000: begin // R型指令
+                        if (func == 6'b001001) begin // jalr
+                            M5 = 3'b000; // 使用Rs寄存器的值作为跳转地址
+                            M4 = 3'b011; // 使用锁存的PC+4保存到rd
+                            M2 = 0; // jalr目标寄存器是rd
+                            Reg_in = 1;
+                        end else if (func == 6'b001000) begin // jr
+                            M5 = 3'b000; // 使用Rs寄存器的值作为跳转地址
+                        end
+                    end
+                endcase
+            end
+            
+            S_EX_BRANCH: begin // t3周期
+                PC_in = 1;  // 无论分支是否成功都要更新PC
+                M1 = 0; // Rs
+                case (op)
+                    6'b000100: begin // beq
+                        ALUc = 4'b0011; // sub用于比较
+                        if (ZF) begin
+                            M5 = 3'b001; // PC分支跳转
+                        end else begin
+                            M5 = 3'b010; // PC+4
+                        end
+                    end
+                    6'b000101: begin // bne
+                        ALUc = 4'b0011; // sub用于比较
+                        if (!ZF) begin
+                            M5 = 3'b001; // PC分支跳转
+                        end else begin
+                            M5 = 3'b010; // PC+4
+                        end
+                    end
+                    6'b000001: begin // bgez
+                        ALUc = 4'b1001; // bgez使用大于等于零比较
+                        if (rt == 5'b00001) begin // 确认是bgez指令
+                            if (!SF) begin // 大于等于零 (符号位为0)
+                                M5 = 3'b001; // PC分支跳转
+                            end else begin
+                                M5 = 3'b010; // PC+4
+                            end
+                        end else begin
+                            M5 = 3'b010; // PC+4 (默认情况)
+                        end
+                    end
+                    default: begin
+                        M5 = 3'b010; // PC+4 (默认情况)
+                    end
+                endcase
+            end
+            
+            S_MDU_START: begin // t3周期
+                MDU_start = 1;
+                case (op)
+                    6'b000000: begin // R型指令
+                        case (func)
+                            6'b011000: MDUc = 2'b00; // mult
+                            6'b011001: MDUc = 2'b01; // multu
+                            6'b011010: MDUc = 2'b10; // div
+                            6'b011011: MDUc = 2'b11; // divu
+                        endcase
+                    end
+                endcase
+            end
+            
+            S_MDU_WAIT: begin // 等待MDU完成
+                // MDU_start保持为0（默认值）
+                // 保持MDUc值直到完成
+                case (op)
+                    6'b000000: begin // R型指令
+                        case (func)
+                            6'b011000: MDUc = 2'b00; // mult
+                            6'b011001: MDUc = 2'b01; // multu
+                            6'b011010: MDUc = 2'b10; // div
+                            6'b011011: MDUc = 2'b11; // divu
+                        endcase
+                    end
+                endcase
+            end
+            
+            S_MDU_DONE: begin // t4-n或tn+1周期
+                PC_in = 1;  // 在MDU完成阶段更新PC
+                M5 = 3'b010; // 普通指令：PC+4
+                HI_w = 1;
+                LO_w = 1;
+                M6 = 1; // MDU结果到HI
+                M7 = 1; // MDU结果到LO
+            end
+            
+            S_WB_FROM_HILO: begin // t3周期
+                PC_in = 1;  // 在写回阶段更新PC
+                M5 = 3'b010; // 普通指令：PC+4
+                Reg_in = 1;
+                M2 = 0; // mfhi/mflo目标寄存器是rd
+                case (func)
+                    6'b010000: begin // mfhi
+                        M4 = 3'b001; // HI到寄存器
+                    end
+                    6'b010010: begin // mflo
+                        M4 = 3'b010; // LO到寄存器
+                    end
+                endcase
+            end
+            
+            S_EX_TO_HILO: begin // t3周期
+                PC_in = 1;  // 在执行阶段更新PC
+                M5 = 3'b010; // 普通指令：PC+4
+                case (func)
+                    6'b010001: begin // mthi
+                        HI_w = 1;
+                        M6 = 0; M7 = 0; // Rs
+                    end
+                    6'b010011: begin // mtlo
+                        LO_w = 1;
+                        M6 = 0; M7 = 0; // Rs
+                    end
+                endcase
+            end
+            
+            S_WB_FROM_CP0: begin // t3周期
+                PC_in = 1;  // 在写回阶段更新PC
+                M5 = 3'b010; // 普通指令：PC+4
+                Reg_in = 1;
+                M2 = 1; // mfc0目标寄存器是rt
+                M4 = 3'b000; // CP0数据到寄存器
+                mfc0 = 1; // 确保mfc0信号在写回阶段也有效
+            end
+            
+            S_EX_TO_CP0: begin // t3周期
+                PC_in = 1;  // 在写入CP0后更新PC
+                M5 = 3'b010; // 普通指令：PC+4
+                mtc0 = 1;
+            end
+            
+            S_EX_ERET: begin // t1, t2, t3周期
+                eret = 1;
+                PC_in = 1;
+                M5 = 3'b011; // PC异常返回地址
+            end
+            
+            // 异常处理相关状态
+            S_EXCEPTION: begin // t3周期
+                exception = 1;
+                case (op)
+                    6'b000000: begin // R型指令
+                        case (func)
+                            6'b001100: cause = 5'b01000; // syscall
+                            6'b001101: cause = 5'b01001; // break
+                            6'b110100: cause = 5'b01101; // teq
+                            default: cause = 5'b00000;
+                        endcase
+                    end
+                    default: cause = 5'b00000;
+                endcase
+                PC_in = 1;
+                M5 = 3'b011; // PC异常处理地址
+            end
+            
+            default: begin
+                // 保持默认值
+            end
+        endcase
+    end
+
+endmodule

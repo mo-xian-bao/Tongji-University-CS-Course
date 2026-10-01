@@ -1,0 +1,53 @@
+Reading C:/modelsim_dlx64_10.5c/tcl/vsim/pref.tcl
+
+# 10.5c
+
+# do {C:\Users\Administrator\Desktop\MIPS246\MIPS246.Web\test\test_bench\_246tb_ex9.do}
+# Start time: 00:02:06 on May 14,2025
+# vlog C:\Users\Administrator\Desktop\MIPS246\MIPS246.Web\/test/test_bench/_246tb_ex9_tb.v 
+# Model Technology ModelSim DE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# -- Compiling module _246tb_ex9_tb
+# 
+# Top level modules:
+# 	_246tb_ex9_tb
+# End time: 00:02:06 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Start time: 00:02:06 on May 14,2025
+# vlog ./ALU.v ./CPU.v ./CU.v ./DMEM.v ./IMEM.v ./PC.v ./RegFile.v ./dist_mem_gen_0.v ./dist_mem_gen_v8_0.v ./sccomp_dataflow.v 
+# Model Technology ModelSim DE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# -- Compiling module ALU
+# -- Compiling module CPU
+# ** Error: ./CPU.v(19): (vlog-2730) Undefined variable: 'mux1_out'.
+# ** Error: ./CPU.v(24): (vlog-2730) Undefined variable: 'mux3_out'.
+# ** Error: ./CPU.v(26): (vlog-2730) Undefined variable: 'mux5_out'.
+# ** Error: ./CPU.v(44): (vlog-2730) Undefined variable: 'mux10_out'.
+# ** Error: ./CPU.v(46): (vlog-2730) Undefined variable: 'mux7_out'.
+# ** Error (suppressible): ./CPU.v(51): (vlog-2388) 'mux1_out' already declared in this scope (CPU).
+# ** Error: ./CPU.v(53): (vlog-2730) Undefined variable: 'mux4_out'.
+# ** Error: ./CPU.v(57): (vlog-2730) Undefined variable: 'mux9_out'.
+# ** Error (suppressible): ./CPU.v(60): (vlog-2388) 'mux3_out' already declared in this scope (CPU).
+# ** Error (suppressible): ./CPU.v(65): (vlog-2388) 'mux4_out' already declared in this scope (CPU).
+# ** Error: ./CPU.v(66): (vlog-2730) Undefined variable: 'mux6_out'.
+# ** Error (suppressible): ./CPU.v(69): (vlog-2388) 'mux5_out' already declared in this scope (CPU).
+# ** Error: ./CPU.v(70): (vlog-2730) Undefined variable: 'mux8_out'.
+# ** Error (suppressible): ./CPU.v(73): (vlog-2388) 'mux6_out' already declared in this scope (CPU).
+# ** Error (suppressible): ./CPU.v(79): (vlog-2388) 'mux7_out' already declared in this scope (CPU).
+# ** Error (suppressible): ./CPU.v(83): (vlog-2388) 'mux8_out' already declared in this scope (CPU).
+# ** Error (suppressible): ./CPU.v(89): (vlog-2388) 'mux9_out' already declared in this scope (CPU).
+# ** Error (suppressible): ./CPU.v(94): (vlog-2388) 'mux10_out' already declared in this scope (CPU).
+# -- Compiling module CU
+# -- Compiling module DMEM
+# -- Compiling module IMEM
+# -- Compiling module PC
+# -- Compiling module RegFile
+# -- Compiling module dist_mem_gen_0
+# -- Compiling module dist_mem_gen_v8_0_10
+# -- Compiling module sccomp_dataflow
+# End time: 00:02:06 on May 14,2025, Elapsed time: 0:00:00
+# Errors: 18, Warnings: 0
+# ** Error: C:/modelsim_dlx64_10.5c/win64pe/vlog failed.
+# Error in macro C:\Users\Administrator\Desktop\MIPS246\MIPS246.Web\test\test_bench\_246tb_ex9.do line 4
+# C:/modelsim_dlx64_10.5c/win64pe/vlog failed.
+#     while executing
+# "vlog ./*.v"
+ModelSim> q 

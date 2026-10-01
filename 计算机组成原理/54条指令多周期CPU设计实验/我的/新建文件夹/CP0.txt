@@ -1,0 +1,69 @@
+module CPO(
+    input           clk,
+    input           rst,
+    // 与 CPU 指令交互的接口
+    input           mfc0,        // CPU 指令 Mfc0 (读 CP0)
+    input           mtc0,        // CPU 指令 Mtc0 (写 CP0)
+    input           eret,        // CPU 指令 ERET (异常返回)
+    // 异常处理相关接口
+    input           exception,   // 来自CPU的异常请求信号
+    input  [4:0]    cause,       // 来自CPU的异常类型码 (ExcCode)
+    input           intr,        // 外部中断请求 (本次代码未处理)
+    // 数据与地址总线
+    input  [31:0]   pc,          // 当前指令的地址
+    input  [4:0]    Rd,          // 指定CP0寄存器的地址
+    input  [31:0]   wdata,       // 从通用寄存器写入CP0的数据
+    // 输出信号
+    output [31:0]   rdata,       // 从CP0读出到通用寄存器的数据
+    output [31:0]   status,      // 输出Status寄存器的当前值
+    output reg      timer_int,   // 定时器中断信号 (本次实验未选择)
+    output [31:0]   exc_addr     // 异常入口地址
+);
+
+    reg [31:0] cp0_regs [31:0]; // 32*32位的寄存器堆
+    reg masked;                 // 是否被屏蔽
+   
+    wire [31:0] status_reg = cp0_regs[12]; // 12号寄存器: 状态控制
+    wire [31:0] cause_reg  = cp0_regs[13]; // 13号寄存器: 保存异常原因
+    wire [31:0] epc_reg    = cp0_regs[14]; // 14号寄存器: 保存异常返回地址
+
+    assign status = cp0_regs[12];
+    assign exc_addr = eret?cp0_regs[14]:32'h0000_0004; // 返回EPC寄存器的值（异常返回地址）
+    assign rdata = mfc0 ? cp0_regs[Rd] : 32'b0;
+
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            // 复位时，清空所有寄存器
+            integer i;
+            for (i = 0; i < 32; i = i + 1) begin
+                cp0_regs[i] <= 32'h0;
+            end
+            timer_int <= 1'b0;
+            //优先级 exception > mtc0 > eret
+        end 
+        else if (exception && cp0_regs[12][0]) begin  // 检查是否有异常请求且中断未被屏蔽
+            masked = 1'b0;
+            
+            // 检查特定异常是否被屏蔽 
+            case (cause)
+                5'd8:  masked = cp0_regs[12][8];  // syscall
+                5'd9:  masked = cp0_regs[12][9];  // break
+                5'd13: masked = cp0_regs[12][10]; // teq
+                default: masked = 1'b1;
+            endcase
+
+            if (!masked) begin
+                // 异常未被屏蔽，开始处理
+                cp0_regs[14] <= pc; // 保存返回地址到EPC
+                cp0_regs[13][6:2] <= cause; // 设置Cause寄存器的ExcCode字段 
+                cp0_regs[12] <= cp0_regs[12] << 5; //status寄存器左移5位来保存并关闭中断
+            end
+        end else if (mtc0) begin
+            // 当 mtc0 指令有效时，根据 Rd 指定的地址写入数据
+            cp0_regs[Rd] <= wdata;
+        end else if (eret) begin
+            cp0_regs[12] <= cp0_regs[12] >> 5; //右移5位以恢复进入异常前的Status状态
+        end
+    end
+
+endmodule

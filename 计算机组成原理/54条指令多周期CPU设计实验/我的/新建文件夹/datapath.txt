@@ -1,0 +1,291 @@
+module datapath(
+    input clk,
+    input rst,
+    
+    // 来自CU的控制信号
+    input PC_in,           // PC写使能
+    input IR_in,           // 指令寄存器写使能
+    input ACC_in,          // ACC寄存器写使能
+    input [3:0] ALUc,      // ALU控制信号
+    input [1:0] MDUc,      // MDU控制信号
+    input DM_r,            // 数据存储器读使能
+    input DM_w,            // 数据存储器写使能
+    input [2:0] byte_out_c, // 字节输出控制信号
+    input [3:0] byte_in_ena, // 字节输入使能信号
+    input HI_w,            // HI寄存器写使能
+    input LO_w,            // LO寄存器写使能
+    input M1,              // 多路选择器M1控制信号
+    input M2,              // 多路选择器M2控制信号
+    input M3,              // 多路选择器M3控制信号
+    input [2:0] M4,        // 多路选择器M4控制信号
+    input [2:0] M5,        // 多路选择器M5控制信号
+    input M6,              // 多路选择器M6控制信号
+    input M7,              // 多路选择器M7控制信号
+    input mfc0,            // CP0读控制信号
+    input mtc0,            // CP0写控制信号
+    input eret,            // 异常返回信号
+    input exception,       // 异常信号
+    input [4:0] cause,     // 异常原因码
+    input MDR_in,          // MDR寄存器写使能
+    input EXT_c,           // 扩展控制信号
+    input Reg_in,          // 寄存器堆写使能
+    input RsReg_in,        // Rs寄存器写使能
+    input RtReg_in,        // Rt寄存器写使能
+    input MDU_start,      // MDU开始信号
+    input Latch_PC4_in_M4, // PC4寄存器写使能(MUX4)
+    
+    // 向CU输出的状态信号
+    output [31:0] Instr,   // 当前指令
+    output [31:0] ACC,     // ACC寄存器值
+    output ZF,             // 零标志
+    output SF,             // 符号标志
+    output [31:0] CP0_status, // CP0状态寄存器值
+    output MDU_busy,       // MDU忙信号
+);
+
+    // 内部连接线
+    wire [31:0] pc_out, pc_next;
+    wire [31:0] instr_out;
+    wire [31:0] rs_data, rt_data, rd_data;
+    wire [31:0] rs_reg_out, rt_reg_out;
+    wire [31:0] alu_a, alu_b, alu_result;
+    wire [31:0] acc_out;
+    wire [31:0] ext_out;
+    wire [31:0] dm_rdata, dm_wdata;
+    wire [31:0] mdr_out;
+    wire [31:0] hi_out, lo_out;
+    wire [31:0] hi_in, lo_in;
+    wire [31:0] mdu_hi, mdu_lo;
+    wire [31:0] cp0_rdata, cp0_exc_addr;
+    wire [31:0] m4_out, m5_out;
+    wire [31:0] pc_plus4;
+    wire [31:0] branch_addr, jump_addr;
+    wire alu_zero, alu_carry, alu_negative, alu_overflow;
+    
+    // 指令字段解析
+    wire [5:0] op = ir_reg[31:26];
+    wire [4:0] rs = ir_reg[25:21];
+    wire [4:0] rt = ir_reg[20:16];
+    wire [4:0] rd = ir_reg[15:11];
+    wire [4:0] shamt = ir_reg[10:6];
+    wire [5:0] func = ir_reg[5:0];
+    wire [15:0] imm = ir_reg[15:0];
+    wire [25:0] addr = ir_reg[25:0];
+    
+    // 寄存器目标选择 (M2)
+    wire [4:0] reg_dst = M2 ? rt : rd;
+    
+    // PC+4计算
+    assign pc_plus4 = pc_out + 32'd4;
+    
+    // 分支地址计算
+    assign branch_addr = pc_plus4 + (ext_out << 2);
+    
+    // 跳转地址计算
+    assign jump_addr = {pc_plus4[31:28], addr, 2'b00};
+    
+    // 输出到CU的信号
+    assign Instr = ir_reg;
+    assign ACC = acc_out;
+    assign ZF = alu_zero;
+    assign SF = alu_negative;
+    
+    // PC模块
+    PC pc_inst(
+        .clk(clk),
+        .rst(rst),
+        .pc_in(PC_in),
+        .next_pc(m5_out),
+        .pc_data(pc_out)
+    );
+    
+    // 指令存储器
+    IMEM imem_inst(
+        .PC(pc_out),
+        .Instr(instr_out)
+    );
+    
+    // 指令寄存器
+    reg [31:0] ir_reg;
+    always @(posedge clk or posedge rst) begin
+        if (rst)
+            ir_reg <= 32'h0;
+        else if (IR_in)
+            ir_reg <= instr_out;
+    end
+    
+    // 寄存器堆
+    RegFile regfile_inst(
+        .clk(clk),
+        .rst(rst),
+        .we(Reg_in),
+        .Rdc(reg_dst),
+        .Rsc(rs),
+        .Rtc(rt),
+        .Rd(m4_out),
+        .Rs(rs_data),
+        .Rt(rt_data)
+    );
+    
+    // Rs寄存器
+    reg [31:0] rs_reg;
+    always @(posedge clk or posedge rst) begin
+        if (rst)
+            rs_reg <= 32'h0;
+        else if (RsReg_in)
+            rs_reg <= rs_data;
+    end
+    assign rs_reg_out = rs_reg;
+    
+    // Rt寄存器
+    reg [31:0] rt_reg;
+    always @(posedge clk or posedge rst) begin
+        if (rst)
+            rt_reg <= 32'h0;
+        else if (RtReg_in)
+            rt_reg <= rt_data;
+    end
+    assign rt_reg_out = rt_reg;
+    
+    // M3多路选择器 (ALU的B输入选择: ext/rt)
+    assign alu_b = M3 ? ext_out : rt_reg_out;
+    
+    // M1多路选择器 (ALU的A输入选择: shamt/rs)
+    assign alu_a = M1 ? {27'b0, shamt} : rs_reg_out;
+    
+    // ALU模块
+    ALU alu_inst(
+        .a(alu_a),
+        .b(alu_b),
+        .aluc(ALUc),
+        .r(alu_result),
+        .zero(alu_zero),
+        .carry(alu_carry),
+        .negative(alu_negative),
+        .overflow(alu_overflow)
+    );
+    
+    // ACC寄存器
+    reg [31:0] acc_reg;
+    always @(posedge clk or posedge rst) begin
+        if (rst)
+            acc_reg <= 32'h0;
+        else if (ACC_in)
+            acc_reg <= alu_result;
+    end
+    assign acc_out = acc_reg;
+    
+    // 扩展器
+    Extender ext_inst(
+        .data_in(imm),
+        .extc(EXT_c),
+        .data_out(ext_out)
+    );
+    
+    // 数据存储器
+    DMEM_with_LDP dmem_inst(
+        .clk(clk),
+        .rst(rst),
+        .MemRead(DM_r),
+        .MemWrite(DM_w),
+        .addr(acc_out), // 使用完整地址
+        .data_in(rt_reg_out),
+        .byte_in_ena(byte_in_ena),
+        .byte_out_c(byte_out_c), // 字节输出控制
+        .data_out(dm_rdata)
+    );
+    
+    // MDR寄存器
+    reg [31:0] mdr_reg;
+    always @(posedge clk or posedge rst) begin
+        if (rst)
+            mdr_reg <= 32'h0;
+        else if (MDR_in)
+            mdr_reg <= dm_rdata;
+    end
+    assign mdr_out = mdr_reg;
+    
+    // MDU模块
+    MDU mdu_inst(
+        .clk(clk),
+        .rst(rst),
+        .start(MDU_start),
+        .A(rs_reg_out),
+        .B(rt_reg_out),
+        .MDUc(MDUc),
+        .HI(mdu_hi),
+        .LO(mdu_lo),
+        .busy(MDU_busy)
+    );
+    
+    // HI寄存器
+    reg [31:0] hi_reg;
+    always @(posedge clk or posedge rst) begin
+        if (rst)
+            hi_reg <= 32'h0;
+        else if (HI_w)
+            hi_reg <= hi_in;
+    end
+    assign hi_out = hi_reg;
+    
+    // LO寄存器
+    reg [31:0] lo_reg;
+    always @(posedge clk or posedge rst) begin
+        if (rst)
+            lo_reg <= 32'h0;
+        else if (LO_w)
+            lo_reg <= lo_in;
+    end
+    assign lo_out = lo_reg;
+    
+    // M6多路选择器 (HI寄存器输入选择)
+    assign hi_in = M6 ? mdu_hi : rs_reg_out;
+    
+    // M7多路选择器 (LO寄存器输入选择)  
+    assign lo_in = M7 ? mdu_lo : rs_reg_out;
+    
+    // CP0模块
+    CPO cp0_inst(
+        .clk(clk),
+        .rst(rst),
+        .mfc0(mfc0),
+        .mtc0(mtc0),
+        .eret(eret),
+        .exception(exception),
+        .cause(cause),
+        .intr(1'b0), // 暂不处理外部中断
+        .pc(pc_out),
+        .Rd(rd),
+        .wdata(rt_reg_out),
+        .rdata(cp0_rdata),
+        .status(CP0_status),
+        .exc_addr(cp0_exc_addr)
+    );
+    
+    // M4多路选择器 (寄存器写入数据选择)
+    MUX4 mux4_inst(
+        .clk(clk),
+        .rst(rst),
+        .A(cp0_rdata),
+        .B(hi_out),
+        .C(lo_out),
+        .PC_Value_for_Latch(pc_plus4),
+        .E(mdr_out),
+        .F(acc_out),
+        .Latch_PC_in_M4(Latch_PC4_in_M4),
+        .M4_sel(M4),
+        .M4_out(m4_out)
+    );
+    
+    // M5多路选择器 (PC输入选择)
+    MUX5 mux5_inst(
+        .A(rs_reg_out),      // jr/jalr
+        .B(branch_addr),     // 分支
+        .C(pc_plus4),        // PC+4
+        .D(cp0_exc_addr),    // 异常/eret
+        .E(jump_addr),       // j/jal
+        .M5_sel(M5),
+        .M5_out(m5_out)
+    );
+
+endmodule
