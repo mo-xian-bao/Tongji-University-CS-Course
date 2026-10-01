@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.cdt.debug.ui.memory"
+      label="%featureName"
+      version="2.1.200.201202111925"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="%updateSiteName" url="http://download.eclipse.org/tools/cdt/releases/indigo"/>
+   </url>
+
+   <plugin
+         id="org.eclipse.cdt.debug.ui.memory.search"
+         download-size="52"
+         install-size="103"
+         version="1.2.1.201202111925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.debug.ui.memory.traditional"
+         download-size="126"
+         install-size="237"
+         version="1.2.1.201202111925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.debug.ui.memory.transport"
+         download-size="101"
+         install-size="201"
+         version="2.1.0.201202111925"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.cdt.debug.ui.memory.memorybrowser"
+         download-size="53"
+         install-size="108"
+         version="1.2.100.201202111925"
+         unpack="false"/>
+
+</feature>

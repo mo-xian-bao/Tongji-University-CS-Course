@@ -1,0 +1,196 @@
+!SESSION 2025-09-20 12:10:31.700 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.8.0_421
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-20 12:12:51.983
+!MESSAGE Indexed 'oos' (99 sources, 203 headers) in 4.61 sec: 20,116 declarations; 44,337 references; 10 unresolved inclusions; 9 syntax errors; 199 unresolved names (0.31%)
+!SESSION 2025-09-20 12:16:49.240 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.8.0_421
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-20 12:32:41.460
+!MESSAGE Indexed 'oos' (99 sources, 203 headers) in 4.80 sec: 20,116 declarations; 44,337 references; 10 unresolved inclusions; 9 syntax errors; 199 unresolved names (0.31%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-20 12:39:29.531
+!MESSAGE Indexed 'oos' (99 sources, 203 headers) in 2.54 sec: 20,116 declarations; 44,337 references; 10 unresolved inclusions; 9 syntax errors; 199 unresolved names (0.31%)
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 150 2025-09-20 12:59:28.522
+!MESSAGE Target selection failed.
+!STACK 0
+org.eclipse.cdt.debug.mi.core.MIException: localhost:1234: \323\311\323\332\301\254\275\323\267\275\324\332\322\273\266\316\312\261\274\344\272\363\303\273\323\320\325\375\310\267\264\360\270\264\273\362\301\254\275\323\265\304\326\367\273\372\303\273\323\320\267\264\323\246\243\254\301\254\275\323\263\242\312\324\312\247\260\334\241\243\r\n.
+	at org.eclipse.cdt.debug.mi.core.command.Command.throwMIException(Command.java:105)
+	at org.eclipse.cdt.debug.mi.core.command.Command.getMIInfo(Command.java:79)
+	at org.eclipse.cdt.debug.mi.core.GDBServerCDIDebugger2.startGDBServerSession(GDBServerCDIDebugger2.java:101)
+	at org.eclipse.cdt.debug.mi.core.GDBServerCDIDebugger2.doStartSession(GDBServerCDIDebugger2.java:43)
+	at org.eclipse.cdt.debug.mi.core.AbstractGDBCDIDebugger.createSession(AbstractGDBCDIDebugger.java:84)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchDebugSession(LocalCDILaunchDelegate.java:333)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.createCDISession(LocalCDILaunchDelegate.java:457)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchLocalDebugSession(LocalCDILaunchDelegate.java:144)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchDebugger(LocalCDILaunchDelegate.java:112)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.debug.mi.core 4 150 2025-09-20 12:59:28.527
+!MESSAGE localhost:1234: \323\311\323\332\301\254\275\323\267\275\324\332\322\273\266\316\312\261\274\344\272\363\303\273\323\320\325\375\310\267\264\360\270\264\273\362\301\254\275\323\265\304\326\367\273\372\303\273\323\320\267\264\323\246\243\254\301\254\275\323\263\242\312\324\312\247\260\334\241\243\r\n.
+!STACK 0
+org.eclipse.cdt.debug.mi.core.MIException: localhost:1234: \323\311\323\332\301\254\275\323\267\275\324\332\322\273\266\316\312\261\274\344\272\363\303\273\323\320\325\375\310\267\264\360\270\264\273\362\301\254\275\323\265\304\326\367\273\372\303\273\323\320\267\264\323\246\243\254\301\254\275\323\263\242\312\324\312\247\260\334\241\243\r\n.
+	at org.eclipse.cdt.debug.mi.core.command.Command.throwMIException(Command.java:105)
+	at org.eclipse.cdt.debug.mi.core.command.Command.getMIInfo(Command.java:79)
+	at org.eclipse.cdt.debug.mi.core.GDBServerCDIDebugger2.startGDBServerSession(GDBServerCDIDebugger2.java:101)
+	at org.eclipse.cdt.debug.mi.core.GDBServerCDIDebugger2.doStartSession(GDBServerCDIDebugger2.java:43)
+	at org.eclipse.cdt.debug.mi.core.AbstractGDBCDIDebugger.createSession(AbstractGDBCDIDebugger.java:84)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchDebugSession(LocalCDILaunchDelegate.java:333)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.createCDISession(LocalCDILaunchDelegate.java:457)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchLocalDebugSession(LocalCDILaunchDelegate.java:144)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchDebugger(LocalCDILaunchDelegate.java:112)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2025-09-20 13:08:11.842
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: No registers.[No registers.]
+	at org.eclipse.cdt.debug.mi.core.cdi.RegisterManager.update(RegisterManager.java:427)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:314)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:100)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:791)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:46)
+!SESSION 2025-09-26 17:07:14.275 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.8.0_421
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-09-26 17:11:37.703
+!MESSAGE Indexed 'oos' (100 sources, 203 headers) in 4.50 sec: 20,122 declarations; 44,354 references; 10 unresolved inclusions; 9 syntax errors; 199 unresolved names (0.31%)
+!SESSION 2025-11-06 13:52:36.101 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.8.0_421
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.debug.core 4 125 2025-11-06 15:22:50.511
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Pipe broken
+	at java.io.PipedInputStream.read(Unknown Source)
+	at java.io.PipedInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.FilterInputStream.read(Unknown Source)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.debug.core 4 125 2025-11-06 15:22:50.517
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: Pipe broken
+	at java.io.PipedInputStream.read(Unknown Source)
+	at java.io.PipedInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.FilterInputStream.read(Unknown Source)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 150 2025-11-06 15:23:10.032
+!MESSAGE Target selection failed.
+!STACK 0
+org.eclipse.cdt.debug.mi.core.MIException: localhost:1234: \323\311\323\332\301\254\275\323\267\275\324\332\322\273\266\316\312\261\274\344\272\363\303\273\323\320\325\375\310\267\264\360\270\264\273\362\301\254\275\323\265\304\326\367\273\372\303\273\323\320\267\264\323\246\243\254\301\254\275\323\263\242\312\324\312\247\260\334\241\243\r\n.
+	at org.eclipse.cdt.debug.mi.core.command.Command.throwMIException(Command.java:105)
+	at org.eclipse.cdt.debug.mi.core.command.Command.getMIInfo(Command.java:79)
+	at org.eclipse.cdt.debug.mi.core.GDBServerCDIDebugger2.startGDBServerSession(GDBServerCDIDebugger2.java:101)
+	at org.eclipse.cdt.debug.mi.core.GDBServerCDIDebugger2.doStartSession(GDBServerCDIDebugger2.java:43)
+	at org.eclipse.cdt.debug.mi.core.AbstractGDBCDIDebugger.createSession(AbstractGDBCDIDebugger.java:84)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchDebugSession(LocalCDILaunchDelegate.java:333)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.createCDISession(LocalCDILaunchDelegate.java:457)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchLocalDebugSession(LocalCDILaunchDelegate.java:144)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchDebugger(LocalCDILaunchDelegate.java:112)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.debug.mi.core 4 150 2025-11-06 15:23:10.032
+!MESSAGE localhost:1234: \323\311\323\332\301\254\275\323\267\275\324\332\322\273\266\316\312\261\274\344\272\363\303\273\323\320\325\375\310\267\264\360\270\264\273\362\301\254\275\323\265\304\326\367\273\372\303\273\323\320\267\264\323\246\243\254\301\254\275\323\263\242\312\324\312\247\260\334\241\243\r\n.
+!STACK 0
+org.eclipse.cdt.debug.mi.core.MIException: localhost:1234: \323\311\323\332\301\254\275\323\267\275\324\332\322\273\266\316\312\261\274\344\272\363\303\273\323\320\325\375\310\267\264\360\270\264\273\362\301\254\275\323\265\304\326\367\273\372\303\273\323\320\267\264\323\246\243\254\301\254\275\323\263\242\312\324\312\247\260\334\241\243\r\n.
+	at org.eclipse.cdt.debug.mi.core.command.Command.throwMIException(Command.java:105)
+	at org.eclipse.cdt.debug.mi.core.command.Command.getMIInfo(Command.java:79)
+	at org.eclipse.cdt.debug.mi.core.GDBServerCDIDebugger2.startGDBServerSession(GDBServerCDIDebugger2.java:101)
+	at org.eclipse.cdt.debug.mi.core.GDBServerCDIDebugger2.doStartSession(GDBServerCDIDebugger2.java:43)
+	at org.eclipse.cdt.debug.mi.core.AbstractGDBCDIDebugger.createSession(AbstractGDBCDIDebugger.java:84)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchDebugSession(LocalCDILaunchDelegate.java:333)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.createCDISession(LocalCDILaunchDelegate.java:457)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchLocalDebugSession(LocalCDILaunchDelegate.java:144)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchDebugger(LocalCDILaunchDelegate.java:112)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 150 2025-11-06 15:23:10.168
+!MESSAGE Target selection failed.
+!STACK 0
+org.eclipse.cdt.debug.mi.core.MIException: Target is not responding (timed out)
+	at org.eclipse.cdt.debug.mi.core.MISession.postCommand0(MISession.java:623)
+	at org.eclipse.cdt.debug.mi.core.MISession.postCommand(MISession.java:589)
+	at org.eclipse.cdt.debug.mi.core.GDBServerCDIDebugger2.startGDBServerSession(GDBServerCDIDebugger2.java:100)
+	at org.eclipse.cdt.debug.mi.core.GDBServerCDIDebugger2.doStartSession(GDBServerCDIDebugger2.java:43)
+	at org.eclipse.cdt.debug.mi.core.AbstractGDBCDIDebugger.createSession(AbstractGDBCDIDebugger.java:84)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchDebugSession(LocalCDILaunchDelegate.java:333)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.createCDISession(LocalCDILaunchDelegate.java:457)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchLocalDebugSession(LocalCDILaunchDelegate.java:144)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchDebugger(LocalCDILaunchDelegate.java:112)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.debug.mi.core 4 150 2025-11-06 15:23:10.168
+!MESSAGE Target is not responding (timed out)
+!STACK 0
+org.eclipse.cdt.debug.mi.core.MIException: Target is not responding (timed out)
+	at org.eclipse.cdt.debug.mi.core.MISession.postCommand0(MISession.java:623)
+	at org.eclipse.cdt.debug.mi.core.MISession.postCommand(MISession.java:589)
+	at org.eclipse.cdt.debug.mi.core.GDBServerCDIDebugger2.startGDBServerSession(GDBServerCDIDebugger2.java:100)
+	at org.eclipse.cdt.debug.mi.core.GDBServerCDIDebugger2.doStartSession(GDBServerCDIDebugger2.java:43)
+	at org.eclipse.cdt.debug.mi.core.AbstractGDBCDIDebugger.createSession(AbstractGDBCDIDebugger.java:84)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchDebugSession(LocalCDILaunchDelegate.java:333)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.createCDISession(LocalCDILaunchDelegate.java:457)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchLocalDebugSession(LocalCDILaunchDelegate.java:144)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launchDebugger(LocalCDILaunchDelegate.java:112)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:73)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

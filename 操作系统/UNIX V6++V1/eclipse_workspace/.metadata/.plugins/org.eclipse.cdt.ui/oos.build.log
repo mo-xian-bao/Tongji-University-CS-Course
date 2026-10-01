@@ -1,0 +1,230 @@
+
+**** Build of configuration Default for project oos ****
+
+make all 
+make --directory=boot
+make[1]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/boot'
+make[1]: `all' is up to date.
+make[1]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/boot'
+make --directory=kernel
+make[1]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/kernel'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/kernel'
+make --directory=machine
+make[1]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/machine'
+make[1]: `all' is up to date.
+make[1]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/machine'
+make --directory=interrupt
+make[1]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/interrupt'
+make[1]: `all' is up to date.
+make[1]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/interrupt'
+make --directory=mm
+make[1]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/mm'
+make[1]: `all' is up to date.
+make[1]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/mm'
+make --directory=proc
+make[1]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/proc'
+make[1]: `all' is up to date.
+make[1]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/proc'
+make --directory=dev
+make[1]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/dev'
+make[1]: `all' is up to date.
+make[1]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/dev'
+make --directory=fs
+make[1]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/fs'
+make[1]: `all' is up to date.
+make[1]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/fs'
+make --directory=tty
+make[1]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/tty'
+make[1]: `all' is up to date.
+make[1]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/tty'
+make --directory=test
+make[1]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/test'
+make --directory=dev
+make[2]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/test/dev'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/test/dev'
+make --directory=fs
+make[2]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/test/fs'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/test/fs'
+make --directory=lib
+make[2]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/test/lib'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/test/lib'
+make --directory=mm
+make[2]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/test/mm'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/test/mm'
+make[1]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/test'
+make --directory=pe
+make[1]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/pe'
+make[1]: `all' is up to date.
+make[1]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/pe'
+make --directory=lib
+make[1]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/lib'
+ar -crv Lib_V6++.a .\objs\file.o .\objs\sys.o .\objs\stdio.o .\objs\stdlib.o .\objs\string.o .\objs\double.o .\objs\float.o .\objs\sprintf.o .\objs\print_parse.o .\objs\time.o .\objs\malloc.o
+r - .\objs\file.o
+r - .\objs\sys.o
+r - .\objs\stdio.o
+r - .\objs\stdlib.o
+r - .\objs\string.o
+r - .\objs\double.o
+r - .\objs\float.o
+r - .\objs\sprintf.o
+r - .\objs\print_parse.o
+r - .\objs\time.o
+r - .\objs\malloc.o
+make[1]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/lib'
+make --directory=shell
+make[1]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/shell'
+gcc -W -O0 -g -nostdlib -nostdinc -nostartfiles -fno-builtin -fno-exceptions .\OBJS\commandtree.o .\OBJS\executecommand.o .\OBJS\preexecute.o .\OBJS\main.o "..\lib\Lib_V6++.a" -e _main1 -o .\OBJS\Shell.exe
+copy .\OBJS\Shell.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\Shell.exe
+已复制         1 个文件。
+make[1]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/shell'
+make --directory=program
+make[1]: Entering directory `D:/desktop/OS/UNIX V6++V1/oos/src/program'
+del .\objs\*.exe
+del /Q ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\*
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  cat.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\cat.exe
+copy .\objs\cat.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\cat
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  cp.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\cp.exe
+copy .\objs\cp.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\cp
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  ls.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\ls.exe
+copy .\objs\ls.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\ls
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  mkdir.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\mkdir.exe
+copy .\objs\mkdir.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\mkdir
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  rm.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\rm.exe
+copy .\objs\rm.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\rm
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  performance.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\perf.exe
+copy .\objs\perf.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\perf
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  sig.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\sig.exe
+copy .\objs\sig.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\sig
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  copyfile.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\copyfile.exe
+copy .\objs\copyfile.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\copyfile
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  shutdown.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\shutdown.exe
+copy .\objs\shutdown.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\shutdown
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  test.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\test.exe
+copy .\objs\test.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\test
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  forks.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\forks.exe
+copy .\objs\forks.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\forks
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  trace.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\trace.exe
+copy .\objs\trace.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\trace
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  echo.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\echo.exe
+copy .\objs\echo.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\echo
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  date.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\date.exe
+copy .\objs\date.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\date
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  newsig.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\newsig.exe
+copy .\objs\newsig.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\newsig
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  sigTest.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\sigTest.exe
+copy .\objs\sigTest.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\sigTest
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  stack.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\stack.exe
+copy .\objs\stack.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\stack
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  malloc.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\malloc.exe
+copy .\objs\malloc.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\malloc
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  testSTDOUT.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\testSTDOUT.exe
+copy .\objs\testSTDOUT.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\testSTDOUT
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  fork.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\fork.exe
+copy .\objs\fork.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\fork
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  showStack.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\showStack.exe
+copy .\objs\showStack.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\showStack
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  trivialProg.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\trivialProg.exe
+copy .\objs\trivialProg.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\trivialProg
+已复制         1 个文件。
+gcc -w -O0 -g -nostdlib -nostartfiles -nostdinc -fno-builtin -fno-exceptions -I"." -I"..\lib\include"  helloworld.c -e _main1 "..\lib\Lib_V6++.a" -o .\objs\helloworld.exe
+copy .\objs\helloworld.exe ..\..\tools\v6pp-fs-edit-2022\workspace\programs\bin\helloworld
+已复制         1 个文件。
+make[1]: Leaving directory `D:/desktop/OS/UNIX V6++V1/oos/src/program'
+ld -T Link.ld ..\targets\objs\sector2.bin  ..\targets\objs\allocator.o   ..\targets\objs\atadriver.o   ..\targets\objs\blockdevice.o   ..\targets\objs\buffermanager.o   ..\targets\objs\chardevice.o   ..\targets\objs\chip8253.o   ..\targets\objs\chip8259A.o   ..\targets\objs\cmostime.o   ..\targets\objs\crt.o   ..\targets\objs\devicemanager.o   ..\targets\objs\diskinterrupt.o   ..\targets\objs\dma.o   ..\targets\objs\exception.o   ..\targets\objs\file.o   ..\targets\objs\filemanager.o   ..\targets\objs\filesystem.o   ..\targets\objs\gdt.o   ..\targets\objs\idt.o   ..\targets\objs\inode.o   ..\targets\objs\kernel.o   ..\targets\objs\kernelallocator.o   ..\targets\objs\keyboard.o   ..\targets\objs\keyboardinterrupt.o   ..\targets\objs\lib.o   ..\targets\objs\machine.o   ..\targets\objs\main.o   ..\targets\objs\memorydescriptor.o   ..\targets\objs\new.o   ..\targets\objs\openfilemanager.o   ..\targets\objs\pagedirectory.o   ..\targets\objs\pagemanager.o   ..\targets\objs\PEParser.o   ..\targets\objs\process.o   ..\targets\objs\processmanager.o   ..\targets\objs\support.o   ..\targets\objs\swappermanager.o   ..\targets\objs\systemcall.o   ..\targets\objs\taskstatesegment.o   ..\targets\objs\testbuffermanager.o   ..\targets\objs\testfilesystem.o   ..\targets\objs\testlib.o   ..\targets\objs\testswappermanager.o   ..\targets\objs\testutility.o   ..\targets\objs\text.o   ..\targets\objs\timeinterrupt.o   ..\targets\objs\tty.o   ..\targets\objs\user.o   ..\targets\objs\utility.o   ..\targets\objs\video.o  -o ..\targets\objs\kernel.exe	
+objcopy -O binary ..\targets\objs\kernel.exe ..\targets\objs\kernel.bin
+nm ..\targets\objs\kernel.exe > ..\targets\objs\kernel.sym
+objdump -d ..\targets\objs\kernel.exe  > ..\targets\objs\kernel.asm
+copy ..\targets\objs\boot.bin ..\targets\img\boot.bin
+已复制         1 个文件。
+copy ..\targets\objs\kernel.bin ..\targets\img\kernel.bin
+已复制         1 个文件。
+copy ..\targets\objs\kernel.sym  ..\targets\img\kernel.sym
+已复制         1 个文件。
+copy ..\targets\objs\kernel.asm  ..\targets\img\kernel.asm
+已复制         1 个文件。
+copy ..\targets\objs\boot.bin ..\tools\v6pp-fs-edit-2022\workspace\boot.bin
+已复制         1 个文件。
+copy ..\targets\objs\kernel.bin ..\tools\v6pp-fs-edit-2022\workspace\kernel.bin
+已复制         1 个文件。
+cd ..\tools\v6pp-fs-edit-2022\workspace && filescanner.exe | fsedit.exe c.img c
+[] > [] > [info 11] 内核写入完毕。
+[] > [info 13] 启动引导程序写入完毕。
+[] > [info 9] 创建文件夹：bin
+[] > [info] 切换路径。
+[bin] > [info 5] 上传成功：cat
+[bin] > [info 5] 上传成功：copyfile
+[bin] > [info 5] 上传成功：cp
+[bin] > [info 5] 上传成功：date
+[bin] > [info 5] 上传成功：echo
+[bin] > [info 5] 上传成功：fork
+[bin] > [info 5] 上传成功：forks
+[bin] > [info 5] 上传成功：helloworld
+[bin] > [info 5] 上传成功：ls
+[bin] > [info 5] 上传成功：malloc
+[bin] > [info 5] 上传成功：mkdir
+[bin] > [info 5] 上传成功：newsig
+[bin] > [info 5] 上传成功：perf
+[bin] > [info 5] 上传成功：rm
+[bin] > [info 5] 上传成功：showStack
+[bin] > [info 5] 上传成功：shutdown
+[bin] > [info 5] 上传成功：sig
+[bin] > [info 5] 上传成功：sigTest
+[bin] > [info 5] 上传成功：stack
+[bin] > [info 5] 上传成功：test
+[bin] > [info 5] 上传成功：testSTDOUT
+[bin] > [info 5] 上传成功：trace
+[bin] > [info 5] 上传成功：trivialProg
+[bin] > [info] 切换路径。
+[bin/..] > [info 9] 创建文件夹：demos
+[bin/..] > [info] 切换路径。
+[bin/../demos] > [info 5] 上传成功：cpfile
+[bin/../demos] > [info 5] 上传成功：forks
+[bin/../demos] > [info 5] 上传成功：forks.exe
+[bin/../demos] > [info 5] 上传成功：peProgram.exe
+[bin/../demos] > [info 5] 上传成功：sig
+[bin/../demos] > [info 5] 上传成功：sig.exe
+[bin/../demos] > [info 5] 上传成功：test
+[bin/../demos] > [info 5] 上传成功：test.exe
+[bin/../demos] > [info] 切换路径。
+[bin/../demos/..] > [info 9] 创建文件夹：etc
+[bin/../demos/..] > [info] 切换路径。
+[bin/../demos/../etc] > [info 5] 上传成功：greetings!
+[bin/../demos/../etc] > [info] 切换路径。
+[bin/../demos/../etc/..] > [info 5] 上传成功：Shell.exe
+[bin/../demos/../etc/..] > [info 9] 创建文件夹：usr
+[bin/../demos/../etc/..] > [info] 切换路径。
+[bin/../demos/../etc/../usr] > [info] 切换路径。
+[bin/../demos/../etc/../usr/..] > [info 9] 创建文件夹：var
+[bin/../demos/../etc/../usr/..] > [info] 切换路径。
+[bin/../demos/../etc/../usr/../var] > [info] 切换路径。
+[bin/../demos/../etc/../usr/../var/..] > bye!
+copy ..\tools\v6pp-fs-edit-2022\workspace\c.img "..\targets\UNIXV6++"\c.img
+已复制         1 个文件。
+
+**** Build Finished ****

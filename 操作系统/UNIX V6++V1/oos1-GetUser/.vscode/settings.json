@@ -1,0 +1,8 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.encoding": "gb18030",
+    "files.associations": {
+        "sys.h": "c",
+        "types.h": "c"
+    },
+}

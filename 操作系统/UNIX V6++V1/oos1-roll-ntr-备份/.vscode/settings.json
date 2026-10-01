@@ -1,0 +1,15 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.encoding": "gb18030",
+    "files.associations": {
+        "sys.h": "c",
+        "types.h": "c"
+    },
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "python-envs.pythonProjects": [],
+    "chat.tools.terminal.autoApprove": {
+        "Get-Command": true,
+        "ForEach-Object": true
+    },
+}
