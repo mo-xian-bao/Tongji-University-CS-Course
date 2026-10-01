@@ -1,0 +1,6673 @@
+{
+  "count": 74,
+  "weighted_run_formats": [
+    [
+      "{\"ascii\": null, \"bold\": false, \"eastAsia\": null, \"italic\": false, \"size_pt\": null}",
+      7424
+    ],
+    [
+      "{\"ascii\": null, \"bold\": false, \"eastAsia\": null, \"italic\": true, \"size_pt\": null}",
+      368
+    ]
+  ],
+  "boxes": [
+    {
+      "index": 1,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "class VariableSymbol:",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    name: str               # 变量名",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "    type_name: TypeNode     # 类型（可为 None，表示待推导）",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "    is_mut: bool            # 是否可变",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "    initialized: bool       # 是否已被初始化（赋值）",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "class FunctionSymbol:",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    name: str               # 函数名",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "    params: list[TypeNode]  # 参数类型列表",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "    return_type: TypeNode   # 返回类型（可为 None）",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "# 语义分析器中",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "self.functions: dict[str, FunctionSymbol]   # 全局函数符号表",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "self.scopes: list[dict[str, VariableSymbol]] # 作用域栈",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "shape_style": "position:absolute;rotation:-0;width:311.6pt;height:229.8pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:14.05pt;mso-position-vertical-relative:text;margin-left:51.85pt;mso-position-horizontal:center;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "class VariableSymbol:",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    name: str               # 变量名",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "    type_name: TypeNode     # 类型（可为 None，表示待推导）",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "    is_mut: bool            # 是否可变",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "    initialized: bool       # 是否已被初始化（赋值）",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "class FunctionSymbol:",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    name: str               # 函数名",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "    params: list[TypeNode]  # 参数类型列表",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "    return_type: TypeNode   # 返回类型（可为 None）",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "# 语义分析器中",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "self.functions: dict[str, FunctionSymbol]   # 全局函数符号表",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "self.scopes: list[dict[str, VariableSymbol]] # 作用域栈",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "@dataclass",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "class FunctionSymbol:",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    name: str",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    params: list[TypeNode]",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    return_type: Optional[TypeNode]",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "@dataclass",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "class VariableSymbol:",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    name: str",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    type_name: Optional[TypeNode]   # None 表示尚未推导出类型",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "    is_mut: bool",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    initialized: bool",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "shape_style": "position:absolute;rotation:-0;width:326.45pt;height:174.55pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:3.35pt;mso-position-vertical-relative:text;margin-left:37.9pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "@dataclass",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "class FunctionSymbol:",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    name: str",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    params: list[TypeNode]",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    return_type: Optional[TypeNode]",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "@dataclass",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "class VariableSymbol:",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    name: str",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    type_name: Optional[TypeNode]   # None 表示尚未推导出类型",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "    is_mut: bool",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    initialized: bool",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "self.scopes: list[dict[str, VariableSymbol]] = []",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "shape_style": "position:absolute;rotation:-0;width:327.9pt;height:20.8pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:8.05pt;mso-position-vertical-relative:text;margin-left:38.65pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "self.scopes: list[dict[str, VariableSymbol]] = []",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "class BoolType(TypeNode):",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    pass",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "@dataclass",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "class RangeType:",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    element_type: TypeNode   # 范围元素的类型（目前只有 i32）",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "shape_style": "position:absolute;rotation:-0;width:332.1pt;height:101.95pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:14.2pt;mso-position-vertical-relative:text;margin-left:41.6pt;mso-position-horizontal:center;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "class BoolType(TypeNode):",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    pass",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "@dataclass",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "class RangeType:",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    element_type: TypeNode   # 范围元素的类型（目前只有 i32）",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "@dataclass",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "class LoopContext:",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    allow_break_value: bool      # 是否允许 break 携带返回值（loop 表达式允许）",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "break_types: list[Optional[TypeNode]]  # 记录所有 break 返回值类型，用于类型统一",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "shape_style": "position:absolute;rotation:-0;width:419.25pt;height:63.4pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:7.65pt;mso-position-vertical-relative:text;margin-left:-2.6pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "@dataclass",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "class LoopContext:",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    allow_break_value: bool      # 是否允许 break 携带返回值（loop 表达式允许）",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        },
+        {
+          "text": "break_types: list[Optional[TypeNode]]  # 记录所有 break 返回值类型，用于类型统一",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "analyze(program)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    ├── _collect_functions(program)   # 构建函数符号表，检查重复定义",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    └── for each function:",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "        └── _analyze_function(function)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "            ├── _push_scope()           # 函数级作用域",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "            ├── 定义形参符号",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "            ├── _analyze_block(body)    # 分析函数体",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "            ├── 检查返回值一致性",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "            └── _pop_scope()",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "shape_style": "position:absolute;rotation:-0;width:384.25pt;height:147.25pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:13.9pt;mso-position-vertical-relative:text;margin-left:15.55pt;mso-position-horizontal:center;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "analyze(program)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    ├── _collect_functions(program)   # 构建函数符号表，检查重复定义",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    └── for each function:",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "        └── _analyze_function(function)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "            ├── _push_scope()           # 函数级作用域",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "            ├── 定义形参符号",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "            ├── _analyze_block(body)    # 分析函数体",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "            ├── 检查返回值一致性",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "            └── _pop_scope()",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "ssignStmt",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "  target: IdentifierExpr(a)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "  value: BinaryExpr(+)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    left: NumberExpr(1)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    right: BinaryExpr(*)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "      left: NumberExpr(2)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "      right: NumberExpr(3)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "shape_style": "position:absolute;rotation:-0;width:290.05pt;height:93.4pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:8.8pt;mso-position-vertical-relative:text;margin-left:61.9pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "ssignStmt",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "  target: IdentifierExpr(a)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "  value: BinaryExpr(+)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    left: NumberExpr(1)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    right: BinaryExpr(*)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "      left: NumberExpr(2)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "      right: NumberExpr(3)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "(*, 2, 3, t1)     # 计算 2 * 3 → t1",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(+, 1, t1, t2)    # 计算 1 + t1 → t2",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t2, _, a)     # a = t2",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "shape_style": "position:absolute;rotation:-0;width:209.1pt;height:51.3pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:5.95pt;mso-position-vertical-relative:text;margin-left:102.4pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "(*, 2, 3, t1)     # 计算 2 * 3 → t1",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(+, 1, t1, t2)    # 计算 1 + t1 → t2",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t2, _, a)     # a = t2",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "(+, a, 1, t1)     # a+1",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(*, b, 2, t2)     # b*2",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(<, t1, t2, t3)   # 比较结果存入 t3",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "shape_style": "position:absolute;rotation:-0;width:233pt;height:48.15pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:14.2pt;mso-position-vertical-relative:text;margin-left:91.15pt;mso-position-horizontal:center;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "(+, a, 1, t1)     # a+1",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(*, b, 2, t2)     # b*2",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(<, t1, t2, t3)   # 比较结果存入 t3",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "if a > 0 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    x = 1;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "} else {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    x = 2;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "shape_style": "position:absolute;rotation:-0;width:191.85pt;height:69.2pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:3.25pt;mso-position-vertical-relative:text;margin-left:110.65pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "if a > 0 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    x = 1;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "} else {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    x = 2;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "(>, a, 0, t1)      # 计算条件",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(jz, t1, _, L1)    # 条件为假则跳转到 else",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, 1, _, x)       # then 分支",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(j, _, _, L2)      # 无条件跳转到结束",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L1)  # else 标签",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, 2, _, x)       # else 分支",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L2)  # 结束标签",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "shape_style": "position:absolute;rotation:-0;width:221.75pt;height:115.45pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:5.95pt;mso-position-vertical-relative:text;margin-left:96.4pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "(>, a, 0, t1)      # 计算条件",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(jz, t1, _, L1)    # 条件为假则跳转到 else",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, 1, _, x)       # then 分支",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(j, _, _, L2)      # 无条件跳转到结束",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L1)  # else 标签",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, 2, _, x)       # else 分支",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L2)  # 结束标签",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "while n > 0 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    n = n - 1;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "shape_style": "position:absolute;rotation:-0;width:166.05pt;height:45pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:8.2pt;mso-position-vertical-relative:text;margin-left:124.15pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "while n > 0 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    n = n - 1;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "(label, _, _, L1)      # 循环开始",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(>, n, 0, t1)          # 条件计算",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(jz, t1, _, L2)        # 条件假则退出",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(-, n, 1, t2)          # 循环体",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t2, _, n)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(j, _, _, L1)          # 跳回循环头",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L2)      # 循环结束",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "shape_style": "position:absolute;rotation:-0;width:198.4pt;height:112.3pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:14.35pt;mso-position-vertical-relative:text;margin-left:108.45pt;mso-position-horizontal:center;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "(label, _, _, L1)      # 循环开始",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(>, n, 0, t1)          # 条件计算",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(jz, t1, _, L2)        # 条件假则退出",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(-, n, 1, t2)          # 循环体",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t2, _, n)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(j, _, _, L1)          # 跳回循环头",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L2)      # 循环结束",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "for mut i in 1..n+1 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    n = n - 1;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "shape_style": "position:absolute;rotation:-0;width:166.05pt;height:45pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:5.5pt;mso-position-vertical-relative:text;margin-left:124.15pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "for mut i in 1..n+1 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    n = n - 1;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "(+, n, 1, t1)          # 计算上界 end",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(decl, i32, _, i)      # 声明循环变量",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, 1, _, i)           # i = start",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L1)      # 循环开始",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(<, i, t1, t2)         # i < end?",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(jz, t2, _, L2)        # 条件假则退出",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(-, n, 1, t3)          # 循环体",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t3, _, n)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(+, i, 1, t4)          # i = i + 1",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t4, _, i)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(j, _, _, L1)          # 跳回循环头",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L2)      # 循环结束",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "shape_style": "position:absolute;rotation:-0;width:211.3pt;height:175.95pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:4.15pt;mso-position-vertical-relative:text;margin-left:101.65pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "(+, n, 1, t1)          # 计算上界 end",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(decl, i32, _, i)      # 声明循环变量",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, 1, _, i)           # i = start",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L1)      # 循环开始",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(<, i, t1, t2)         # i < end?",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(jz, t2, _, L2)        # 条件假则退出",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(-, n, 1, t3)          # 循环体",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t3, _, n)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(+, i, 1, t4)          # i = i + 1",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t4, _, i)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(j, _, _, L1)          # 跳回循环头",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L2)      # 循环结束",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "(+, 1, 2, t1)          # 计算第一个实参",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(param, _, _, t1)      # 传递参数1",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(param, _, _, y)       # 传递参数2",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(call, callee, 2, t2)  # 调用函数，返回值存入 t2",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t2, _, x)          # 赋值给 x",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "shape_style": "position:absolute;rotation:-0;width:206.15pt;height:97.05pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:1.8pt;mso-position-vertical-relative:text;margin-left:101.4pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "(+, 1, 2, t1)          # 计算第一个实参",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(param, _, _, t1)      # 传递参数1",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(param, _, _, y)       # 传递参数2",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(call, callee, 2, t2)  # 调用函数，返回值存入 t2",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t2, _, x)          # 赋值给 x",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "(ref, a, _, t1)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t1, _, b)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "shape_style": "position:absolute;rotation:-0;width:166.05pt;height:32.9pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:4.15pt;mso-position-vertical-relative:text;margin-left:124.15pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "(ref, a, _, t1)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t1, _, b)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "(ref_mut, a, _, t1)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t1, _, c)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "shape_style": "position:absolute;rotation:-0;width:166.05pt;height:32.9pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:7.9pt;mso-position-vertical-relative:text;margin-left:124.15pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "(ref_mut, a, _, t1)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t1, _, c)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "(deref, r, _, t1)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t1, _, x)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "shape_style": "position:absolute;rotation:-0;width:166.05pt;height:32.9pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:4.9pt;mso-position-vertical-relative:text;margin-left:124.15pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "(deref, r, _, t1)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t1, _, x)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "(*=, 3, _, r)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "shape_style": "position:absolute;rotation:-0;width:166.05pt;height:20.8pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:14.05pt;mso-position-vertical-relative:text;margin-left:124.65pt;mso-position-horizontal:center;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "(*=, 3, _, r)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "(decl, [i32;3], _, xs)   # 声明数组",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "([]=, 1, 0, xs)          # xs[0] = 1",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "([]=, 2, 1, xs)          # xs[1] = 2",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "([]=, 3, 2, xs)          # xs[2] = 3",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "shape_style": "position:absolute;rotation:-0;width:191.85pt;height:60.25pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:3.25pt;mso-position-vertical-relative:text;margin-left:108.4pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "(decl, [i32;3], _, xs)   # 声明数组",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "([]=, 1, 0, xs)          # xs[0] = 1",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "([]=, 2, 1, xs)          # xs[1] = 2",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "([]=, 3, 2, xs)          # xs[2] = 3",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "([], xs, 0, t1)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t1, _, a)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "shape_style": "position:absolute;rotation:-0;width:166.05pt;height:32.9pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:7.3pt;mso-position-vertical-relative:text;margin-left:124.15pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "([], xs, 0, t1)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t1, _, a)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "([]=, 1, 0, xs)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "shape_style": "position:absolute;rotation:-0;width:166.05pt;height:20.8pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:5.65pt;mso-position-vertical-relative:text;margin-left:124.15pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "([]=, 1, 0, xs)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "(decl, (i32,i32), _, pair)   # 声明元组",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(.=, 1, 0, pair)              # pair.0 = 1",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(.=, 2, 1, pair)              # pair.1 = 2",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(., pair, 0, t1)              # t1 = pair.0",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t1, _, b)                 # b = t1",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "shape_style": "position:absolute;rotation:-0;width:200.2pt;height:72.35pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:3.4pt;mso-position-vertical-relative:text;margin-left:106.9pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "(decl, (i32,i32), _, pair)   # 声明元组",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(.=, 1, 0, pair)              # pair.0 = 1",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(.=, 2, 1, pair)              # pair.1 = 2",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(., pair, 0, t1)              # t1 = pair.0",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t1, _, b)                 # b = t1",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "let b = if a > 0 { 1 } else { 0 };",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "shape_style": "position:absolute;rotation:-0;width:166.05pt;height:20.8pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:2.65pt;mso-position-vertical-relative:text;margin-left:124.15pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "let b = if a > 0 { 1 } else { 0 };",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "(>, a, 0, t1)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(jz, t1, _, L2)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, 1, _, t_result)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(j, _, _, L_end)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L2)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, 0, _, t_result)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L_end)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t_result, _, b)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "shape_style": "position:absolute;rotation:-0;width:166.05pt;height:105.5pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:7pt;mso-position-vertical-relative:text;margin-left:124.15pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "(>, a, 0, t1)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(jz, t1, _, L2)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, 1, _, t_result)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(j, _, _, L_end)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L2)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, 0, _, t_result)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L_end)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t_result, _, b)",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "let a = loop {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    break 42;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "};",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "shape_style": "position:absolute;rotation:-0;width:166.05pt;height:45pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:5.8pt;mso-position-vertical-relative:text;margin-left:124.15pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "let a = loop {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    break 42;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "};",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "(decl, i32, _, a)          # 声明 a（实际由上层 let 生成）",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L1)          # 循环开始",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, 42, _, t_result)       # break 值存入结果临时变量",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(j, _, _, L2)              # 跳转到循环结束",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(j, _, _, L1)              # 循环末尾无条件跳转（如果无 break 会无限循环）",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L2)          # 循环结束",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t_result, _, a)        # 将结果赋给 a",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "shape_style": "position:absolute;rotation:-0;width:225.5pt;height:160.3pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:14.05pt;mso-position-vertical-relative:text;margin-left:94.9pt;mso-position-horizontal:center;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "(decl, i32, _, a)          # 声明 a（实际由上层 let 生成）",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L1)          # 循环开始",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, 42, _, t_result)       # break 值存入结果临时变量",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(j, _, _, L2)              # 跳转到循环结束",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(j, _, _, L1)              # 循环末尾无条件跳转（如果无 break 会无限循环）",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(label, _, _, L2)          # 循环结束",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "(=, t_result, _, a)        # 将结果赋给 a",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            },
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "fn main() -> i32 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    let mut a:i32;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    let mut b:i32;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    a = 1 + 2 * 3;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    b = a - 4;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    return b;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "shape_style": "position:absolute;rotation:-0;width:166.05pt;height:93.4pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:7.15pt;mso-position-vertical-relative:text;margin-left:124.15pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "fn main() -> i32 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    let mut a:i32;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    let mut b:i32;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    a = 1 + 2 * 3;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    b = a - 4;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    return b;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "fn program_4_2(mut a:i32) -> i32 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    if a>0 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "        return 1;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    } else {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "        return 0;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    }",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "shape_style": "position:absolute;rotation:-0;width:235.8pt;height:93.4pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:5.5pt;mso-position-vertical-relative:text;margin-left:88.9pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "fn program_4_2(mut a:i32) -> i32 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    if a>0 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "        return 1;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    } else {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "        return 0;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    }",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "fn program_5_2(mut n:i32) {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    for mut i in 1..n+1 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "        n = n - 1;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    }",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "shape_style": "position:absolute;rotation:-0;width:216.65pt;height:69.2pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:14.05pt;mso-position-vertical-relative:text;margin-left:99.35pt;mso-position-horizontal:center;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "fn program_5_2(mut n:i32) {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    for mut i in 1..n+1 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "        n = n - 1;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    }",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "fn test_call() {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    callee();",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    callee_with_arg(1+2);",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    let mut x:i32 = callee_ret();",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "shape_style": "position:absolute;rotation:-0;width:182.95pt;height:69.2pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:14.5pt;mso-position-vertical-relative:text;margin-left:116.2pt;mso-position-horizontal:center;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "fn test_call() {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    callee();",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    callee_with_arg(1+2);",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    let mut x:i32 = callee_ret();",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "fn program_2_2__2() {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    a = 32;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "shape_style": "position:absolute;rotation:-0;width:207.75pt;height:45pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:14.05pt;mso-position-vertical-relative:text;margin-left:103.8pt;mso-position-horizontal:center;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "fn program_2_2__2() {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    a = 32;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "fn program_1_5__2() -> i32 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    return ;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "shape_style": "position:absolute;rotation:-0;width:229.25pt;height:45pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:4.3pt;mso-position-vertical-relative:text;margin-left:92.65pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "fn program_1_5__2() -> i32 {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    return ;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "fn program_1_5__3() {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    return 1;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "shape_style": "position:absolute;rotation:-0;width:223.1pt;height:45pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:4.6pt;mso-position-vertical-relative:text;margin-left:94.15pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "fn program_1_5__3() {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    return 1;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "fn test_immutable() {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    let a = 1;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    a = 2;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "shape_style": "position:absolute;rotation:-0;width:220.35pt;height:57.1pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:8.65pt;mso-position-vertical-relative:text;margin-left:96.4pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "fn test_immutable() {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    let a = 1;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    a = 2;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "shape_style": null,
+      "stroke": null,
+      "stroke_color": null,
+      "fill": null,
+      "paragraphs": [
+        {
+          "text": "fn test_break_outside() {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    break;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "shape_style": "position:absolute;rotation:-0;width:218.5pt;height:45pt;mso-wrap-distance-left:9.05pt;mso-wrap-distance-right:9.05pt;mso-wrap-distance-top:3.6pt;mso-wrap-distance-bottom:3.6pt;margin-top:7pt;mso-position-vertical-relative:text;margin-left:97.9pt;mso-position-horizontal-relative:text",
+      "stroke": null,
+      "stroke_color": "#000000",
+      "fill": "#FFFFFF",
+      "paragraphs": [
+        {
+          "text": "fn test_break_outside() {",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "    break;",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        },
+        {
+          "text": "}",
+          "style": "Normal",
+          "formats": [
+            {
+              "ascii": null,
+              "eastAsia": null,
+              "size_pt": null,
+              "bold": false,
+              "italic": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+fn ok_minimal() {
+}

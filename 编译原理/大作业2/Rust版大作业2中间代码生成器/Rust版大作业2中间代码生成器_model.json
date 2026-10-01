@@ -1,0 +1,3620 @@
+[
+    [
+        {
+            "type": "image",
+            "content": "data:image/png;base64,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"
+        },
+        {
+            "type": "text",
+            "content": "编译原理 大作业2：中间代码生成器"
+        },
+        {
+            "type": "text",
+            "content": "<text style=\"bold\">同济大学</text>"
+        },
+        {
+            "type": "text",
+            "content": "<text style=\"bold\">编译原理课程组</text>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust编译器实现</text>",
+            "level": 2
+        },
+        {
+            "type": "text",
+            "content": "<text style=\"bold\">Rust</text>"
+        },
+        {
+            "type": "text",
+            "content": "<text style=\"bold\">华为是五位Rust基金会创始白金会员成员之一，引领了Rust语言的发展。</text>"
+        },
+        {
+            "type": "text",
+            "content": "性能"
+        },
+        {
+            "type": "text",
+            "content": "Rust速度极快，性能比肩C语言，内存效率极高，无需运行时或垃圾收集器，可以为性能关键型服务提供支持。"
+        },
+        {
+            "type": "text",
+            "content": "可靠性"
+        },
+        {
+            "type": "text",
+            "content": "Rust丰富的类型系统和所有权模型保证了内存安全和线程安全，使编程人员能够在编译时消除许多类别的错误。"
+        },
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">Rust是一门能够安全高效地编写系统级程序的语言，在内存安全方面具有显著优势。</text>",
+            "level": 3
+        },
+        {
+            "type": "text",
+            "content": "<text style=\"bold\">知名问答平台StackOverflow的调查表明, 自2015年以来，Rust一直是开发者最爱的编程语言。</text>"
+        },
+        {
+            "type": "text",
+            "content": "生态性"
+        },
+        {
+            "type": "text",
+            "content": "Rust拥有出色的文档、带有有用错误消息的友好编译器、集成的包管理器和构建工具、自动格式化程序等。"
+        },
+        {
+            "type": "text",
+            "content": "<text style=\"bold\">《Nature》杂志2020年尾的文章《Why Scientists are Turning to Rust》中也强调：</text>"
+        },
+        {
+            "type": "text",
+            "content": "<text style=\"bold\">科学家极为推崇Rust。</text>"
+        },
+        {
+            "type": "text",
+            "content": "<text style=\"bold\">华为内部使用</text>"
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">Rust 广泛用于嵌入式系统开发、系统驱动、云计算、虚拟存储、网络传输协议、并发编程框架基础库等产品中。</text>"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">华为实验室正基于 Rust 探索先进的代码解析、安全分析等工具。</text>"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "<text style=\"bold\">Rust社区贡献</text>"
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">华为深度参与了在Rust社区中，贡献了包括C到Rust转换、内联汇编、交叉编译、Parking Lot并发库、SIMD 基础库、文档导航、代码多态化、热补丁、AOP等特性。</text>"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "content": "<text style=\"bold\">Rust中国推广</text>"
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">华为战略支持了在中国举办的Rust China Conf大会，并推行多项社区活动。</text>"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">华为也为为中国的开发者提供Rust教程和Rust编码规范等。</text>"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">大作业2：中间代码生成器</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">了解类Rust语义规则，根据源程序给出语义分析结果，实现中间代码生成（建议以四元式的形式作为中间代码）;</text>"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">注意静态语义错误的诊断和处理；</text>"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">在此基础上，考虑更为通行的高级语言的语义检查和中间代码生成所需要注意的内容，并给出解决方案。</text>"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">分组，保持大作业1的分组</text>"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">撰写设计和说明文档</text>"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">0.1 变量属性</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<变量属性> -> mut"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：允许变量被二次赋值，后续拓展的不可变变量不允许被二次赋值。"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">0.2 类型</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<类型> -> i32"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：支持基础类型i32，表示32位的整型。"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">0.3 左值</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<左值> -> <可取引用>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<可取引用 -> <可取元素>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<可取元素> -> <ID>"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">语义说明：标识符的一些属性：可作为左值、可取引用、可取元素。</text>"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">1.1 基础程序</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "Program  -> <声明串>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<声明串> -> 空 | <声明> <声明串>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<声明> -> <函数声明>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<函数声明> -> <函数头声明> <语句块>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<函数头声明> ->  fn <ID> '(' <形参列表> ')'"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<形参列表>-> 空"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<语句块> -> '{' <语句串> '}'"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<语句串> -> 空"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：定义了一个最基础的程序结构，支持声明若干个函数，每个函数无参数且函数体为空。"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_1_1() {"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">1.2 语句（拓展1.1）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<语句串> -> <语句> <语句串>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<语句>-> ';'"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：语句串由任意数量个语句构成，单个分号可以作为一个语句。"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">1.3 返回语句（拓展1.2）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<语句>-> <返回语句>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<返回语句> -> return ';'"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：<返回语句> 用于从函数调用中退出，并将控制权交还给调用者。目前不支持返回值。"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">1.4 函数输入（依赖0.1、0.2，拓展1.1）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<形参列表>-> <形参> | <形参> ',' <形参列表>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<形参> -> <变量属性> <ID> ':' <类型>"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：函数声明时接收参数，参数具有指定的类型。"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">1.5 函数输出（依赖0.2、3.1，拓展1.1、1.3）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<函数头声明> ->  fn <ID> '(' <形参列表> ')' '->' <类型>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<返回语句> -> return <表达式> ';'"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">语义说明：<函数头声明> 支持标注返回类型，<返回语句> 支持返回一个表达式的值。</text>"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_1_2() {"
+                },
+                {
+                    "type": "text",
+                    "content": ";;;;;;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_1_3() {"
+                },
+                {
+                    "type": "text",
+                    "content": "return ;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_1_4(mut a:i32) {"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_1_5__1() -> i32 {"
+                },
+                {
+                    "type": "text",
+                    "content": "return 1;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_1_5__2() -> i32 {"
+                },
+                {
+                    "type": "text",
+                    "content": "return ;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_1_5__3() {"
+                },
+                {
+                    "type": "text",
+                    "content": "return 1;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 返回语句的类型（空）和函数声明返回类型（i32）不一致"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 返回语句的类型（i32）和函数声明返回类型（空）不一致"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">2.0 变量声明（依赖0.1、0.2）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<变量声明> -> <变量属性> <ID>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<变量声明> -> <变量属性> <ID> ':'  <类型>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：允许两种变量声明："
+                        },
+                        {
+                            "type": "list",
+                            "attribute": "unordered",
+                            "ilevel": 2,
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "content": "声明一个变量但不指定类型，后续需要对该变量进行赋值来支持编译器推导类型；"
+                                },
+                                {
+                                    "type": "text",
+                                    "content": "声明一个变量且指定类型。"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "content": "<text style=\"bold\">2.1 变量声明语句（依赖2.0，拓展1.2）</text>"
+                        },
+                        {
+                            "type": "list",
+                            "attribute": "unordered",
+                            "ilevel": 2,
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "content": "<语句> -> <变量声明语句>"
+                                },
+                                {
+                                    "type": "text",
+                                    "content": "<变量声明语句> ->  let <变量声明> ';'"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：变量声明语句需在变量声明前加上 let 关键字，变量允许被二次声明，每次声明隐藏之前的绑定，称为重影。"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_2_1__1() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:i32;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_2_1__2() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b;"
+                },
+                {
+                    "type": "text",
+                    "content": "b=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_2_1__3() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_2_1__4() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:i32;"
+                },
+                {
+                    "type": "text",
+                    "content": "a=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:i32;"
+                },
+                {
+                    "type": "text",
+                    "content": "a=2;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "√ 后续可以判断b的类型为整型"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 后续无法推断b的类型"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "√ 可以二次声明，称为重影"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">2.0 变量声明（依赖0.1、0.2）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<变量声明> -> <变量属性> <ID>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<变量声明> -> <变量属性> <ID> ':'  <类型>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：允许两种变量声明："
+                        },
+                        {
+                            "type": "list",
+                            "attribute": "unordered",
+                            "ilevel": 2,
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "content": "声明一个变量但不指定类型，后续需要对该变量进行赋值来支持编译器推导类型；"
+                                },
+                                {
+                                    "type": "text",
+                                    "content": "声明一个变量且指定类型。"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "content": "<text style=\"bold\">2.2 赋值语句（依赖0.3、3.1，拓展1.2）</text>"
+                        },
+                        {
+                            "type": "list",
+                            "attribute": "unordered",
+                            "ilevel": 2,
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "content": "<语句>-> <赋值语句>"
+                                },
+                                {
+                                    "type": "text",
+                                    "content": "<赋值语句> -> <左值> '='<表达式> ';'"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：允许将一个 <表达式> 的计算结果赋值给左值，从而实现变量值的修改。左值需提前声明；若左值已知类型需和表达式的类型一致；右值若为变量则需提前声明且赋值。"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_2_2__1(mut a:i32) {"
+                },
+                {
+                    "type": "text",
+                    "content": "a=32;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_2_2__2() {"
+                },
+                {
+                    "type": "text",
+                    "content": "a=32;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_2_2__3(mut a:i32) {"
+                },
+                {
+                    "type": "text",
+                    "content": "a=1==1;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_2_2__4() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b:i32=a;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_2_2__5() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:i32;"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b:i32=a;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 变量未声明"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 变量类型不一致"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 右值未提前声明"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 右值未提前赋值"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">2.0 变量声明（依赖0.1、0.2）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<变量声明> -> <变量属性> <ID>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<变量声明> -> <变量属性> <ID> ':'  <类型>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：允许两种变量声明："
+                        },
+                        {
+                            "type": "list",
+                            "attribute": "unordered",
+                            "ilevel": 2,
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "content": "声明一个变量但不指定类型，后续需要对该变量进行赋值来支持编译器推导类型；"
+                                },
+                                {
+                                    "type": "text",
+                                    "content": "声明一个变量且指定类型。"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "content": "<text style=\"bold\">2.3 变量声明赋值语句（依赖2.0、3.1，拓展1.2）</text>"
+                        },
+                        {
+                            "type": "list",
+                            "attribute": "unordered",
+                            "ilevel": 2,
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "content": "<语句>-> <变量声明赋值语句>"
+                                },
+                                {
+                                    "type": "text",
+                                    "content": "<变量声明赋值语句> -> let <变量声明> '='<表达式> ';'"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：变量声明的同时进行赋值"
+                        },
+                        {
+                            "type": "list",
+                            "attribute": "unordered",
+                            "ilevel": 2,
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "content": "如果变量声明时未指定类型，则类型根据后续表达式推断；"
+                                },
+                                {
+                                    "type": "text",
+                                    "content": "如果变量声明时指定类型，则需检测是否与后续表达式类型一致，不一致应报错。"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "content": "<text style=\"strikethrough\">变量允许被二次声明，每次声明隐藏之前的绑定，称为重影。</text>"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_2_3__1() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:i32=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_2_3__2() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:i32=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a=2;"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:i32=3;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "√ 可以二次声明，称为重影"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">3.1 基本表达式（依赖0.3、拓展1.2）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<语句> -> <表达式> ';'"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<表达式> -> <加减表达式>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<加减表达式> ->  <项>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<项> -> <因子>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<因子> -> <NUM>  | <左值> | '(' <表达式> ')'"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：提供表达式求值的能力，支持常量、变量以及带括号的嵌套表达式。"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_3_1__1() {"
+                },
+                {
+                    "type": "text",
+                    "content": "0;"
+                },
+                {
+                    "type": "text",
+                    "content": "(1);"
+                },
+                {
+                    "type": "text",
+                    "content": "((2));"
+                },
+                {
+                    "type": "text",
+                    "content": "(((3)));"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_3_1__2(mut a:i32) {"
+                },
+                {
+                    "type": "text",
+                    "content": "a;"
+                },
+                {
+                    "type": "text",
+                    "content": "(a);"
+                },
+                {
+                    "type": "text",
+                    "content": "((a));"
+                },
+                {
+                    "type": "text",
+                    "content": "(((a)));"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">3.2 增加比较运算（依赖3.1、拓展3.1）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<表达式> -> <表达式> <比较运算符> <加减表达式>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<比较运算符> -> '<' | '<=' | '>' | '>='  | '==' | ‘!=‘"
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：支持比较运算，且优先级乘除>加减>比较。"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">3.3 增加加减运算（依赖3.1、拓展3.1）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<加减表达式> -> <加减表达式> <加减运算符> <项>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<加减运算符> -> '+' | ‘-’"
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：支持加减运算，且优先级乘除>加减>比较。"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">3.4 增加乘除运算（依赖3.1、拓展3.1）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<项> -> <项> <乘除运算符> <因子>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<乘除运算符> -> '*' | '/’"
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：支持乘除运算，且优先级乘除>加减>比较。"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_3_2() {"
+                },
+                {
+                    "type": "text",
+                    "content": "1<2;"
+                },
+                {
+                    "type": "text",
+                    "content": "3<=4;"
+                },
+                {
+                    "type": "text",
+                    "content": "5>6;"
+                },
+                {
+                    "type": "text",
+                    "content": "7>=8;"
+                },
+                {
+                    "type": "text",
+                    "content": "9==10;"
+                },
+                {
+                    "type": "text",
+                    "content": "11!=12;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_3_3() {"
+                },
+                {
+                    "type": "text",
+                    "content": "1+2;"
+                },
+                {
+                    "type": "text",
+                    "content": "3-4;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_3_4() {"
+                },
+                {
+                    "type": "text",
+                    "content": "1*2;"
+                },
+                {
+                    "type": "text",
+                    "content": "3/4;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_3_3__1__a() {"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_3_3__1__b() {"
+                },
+                {
+                    "type": "text",
+                    "content": "program_3_3__1__a();"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_3_3__2__a(mut a:i32) {"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_3_3__2__b() {"
+                },
+                {
+                    "type": "text",
+                    "content": "program_3_3__2__a(1+2);"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">3.5 函数调用（依赖3.1，拓展3.1）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<因子> -> <ID> '(' <实参列表> ')'"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<实参列表>-> 空 | <表达式> | <表达式> ',' <实参列表>"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：提供函数调用表达式的能力，函数调用结果可以参与运算。实参数量与形参数量需一致；<实参列表> 中的每个 <表达式> 的类型必须与对应位置形参的类型一致；若函数无返回值，则不能参与运算或作为右值。"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_3_3__3__a() {"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_3_3__3__b() {"
+                },
+                {
+                    "type": "text",
+                    "content": "program_3_3__3__a(1);"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 实参数量与形参数量不一致"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_3_3__4__a(mut a:i32) {"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_3_3__4__b() {"
+                },
+                {
+                    "type": "text",
+                    "content": "program_3_3__4__a(program_3_3__4__a);"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 实参类型与形参类型不一致"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_3_3__5__a() {"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_3_3__5__b() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a=program_3_3__5__a();"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 无返回值函数不能作为右值"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_4_1(mut a:i32) -> i32 {"
+                },
+                {
+                    "type": "text",
+                    "content": "if a>0 {"
+                },
+                {
+                    "type": "text",
+                    "content": "return 1;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "return 0;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_4_2(mut a:i32) -> i32 {"
+                },
+                {
+                    "type": "text",
+                    "content": "if a>0 {"
+                },
+                {
+                    "type": "text",
+                    "content": "return 1;"
+                },
+                {
+                    "type": "text",
+                    "content": "} else {"
+                },
+                {
+                    "type": "text",
+                    "content": "return 0;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_4_3(mut a:i32) -> i32 {"
+                },
+                {
+                    "type": "text",
+                    "content": "if a>0 {"
+                },
+                {
+                    "type": "text",
+                    "content": "return a+1;"
+                },
+                {
+                    "type": "text",
+                    "content": "} else if a<0 {"
+                },
+                {
+                    "type": "text",
+                    "content": "return a-1;"
+                },
+                {
+                    "type": "text",
+                    "content": "} else {"
+                },
+                {
+                    "type": "text",
+                    "content": "return 0;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">4.1 选择结构（依赖1.1、3.1，拓展1.2）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<语句> -> <if语句>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<if语句> ->  if <表达式> <语句块> <else部分>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<else部分> -> 空"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：支持 if 条件分支语句，若 <表达式> 为真，则执行 if 后的 <语句块>。"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">4.2 增加else（依赖1.1，拓展4.1）</text>"
+                },
+                {
+                    "type": "text",
+                    "content": "<else部分> -> else <语句块>"
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：拓展else分支，若前一个if条件不成立，则执行 else 后的 <语句块>。"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">4.3 增加else if（依赖1.1，拓展4.1）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<else部分> -> else if <表达式> <语句块> <else部分>"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：拓展 else if 分支，若前一个 if 或 else if 条件不成立，则评估此分支的 <表达式>，若为真则执行该 else if 后的 <语句块>。"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">5.0 循环语句（依赖5.1 or 5.2 or 5.3，拓展1.2）</text>"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\"><语句> -> <循环语句></text>"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">5.1 while循环结构（依赖1.1、3.1，拓展5.0）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<循环语句> -> <while语句>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<while语句>  -> while <表达式>  <语句块>"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：拓展循环控制能力，实现基于条件的多次重复执行逻辑。每次循环开始时求表达式的值，若结果为真，则执行 <语句块>；若为假，则跳出循环。"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">5.2 for循环结构（依赖1.1、2.0、3.1，拓展5.0）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<循环语句> -> <for语句>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<for语句>->  for <变量声明内部> in  <可迭代结构> <语句块>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<可迭代结构> ->  <表达式> '..' <表达式>"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：拓展基于范围的迭代能力，对可迭代结构中的每一个元素进行遍历，<可迭代结构>是左闭右开区间，即包含第一个<表达式>的值，不包含第二个<表达式>的值。<表达式>类型需要是整型。"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_5_1(mut n:i32) {"
+                },
+                {
+                    "type": "text",
+                    "content": "while n>0 {"
+                },
+                {
+                    "type": "text",
+                    "content": "n=n-1;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_5_2__1(mut n:i32) {"
+                },
+                {
+                    "type": "text",
+                    "content": "for mut i in 1..n+1 {"
+                },
+                {
+                    "type": "text",
+                    "content": "n=n-1;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_5_2__2(mut n:i32) {"
+                },
+                {
+                    "type": "text",
+                    "content": "for mut i in 1..n+0.1 {"
+                },
+                {
+                    "type": "text",
+                    "content": "n=n-1;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× n+0.1类型不是整型"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">5.3 loop循环结构（依赖1.1，拓展5.0）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<循环语句> -> <loop语句>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<loop语句>->loop  <语句块>"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：拓展无条件无限循环的能力，定义一个无限循环，每次迭代时执行 <语句块> 中的内容，只有通过显式退出指令（如 break）才能终止循环。"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">5.4 增加break和continue（拓展1.2）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<语句> -> break ';' | continue ';'"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：增强循环逻辑的灵活性和表达能力。"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "break ';' 表示立即终止最内层当前所在的循环，控制流将跳出循环；必须出现在循环体内；在嵌套循环中使用仅跳出当前最内层循环。"
+                        },
+                        {
+                            "type": "text",
+                            "content": "continue ';' 表示跳过当前循环体中剩余的代码，控制流将跳转到下一次循环；必须出现在循环体内；在嵌套循环中使用仅影响当前所在循环。"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_5_3() {"
+                },
+                {
+                    "type": "text",
+                    "content": "loop {"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_5_4__1() {"
+                },
+                {
+                    "type": "text",
+                    "content": "while 1==1 {"
+                },
+                {
+                    "type": "text",
+                    "content": "break;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_5_4__2() {"
+                },
+                {
+                    "type": "text",
+                    "content": "break;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_5_4__3() {"
+                },
+                {
+                    "type": "text",
+                    "content": "while 1==0 {"
+                },
+                {
+                    "type": "text",
+                    "content": "continue;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_5_4__4() {"
+                },
+                {
+                    "type": "text",
+                    "content": "continue;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× break; 必须出现在循环体内"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× continue; 必须出现在循环体内"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">6.1 变量不可变属性（拓展0.1）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<变量属性> -> 空"
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：变量声明时可以不标注mut关键字，如此变量不可被二次赋值；若变量是复合类型（如数组），其元素也不可被二次赋值。"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">6.2 不可变引用（依赖0.2、0.3，拓展0.2、0.3）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<类型> -> '&' <类型>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<可取引用> -> '&' <可取引用>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：'&' <类型> 表示一个指向对应数据类型的不可变引用类型。 '&' <可取引用> 表示创建一个变量的不可变引用；允许通过该引用读取但不允许修改指向数据；可以同时存在多个不可变引用。"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">6.3 可变引用（依赖0.2、0.3，拓展0.2、0.3）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<类型> -> '&' mut <类型>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<可取引用> -> '&' mut <可取引用>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：'&' mut <类型> 表示一个指向对应数据类型的可变引用类型。'&' mut <可取引用> 表示创建一个变量的可变引用；允许通过该引用修改指向数据；不允许存在其他的不可变或可变引用；仅允许从可变变量创建可变引用。"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_6_1__1() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let a:i32=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "let b=2;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_6_1__2() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let c:i32=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "c=2;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_6_2__1() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let a:i32=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "let b:& i32=&a;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_6_2__2() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:i32=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "let b=&a;"
+                },
+                {
+                    "type": "text",
+                    "content": "let c=&a;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 不可变变量不可被二次赋值"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "✓ 可以存在多个不可变引用"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">6.1 变量不可变属性（拓展0.1）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<变量属性> -> 空"
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：变量声明时可以不标注mut关键字，如此变量不可被二次赋值；若变量是复合类型（如数组），其元素也不可被二次赋值。"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">6.2 不可变引用（依赖0.2、0.3，拓展0.2、0.3）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<类型> -> '&' <类型>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<可取引用> -> '&' <可取引用>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：'&' <类型> 表示一个指向对应数据类型的不可变引用类型。 '&' <可取引用> 表示创建一个变量的不可变引用；允许通过该引用读取但不允许修改指向数据；可以同时存在多个不可变引用。"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">6.3 可变引用（依赖0.2、0.3，拓展0.2、0.3）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<类型> -> '&' mut <类型>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<可取引用> -> '&' mut <可取引用>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：'&' mut <类型> 表示一个指向对应数据类型的可变引用类型。'&' mut <可取引用> 表示创建一个变量的可变引用；允许通过该引用修改指向数据；不允许存在其他的不可变或可变引用；仅允许从可变变量创建可变引用。"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_6_3() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:i32=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b:&mut i32=&mut a;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_6_3__4() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:i32=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "let b=&a;"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut c=&mut a;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_6_3__5() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let a:i32=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b=&mut a;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 可变引用不能和其他的引用共存"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 仅支持从可变变量创建可变引用"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">6.2 不可变引用（依赖0.2、0.3，拓展0.2、0.3）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<类型> -> '&' <类型>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<可取引用> -> '&' <可取引用>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：'&' <类型> 表示一个指向对应数据类型的不可变引用类型。 '&' <可取引用> 表示创建一个变量的不可变引用；允许通过该引用读取但不允许修改指向数据；可以同时存在多个不可变引用。"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">6.3 可变引用（依赖0.2、0.3，拓展0.2、0.3）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<类型> -> '&' mut <类型>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<可取引用> -> '&' mut <可取引用>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：'&' mut <类型> 表示一个指向对应数据类型的可变引用类型。'&' mut <可取引用> 表示创建一个变量的可变引用；允许通过该引用修改指向数据；不允许存在其他的不可变或可变引用；仅允许从可变变量创建可变引用。"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">6.4 借用（依赖0.3、拓展0.3）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<左值> -> '*' <左值>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "语义说明：表示对一个引用类型的值进行解引用操作，访问其指向的数据；不允许对非引用类型变量进行解引用。"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_6_4__1() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:i32=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b=&mut a;"
+                },
+                {
+                    "type": "text",
+                    "content": "*b=2;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_6_4__2() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:i32=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b=*a;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                },
+                {
+                    "type": "text",
+                    "content": "fn program_6_4__3() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:i32=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b=&a;"
+                },
+                {
+                    "type": "text",
+                    "content": "*b=2;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 不允许对非引用类型进行解引用"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 不可变引用不可以修改指向数据"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">7.0 函数表达式块（依赖1.1、3.1，拓展3.1）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<函数表达式语句块>->'{'  <函数表达式语句串>  '}'"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<函数表达式语句串>->  <表达式> | <语句> <函数表达式语句串>"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：允许将复杂的逻辑封装在一个块里，其中包含一系列 <语句> 和一个末尾的 <表达式> 的代码块，末尾的 <表达式> 的值作为返回值。"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">7.1 函数表达式块作为表达式（依赖7.0，拓展0.3）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<可取元素> -> <函数表达式语句块>"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：函数表达式语句块可以作为表达式参与计算，通常是作为右值赋值给变量。"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">7.2 函数表达式块作为函数体（依赖1.1、7.0，拓展1.1）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<函数声明> -> <函数头声明> <函数表达式语句块>"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：提供使用结构化表达式块作为函数执行内容的能力，一个完整的函数可由 <函数头> 和 <函数表达式语句块> 组成，<函数表达式代码块> 的最后一个 <表达式> 的值作为返回值。"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_7_1(mut x:i32,mut y:i32) {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut z={"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut t=x*x+x;"
+                },
+                {
+                    "type": "text",
+                    "content": "t=t+x*y;"
+                },
+                {
+                    "type": "text",
+                    "content": "t"
+                },
+                {
+                    "type": "text",
+                    "content": "};"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_7_2(mut x:i32,mut y:i32) -> i32 {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut t=x*x+x;"
+                },
+                {
+                    "type": "text",
+                    "content": "t=t+x*y;"
+                },
+                {
+                    "type": "text",
+                    "content": "t"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">7.3 选择表达式（依赖3.1、7.0，拓展0.3）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<表达式> -> <选择表达式>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<选择表达式>-> if  <表达式> <函数表达式语句块> else <函数表达式语句块>"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：提供将 if-else 结构用作表达式并返回值的能力，一个 <表达式> 可以是 if-else 结构和 <函数表达式语句块> 的组合，根据 if 后的 <表达式> 的真假，决定执行哪一个 <函数表达式语句块>，该语句块的返回值作为该 <选择表达式> 的返回值。"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">7.4 循环表达式（依赖3.1、5.3，拓展0.3）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<表达式> -> <loop语句>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<语句> -> break <表达式> ';'"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：提供将循环结构作表达式并返回值的能力，一个 <表达式> 可以是一个 <loop语句>，其最终返回值由某个分支中的 break <表达式> 决定。break 必须出现在循环体内，否则应报错；break 后的表达式必须能求值；若多个 break 存在于同一循环体中，它们必须返回相同类型。"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_7_3(mut a:i32) {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b=if a>0 {"
+                },
+                {
+                    "type": "text",
+                    "content": "1"
+                },
+                {
+                    "type": "text",
+                    "content": "} else {"
+                },
+                {
+                    "type": "text",
+                    "content": "0"
+                },
+                {
+                    "type": "text",
+                    "content": "};"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_7_4__1() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a=loop {"
+                },
+                {
+                    "type": "text",
+                    "content": "break 1;"
+                },
+                {
+                    "type": "text",
+                    "content": "};"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_7_4__2() {"
+                },
+                {
+                    "type": "text",
+                    "content": "break 2;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× break <表达式>; 必须出现在循环体内"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">8.1 数组类型（依赖0.2，拓展0.2）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<类型>-> '[' <类型> ';' <NUM>']"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：拓展数组类型，产生式右边的<类型> 是数组中元素的类型，<NUM> 是数组的长度，必须是一个正整数常量。"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">8.2 数组表达式（依赖3.1、0.3，拓展5.2）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<可取元素> -> '['  <数组元素列表>  ']'"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<数组元素列表>-> 空 | <表达式> | <表达式> ',' <数组元素列表>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<可迭代结构> -> <表达式>"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：数组是由方括号'[]'包裹，逗号','分隔元素<表达式>的结构， <表达式>的数量必须与数组的长度一致，每个 <表达式> 的类型要与数组元素类型一致。"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_8_1() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:[i32;3];"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b:[[i32;3];3];"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_8_2__1(mut a:i32) {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:[i32;2];"
+                },
+                {
+                    "type": "text",
+                    "content": "a=[1,2,3];"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_8_2__2() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:[[i32;1];1];"
+                },
+                {
+                    "type": "text",
+                    "content": "a=[1];"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 初始化时的元素数量与数组长度不一致"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 初始化时元素的类型与数组的元素类型不一致"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">8.3 数组元素（依赖0.3、3.1，拓展0.3）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<可取元素> -> <可取元素> '[' <表达式> ']'"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：提供按索引访问数组元素的能力，元素可以被取元素、可以参与计算、可以作为左值被修改。索引<表达式>的类型必须是整型；索引<表达式>必须在合法范围 [0, len)内；若数组变量不可变，则数组或其子元素不允许被二次赋值。"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_8_3__1(mut a:[[i32;3];3]) {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b:i32=a[0][0];"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "√ 元素可以被取子元素"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_8_3__2(mut a:[i32;3]) {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b:i32=a[0]+a[1]+a[2];"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_8_3__3(mut a:[i32;3]) {"
+                },
+                {
+                    "type": "text",
+                    "content": "a[0]=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "√ 元素可以参与计算"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "√ 元素可以作为左值被修改"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_8_3__4(mut a:i32) {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a=[1,2,3];"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b=a[a];"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 数组的索引的类型必须是整数类型"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_8_3__5() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a=[1,2,3];"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b=a[3];"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_8_3__6() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let a:[i32;3]=[1,2,3];"
+                },
+                {
+                    "type": "text",
+                    "content": "a[0]=4;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 数组的索引必须在合法范围[0,3)内"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 不可变数组的元素也不可变，不允许被二次赋值"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">9.1 元组类型（依赖0.2，拓展0.2）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<类型> -> '('  <元组类型内部> ')'"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<元组类型内部> -> 空 | <类型> ',' <类型列表>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<类型列表> ->空 | <类型> | <类型> ',' <类型列表>"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：拓展元组类型，是由圆括号'()'包裹，逗号','分隔元素类型的结构。支持空元组类型()和非零数量元素的元组类型。"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">9.2 元组类型（依赖3.1，拓展0.3）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<可取元素> -> '(' <元组赋值内部> ')'"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<元组赋值内部> -> 空 | <表达式> ',' <元组元素列表>"
+                        },
+                        {
+                            "type": "text",
+                            "content": "<元组元素列表>->空 | <表达式> | <表达式> ',' <元组元素列表>"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：元组是由圆括号'()'包裹，逗号','分隔元素<表达式>的结构， 支持空元组()和带元素的元组表达式， <表达式>的数量必须与元组类型中的<类型>数量一致；每个 <表达式> 的类型要与元组对应位置元素<类型>一致；仅有一个元素的元组的元素后必须要加逗号',' ，从而与加括号的表达式区分。"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_9_1() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let a:();"
+                },
+                {
+                    "type": "text",
+                    "content": "let b:(i32;i32;);"
+                },
+                {
+                    "type": "text",
+                    "content": "let a:(();i32);"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_9_2__1(mut a:i32) {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:(i32,i32);"
+                },
+                {
+                    "type": "text",
+                    "content": "a=(1,2,3);"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_9_2__2() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a:((),);"
+                },
+                {
+                    "type": "text",
+                    "content": "a=(1,);"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 初始化时的元素数量与元组长度不一致"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 初始化时元素的类型与元组定义的元素类型不一致"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">类Rust语法和语义规则</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">9.3 元组元素（依赖0.3，拓展0.3）</text>"
+                },
+                {
+                    "type": "list",
+                    "attribute": "unordered",
+                    "ilevel": 1,
+                    "content": [
+                        {
+                            "type": "text",
+                            "content": "<可赋值元素>-><元素> '.' <NUM>"
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "content": "语义说明：提供按索引访问元组元素的能力，元素可以被取元素、可以参与计算、可以作为左值被修改。索引必须是整型字面量；索引必须在合法范围 [0, len)内；若元组变量不可变，则元组或其子元素不允许被二次赋值。"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_9_3__1(mut a:((i32,i32),) {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b:i32=a.0.0;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_9_3__2(mut a:(i32,i32,i32)) {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b:i32=a.0+a.1+a.2;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "√ 元素可以被取子元素"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "√ 元素可以参与计算"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_9_3__3(mut a:[i32;3]) {"
+                },
+                {
+                    "type": "text",
+                    "content": "a.0=1;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "√ 元素可以作为左值被修改"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_9_3__4(mut a:i32) {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a=(1,2,3);"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b=a.a;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 元组的索引的类型必须是整数类型"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_9_3__5() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut a=(1,2,3);"
+                },
+                {
+                    "type": "text",
+                    "content": "let mut b=a.3;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 元组的索引必须在合法范围[0,3)内"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "fn program_9_3__6() {"
+                },
+                {
+                    "type": "text",
+                    "content": "let a:(i32,i32,i32)=(1,2,3)"
+                },
+                {
+                    "type": "text",
+                    "content": "a.0=4;"
+                },
+                {
+                    "type": "text",
+                    "content": "}"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "× 不可变元组的元素也不可变，不允许被二次赋值"
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">评分标准</text>",
+            "level": 2
+        },
+        {
+            "type": "table",
+            "content": "<table border=\"1\">\n  <tr>\n    <th>实验评价内容</th>\n    <th>所占比重</th>\n    <th>要求</th>\n  </tr>\n  <tr>\n    <td>问题分析能力</td>\n    <td>20%</td>\n    <td>说明语义分析和中间代码生成原理，绘制必要的状态转换图。</td>\n  </tr>\n  <tr>\n    <td>系统方案（算法）设计能力</td>\n    <td>20%</td>\n    <td>报告中体现系统各模块的总体设计和详细设计。</td>\n  </tr>\n  <tr>\n    <td>编程能力</td>\n    <td>20%</td>\n    <td>独立编程实现要求的全部功能，正确无误。</td>\n  </tr>\n  <tr>\n    <td>撰写报告能力</td>\n    <td>30%</td>\n    <td>表达通顺、结构清晰、内容完整、实验充分、提出个人想法，不存在抄袭。</td>\n  </tr>\n  <tr>\n    <td>查阅文献资料能力</td>\n    <td>10%</td>\n    <td>报告中列出所查阅的文献资料，含图书、论文、网络资源等。</td>\n  </tr>\n</table>"
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": "<text style=\"bold\">报告要求</text>",
+            "level": 2
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">设计文档1份</text>"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">程序源代码、可执行代码1份</text>"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">程序实例与结果截屏</text>"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">报告PPT1份</text>"
+                }
+            ]
+        },
+        {
+            "type": "list",
+            "attribute": "unordered",
+            "ilevel": 0,
+            "content": [
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">语法规则至少完成以下：</text>"
+                },
+                {
+                    "type": "text",
+                    "content": "0.1、0.2、0.3、"
+                },
+                {
+                    "type": "text",
+                    "content": "1.1、1.2、1.3、1.4、1.5、"
+                },
+                {
+                    "type": "text",
+                    "content": "2.0、2.1、2.2、"
+                },
+                {
+                    "type": "text",
+                    "content": "3.1、3.2、3.3、3.4、3.5、"
+                },
+                {
+                    "type": "text",
+                    "content": "4.1、5.0、5.1。"
+                },
+                {
+                    "type": "text",
+                    "content": "<text style=\"bold\">剩余规则不做强制要求。</text>"
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,1471 @@
+第七章 语义分析和
+   中间代码产生
+
+同济大学计算机系
+概述
+n 静态语义检查
+ ¨ 类型检查
+ ¨ 控制流检查
+ ¨ 一致性检查
+ ¨ 相关名字检查
+ ¨ 名字的作用域分析
+
+
+语法分       静态检   中间代码 中间代码
+                          优化器
+ 析器        查器   产生器
+
+                                2
+n 中间语言（复杂性界于源语言和目标语言之间）
+ 的好处：
+ ¨ 便于进行与机器无关的代码优化工作
+ ¨ 易于移植
+ ¨ 使编译程序的结构在逻辑上更为简单明确
+
+
+
+      Compiler          Compiler
+      Front End         Back End
+源语言               中间语              目标语
+ 程序               言程序              言程序
+
+
+                                         3
+内容线索
+
+n 中间语言
+
+n 说明语句
+
+n 赋值语句的翻译
+
+n 布尔表达式的翻译
+
+n 控制语句的翻译
+
+n 过程调用的处理
+
+
+
+             4
+中间语言
+n 常用的中间语言
+ ¨ 后缀式，逆波兰表示
+ ¨ 图表示
+  n DAG
+  n 抽象语法树
+
+ ¨ 三地址代码
+  n 三元式
+
+  n 四元式
+
+  n 间接三元式
+
+
+
+
+               5
+后缀式
+n 后缀式表示法：Lukasiewicz发明的一种表示表达式
+ 的方法，又称逆波兰表示法。
+n 一个表达式E的后缀形式可以如下定义：
+ 1. 如果E是一个变量或常量，则E的后缀式是E自身。
+ 2. 如果E是E1 op E2形式的表达式，其中op是任何二元
+   操作符，则E的后缀式为E1 E2 op，其中E1 和E2 分
+   别为E1 和E2的后缀式。
+ 3. 如果E是(E1)形式的表达式，则E1的后缀式就是E的后
+   缀式。
+
+                                        6
+n 逆波兰表示法不用括号。只要知道每个算符的
+ 目数，对于后缀式，不论从哪一端进行扫描，
+ 都能对它进行唯一分解。
+n 后缀式的计算
+ ¨ 用一个栈实现。
+
+ ¨ 一般的计算过程是：自左至右扫描后缀式，每碰到
+  运算量就把它推进栈。每碰到k目运算符就把它作
+  用于栈顶的k个项，并用运算结果代替这k个项。
+
+
+
+
+                            7
+把表达式翻译成后缀式的语义规则描述
+    产生式                       语义规则
+E→E(1) op E(2)   E.code:= E(1).code || E(2).code ||op
+E→ (E(1))        E.code:= E(1).code
+E→id             E.code:=id
+
+n E.code表示E后缀形式
+n op表示任意二元操作符
+n “||”表示后缀形式的连接
+
+
+
+                                                        8
+E→E(1)op E(2)            E.code:= E(1).code || E(2).code ||op
+E→ (E(1))                E.code:= E(1).code
+E→id                     E.code:=id
+
+ n   数组POST存放后缀式：k为下标，初值为1
+ n   上述语义动作可实现为：
+     产生式                            程序段
+     E→E(1)op E(2)         {POST[k]:=op;k:=k+1}
+     E→ (E(1))             {}
+     E→i                   {POST[k]:=i;k:=k+1}
+ n   例：输入串a+b+c的分析和翻译
+
+     POST：           1          2    3     4      5
+                     a          b   +      c      + …
+                                                                9
+图表示法
+
+n DAG
+
+n 抽象语法树
+
+
+
+
+          10
+DAG
+n 有向无循环图(Directed Acyclic Graph，简称
+ DAG)
+  ¨ 对表达式中的每个子表达式，DAG中都有一个结点
+
+  ¨ 一个内部结点代表一个操作符，它的孩子代表操作数
+
+  ¨ 在一个DAG中代表公共子表达式的结点具有多个父结
+   点
+
+
+
+
+                                     11
+a+a*(b-c)+(b-c)*d的图表示法
+后缀表达式：aabc-*+bc- d *+
+                   +
+
+           +               *
+
+               *               d
+
+       a               -
+
+                   b       c
+                                   12
+抽象语法树
+n 在语法树中去掉那些对翻译不必要的信息，从而
+ 获得更有效的源程序中间表示。这种经变换后的
+ 语法树称之为抽象语法树(Abstract Syntax Tree)
+
+q S→if B   then S1 else S2       q   3*5+4
+     if_then_else                           +
+
+                                 *              4
+B          S1        S2
+                             3          5
+                                                    13
+建立表达式的抽象语法树
+n mknode (op,left,right) 建立一个运算符号结点，
+ 标号是op，两个域left和right分别指向左子树和
+ 右子树。
+n mkleaf (id,entry) 建立一个标识符结点，标号为
+ id，一个域entry指向标识符在符号表中的入口。
+n mkleaf (num,val) 建立一个数结点，标号为num，
+ 一个域val用于存放数的值。
+
+
+                                   14
+建立抽象语法树的语义规则
+产 生 式            语 义 规 则
+E→E1+T   E.nptr := mknode ( ‘+’, E1.nptr, T.nptr )
+E→E1-T   E.nptr := mknode ( ‘-’, E1.nptr, T.nptr )
+E→T      E.nptr := T.nptr
+T→ (E)   T.nptr := E.nptr
+T→id     T.nptr := mkleaf ( id, id.entry )
+T→num    T.nptr := mkleaf ( num, num.val )
+
+
+
+                                                     15
+a－4＋c的抽象语法树
+                              E    nptr
+
+
+          E nptr                           T nptr
+
+E         -                 T nptr     +
+                                           id
+
+T nptr        -                                 id
+
+                          num              To entry for c
+id
+     id                     num    4
+                  To entry for a                     16
+a:=b*(-c)+b*(-c)的图表示法
+    assign                     assign
+
+
+a            +             a            +
+
+             *                  *              *
+
+        b         uminus   b        uminus b       uminus
+
+                    c              c                 c
+            DAG                  抽象语法树
+                                                      17
+产生赋值语句抽象语法树的属性文法
+
+产生式            语义规则
+S→id:=E   S.nptr:=mknode(‘assign’,
+               mkleaf(id,id.place),E.nptr)
+E→E1+E2   E.nptr:=mknode(‘+’,E1.nptr,E2.nptr)
+E→E1*E2   E.nptr:=mknode(‘*’,E1.nptr,E2.nptr)
+E→-E1     E.nptr:=mknode(‘uminus’,E1.nptr)
+E→ (E1)   E.nptr:=E1.nptr
+E→id      E.nptr:=mkleaf(id,id.place)
+
+                                          18
+三地址代码
+
+n 三地址代码
+
+ x:=y op z
+n 三地址代码可以看成是抽象语法树或
+ DAG的一种线性表示
+
+
+
+
+                     19
+a:=b*(-c)+b*(-c)的图表示法
+     assign                assign
+
+ a            +            a        +
+       *          *                 *
+ b     uminusb    uminus       b        uminus
+        c             c                   c
+      抽象语法树                    DAG
+抽象语法树对应的代码：                DAG对应的代码：
+ T1:=-c                    T1:=-c
+ T2:=b*T1
+                           T2:=b*T1
+ T3:=-c
+ T4:=b*T3                  T5:=T2+T2
+ T5:=T2+T4                 a:=T5
+ a:=T5
+                                                 20
+三地址语句的种类
+n x:=y op z
+n x:=op y
+n x:=y
+n goto L
+n if x relop y goto L或if a goto L
+n param x和call p,n，以及返回语句return y
+n x:=y[i]及x[i]:=y的索引赋值
+n x:=&y, x:=*y和*x:=y的地址和指针赋值
+
+                                    21
+n   x:=&y 把y的地址赋给x，其中y是一个名字，或者是一个
+    临时变量，代表一个具有左值的表达式
+         地址   内容             地址    内容
+     x                  y
+         左值   右值            左值    右值
+n   x:=*y 把y所指示的地址单元里存放的内容赋给x，其中y
+    是一个指针或者是一个其右值为地址的临时变量。
+         地址   内容        地址    内容        地址   内容
+     x             y
+         左值   右值        左值    右值        左值   右值
+n   *x:=y 把y的右值赋给x所指向的对象的右值
+         地址   内容   地址    内容             地址   内容
+     x                              y
+         左值   右值   左值   右值              左值   右值
+                                                  22
+语句的三地址代码
+
+n 生成三地址代码时，临时变量的名字对应抽象语
+ 法树的内部结点
+ ¨ 产生式E →E1+E2
+   n   E的值放到一个新的临时变量T中
+ ¨ 赋值语句id:=E的三地址代码包括：
+
+  （1）对表达式E求值并置于变量T中
+  （2）进行赋值 id.place:=T
+
+
+
+                         23
+赋值语句的文法
+产生式       n   非终结符号S有综合属性S.code，它代表赋
+S→id:=E       值语句S的三地址代码。
+E→E1+E2   n   非终结符号E有如下两个属性：
+              ¨ E.place表示存放E值的名字。
+E→E1*E2
+              ¨ E.code表示对E求值的三地址语句序列。
+E→-E1         ¨ 函数newtemp的功能是，每次调用它时，将返回
+E→ (E1)        一个不同临时变量名字,如T1,T2,…。
+              ¨ gen表示生成三地址语句
+E→id
+          n   三地址语句序列往往是被存放到一个输出文
+              件中
+
+                                        24
+S-属性文法定义
+ 产生式                 语义规则
+S→id:=E   S.code:=E.code || gen(id.place ‘:=’ E.place)
+E→E1+E2   E.place:=newtemp;
+          E.code:=E1.code || E2.code ||
+                 gen(E.place ‘:=’ E1.place ‘+’ E2.place)
+E→E1*E2   E.place:=newtemp;
+          E.code:=E1.code || E2.code ||
+                 gen(E.place ‘:=’ E1.place ‘*’ E2.place)
+E→-E1     E.place:=newtemp;
+          E.code:=E1.code ||
+                 gen(E.place ‘:=’ ‘uminus’ E1.place)
+E→ (E1)   E.place:=E1.place;
+          E.code:=E1.code
+E→id      E.place:=id.place;
+          E.code=‘ ’
+
+                                                           25
+三地址语句                          a:=b*(-c)+b*(-c)
+
+n   四元式
+        ¨ 一个带有四个域的记录结构，这四个域分别称为op, arg1, arg2
+          及result
+              op   arg1 arg2 result
+        (0) uminus   c          T1
+        (1) *        b  T1      T2
+        (2) uminus   c          T3
+        (3) *        b  T3      T4
+        (4) +        T2 T4      T5
+        (5) :=       T5         a
+    ¨ 四元式之间的联系通过临时变量实现。
+    ¨ 单目运算只用arg1域，转移语句将目标标号放入result域。
+    ¨ arg1,arg2,result通常为指针，指向有关名字的符号表入口，且
+      临时变量填入符号表。
+                                                  26
+三地址语句                   a:=b*(-c)+b*(-c)
+
+
+ n 三元式
+  ¨ 通过计算临时变量值的语句的位置来引用这
+    个临时变量
+  ¨ 三个域：op、arg1和arg2
+
+        op       arg1   arg2
+  (0)   uminus   c
+  (1)   *        b      (0)
+  (2)   uminus   c
+  (3)   *        b      (2)
+  (4)   +        (1)    (3)
+  (5)   assign   a      (4)
+                                           27
+三地址语句
+n     多目运算的三元式
+    例. x[i]:=y
+           op      arg1   arg2
+    (0)    []=      x        i
+    (1)   assign   (0)      y
+    例. x:=y[i]
+           op      arg1     arg2
+    (0)    =[]      y            i
+    (1)   assign    x        (0)
+
+
+
+                                     28
+三地址语句
+
+n 间接三元式
+ ¨ 为了便于代码优化，用三元式表+间接码表
+  表示中间代码
+  n 间接码表:一张指示器表，按运算的先后次序列
+
+   出有关三元式在三元式表中的位置。
+ ¨ 优点: 方便优化，节省空间
+
+
+
+
+                            29
+n 例如，语句
+
+          X:=(A+B)*C;
+          Y:=D↑(A+B)
+的间接三元式表示如下表所示。
+  间接代码            三元式表
+   (1)           OP   ARG1 ARG2
+   (2)     (1)   +    A    B
+   (3)     (2)   *    (1)   C
+   (1)     (3)   :=   X    (2)
+   (4)     (4)   ↑    D    (1)
+   (5)     (5)   :=   Y    (4)
+
+                                  30
+四元式、三元式和间接三元式比较
+
+n 三元式中使用了指向三元式的指针，优化
+    时修改较难。
+n   间接三元式优化只需要更改间接码表，并
+    节省三元式表存储空间。
+n   修改四元式表也较容易，只是临时变量要
+    填入符号表，占据一定存储空间。
+
+
+                         31
+内容线索
+
+ü 中间语言
+
+n 说明语句的翻译
+
+n 赋值语句的翻译
+
+n 布尔表达式的翻译
+
+n 控制语句的翻译
+
+n 过程调用的处理
+
+
+
+             32
+概述
+n 说明部分中把定义性出现的标识符与类型等属性
+ 相关联,从而确定它们在计算机内部的表示法、取
+ 值范围及可对其进行的运算。
+n 为了产生有效地可执行目标代码，对于说明部分
+ 的翻译，不仅仅把与标识符相关联的类型等属性
+ 填入符号表中，还必须考虑到标识符所标记的对
+ 象的存储分配问题。
+
+
+                      33
+常量定义的翻译
+n   C++语言中有常量定义，以关键字const为标志，如
+     const float pi=3.1416， one=1.0
+n   对每个常量定义的处理应包括下列工作：
+    （1）把等号右边的常量值登录入常量表中（若之前尚未
+    登录）并回送常量表序号；
+    （2）然后为等号左边的标识符建立符号表新条目，在该
+    条目中填入常量标志、相应类型及常量表序号。
+
+
+
+                                      34
+n 假定常量定义中不指明类型，类型直接由常量值本身确定，
+  且等号右边仅整数或常量标识符。
+n 常量定义及相应翻译方案
+                                  lookCT(c)将在常量表中查找
+CONSTEDFconst CDT                常量c，若查不到，则把给常
+CDT CDT，CD                       量值登录入常量表。最终回送
+CDT CD                           常量c值在常量表中的序号
+CD id=num
+   { num.ord:=lookCT(num.lexval)
+     id.ord:=num.ord; id.type:=integer;
+     id.kind:=CONSTANT
+     add(id.entry, id.kind, id.type, id.ord)}
+CD  id=id1                                    过程add是对过
+                                               程addtype的扩
+    {id.kind:=CONSTANT; id.type:=id1.type; 充，它把种类、
+      id.ord:=id1.ord                          类型与序号三者
+     add(id.entry, id.kind, id.type, id.ord)}  填入符号表相应
+                                            条目中      35
+变量说明的翻译
+n 变量说明部分由一组变量说明语句组成，这里假
+  定每个变量说明语句中仅包含一个标识符。
+n 变量说明部分的语法定义
+  P  D;
+  D  D; D
+  D  id: T
+  T  integer
+  T  real
+  T  array[num] of T1
+  T  ↑T1
+                         36
+n   变量说明部分的翻译
+    P  D; {offset:=0}
+    D  D; D
+    D  id: T
+       {enter(id.name, T.type, offset);
+        offset:=offset+T.width}
+    T  integer
+       {T.type:=integer; T.width:=4}
+    T  real
+       {T.type:=real; T.width:=8}
+    T  array[num] of T1
+       {T.type:=array(num.val, T1.type);
+        T.width:=num.val*T1.width}
+    T  ↑T1
+       {T.type=pointer(T1.type); T.width:=4}
+                                               37
+文法转换
+
+n P  D;   {offset:=0}
+ 在处理第一条说明语句之前，需要对offset赋初
+ 值；
+ 为了使得offset赋初值更明显
+ 变更为 P  {offset:=0} D;
+ 也可采用增加非终结符号及产生式来实现
+  PMD
+  M   {offset:=0}         38
+保留作用域信息
+n 过程（函数）定义的语法
+  P  D;
+                    T  integer
+  D  D; D          T  real
+  D  id: T         T  array[num] of T1
+                    T  ↑T1
+  D  proc id; D; S
+n 过程及函数定义的翻译必然涉及标识符作用域问
+  题
+n 基本思想：每个过程有一张独立的符号表
+
+
+                                       39
+n   过程示例
+(1) Program sort(input, output)
+(2) var a: array[0..10] of integer;
+(3)     x: integer;
+(4)     procedure readarray;
+(5)         var i: integer;
+(6)         begin …a … end {readarray}
+(7)     procedure exchange(i, j:integer)
+(8)         begin
+(9)             x:=a[i]; a[i]:=a[j]; a[j]:=x
+(10)        end {exchange}
+(11)    procedure quicksort (m, n:integer);
+(12)        var k, v: integer;
+(13)        function partition (y,z: integer): integer;
+(14)            var i,j: integer;
+(15)            begin …a …
+(16)                    …v …
+(17)                    …exchange(i, j); …
+(18)            end {partition}
+(19)         begin … end {quicksort};
+(20) begin … end {sort}.
+                                                          40
+n 语义规则中的操作
+ ¨ mktable(previous) ：创建一张新符号表，并返回指向
+  新表的一个指针。
+   n 参数previous指向一张先前创建的符号表，其值放在新符号
+     表表头
+ ¨ enter(table, name, type, offset)：在指针table指示的
+   符号表中为名字name建立一个新项，并把类型type、
+   相对地址offset填入到该项中。
+ ¨ addwidth(table, with)：指针table指示的符号表表头
+   中记录下该表中所有名字占用的总宽度
+ ¨ enterproc(table, name, newtable)：在指针table指
+   示的符号表中为名字name的过程建立一个新项。
+   n 参数newtable指向过程name的符号表
+
+
+
+
+                                             41
+n   翻译
+    P  M D;               {addwidth(top(tblptr), top(offset));
+                              pop(tblptr); pop(offset)}
+    M                    {t:=mktable(nil);
+                              push(t, tblptr); push(0, offset)}
+    D  D1; D2
+    D  proc id; N D1; S {t:=top(tblptr);
+                             addwidth(t,top(offset));
+                             pop(tblptr); pop(offset)
+                             enterproc(top(tblptr), id.name, t)}
+    D  id: T             {enter(top(tblptr), id.name, T.type,
+                             top(offset));
+                             top(offset):=top(offset)+T.width}
+    N                   {t:=mktable(top(tblptr));
+                             push(t, tblptr); push(0, offset)}
+                                                             42
+  n 栈tblptr 保存各外层过程的符号表指针
+  n 栈offset 存放各嵌套过程的当前相对地址
+      ¨ 栈顶元素为当前被处理过程的下一个名字的相对地址
+                                                                             sort
+
+(1) Program sort(input, output)                                      nil
+(2) var a: array[0..10] of integer;                                 a               0
+                                      readarray
+(3)     x: integer;                                                 x               44
+                                        sort
+(4)     procedure readarray;                                     readarray
+(5)         var i: integer;            tblptr
+                                                  readarray
+(6)         begin …a … end {readarray}
+                                                  sort       4
+       ……
+                                                  i      0
+                                          4
+                                          0
+                                          44
+                                           0
+                                          48
+                                        offset
+                                                                                     43
+内容线索
+
+ü 中间语言
+
+ü 说明语句的翻译
+
+n 赋值语句的翻译
+
+n 布尔表达式的翻译
+
+n 控制语句的翻译
+
+n 过程调用的处理
+
+
+
+             44
+赋值语句的翻译
+n 简单算术表达式及赋值语句
+ ¨ 简单算术表达式及赋值语句翻译为三地址代码
+ 的翻译模式
+  n 属性id.name 表示id所代表的名字本身
+
+  n 过程lookup(id.name)检查是否在符号表中存在相
+
+   应此名字的入口。如果有，则返回一个指向该表项
+   的指针，否则，返回nil表示没有找到
+  n 过程emit将生成的三地址语句发送到输出文件中
+
+
+
+                                    45
+  产生赋值语句三地址代码的翻译模式
+S→id:=E S.code:=E.code || gen(id.place ‘:=’ E.place)
+E→E1+E2 E.place:=newtemp;
+     E.code:=E1.code || E2.code ||gen(E.place ‘:=’ E1.place ‘+’ E2.place)
+E→E1*E2 E.place:=newtemp;
+          E.code:=E1.code || E2.code || gen(E.place ‘:=’ E1.place ‘*’ E2.place)
+
+   S→id:=E        { p:=lookup(id.name);
+                    if pnil then
+                         emit(p ‘:=’ E.place)
+                    else error }
+  E→E1+E2        { E.place:=newtemp;
+                    emit(E.place ‘:=’ E1.place ‘+’ E2.place)}
+  E→E1*E2       { E.place:=newtemp;
+                   emit(E.place ‘:=’ E 1.place ‘*’ E 2.place)}
+                                                                        46
+E→-E1      E.place:=newtemp;
+           E.code:=E1.code || gen(E.place ‘:=’ ‘uminus’ E1.place)
+E→ (E1)    E.place:=E1.place;
+           E.code:=E1.code
+E→id       E.place:=id.place;
+           E.code=‘ ’
+
+       E→-E1       { E.place:=newtemp;
+                     emit(E.place‘:=’‘uminus’E 1.place)}
+       E→(E1)      { E.place:=E1.place}
+       E→id        { p:=lookup(id.name);
+                     if pnil then
+                         E.place:=p
+                     else error }
+
+
+
+                                                              47
+类型转换
+n  用E.type表示非终结符E的类型属性
+n 对应产生式EE1 op E2的语义动作中关于E.type的语义规则可定义为：
+   { if E1.type=integer and E2.type=integer
+        E.type:=integer
+      else E.type:=real }
+n 进行类型转换的三地址代码
+     x:= inttoreal y
+n 算符区分为整型算符int op和实型算符real op，
+例. x:=y＋i*j
+ 其中x、y为实型；i、j为整型。这个赋值句产生的三地址代码为：
+         T1:=i int* j
+         T3:=inttoreal T1
+         T2:=y real+ T3
+         x:=T2
+
+                                              48
+关于产生式E→E1 ＋E2 的语义动作
+{ E.place:=newtemp;
+  if E1.type=integer and E2.type=integer then begin
+     emit (E.place ‘:=’ E 1.place ‘int+’ E 2.place);
+     E.type:=integer
+  end
+  else if E1.type=real and E2.type=real then begin
+     emit (E.place ‘:=’ E 1.place ‘real+’ E 2.place);
+     E.type:=real
+  end
+
+
+
+
+                                                        49
+else if E1.type=integer and E2.type=real then begin
+   u:=newtemp;
+   emit (u ‘:=’ ‘inttoreal’ E 1.place);
+   emit (E.place ‘:=’ u ‘real+’ E 2.palce);
+   E.type:=real
+end
+else if E1.type=real and E2.type=integer then begin
+   u:=newtemp;
+   emit (u ‘:=’ ‘inttoreal’ E 2.place);
+   emit (E.place ‘:=’ E 1.place ‘real+’ u);
+   E.type:=real
+end
+else E.type:=type_error}
+
+
+                                                      50
+内容线索
+
+ü 中间语言
+
+ü 说明语句的翻译
+
+ü 赋值语句的翻译
+
+n 布尔表达式的翻译
+
+n 控制语句的翻译
+
+n 过程调用的处理
+
+
+
+             51
+    布尔表达式的翻译
+
+n   布尔表达式：用布尔运算符把布尔量、关系表达式联结起来
+    的式子。
+    ¨ 布尔运算符：and, or, not ；
+    ¨ 关系运算符 ＜,≤,＝, ≠，＞ ,≥
+
+n   布尔表达式的两个基本作用:
+    ¨ 用于逻辑演算,计算逻辑值;
+    ¨ 用于控制语句的条件式.
+
+n   产生布尔表达式的文法:
+    ¨ E→E or E | E andE |  E | (E) | id rop id | id
+
+n   运算符优先级：布尔运算由高到低:not and or，同级左结合
+           关系运算符同级，且高于布尔运算符
+                                                       52
+n 计算布尔表达式通常采用两种方法:
+（1） 如同计算算术表达式一样,一步步算
+      1 or (not 0 and 0) or 0
+   =1 or (1 and 0) or 0
+   =1 or 0 or 0
+   =1 or 0
+   =1
+（2） 采用优化措施
+  把A or B解释成         if A then true else B
+  把A and B解释成        if A then B else false
+  把 A解释成            if A then false else true
+
+ 对应的，有两种布尔表达式翻译方法
+                                                 53
+数值表示法
+n a or b and not c 翻译成
+ T1:=not c
+ T2:=b and T1
+ T3:=a or T2
+n a<b的关系表达式可等价地写成
+      if a<b then 1 else 0 ，翻译成
+ 100:      if a<b goto 103
+ 101:      T:=0
+ 102:      goto 104
+ 103:      T:=1
+ 104:
+                                  54
+数值表示法的翻译模式
+
+n 过程emit将三地址代码送到输出文件中
+n nextstat：给出输出序列中下一条三地址语
+  句的地址索引
+n 每产生一条三地址语句后，过程emit便把
+  nextstat加1
+
+
+
+
+                         55
+数值表示法的翻译模式
+E→E1 or E2   {E.place:=newtemp;
+              emit(E.place ‘:=’ E 1.place ‘or’
+                     E2.place)}
+E→E1 and E2 {E.place:=newtemp;
+             emit(E.place ‘:=’ E 1.place ‘and’
+                    E2.place)}
+E→not E1     {E.place:=newtemp;
+              emit(E.place ‘:=’ ‘not’ E 1.place)}
+E→(E1)       {E.place:=E1.place}
+
+                                                 56
+数值表示法的翻译模式
+                   a<b 翻译成
+           100:    if a<b goto 103
+           101:    T:=0
+           102:    goto 104
+           103:    T:=1
+           104:
+Eid1 relop id2 { E.place:=newtemp;
+               emit(‘if’ id1.place relop. op
+                   id2. place ‘goto’ nextstat+3);
+               emit(E.place ‘:=’ ‘0’);
+               emit(‘goto’ nextstat+2);
+               emit(E.place‘:=’ ‘1’) }
+E→id              { E.place:=id.place }
+                                             57
+布尔表达式a<b or c<d and e<f的翻译结果
+100:    if a<b goto 103
+101:    T1:=0           Eid1 relop id2
+                         { E.place:=newtemp;
+102:    goto 104            emit(‘if’ id1.place relop. op id2. place
+103:    T1:=1                    ‘goto’ nextstat+3);
+104:    if c<d goto 107     emit(E.place ‘:=’ ‘0’);
+                            emit(‘goto’ nextstat+2);
+105:    T2:=0               emit(E.place‘:=’ ‘1’) }
+106:    goto 108        E→id
+107:    T2:=1              { E.place:=id.place }
+108:   if e<f goto 111 E→E1 or E2
+109:   T3:=0              { E.place:=newtemp;
+                             emit(E.place ‘:=’ E 1.place ‘or’ E2.place)}
+110:    goto 112
+111:    T3:=1           E→E1 and E2
+                        { E.place:=newtemp;
+112:    T4:=T2 and T3      emit(E.place ‘:=’ E 1.place ‘and’ E2.place) }
+113:    T5:=T1 or T4
+                                                                 58
+作为条件控制的布尔式翻译
+n 条件语句 ifE then S1 else S2
+  赋予 E 两种出口:一真一假
+                          To E.true
+              E.code
+ E.true:                  To E.false
+             S1.code
+                                           真出口
+            goto S.next
+ E.false:                          E的代码
+              S2.code
+                                   S1的代码
+ S.next        ……
+
+                                   S2的代码   假出口
+                                                 59
+例. 把语句: if a>c or b <d then S1 else S2
+翻译成如下的一串三地址代码
+                               “真”出口
+           if a>c goto L2
+           goto L1        “真”出口
+  L1:      if b<d goto L2
+                          “假”出口
+           goto L3
+  L2:      (关于S1的三地址代码序列)
+           goto Lnext
+  L3:      (关于S2的三地址代码序列)
+  Lnext:
+
+                                         60
+产生布尔表达式三地址代码的语义规则
+                                        每次调用函数
+  产生式                         语义规则      newlabel后都返回
+ E→E1 or E2                             一个新的符号标号
+
+                         E1.true:=E.true;
+  E.true是E为‘真’           E1.false:=newlabel;
+  时控制流转向的标
+  号                      E2.true:=E.true; E.false是E为‘假’
+                                            时控制流转向的标
+                         E2.false:=E.false; 号
+E1.code     To E.true
+                         E.code:=E1.code ||
+    To E1.false             gen(E1.false ‘:’) ||E2.code
+E2.code     To E.true
+            To E.false
+
+                                                   61
+产生布尔表达式三地址代码的语义规则
+ 产生式                       语义规则
+E→E1 and E2
+                         E1.true:=newlabel;
+                         E1.false:=E.false;
+                         E2.true:=E.true;
+                         E2.false:=E.fasle;
+ E1.code     To E. false E.code:=E1.code ||
+                             gen(E1.true ‘:’) || E2.code
+     To E1. true
+ E2.code     To E.true
+              To E.false
+
+                                                    62
+产生布尔表达式三地址代码的语义规则
+产生式        语义规则
+
+E→not E1   E1.true:=E.false;
+           E1.false:=E.true;
+           E.code:=E1.code
+
+E→ (E1)    E1.true:=E.true;
+           E1.false:=E.false;
+           E.code:=E1.code
+
+
+                                63
+产生布尔表达式三地址代码的语义规则
+  产生式                语义规则
+
+E→id1 relop id2 E.code:=gen(‘if ’ id1.place
+                relop.op id2.place ‘goto’ E.true) ||
+                           gen(‘goto’ E.false)
+
+E→true          E.code:=gen(‘goto’ E.true)
+
+E→false         E.code:=gen(‘goto’ E.false)
+
+
+                                                64
+考虑如下表达式：
+        a<b or c<d and e<f
+假定整个表达式的真假出口已分别置为Ltrue和
+Lfalse，则按定义将生成如下的代码：
+
+      if a<b goto Ltrue
+      goto L1
+L1:   if c<d goto L2
+      goto Lfalse
+L2:   if e<f goto Ltrue
+      goto Lfalse
+
+                             65
+布尔表达式的翻译
+n 两遍扫描
+
+ ¨ 为给定的输入串构造一棵语法树；
+
+ ¨ 对语法树进行深度优先遍历，进行语义规则中
+  规定的翻译。
+n 一遍扫描
+
+
+
+
+                      66
+一遍扫描实现布尔表达式的翻
+译
+n 采用四元式形式
+n 把四元式存入一个数组中，数组下标就代表四元
+  式的标号
+n 约定
+  四元式(jnz, a, -, p) 表示 if a goto p
+  四元式(jrop, x, y, p)表示 if x rop y goto p
+  四元式(j, -, -, p)   表示 goto p
+n 有时,四元式转移地址无法立即知道,我们只好把
+  这个未完成的四元式地址作为E的语义值保存,待
+  机"回填"。
+                                      67
+n 为 非 终 结 符 E 赋 予 两 个 综 合 属 性 E.truelist 和
+ E.falselist。它们分别记录布尔表达式E所对应
+ 的四元式中需回填“真”、“假”出口的四元式
+ 的标号所构成的链表
+n 例如:假定E的四元式中需要回填"真"出口的p，
+ q，r三个四元式，则E.truelist为下列链:
+  (p) (x， x，x，0) 链尾
+  …
+  (q) (x，x，x，p)
+  …
+  (r) (x，x，x，q)     E. truelist =r
+                                        68
+n为了处理E.truelist和E.falselist ，引入下列语义变
+量和过程:
+ ¨变量nextquad，它指向下一条将要产生但尚未形成的四元
+  式的地址(标号)。nextquad的初值为1，每当执行一次
+  emit之后，nextquad将自动增1。
+ ¨函数makelist(i)，它将创建一个仅含i的新链表，其中i是
+  四元式数组的一个下标(标号)；函数返回指向这个链的指
+  针。
+ ¨函数merge(p1,p2)，把以p1和p2为链首的两条链合并为一，
+  作为函数值，回送合并后的链首。
+ ¨过程backpatch(p, t)，其功能是完成“回填”，把p所链
+  接的每个四元式的第四区段都填为t。
+                                  69
+布尔表达式的文法
+(1)   E→ E1 or M E2
+(2)      | E1 and M E2
+(3)      | not E1
+(4)      | (E1)
+(5)      | id1 relop id2
+(6)      | id
+(7)   M→
+                           70
+布尔表达式的翻译模式
+          E1.code     To E.true
+
+              To E1.false
+          E2.code     To E.true
+                      To E.false
+
+
+(1) E→E1 or M E2
+  { backpatch(E1.falselist, M.quad);
+    E.truelist:=merge(E1.truelist, E2.truelist);
+    E.falselist:=E2.falselist }
+
+                                                   71
+布尔表达式的翻译模式
+           E1.code     To E. false
+
+               To E1. true
+           E2.code     To E.true
+                        To E.false
+
+
+(2) E→E1 and M E2
+  { backpatch(E1.truelist, M.quad);
+    E.truelist:=E2.truelist;
+    E.falselist:=merge(E1.falselist,E2.falselist) }
+                                                      72
+布尔表达式的翻译模式
+(3) E→not E1
+  { E.truelist:=E1.falselist;
+    E.falselist:=E1.truelist}
+
+(4) E→(E1)
+  { E.truelist:=E1.truelist;
+    E.falselist:=E1. falselist}
+
+
+                                  73
+ 布尔表达式的翻译模式
+(5) E→id1 relop id2 { E.truelist:=makelist(nextquad);
+    E.falselist:=makelist(nextquad+1);
+    emit(‘j’ relop.op ‘,’ id 1.place ‘,’ id 2.place‘,’
+   ‘0’);
+    emit(‘j, －, －, 0’) }
+
+(6) E→id
+   { E.truelist:=makelist(nextquad);
+     E.falselist:=makelist(nextquad+1);
+     emit(‘jnz’ ‘,’ id .place ‘,’ ‘－’ ‘,’      ‘0’)；
+     emit(‘ j, -, -, 0’) }
+
+(7) M→                      { M.quad:=nextquad }
+
+                                                     74
+a<b or c<d and e<f
+100 (j<, a, b, 0)            作为整个布尔表达式的"
+                             真""假"出口(转移目标)
+101 (j, -, -, 102)           仍待回填
+102 (j<, c, d, 104)
+103 (j, -, -, 0)
+104 (j<, e, f,0) truelist=100，104
+105 (j, -, -, 0)           falselist =103，105
+
+
+                                           75
+内容线索
+ü 中间语言
+
+ü 说明语句的翻译
+
+ü 赋值语句的翻译
+
+ü 布尔表达式的翻译
+
+n 控制语句的翻译
+
+n 过程调用的处理
+
+
+
+             76
+控制语句的翻译
+
+n 考虑下列产生式所定义的语句
+
+  S → if E then S1
+      | if E then S1 else S2
+      | while E do S1
+其中E为布尔表达式。
+
+                               77
+if-then语句的属性文法
+                          To E.true
+                 E.code
+        E.true: S .code   To E.false
+                 1
+        E.false: ……
+
+  产生式                    语义规则
+S→if E then S1       E.true:=newlabel;
+                     E.false:=S.next;
+ S.next之值是一个标号，
+ 它指出继S的代码之后          S1.next:=S.next
+ 将被执行的第一条三地
+ 址指令
+                     S.code:=E.code ||
+                     gen(E.true ‘:’) || S1.code
+                                                  78
+  if-then-else语句的属性文法
+     产生式                              语义规则
+    S→if E then S1 else S2           E.true:=newlabel;
+                                    E.false:=newlabel;
+                       To E.true    S1.next:=S.next
+          E.code                    S2.next:=S.next;
+E.true:                To E.false   S.code:=E.code ||
+          S1.code
+                                    gen(E.true ‘:’) || S1.code
+       ||goto S.next
+E.false: S .code
+            2                       gen(‘goto’ S.next) ||
+S.next      ……                      gen(E.false ‘:’) || S2.code
+
+
+                                                             79
+  while-do语句的属性文法
+        产生式                         语义规则
+       S→while E do S1           S.begin:=newlabel;
+                                 E.true:=newlabel;
+                                 E.false:=S.next;
+S.begin:              To E.true S .next:=S.begin;
+            E.code                1
+
+E.true: S .code       To E.false S.code:=gen(S.begin ‘:’) ||
+             1
+                                   E.code ||
+         goto S.begin              gen(E.true ‘:’) || S1.code ||
+E.false:     ……
+                                   gen(‘goto’ S.begin)
+
+
+
+                                                            80
+考虑如下语句 :
+   while a<b do
+         if c<d then x:=y+z
+                else x:=y-z
+n 生成下列代码：
+  L 1:     if a<b goto L2
+           goto Lnext
+  L 2:     if c<d goto L3
+           goto L4
+  L 3:     T1:=y+z
+           x:=T1     E→id1 relop id2
+                       E.code:=gen(‘if ’ id1.place relop.op
+           goto L1                id2.place ‘goto’ E.true)
+  L 4:     T2:=y-z             ||gen(‘goto’ E.false)
+
+           x:=T2
+           goto L1
+  Lnext:                                                      81
+一遍扫描翻译控制流语句
+n   考虑下列产生式所定义的语句:
+    (1) S→if E then S
+    (2)    | if E then S else S
+    (3)    | while E do S
+    (4)    | begin L end
+    (5)    |A
+    (6) L→L;S
+    (7)    |S
+n   S表示语句，           L表示语句表，
+    A为赋值语句，E为一个布尔表达式
+
+                                  82
+if 语句的翻译
+相关产生式
+ S → if E then S(1)
+        | if E then S(1) else S(2)
+改写后产生式
+  S → if E then M S1
+  S → if E then M1 S1 N else M2 S2
+  M→
+  N→
+
+                                     83
+翻译模式:
+1. S→if E then M S1
+{ backpatch(E.truelist, M.quad);
+   S.nextlist:=merge(E.falselist, S1.nextlist) }
+
+2. S→if E then M1 S1 N else M2 S2
+{ backpatch(E.truelist, M1.quad);
+   backpatch(E.falselist, M2.quad);
+   S.nextlist:=merge(S1.nextlist, N.nextlist, S2.nextlist) }
+
+3. M→             { M.quad:=nextquad }
+
+4. N→             { N.nextlist:=makelist(nextquad);
+                     emit(‘j,－,－,－’) }
+                                                       84
+while 语句的翻译
+相关产生式
+  S→ while E do S(1)
+                          “真”出口
+                E的代码
+
+               S (1)的代码
+                           “假”出口
+
+为了便于"回填"，改写产生式为:
+  S→while M1 E do M2 S1
+  M→
+                                   85
+翻译模式:
+1. S→while M1 E do M2 S1
+    {backpatch(S1.nextlist, M1.quad);
+     backpatch(E.truelist, M2.quad);
+     S.nextlist:=E.falselist
+     emit(‘j,－,－,’ M1.quad) }
+
+
+2. M→    { M.quad:=nextquad }
+
+
+
+                                        86
+语句L→L;S的翻译
+产生式
+   L→L;S
+改写为：
+     L→L1; M S
+     M→
+翻译模式:
+1. L→L1; M S     { backpatch(L1.nextlist, M.quad);
+                  L.nextlist:=S.nextlist }
+2. M→           { M.quad:=nextquad }
+
+                                                     87
+其它几个语句的翻译
+
+      S→begin L end
+ { S.nextlist:=L.nextlist }
+
+      S→A
+ { S.nextlist:=makelist( ) }
+
+      L→S
+ { L.nextlist:=S.nextlist }
+
+                               88
+   翻译语句
+     while (a<b) do
+          if (c<d) then x:=y+z;
+P195
+P190
+(5) E→id
+S→if            M id
+           1 relop
+       E then      S12 { E.truelist:=makelist(nextquad);
+     E.falselist:=makelist(nextquad+1);
+ { backpatch(E.truelist, M.quad);
+     emit(‘j’ relop.op ‘,’ id
+    S.nextlist:=merge(E.falselist,     .place ‘,’
+                                   S11.nextlist) } id 2.place‘,’ ‘0’);
+     emit(‘j, －, －, 0’) }
+M→ { M.quad:=nextquad }         P195
+P179
+S→A { S.nextlist:=makelist( ) }  S→while M1 E do M2 S1
+S→id:=E      { p:=lookup(id.name);{ backpatch(S1.nextlist, M1.quad);
+                 if pnil then
+                                    backpatch(E.truelist, M2.quad);
+                       emit(p ‘:=’ E.place)
+                 else error }       S.nextlist:=E.falselist
+E→E1+E2 { E.place:=newtemp; emit(‘j,－,－,’ M .quad) }
+                                                         1
+                  emit(E.place ‘:=’ E1.place ‘+’ E2.place)}
+                                 M→ { M.quad:=nextquad }         89
+翻译语句
+  while (a<b) do
+       if (c<d) then x:=y+z;
+
+
+
+
+                               90
+标号与goto语句
+n   标号定义形式
+            L: S；
+ 当这种语句被处理之后，标号L称为“定义了”的。即在符
+  号表中，标号L的“地址”栏将登记上语句S的第一个四
+  元式的地址。
+n 标号引用
+            goto L；
+
+    向后转移：          向前转移：
+    L1: ……             goto L1;
+        ……             ……
+        goto L1;   L1: ……
+                                  91
+符号表信息
+
+名字   类型   …   定义否   地址
+
+…    …    …    …    …
+                         (P) (j, -, -, 0)
+L    标号       已
+              未     r    …
+                         (q) (j, -, -, p)
+                         …
+                         (r) (j, -, -, q)
+
+
+                                        92
+产生式S→goto L的语义动作:
+{ 查找符号表；
+    IF L在符号表中且"定义否"栏为"已"
+      THEN GEN(J，-，-，P)
+      ELSE IF L不在符号表中
+         THEN BEGIN
+               把L填入表中；
+               置"定义否"为"未"，"地址"栏为NXQ；
+               GEN(J，-，-，0) END
+           ELSE BEGIN
+               Q:=L的地址栏中的编号；
+               置地址栏编号为NXQ；
+               GEN(J，-，-，Q)
+           END
+}
+
+                                       93
+n 带标号语句的产生式:
+     S→label S     label → i:
+n label → i: 对应的语义动作:
+1. 若i所指的标识符(假定为L)不在符号表中，则把
+  它填入，置"类型"为"标号"，定义否为"已"，"地
+  址"为nextquad ；
+2. 若L已在符号表中但"类型"不为标号或"定义否"
+  为"已"，则报告出错；
+3. 若L已在符号表中，则把标号"未"改为"已"，然
+  后，把地址栏中的链头(记为q)取出，同时把
+  nextquad填在其中，最后，执行
+  BACKPATCH(q，nextquad )。
+                                94
+CASE语句的翻译
+n 语句结构
+ case E of
+                    E是一个表达式，称为选
+    C1: S1;         择子。E通常是一个整型
+    C2: S2;         表达式或字符型变量。
+    …
+    Cn-1: Sn-1;
+    otherwise: Sn
+ end
+
+                                  95
+n 翻译法(一):
+   T:=E                   n 改进:
+L1 :   if TC1 goto L2
+       S1的代码                C1    S 1 的地址
+       goto next            C2    S 2 的地址
+L2 :   if TC2 goto L3
+       S2的代码                          
+       goto next             E    S n 的地址
+L3 :
+      …
+Ln-1: if TCn-1 goto Ln
+      Sn-1的代码
+      goto next
+Ln :   Sn的代码
+next:
+                                            96
+n  翻译法(二):                   L1       L1 的 四 元 式首地址
+      计算E并放入T中               L2       L2 的 四 元 式首地址
+      goto test                             
+L1 :  关于S1的中间码              L n-1 L n-1 的 四 元 式 首 地 址
+      goto next             Ln Ln 的 四 元 式首地址
+…
+Ln-1: 关于Sn-1的中间码              C1         P1
+                                                 Pi是Li在
+      goto next               C2         P2      符号表中
+Ln :  关于Sn的中间码
+                                               的位置
+      goto next              C n -1     P n -1
+test: if T=C1 goto L1       (case, C1, P1, -)
+      if T=C2 goto L2       (case, C2,     P2, -)
+      …                     …
+                            (case, Cn-1, Pn-1, -)
+      if T=Cn-1 goto Ln-1
+                            (case, T, Pn, -)
+      goto Ln
+                            (label, NEXT, -, -)
+next:                                                 97
+内容线索
+ü 中间语言
+
+ü 说明语句的翻译
+
+ü 赋值语句的翻译
+
+ü 布尔表达式的翻译
+
+ü 控制语句的翻译
+
+n 过程调用的处理
+
+
+
+             98
+过程调用的处理
+n 过程调用主要对应两种事:
+ ¨ 传递参数
+ ¨ 转子（过程）
+n 传地址:把实在参数的地址传递给相应的形式参数
+ ¨ 调用段预先把实在参数的地址传递到被调用段可以拿
+   到的地方；
+ ¨ 程序控制转入被调用段之后，被调用段首先把实在参
+   数的地址抄进自己相应的形式单元中；
+ ¨ 过程体对形式参数的引用与赋值被处理成对形式单元
+   的间接访问。
+                             99
+过程调用的文法
+
+n 过程调用文法:
+ (1)   S → call id (Elist)
+ (2)   Elist → Elist, E
+ (3)   Elist → E
+n 参数的地址存放在一个队列中
+n 最后对队列中的每一项生成一条par语句
+
+
+
+                             100
+过程调用的翻译
+n 翻译方法：把实参的地址逐一放在转子指令的
+ 前面.
+例如， CALL S(A，X+Y) 翻译为:
+  中间代码：计算X+Y，置于T中
+  par A    /*第一个参数的地址*/
+  par T    /*第二个参数的地址*/
+  call S    /*转子*/
+
+
+                          101
+n 翻译模式
+
+3. Elist→E
+      { 初始化queue仅包含E.place }
+2. Elist→Elist, E
+      { 将E.place加入到queue的队尾 }
+
+1. S→call id (Elist)
+  { for 队列queue中的每一项p do
+          emit(‘param’ p);
+     emit(‘call’ id.place) }
+
+                                102
+作业
+
+n P217
+1,3,4,6,7
+
+
+
+
+            103
+

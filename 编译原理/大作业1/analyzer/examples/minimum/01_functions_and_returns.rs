@@ -1,0 +1,18 @@
+fn program_1_1() {
+}
+
+fn program_1_2() {
+    ;;;;;;
+}
+
+fn program_1_3() {
+    return;
+}
+
+fn program_1_4(mut a:i32) {
+}
+
+fn program_1_5() -> i32 {
+    return 1;
+}
+

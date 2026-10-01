@@ -1,0 +1,2223 @@
+[
+    {
+        "type": "text",
+        "text": "编译原理 ",
+        "text_level": 1,
+        "bbox": [
+            362,
+            253,
+            635,
+            375
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "大作业 1 ：词法分析、语法分析器",
+        "text_level": 2,
+        "bbox": [
+            83,
+            453,
+            937,
+            559
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "同济大学",
+        "text_level": 3,
+        "bbox": [
+            432,
+            696,
+            601,
+            772
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "编译原理课程组",
+        "text_level": 3,
+        "bbox": [
+            369,
+            779,
+            661,
+            855
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "1907 G UNI E ",
+        "bbox": [
+            727,
+            14,
+            793,
+            125
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "同济大学",
+        "bbox": [
+            808,
+            11,
+            984,
+            88
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "TONGJI UNIVERSITY",
+        "bbox": [
+            811,
+            88,
+            985,
+            118
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_number",
+        "text": "1 ",
+        "bbox": [
+            964,
+            935,
+            975,
+            959
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "类 Rust 编译器实现",
+        "text_level": 2,
+        "bbox": [
+            10,
+            16,
+            355,
+            88
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/783a0293b4a0449cdc7e7a4d6bb2fe738cc7dd406b9a9e345b0807033e6222c6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            15,
+            138,
+            80,
+            229
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "HUAWEI ",
+        "text_level": 3,
+        "bbox": [
+            88,
+            164,
+            232,
+            214
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Rust ",
+        "text_level": 3,
+        "bbox": [
+            44,
+            416,
+            91,
+            450
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "性能",
+        "text_level": 3,
+        "bbox": [
+            203,
+            285,
+            255,
+            333
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Rust速度极快，性能比肩C语言，内存效率极高，无需运行时或垃圾收集器，可以为性能关键型服务提供支持。",
+        "bbox": [
+            289,
+            272,
+            478,
+            372
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "可靠性",
+        "text_level": 3,
+        "bbox": [
+            200,
+            414,
+            259,
+            451
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Rust丰富的类型系统和所有权模型保证了内存安全和线程安全，使编程人员能够在编译时消除许多类别的错误。",
+        "bbox": [
+            290,
+            394,
+            482,
+            494
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "生态性",
+        "text_level": 3,
+        "bbox": [
+            200,
+            535,
+            258,
+            572
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Rust拥有出色的文档、带有有用错误消息的友好编译器、集成的包管理器和构建工具、自动格式化程序等。",
+        "bbox": [
+            289,
+            520,
+            477,
+            596
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Rust是一门能够安全高效地编写系统级程序的语言，在内存安全方面具有显著优势。",
+        "bbox": [
+            533,
+            185,
+            968,
+            294
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/dee8886901ce3983aa32cac92b322909d2a7a5d88db0447789dc6cf6f9108aa1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            505,
+            329,
+            573,
+            468
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "知名问答平台 StackOverflow 的调查表明 , 自2015 年以来， Rust 一直是开发者最爱的编程语言。",
+        "bbox": [
+            617,
+            346,
+            988,
+            455
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "nature ",
+        "text_level": 3,
+        "bbox": [
+            495,
+            555,
+            601,
+            607
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "《 Nature 》杂志 2020 年尾的文章《 WhyScientists are Turning to Rust 》中也强调科学家极为推崇 Rust 。",
+        "bbox": [
+            614,
+            509,
+            983,
+            651
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "华为是五位",
+        "bbox": [
+            10,
+            694,
+            108,
+            733
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Rust 基金会创始白金会员成员之一，引领了",
+        "bbox": [
+            10,
+            744,
+            143,
+            885
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Rust 语言的发展。",
+        "bbox": [
+            10,
+            896,
+            140,
+            983
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "华为内部使用",
+        "text_level": 3,
+        "bbox": [
+            281,
+            664,
+            407,
+            707
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Rust 广泛用于嵌入式系统开发、系统驱动、云计算、虚拟存储、网络传输协议、并发编程框架基础库等产品中。",
+            "华为实验室正基于 Rust探索先进的代码解析、安全台析笑工具"
+        ],
+        "bbox": [
+            193,
+            733,
+            426,
+            998
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Rust 社区贡献",
+        "text_level": 3,
+        "bbox": [
+            550,
+            666,
+            695,
+            709
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "华为深度参与了在 Rust 社区中，贡献了包括C到Rust 转换、内联汇编、交叉编译、 Parking Lot 并发库、 SIMD 基础库、文档导航、代码多态化、热补丁、 AOP 等特性。",
+        "bbox": [
+            456,
+            746,
+            687,
+            996
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/9fb4a374d69a88420da2bd8c0934c31e42b04f913bb5a274c7e81297950005a2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            765,
+            651,
+            811,
+            725
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Rust 中国推广",
+        "text_level": 3,
+        "bbox": [
+            820,
+            666,
+            943,
+            751
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "华为战略支持了在中国举办的 Rust China Conf大会，并推行多项社区活动。",
+            "华为也为为中国的开发者2提供 Rust 教程和 Rust编码规范等。"
+        ],
+        "bbox": [
+            753,
+            751,
+            975,
+            998
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "大作业1：词法和语法分析工具设计与实现：词法和语法分析工具设计与实现",
+        "text_level": 2,
+        "bbox": [
+            171,
+            177,
+            816,
+            244
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "了解类 Rust 词法、 语法规则 ",
+            " 基本功能：对类 Rust 示例程序实现词法和语法分析，并输出分析结果",
+            "扩展功能不限",
+            "分组，每组 2 至 3 人",
+            "撰写设计和说明文档"
+        ],
+        "bbox": [
+            54,
+            340,
+            731,
+            907
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "3 ",
+        "bbox": [
+            964,
+            935,
+            975,
+            959
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "类 Rust 词法规则 ",
+        "text_level": 3,
+        "bbox": [
+            9,
+            11,
+            312,
+            81
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            " 关键字： i32 | let | if | else | while | return | mut | fn | for | in | loop | break | continue ",
+            "V 标识符： ( 字母 |\\_)( 字母 | 数字 |\\_)\\* （注：不与关键字相同）",
+            "数值：数字 ( 数字 )\\*",
+            "赋值号：",
+            " 算符： \\(+ \\mid - \\mid * \\mid / \\mid = = \\mid > \\mid > = \\mid < \\mid < = \\mid \\mid = \\mid \\& \\mid *\\) ",
+            "界符： ( | ) | { | } | [ | ]",
+            "分隔符： ; | : | ",
+            "特殊符号： -> |",
+            "注释号： /\\* \\*/ | //",
+            "字母： | a |....| z | A |....| Z |",
+            " 数字： 0| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |",
+            "结束符： #"
+        ],
+        "bbox": [
+            39,
+            157,
+            926,
+            979
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "4 ",
+        "bbox": [
+            963,
+            935,
+            976,
+            957
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "类 Rust 语法规则 ",
+        "text_level": 3,
+        "bbox": [
+            9,
+            11,
+            312,
+            81
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": " 1.1 基础程序",
+        "text_level": 4,
+        "bbox": [
+            46,
+            144,
+            253,
+            196
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Program -> < 声明串 >",
+            "• < 声明串 > -> 空 | < 声明 > < 声明串 >",
+            "• < 声明 > -> < 函数声明",
+            "• <函数声明> -> <函数头声明> <语句块>",
+            "• < 函数头声明 > -> fn <ID> '(' < 形参列表 > ')'",
+            "• < 形参列表 >-> 空",
+            "• < 语句块 > -> '{' < 语句串 > '}' ",
+            "• < 语句串 > -> 空"
+        ],
+        "bbox": [
+            93,
+            207,
+            656,
+            666
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfn program_1_1() {\n} \n```",
+        "bbox": [
+            108,
+            740,
+            353,
+            900
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "0.1 变量属性",
+        "text_level": 4,
+        "bbox": [
+            477,
+            518,
+            683,
+            566
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "• < 变量属性 > -> mut",
+        "bbox": [
+            526,
+            583,
+            803,
+            627
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "0.2 类型",
+        "text_level": 4,
+        "bbox": [
+            477,
+            640,
+            633,
+            690
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "• < 类型 > -> i32",
+        "bbox": [
+            526,
+            705,
+            745,
+            750
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "0.3 左值",
+        "text_level": 4,
+        "bbox": [
+            477,
+            764,
+            633,
+            812
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• < 左值 > -> < 可取引用 >",
+            "• < 可取引用 > -> < 可取元素 >",
+            "• < 可取元素 > -> <ID>"
+        ],
+        "bbox": [
+            526,
+            827,
+            897,
+            990
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "5 ",
+        "bbox": [
+            963,
+            935,
+            975,
+            959
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "类 Rust 语法规则 ",
+        "text_level": 3,
+        "bbox": [
+            9,
+            11,
+            312,
+            81
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": " 1.2 语句（拓展 1.1 ）",
+        "text_level": 4,
+        "bbox": [
+            46,
+            144,
+            353,
+            200
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• < 语句串 > -> < 语句 > < 语句串 > ",
+            "• < 语句 >-> "
+        ],
+        "bbox": [
+            96,
+            209,
+            525,
+            314
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": " 1.3 返回语句（拓展 1.2 ）",
+        "text_level": 4,
+        "bbox": [
+            47,
+            327,
+            401,
+            379
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• < 语句 >-> < 返回语句 ",
+            "• < 返回语句 > -> return ';'"
+        ],
+        "bbox": [
+            96,
+            390,
+            425,
+            496
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfn program_1_2() {\n    ;;;;\n} \n```",
+        "bbox": [
+            698,
+            125,
+            904,
+            259
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfn program_1_3() {\n    return;\n} \n```",
+        "bbox": [
+            700,
+            305,
+            903,
+            437
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfn program_1_4(mut a:i32) { \n```",
+        "bbox": [
+            700,
+            483,
+            998,
+            529
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": " 1.4 函数输入（依赖 0.1 、 0.2 ，拓展 1.1 ） }",
+        "text_level": 4,
+        "bbox": [
+            47,
+            566,
+            716,
+            620
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• < 形参列表 >-> < 形参 > | < 形参 > ',' < 形参列表 >",
+            "• < 形参 > -> < 变量属性 > <ID> ':' < 类型 >"
+        ],
+        "bbox": [
+            96,
+            629,
+            706,
+            735
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```rust\nfn program_1_5() -> i32 {\nreturn 1; \n```",
+        "bbox": [
+            700,
+            661,
+            975,
+            746
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.5 函数输出（依赖 0.2 、 3.1 ，拓展 1.1 、 1.3 ）}",
+        "text_level": 4,
+        "bbox": [
+            47,
+            750,
+            716,
+            801
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• < 函数头声明 > -> fn <ID> '(' < 形参列表 > ')' '->' < 类型 >",
+            "• < 返回语句 > -> return < 表达式 > ';'"
+        ],
+        "bbox": [
+            96,
+            811,
+            804,
+            916
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "page_number",
+        "text": "6 ",
+        "bbox": [
+            964,
+            935,
+            975,
+            959
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "类 Rust 语法规则 ",
+        "text_level": 3,
+        "bbox": [
+            9,
+            11,
+            312,
+            81
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.0 变量声明（依赖 0.1 、 0.2 ）",
+        "bbox": [
+            46,
+            140,
+            484,
+            192
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• < 变量声明 > -> < 变量属性 > <ID>",
+            "• < 变量声明 > -> < 变量属性 > <ID> ':' < 类型 >"
+        ],
+        "bbox": [
+            93,
+            201,
+            675,
+            301
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": " 2.1 变量声明语句（依赖 2.0 ，拓展 1.2 ）",
+        "bbox": [
+            46,
+            368,
+            584,
+            422
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• < 语句 > -> < 变量声明语句 > ",
+            "• < 变量声明语句 > -> let < 变量声明 > ';'"
+        ],
+        "bbox": [
+            94,
+            429,
+            586,
+            531
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": " 2.2 赋值语句（依赖 0.3 、 3.1 ，拓展 1.2 ）",
+        "bbox": [
+            46,
+            598,
+            615,
+            651
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• < 语句 >-> < 赋值语句 > ",
+            "• < 赋值语句 > -> < 左值 > '=' < 表达式 > ';'"
+        ],
+        "bbox": [
+            94,
+            657,
+            614,
+            759
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": " 2.3 变量声明赋值语句（依赖 2.0 、 3.1 、拓展 1.2 ）",
+        "bbox": [
+            46,
+            827,
+            713,
+            879
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• <语句>-> <变量声明赋值语句> ",
+            "• < 变量声明赋值语句 > -> let < 变量声明 > '=' < 表达式 > ';'"
+        ],
+        "bbox": [
+            94,
+            887,
+            788,
+            988
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```rust\nfn program_2_1() {\n    let mut a;\n    let mut b:i32;\n} \n```",
+        "bbox": [
+            711,
+            351,
+            916,
+            529
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfn program_2_2(mut a:i32)\na=32;\n} \n```",
+        "bbox": [
+            711,
+            575,
+            996,
+            707
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```javascript\nfn program_2_3() {\n    let mut a=1;\n    let mut b:i32=1; \n```",
+        "bbox": [
+            711,
+            751,
+            915,
+            883
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "page_number",
+        "text": "7 ",
+        "bbox": [
+            963,
+            935,
+            975,
+            959
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "类 Rust 语法规则 ",
+        "text_level": 3,
+        "bbox": [
+            9,
+            11,
+            312,
+            81
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": " 3.1 基本表达式（依赖 0.3 、拓展 1.2 ）",
+        "text_level": 4,
+        "bbox": [
+            46,
+            144,
+            559,
+            198
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• < 语句 > -> < 表达式 >",
+            "• < 表达式 > -> < 加减表达式 >",
+            "< 加减表达式 > -> < 项 >",
+            "• < 项 > -> < 因子 >"
+        ],
+        "bbox": [
+            93,
+            209,
+            500,
+            520
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "• < 因子 > -> <NUM> | < 左值 > | '(' < 表达式 > ')'",
+        "bbox": [
+            94,
+            466,
+            740,
+            522
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfn program_3_1__1() {\n    0;\n    (1);\n    ((2));\n    (((3)));\n} \n```",
+        "bbox": [
+            140,
+            592,
+            426,
+            911
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```lisp\nfn program_3_1__2(mut a:i32)\n{\n    a;\n    (a);\n    ((a));\n    (((a)));\n} \n```",
+        "bbox": [
+            545,
+            592,
+            925,
+            964
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "page_number",
+        "text": "8 ",
+        "bbox": [
+            964,
+            935,
+            975,
+            959
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "类 Rust 语法规则 ",
+        "text_level": 3,
+        "bbox": [
+            8,
+            9,
+            312,
+            81
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_body": "3.2 增加比较运算（依赖 3.1、拓展 3.1）\n• <表达式> -> <表达式> <比较运算符> <加减表达式>\n• <比较运算符> -> '<' | '<=' | '>' | '>=' | '==' | '!='\n3.3 增加加减运算（依赖 3.1、拓展 3.1）\n• <加减表达式> -> <加减表达式> <加减运算符> <项>\n• <加减运算符> -> '+' | '-'",
+        "bbox": [
+            46,
+            140,
+            986,
+            998
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "类 Rust 语法规则 ",
+        "text_level": 3,
+        "bbox": [
+            9,
+            11,
+            312,
+            81
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": " 4.1 选择结构（依赖 1.1 、 3.1 ，拓展 1.2 ）",
+        "bbox": [
+            46,
+            142,
+            615,
+            200
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• < 语句 > -> <if 语句 > ",
+            "• <if 语句 > -> if < 表达式 > < 语句块 > <else 部分 >}fn progr• <else 部分 > -> 空 if a>"
+        ],
+        "bbox": [
+            95,
+            209,
+            769,
+            388
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": " 4.2 增加 else （依赖 1.1 ，拓展 4.1 ）",
+        "bbox": [
+            48,
+            401,
+            553,
+            455
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "• <else 部分 > -> else < 语句块 >",
+        "bbox": [
+            97,
+            466,
+            533,
+            516
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "V 4.3 增加 else if （依赖 1.1 ，拓展 4.1 ）",
+        "bbox": [
+            48,
+            529,
+            580,
+            583
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "• <else 部分 > -> else if < 表达式 > < 语句块 >",
+        "bbox": [
+            97,
+            592,
+            693,
+            644
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```rust\nfn program_4_1(a:i32) -> i32 {\n    if a > 0 {\n    return 1;\n    }\n}\n[分>\nfn program_4_2(a:i32) -> i32 {\n    if a > 0 {\n    return 1;\n    } else {\n    return 0;\n    }\n}\n<else 部分>\nfn program_4_3(a:i32) -> i32 {\n    if a > 0 {\n    return a + 1;\n    } else if a < 0 {\n    return a - 1;\n    } else {\n    return 0;\n    }\n}\n```",
+        "bbox": [
+            707,
+            105,
+            998,
+            988
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "page_number",
+        "text": "10 ",
+        "bbox": [
+            956,
+            933,
+            975,
+            959
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "类 Rust 语法规则 ",
+        "text_level": 3,
+        "bbox": [
+            9,
+            11,
+            312,
+            81
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            " 5.0 循环语句（依赖 5.1 or 5.2 or 5.3 ，拓展 1.2",
+            "• < 语句 > -> < 循环语句 > ",
+            " 5.1 while 循环（依赖 1.1 、 3.1 ，拓展 5.0 ）",
+            "• < 循环语句 > -> <while 语句 > ",
+            "• <while 语句 > -> while < 表达式 > < 语句块 >",
+            " 5.2 for 循环（依赖 1.1 、 2.0 、 3.1 ，拓展 5.0 ）",
+            "• < 循环语句 > -> <for 语句 > ",
+            "• <for 语句 >-> for < 变量声明 > in < 可迭代结构 > < 语句块 > <语句块>",
+            "• < 可迭代结构 > -> < 表达式 > '..' < 表达式 >",
+            "5.3 loop 循环（依赖 1.1 ，拓展 5.0 ）",
+            "• < 循环语句 > -> <loop 语句 > ",
+            "• <loop 语句 > -> loop < 语句块 > ",
+            " 5.4 增加 break 和 continue （拓展 1.2 ）",
+            "• < 语句 > -> break ';' | continue ';'",
+            "）fn program\\_5\\_1(mut n:i32) { while n>0 { n=n-1; ",
+            "} } fn program\\_5\\_2(mut n:i32) { for mut i in 1..n+1 { n=n-1; } } ",
+            "fn program\\_5\\_3() { loop { ",
+            "} } ",
+            "fn program\\_5\\_4() { while 1==0 { continue; } ",
+            "while 1==1 { break; } ",
+            "} "
+        ],
+        "bbox": [
+            46,
+            142,
+            976,
+            987
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "page_number",
+        "text": "11 ",
+        "bbox": [
+            957,
+            933,
+            975,
+            959
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "类 Rust 语法规则 ",
+        "text_level": 3,
+        "bbox": [
+            9,
+            11,
+            312,
+            81
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "6.1 变量不可变属性（拓展 0.1 ）",
+        "bbox": [
+            33,
+            148,
+            463,
+            201
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "• < 变量属性 > -> 空",
+        "bbox": [
+            83,
+            212,
+            343,
+            257
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": " 6.2 不可变引用（依赖 0.2 、 0.3 ，拓展 0.2 、 0.3 ）}",
+        "bbox": [
+            33,
+            329,
+            707,
+            390
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "• < 类型 > -> '&' < 类型 >",
+        "bbox": [
+            82,
+            394,
+            400,
+            440
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "• < 可取引用 > -> '&' < 可取引用 >",
+        "bbox": [
+            83,
+            451,
+            491,
+            498
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": " 6.3 可变引用（依赖 0.2 、 0.3 ，拓展 0.2 、 0.3 ）",
+        "bbox": [
+            33,
+            570,
+            681,
+            622
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "• < 类型 > -> '&' mut < 类型 >",
+        "bbox": [
+            82,
+            633,
+            453,
+            679
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "• < 可取引用 > -> '&' mut < 可取引用 >",
+        "bbox": [
+            83,
+            692,
+            544,
+            738
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": " 6.4 借用（依赖 0.3 、拓展 0.3 ）",
+        "bbox": [
+            33,
+            811,
+            469,
+            862
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "• < 左值 > -> '\\*' < 左值 >",
+        "bbox": [
+            82,
+            874,
+            393,
+            918
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "fn program\\_6\\_1() { let a:i32; // with rule 2.1 let b; // with rule 2.1 let c:i32=1;// with rule 2.3 let d=2;// with rule 2.3 ",
+        "bbox": [
+            653,
+            127,
+            959,
+            346
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "fn program\\_6\\_2(a:i32) { let b:& i32=&a; } ",
+        "bbox": [
+            653,
+            438,
+            909,
+            570
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "fn program\\_6\\_3(mut a:i32) { let mut b:&mut i32=&mut a; } ",
+        "bbox": [
+            653,
+            618,
+            984,
+            750
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "fn program\\_6\\_4(a:&mut i32) { let b=\\*a; \\*a=3; } 12 ",
+        "bbox": [
+            653,
+            794,
+            972,
+            972
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "page_number",
+        "text": "",
+        "bbox": [
+            956,
+            933,
+            975,
+            959
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "类 Rust 语法规则 ",
+        "text_level": 3,
+        "bbox": [
+            9,
+            11,
+            312,
+            81
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": " 7.0 函数表达式块（依赖 1.1 、 3.1 ，拓展 3.1 ）",
+        "bbox": [
+            46,
+            140,
+            666,
+            194
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• < 函数表达式语句块 >->'{' < 函数表达式语句串 > '}'",
+            "• < 函数表达式语句串 >-> < 表达式 > | < 语句 > < 函数表达式语句串 >"
+        ],
+        "bbox": [
+            93,
+            201,
+            893,
+            307
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": " 7.1 函数表达式块作为表达式（依赖 7.0 、拓展 0.3 ）",
+        "bbox": [
+            46,
+            372,
+            710,
+            427
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "• < 可取元素 > -> < 函数表达式语句块 >",
+        "bbox": [
+            94,
+            433,
+            561,
+            479
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": " 7.2 函数表达式块作为函数体（依赖 1.1 、 7.0 ，拓展 1.1 ）",
+        "bbox": [
+            46,
+            548,
+            800,
+            601
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "• < 函数声明 > -> < 函数头声明 > < 函数表达式语句块 >",
+        "bbox": [
+            94,
+            607,
+            730,
+            655
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```ocaml\nfn program_7_1(mut x:i32,mut y:i32)    fn program_7_2(mut x:i32,mut y:i32) -> \n{    let mut z = {\n    let mut t=x*x+x;\n    t=t+x*y;\n    t    }\n}; \n```",
+        "bbox": [
+            78,
+            674,
+            926,
+            988
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "page_number",
+        "text": "13 ",
+        "bbox": [
+            956,
+            933,
+            975,
+            959
+        ],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "类 Rust 语法规则 ",
+        "text_level": 3,
+        "bbox": [
+            9,
+            11,
+            312,
+            81
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": " 7.3 选择表达式（依赖 3.1 、 7.0 ，拓展 0.3 ）",
+        "bbox": [
+            46,
+            144,
+            640,
+            200
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• <可取元素> -> <选择表达式>",
+            "• <选择表达式>-> if <表达式> <函数表达式语句块> else <函数表达式语句块 >"
+        ],
+        "bbox": [
+            93,
+            209,
+            952,
+            372
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": " 7.4 循环表达式（依赖 3.1 、 5.3 ，拓展 0.3 ）",
+        "bbox": [
+            46,
+            442,
+            640,
+            496
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "• < 可取元素 > -> <loop 语句 >• < 语句 > -> break < 表达式 > ';'",
+        "bbox": [
+            94,
+            507,
+            500,
+            612
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfn program_7_3(mut a:i32) {\n    let mut b=if a>0 {\n    1\n    } else {\n    0\n    };\n} \n```",
+        "bbox": [
+            120,
+            614,
+            765,
+            924
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "page_number",
+        "text": "14 ",
+        "bbox": [
+            956,
+            933,
+            975,
+            959
+        ],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "类 Rust 语法规则 ",
+        "text_level": 3,
+        "bbox": [
+            9,
+            11,
+            312,
+            81
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "8.1 数组类型（依赖 0.2 ，拓展 0.2 ）",
+        "bbox": [
+            46,
+            140,
+            534,
+            200
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "• < 类型 >-> '[' < 类型 > ';' <NUM>’]‘",
+        "bbox": [
+            96,
+            209,
+            547,
+            257
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "fn program\\_8\\_1() { let mut a:[i32;3]; } ",
+        "bbox": [
+            659,
+            135,
+            865,
+            268
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": " 8.2 数组表达式（依赖 3.1 ，拓展 0.3 、 5.2 ）",
+        "bbox": [
+            47,
+            327,
+            639,
+            379
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• < 可取元素 > -> '[' < 数组元素列表 > ']' }",
+            "• < 可迭代结构 > -> < 表达式 >"
+        ],
+        "bbox": [
+            96,
+            390,
+            675,
+            551
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "• < 数组元素列表 >-> 空 | < 表达式 > | < 表达式 > ',' < 数组元素列表 >",
+        "bbox": [
+            97,
+            450,
+            900,
+            496
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "fn program\\_8\\_2(mut a:[i32;3]) { a=[1,2,3]; ",
+        "bbox": [
+            659,
+            312,
+            998,
+            400
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": " 8.3 数组元素（依赖 0.3 、 3.1 ，拓展 0.3 ）",
+        "bbox": [
+            47,
+            625,
+            615,
+            677
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "• < 可取元素 > -> < 可取元素 > '[' < 表达式 > ']'",
+        "bbox": [
+            96,
+            688,
+            650,
+            735
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "fn program\\_8\\_3(mut a:[i32;3]) { let mut b:i32=a[0]; a[0]=1; } ",
+        "bbox": [
+            659,
+            624,
+            998,
+            801
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "page_number",
+        "text": "15 ",
+        "bbox": [
+            956,
+            933,
+            975,
+            959
+        ],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "类 Rust 语法规则 ",
+        "text_level": 3,
+        "bbox": [
+            9,
+            11,
+            312,
+            81
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": " 9.1 元组类型（依赖 0.2 ，拓展 0.2 ）",
+        "text_level": 4,
+        "bbox": [
+            46,
+            144,
+            534,
+            198
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• < 类型 > -> '(' < 元组类型内部 > ')'",
+            "• < 元组类型内部 > -> 空 | < 类型 > ',' < 类型列表 >",
+            "• < 类型列表 > -> 空 | < 类型 > | < 类型 > ',' < 类型列表 >"
+        ],
+        "bbox": [
+            97,
+            205,
+            763,
+            377
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```rust\nfn program_9_1() {\n    let a:(i32,i32);\n} \n```",
+        "bbox": [
+            630,
+            109,
+            833,
+            242
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```lisp\nfn program_9_2(mut a:(i32,i32)) {\n    a=(1,2);\n} \n```",
+        "bbox": [
+            630,
+            377,
+            989,
+            509
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": " 9.2 元组表达式（依赖 3.1 、拓展 0.3 ）",
+        "text_level": 4,
+        "bbox": [
+            48,
+            444,
+            558,
+            496
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• < 可取元素 > -> '(' < 元组赋值内部 > ')'",
+            "• < 元组赋值内部 > -> 空 | < 表达式 > ',' < 元组元素列表 >",
+            "• < 元组元素列表 >-> 空 | < 表达式 > | < 表达式 > ',' < 元组元素列表 >"
+        ],
+        "bbox": [
+            97,
+            507,
+            892,
+            675
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": " 9.3 元组元素（依赖 0.3 ，拓展 0.3 ）",
+        "text_level": 4,
+        "bbox": [
+            48,
+            742,
+            533,
+            796
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "• < 可取元素 > ->< 可取元素 > '.' <NUM>",
+        "bbox": [
+            97,
+            807,
+            585,
+            853
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfn program_9_3(mut a:(i32,i32)) {\n    let mut b:i32=a.0;\n    a.0=1;\n} \n```",
+        "bbox": [
+            630,
+            731,
+            989,
+            909
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "page_number",
+        "text": "16 ",
+        "bbox": [
+            956,
+            933,
+            975,
+            959
+        ],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "要求",
+        "text_level": 2,
+        "bbox": [
+            10,
+            11,
+            89,
+            81
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "if123 ",
+        "text_level": 3,
+        "bbox": [
+            50,
+            190,
+            178,
+            251
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "应该能够识别为标识符",
+        "bbox": [
+            80,
+            300,
+            415,
+            359
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "if=123 ",
+        "text_level": 3,
+        "bbox": [
+            50,
+            412,
+            205,
+            470
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "应该识别为三个单词：",
+        "bbox": [
+            79,
+            522,
+            405,
+            579
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "（ if ，保留字）",
+        "bbox": [
+            112,
+            618,
+            373,
+            672
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "（ = ，算符）",
+        "bbox": [
+            113,
+            707,
+            347,
+            762
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "（ 123 ，整数）",
+        "bbox": [
+            113,
+            798,
+            378,
+            850
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "语法规则至少完成以下：",
+        "bbox": [
+            490,
+            161,
+            761,
+            211
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "0.1 0.2 、 0.3 ",
+            "1.1 、 1.2 、 1.3 、 1.4 、 1.5 、",
+            "2.0 、 2.1 2.2 ",
+            "3.1 、 3.2 、 3.3 、 3.4 、 3.5 、",
+            "4.1 5.0 、 5.1 "
+        ],
+        "bbox": [
+            491,
+            227,
+            858,
+            533
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "剩余规则不做强制要求。",
+        "bbox": [
+            490,
+            546,
+            754,
+            596
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "page_number",
+        "text": "17 ",
+        "bbox": [
+            956,
+            933,
+            975,
+            959
+        ],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "评分标准 ",
+        "text_level": 2,
+        "bbox": [
+            12,
+            11,
+            163,
+            81
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "table",
+        "img_path": "images/75a21e04db915c2aeee47b5bdd34ab989ff4d5a3a50d810e4f9de31086bdd8df.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>实验评价内容</td><td>所占比重</td><td>要求</td></tr><tr><td>问题分析能力</td><td>20%</td><td>说明词法分析或语法分析原理,绘制必要的状态转换图。</td></tr><tr><td>系统方案(算法)设计能力</td><td>20%</td><td>报告中体现系统各模块的总体设计和详细设计。</td></tr><tr><td>编程能力</td><td>20%</td><td>独立编程实现要求的全部功能,正确无误。</td></tr><tr><td>撰写报告能力</td><td>30%</td><td>表达通顺、结构清晰、内容完整、实验充分、提出个人想法,不存在抄袭。</td></tr><tr><td>查阅文献资料能力</td><td>10%</td><td>报告中列出所查阅的文献资料,含图书、论文、网络资源等。</td></tr></table>",
+        "bbox": [
+            40,
+            118,
+            937,
+            946
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "page_number",
+        "text": "",
+        "bbox": [
+            958,
+            935,
+            975,
+            959
+        ],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "报告要求",
+        "text_level": 2,
+        "bbox": [
+            9,
+            11,
+            165,
+            81
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "设计文档 1 份",
+            " 程序源代码、 可执行代码 1 份",
+            "程序实例与结果截屏",
+            "报告 PPT1 份"
+        ],
+        "bbox": [
+            45,
+            181,
+            523,
+            614
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "page_number",
+        "text": "19 ",
+        "bbox": [
+            956,
+            933,
+            975,
+            959
+        ],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "写在最后",
+        "text_level": 2,
+        "bbox": [
+            10,
+            12,
+            163,
+            81
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": " 部分羁绊",
+        "text_level": 3,
+        "bbox": [
+            46,
+            118,
+            194,
+            168
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• 2.2 赋值语句 + 拓展<类型>的规则（如8.1）：类型多于一种，变量赋值时需要检测类型是否对应，不对应应该报错。",
+            "• 5.2 for循环结构 + 8.2 数组：数组是可迭代结构，可以被for循环访问；而其他类型的变量不可迭代，被 for 循环访问时应报错。",
+            "• 2.2 赋值语句 + 6.1 变量不可变属性 + 循环的规则（如 5.2 ）：若循环中中存在对不可变变量进行赋值的操作，应该报错。"
+        ],
+        "bbox": [
+            93,
+            181,
+            942,
+            525
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": " 说明",
+        "text_level": 3,
+        "bbox": [
+            46,
+            533,
+            144,
+            585
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• 可以也鼓励大家对本文档中的产生式进行改写，也可以拓展更多未在文档中提到的Rust的语法规则。",
+            "• 本规则中存在极个别的羁绊会使得LR(1)无法处理，如果发现并对此进行思考（如能否改写产生式来解决问题，如果不能则分析原因），将作为加分项。"
+        ],
+        "bbox": [
+            93,
+            598,
+            926,
+            824
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": " 思考",
+        "text_level": 3,
+        "bbox": [
+            46,
+            833,
+            144,
+            883
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• 1.4 函数输入中的形参列表可以识别怎样的语言？",
+            "• 9.1 元组 比 8.1 数组 多了几条产生式，为什么？"
+        ],
+        "bbox": [
+            93,
+            896,
+            653,
+            998
+        ],
+        "page_idx": 19
+    },
+    {
+        "type": "page_number",
+        "text": "20 ",
+        "bbox": [
+            955,
+            933,
+            975,
+            959
+        ],
+        "page_idx": 19
+    }
+]

@@ -1,0 +1,21 @@
+Function program_3_1__1():
+  <empty>
+
+Function program_3_1__2(a):
+  <empty>
+
+Function program_3_2():
+  0: (<, 1, 2, t1)
+  1: (<=, 3, 4, t2)
+  2: (>, 5, 6, t3)
+  3: (>=, 7, 8, t4)
+  4: (==, 9, 10, t5)
+  5: (!=, 11, 12, t6)
+
+Function program_3_3():
+  0: (+, 1, 2, t1)
+  1: (-, 3, 4, t2)
+
+Function program_3_4():
+  0: (*, 1, 2, t1)
+  1: (/, 3, 4, t2)
