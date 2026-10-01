@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ExCourt - 发布场地</title>
+    <link rel="stylesheet" href="/frontend/assets/css/styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="main-content">
+            <div class="form-container">
+                <div class="form-title">发布场地</div>
+
+                <div class="tabs">
+                    <div class="tab active" onclick="switchTab('owned')">已有场地</div>
+                    <div class="tab" onclick="switchTab('wanted')">需求场地</div>
+                </div>
+
+                <!-- 已有场地表单 -->
+                <div id="ownedPanel" class="panel">
+                    <div class="form-group">
+                        <label>场地ID</label>
+                        <input type="text" id="ownedCourtId" placeholder="输入场地编号">
+                    </div>
+
+                    <div class="form-group">
+                        <label>日期</label>
+                        <input type="date" id="ownedDate">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>开始时间</label>
+                            <select id="ownedStartHour"></select>
+                        </div>
+                        <div class="form-group">
+                            <label>结束时间</label>
+                            <select id="ownedEndHour"></select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>序列号</label>
+                        <input type="text" id="ownedSerialNumber" placeholder="输入学校体育网站生成的序列号">
+                        <small style="color: var(--text-secondary); font-size: 12px;">
+                            请从学校体育网站获取预约序列号
+                        </small>
+                    </div>
+
+                    <button onclick="postOwnedCourt()">提交审核</button>
+                    <div id="ownedMessage" class="message" style="display: none;"></div>
+                </div>
+
+                <!-- 需求场地表单 -->
+                <div id="wantedPanel" class="panel hidden">
+                    <div class="form-group">
+                        <label>场地ID</label>
+                        <input type="text" id="wantedCourtId" placeholder="输入需要的场地编号">
+                    </div>
+
+                    <div class="form-group">
+                        <label>日期</label>
+                        <input type="date" id="wantedDate">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>开始时间</label>
+                            <select id="wantedStartHour"></select>
+                        </div>
+                        <div class="form-group">
+                            <label>结束时间</label>
+                            <select id="wantedEndHour"></select>
+                        </div>
+                    </div>
+
+                    <button onclick="postWantedCourt()">发布需求场地</button>
+                    <div id="wantedMessage" class="message" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <nav class="bottom-nav">
+            <a href="/frontend/pages/dashboard.html" class="nav-item">
+                <div class="nav-icon">🏠</div>
+                <span>主页</span>
+            </a>
+            <a href="/frontend/pages/post.html" class="nav-item active">
+                <div class="nav-icon">➕</div>
+                <span>发布场地</span>
+            </a>
+            <a href="/frontend/pages/search.html" class="nav-item">
+                <div class="nav-icon">🔍</div>
+                <span>搜索场地</span>
+            </a>
+            <a href="#" class="nav-item" onclick="showMessages(event)">
+                <div class="nav-icon">💬</div>
+                <span>消息</span>
+            </a>
+            <a href="/frontend/pages/profile.html" class="nav-item">
+                <div class="nav-icon">👤</div>
+                <span>个人中心</span>
+            </a>
+        </nav>
+    </div>
+
+    <script>
+        function showMessages(event) {
+            event.preventDefault();
+            alert('消息功能正在开发中...');
+        }
+
+        // 生成整点时间选项
+        function populateHourSelects() {
+            const selects = ['ownedStartHour', 'ownedEndHour', 'wantedStartHour', 'wantedEndHour'];
+            selects.forEach(id => {
+                const select = document.getElementById(id);
+                select.innerHTML = '';
+                for (let h = 6; h <= 22; h++) {
+                    const option = document.createElement('option');
+                    option.value = h;
+                    option.textContent = `${h}:00`;
+                    select.appendChild(option);
+                }
+            });
+            // 设置默认值
+            document.getElementById('ownedStartHour').value = 8;
+            document.getElementById('ownedEndHour').value = 9;
+            document.getElementById('wantedStartHour').value = 8;
+            document.getElementById('wantedEndHour').value = 9;
+        }
+        populateHourSelects();
+    </script>
+    <script type="module">
+        import { requireAuthOrRedirect, getAuth } from "/frontend/assets/js/auth.js";
+        import { API_BASE } from "/frontend/assets/js/api.js";
+
+        requireAuthOrRedirect();
+        const token = getAuth()?.token;
+
+        window.switchTab = function (type) {
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            if (type === 'owned') {
+                tabs[0].classList.add('active');
+                document.getElementById('ownedPanel').classList.remove('hidden');
+                document.getElementById('wantedPanel').classList.add('hidden');
+            } else {
+                tabs[1].classList.add('active');
+                document.getElementById('ownedPanel').classList.add('hidden');
+                document.getElementById('wantedPanel').classList.remove('hidden');
+            }
+        };
+
+        function showMessage(elementId, message, isError = false) {
+            const messageDiv = document.getElementById(elementId);
+            messageDiv.textContent = message;
+            messageDiv.className = isError ? 'message error' : 'message success';
+            messageDiv.style.display = 'block';
+            setTimeout(() => { messageDiv.style.display = 'none'; }, 3000);
+        }
+
+        window.postOwnedCourt = async function () {
+            const courtId = document.getElementById('ownedCourtId').value.trim();
+            const date = document.getElementById('ownedDate').value;
+            const startHour = parseInt(document.getElementById('ownedStartHour').value);
+            const endHour = parseInt(document.getElementById('ownedEndHour').value);
+            const serialNumber = document.getElementById('ownedSerialNumber').value.trim();
+
+            if (!courtId || !date || !serialNumber) {
+                showMessage('ownedMessage', '请填写所有字段', true);
+                return;
+            }
+            if (endHour <= startHour) {
+                showMessage('ownedMessage', '结束时间必须在开始时间之后', true);
+                return;
+            }
+
+            try {
+                const response = await fetch(`${API_BASE}/courts/owned/post`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify({
+                        court_id: parseInt(courtId),
+                        start_date: date,
+                        start_hour: startHour,
+                        end_hour: endHour,
+                        serial_number: serialNumber
+                    })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    showMessage('ownedMessage', data.message || '已提交审核');
+                    document.getElementById('ownedCourtId').value = '';
+                    document.getElementById('ownedSerialNumber').value = '';
+                } else {
+                    showMessage('ownedMessage', data.detail || '提交失败', true);
+                }
+            } catch (error) {
+                showMessage('ownedMessage', '请求失败：' + error.message, true);
+            }
+        };
+
+        window.postWantedCourt = async function () {
+            const courtId = document.getElementById('wantedCourtId').value.trim();
+            const date = document.getElementById('wantedDate').value;
+            const startHour = parseInt(document.getElementById('wantedStartHour').value);
+            const endHour = parseInt(document.getElementById('wantedEndHour').value);
+
+            if (!courtId || !date) {
+                showMessage('wantedMessage', '请填写所有字段', true);
+                return;
+            }
+            if (endHour <= startHour) {
+                showMessage('wantedMessage', '结束时间必须在开始时间之后', true);
+                return;
+            }
+
+            try {
+                const response = await fetch(`${API_BASE}/courts/wanted/post`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify({
+                        court_id: parseInt(courtId),
+                        start_date: date,
+                        start_hour: startHour,
+                        end_hour: endHour
+                    })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    showMessage('wantedMessage', data.message || '发布成功');
+                    document.getElementById('wantedCourtId').value = '';
+                } else {
+                    showMessage('wantedMessage', data.detail || '发布失败', true);
+                }
+            } catch (error) {
+                showMessage('wantedMessage', '请求失败：' + error.message, true);
+            }
+        };
+
+        // 设置默认日期为今天
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('ownedDate').value = today;
+        document.getElementById('wantedDate').value = today;
+    </script>
+</body>
+
+</html>

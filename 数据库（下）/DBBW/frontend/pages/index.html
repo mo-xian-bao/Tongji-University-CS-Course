@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ExCourt - 场地交换系统</title>
+    <link rel="stylesheet" href="/frontend/assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🏟️ ExCourt</h1>
+        <p style="text-align: center; color: var(--text-secondary); margin-bottom: 24px;">
+            轻松交换场地，便捷管理预约
+        </p>
+
+        <div class="tabs">
+            <div id="tab-login" class="tab active">登录</div>
+            <div id="tab-register" class="tab">注册</div>
+        </div>
+
+        <div id="panel-login" class="panel">
+            <div class="form-group">
+                <label>用户名</label>
+                <input id="login-username" type="text" placeholder="请输入用户名">
+            </div>
+            <div class="form-group">
+                <label>密码</label>
+                <input id="login-password" type="password" placeholder="请输入密码">
+            </div>
+            <button id="btn-login">登录</button>
+        </div>
+
+        <div id="panel-register" class="panel hidden">
+            <div class="form-group">
+                <label>用户名</label>
+                <input id="register-username" type="text" placeholder="请输入用户名">
+            </div>
+            <div class="form-group">
+                <label>密码</label>
+                <input id="register-password" type="password" placeholder="请输入密码，至少6位">
+            </div>
+            <button id="btn-register">注册</button>
+        </div>
+
+        <div id="message" class="message" role="alert" aria-live="polite"></div>
+    </div>
+
+    <footer class="footer">
+        <span>© 2025 ExCourt</span>
+        <a href="/docs" target="_blank" rel="noreferrer">API</a>
+    </footer>
+
+    <script type="module" src="/frontend/assets/js/login.js"></script>
+</body>
+
+</html>

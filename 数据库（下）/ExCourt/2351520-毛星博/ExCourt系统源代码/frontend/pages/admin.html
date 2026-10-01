@@ -1,0 +1,967 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ExCourt - 管理员控制台</title>
+    <link rel="stylesheet" href="/frontend/assets/css/styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .admin-layout {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* 侧边栏 */
+        .sidebar {
+            width: 260px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 24px 16px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            margin-bottom: 32px;
+        }
+
+        .sidebar-logo-icon {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .sidebar-logo-text {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .sidebar-menu {
+            flex: 1;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            border-radius: 10px;
+            margin-bottom: 4px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .menu-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+        }
+
+        .menu-item.active {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .menu-icon {
+            font-size: 18px;
+        }
+
+        .sidebar-footer {
+            padding: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .admin-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .admin-avatar {
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .admin-name {
+            color: white;
+            font-size: 14px;
+        }
+
+        .admin-role {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 12px;
+        }
+
+        .btn-logout {
+            width: 100%;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-logout:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* 主内容区 */
+        .main-area {
+            flex: 1;
+            padding: 24px;
+            overflow-y: auto;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+            min-height: calc(100vh - 48px);
+        }
+
+        .content-header {
+            padding: 24px 32px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        .content-subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        /* 统计卡片 */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 24px 32px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .stat-card.pending {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+        }
+
+        .stat-card.approved {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+        }
+
+        .stat-card.rejected {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+        }
+
+        .stat-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .stat-card.pending .stat-icon {
+            background: #ff9800;
+            color: white;
+        }
+
+        .stat-card.approved .stat-icon {
+            background: #4caf50;
+            color: white;
+        }
+
+        .stat-card.rejected .stat-icon {
+            background: #f44336;
+            color: white;
+        }
+
+        .stat-info h3 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        .stat-info p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* 表格区域 */
+        .table-section {
+            padding: 0 32px 32px;
+        }
+
+        .table-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .table-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+
+        .refresh-btn {
+            padding: 8px 16px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .refresh-btn:hover {
+            background: #5a6fd6;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .data-table th {
+            text-align: left;
+            padding: 14px 16px;
+            background: #f8f9fa;
+            color: #666;
+            font-weight: 500;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .data-table th:first-child {
+            border-radius: 8px 0 0 8px;
+        }
+
+        .data-table th:last-child {
+            border-radius: 0 8px 8px 0;
+        }
+
+        .data-table td {
+            padding: 16px;
+            border-bottom: 1px solid #eee;
+            color: #333;
+        }
+
+        .data-table tr:hover td {
+            background: #f8f9fa;
+        }
+
+        .user-cell {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .user-avatar-small {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .serial-badge {
+            font-family: 'Monaco', 'Consolas', monospace;
+            background: #e8eaf6;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #3f51b5;
+        }
+
+        .time-cell {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-approve {
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #4caf50 0%, #43a047 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .btn-approve:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+        }
+
+        .btn-reject {
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #f44336 0%, #e53935 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .btn-reject:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(244, 67, 54, 0.4);
+        }
+
+        .btn-batch-reject {
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .btn-batch-reject:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);
+        }
+
+        .duplicate-badge {
+            background: #ff5722;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 8px;
+            font-weight: 500;
+        }
+
+        .duplicate-row {
+            background: #fff8e1 !important;
+        }
+
+        .duplicate-row:hover td {
+            background: #ffecb3 !important;
+        }
+
+        .serial-badge.duplicate {
+            background: #ffccbc;
+            color: #bf360c;
+            border: 1px solid #ff5722;
+        }
+
+        .court-conflict-badge {
+            background: #e91e63;
+            color: white;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 8px;
+            font-weight: 500;
+        }
+
+        .conflict-row {
+            background: #fce4ec !important;
+        }
+
+        .conflict-row:hover td {
+            background: #f8bbd9 !important;
+        }
+
+        .duplicate-warning {
+            background: #fff3e0;
+            border: 1px solid #ffb74d;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .duplicate-warning-icon {
+            font-size: 24px;
+        }
+
+        .duplicate-warning-text {
+            flex: 1;
+            color: #e65100;
+            font-size: 14px;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #999;
+        }
+
+        .empty-icon {
+            font-size: 64px;
+            margin-bottom: 16px;
+        }
+
+        .empty-text {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .empty-hint {
+            font-size: 14px;
+            color: #999;
+            margin-top: 8px;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .admin-layout {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                padding: 16px;
+            }
+
+            .stats-row {
+                grid-template-columns: 1fr;
+            }
+
+            .data-table {
+                font-size: 14px;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="admin-layout">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <div class="sidebar-logo-icon">🏟️</div>
+                <span class="sidebar-logo-text">ExCourt</span>
+            </div>
+
+            <nav class="sidebar-menu">
+                <div class="menu-item active">
+                    <span class="menu-icon">📋</span>
+                    <span>待审核申请</span>
+                </div>
+                <div class="menu-item" onclick="loadAllRecords()">
+                    <span class="menu-icon">📊</span>
+                    <span>全部记录</span>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="admin-info">
+                    <div class="admin-avatar">👤</div>
+                    <div>
+                        <div class="admin-name" id="adminName">管理员</div>
+                        <div class="admin-role">系统管理员</div>
+                    </div>
+                </div>
+                <button class="btn-logout" onclick="logout()">退出登录</button>
+            </div>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-area">
+            <div class="content-card">
+                <div class="content-header">
+                    <div>
+                        <h1 class="content-title">场地审核管理</h1>
+                        <p class="content-subtitle">审核用户提交的场地预约申请</p>
+                    </div>
+                </div>
+
+                <!-- 统计卡片 -->
+                <div class="stats-row">
+                    <div class="stat-card pending">
+                        <div class="stat-icon">⏳</div>
+                        <div class="stat-info">
+                            <h3 id="pendingCount">0</h3>
+                            <p>待审核</p>
+                        </div>
+                    </div>
+                    <div class="stat-card approved">
+                        <div class="stat-icon">✓</div>
+                        <div class="stat-info">
+                            <h3 id="approvedCount">0</h3>
+                            <p>已通过</p>
+                        </div>
+                    </div>
+                    <div class="stat-card rejected">
+                        <div class="stat-icon">✗</div>
+                        <div class="stat-info">
+                            <h3 id="rejectedCount">0</h3>
+                            <p>已拒绝</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 表格区域 -->
+                <div class="table-section">
+                    <div class="table-header">
+                        <h2 class="table-title">待审核列表</h2>
+                        <button class="refresh-btn" onclick="loadPendingList()">
+                            🔄 刷新
+                        </button>
+                    </div>
+
+                    <div id="duplicateWarning" class="duplicate-warning" style="display: none;">
+                        <span class="duplicate-warning-icon">⚠️</span>
+                        <span class="duplicate-warning-text" id="duplicateWarningText">检测到重复序列号的申请</span>
+                    </div>
+
+                    <div id="tableContainer">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>申请用户</th>
+                                    <th>场地ID</th>
+                                    <th>预约日期</th>
+                                    <th>时间段</th>
+                                    <th>序列号</th>
+                                    <th>提交时间</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody id="pendingTableBody">
+                                <tr>
+                                    <td colspan="7">
+                                        <div class="empty-state">
+                                            <div class="empty-icon">📭</div>
+                                            <div class="empty-text">加载中...</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="module">
+        import { requireAuthOrRedirect, getAuth, clearAuth } from "/frontend/assets/js/auth.js";
+        import { API_BASE } from "/frontend/assets/js/api.js";
+        import { showAlert, showSuccess, showError, showConfirm, showDangerConfirm } from "/frontend/assets/js/dialog.js";
+
+        requireAuthOrRedirect();
+        const auth = getAuth();
+        const token = auth?.token;
+
+        // 显示管理员名称
+        document.getElementById('adminName').textContent = auth?.username || '管理员';
+
+        window.logout = function () {
+            clearAuth();
+            window.location.href = "/";
+        };
+
+        // 加载统计数据
+        async function loadStats() {
+            try {
+                const response = await fetch(`${API_BASE}/admin/all-pending`, {
+                    headers: { "Authorization": `Bearer ${token}` }
+                });
+                const data = await response.json();
+
+                const pending = data.filter(d => d.status === 'pending').length;
+                const approved = data.filter(d => d.status === 'approved').length;
+                const rejected = data.filter(d => d.status === 'rejected').length;
+
+                document.getElementById('pendingCount').textContent = pending;
+                document.getElementById('approvedCount').textContent = approved;
+                document.getElementById('rejectedCount').textContent = rejected;
+            } catch (error) {
+                console.error('加载统计失败:', error);
+            }
+        }
+
+        // 加载待审核列表
+        window.loadPendingList = async function () {
+            const tbody = document.getElementById('pendingTableBody');
+            const duplicateWarning = document.getElementById('duplicateWarning');
+            const duplicateWarningText = document.getElementById('duplicateWarningText');
+
+            try {
+                const response = await fetch(`${API_BASE}/admin/pending`, {
+                    headers: { "Authorization": `Bearer ${token}` }
+                });
+
+                if (response.status === 403) {
+                    await showError("您没有管理员权限");
+                    window.location.href = "/frontend/pages/dashboard.html";
+                    return;
+                }
+
+                const data = await response.json();
+
+                if (!data || data.length === 0) {
+                    duplicateWarning.style.display = 'none';
+                    tbody.innerHTML = `
+                        <tr>
+                            <td colspan="7">
+                                <div class="empty-state">
+                                    <div class="empty-icon">✨</div>
+                                    <div class="empty-text">暂无待审核的申请</div>
+                                    <div class="empty-hint">所有申请都已处理完毕</div>
+                                </div>
+                            </td>
+                        </tr>
+                    `;
+                    return;
+                }
+
+                // 检查是否有重复序列号或场地冲突
+                const duplicates = data.filter(item => item.is_duplicate);
+                const conflicts = data.filter(item => item.is_court_conflict);
+                const duplicateSerials = [...new Set(duplicates.map(d => d.serial_number))];
+                const conflictCourts = [...new Set(conflicts.map(d => `#${d.court_id} ${d.start_date}`))];
+                
+                let warningMessages = [];
+                if (duplicateSerials.length > 0) {
+                    warningMessages.push(`${duplicateSerials.length} 个重复序列号（${duplicates.length} 个申请）`);
+                }
+                if (conflictCourts.length > 0) {
+                    warningMessages.push(`${conflictCourts.length} 个场地冲突（${conflicts.length} 个申请）`);
+                }
+                
+                if (warningMessages.length > 0) {
+                    duplicateWarning.style.display = 'flex';
+                    duplicateWarningText.textContent = `检测到 ${warningMessages.join('，')}。同意一个将自动拒绝其他冲突申请。`;
+                } else {
+                    duplicateWarning.style.display = 'none';
+                }
+
+                tbody.innerHTML = data.map(item => {
+                    const isDuplicate = item.is_duplicate;
+                    const isConflict = item.is_court_conflict;
+                    
+                    // 行样式：场地冲突优先显示粉色，序列号重复显示黄色
+                    let rowClass = '';
+                    if (isConflict && !isDuplicate) rowClass = 'conflict-row';
+                    else if (isDuplicate) rowClass = 'duplicate-row';
+                    
+                    const serialClass = isDuplicate ? 'serial-badge duplicate' : 'serial-badge';
+                    const duplicateBadge = isDuplicate ? `<span class="duplicate-badge">序列号重复×${item.duplicate_count}</span>` : '';
+                    const conflictBadge = isConflict ? `<span class="court-conflict-badge">场地冲突×${item.court_conflict_count}</span>` : '';
+                    
+                    // 批量拒绝按钮
+                    let batchButtons = '';
+                    if (isDuplicate) {
+                        batchButtons += `<button class="btn-batch-reject" onclick="batchReject('${item.serial_number}')" title="拒绝所有使用此序列号的申请">🗑️ 拒绝同序列号</button>`;
+                    }
+                    if (isConflict) {
+                        batchButtons += `<button class="btn-batch-reject" onclick="batchRejectCourt(${item.court_id}, '${item.start_date}', ${item.start_hour}, ${item.end_hour})" title="拒绝所有申请此场地的申请">🗑️ 拒绝同场地</button>`;
+                    }
+                    
+                    return `
+                    <tr class="${rowClass}">
+                        <td>
+                            <div class="user-cell">
+                                <div class="user-avatar-small">${item.username.charAt(0).toUpperCase()}</div>
+                                <span>${item.username}</span>
+                            </div>
+                        </td>
+                        <td><strong>#${item.court_id}</strong>${conflictBadge}</td>
+                        <td>${item.start_date}</td>
+                        <td>${item.start_hour}:00 - ${item.end_hour}:00</td>
+                        <td>
+                            <span class="${serialClass}">${item.serial_number}</span>
+                            ${duplicateBadge}
+                        </td>
+                        <td class="time-cell">${formatTime(item.created_at)}</td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="btn-approve" onclick="reviewPending('${item.id}', 'approve')" title="${isDuplicate || isConflict ? '同意后将自动拒绝其他冲突申请' : ''}">
+                                    ✓ 通过
+                                </button>
+                                <button class="btn-reject" onclick="reviewPending('${item.id}', 'reject')">
+                                    ✗ 拒绝
+                                </button>
+                                ${batchButtons}
+                            </div>
+                        </td>
+                    </tr>
+                `}).join('');
+            } catch (error) {
+                duplicateWarning.style.display = 'none';
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="7">
+                            <div class="empty-state">
+                                <div class="empty-icon">❌</div>
+                                <div class="empty-text">加载失败</div>
+                                <div class="empty-hint">${error.message}</div>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+            }
+        };
+
+        // 格式化时间
+        function formatTime(isoString) {
+            if (!isoString) return '-';
+            const date = new Date(isoString);
+            return date.toLocaleString('zh-CN', {
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+
+        // 审核操作
+        window.reviewPending = async function (pendingId, action) {
+            const actionText = action === 'approve' ? '通过' : '拒绝';
+            const confirmed = await showConfirm(
+                `确定要${actionText}这个申请吗？`,
+                { title: '确认操作', confirmText: actionText, type: action === 'approve' ? 'success' : 'warning' }
+            );
+            if (!confirmed) return;
+
+            try {
+                const response = await fetch(`${API_BASE}/admin/review`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify({
+                        pending_id: pendingId,
+                        action: action
+                    })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    await showSuccess(data.message || '操作成功');
+                    loadPendingList();
+                    loadStats();
+                } else {
+                    await showError(data.detail || '操作失败');
+                }
+            } catch (error) {
+                await showError('请求失败：' + error.message);
+            }
+        };
+
+        // 批量拒绝相同序列号的申请
+        window.batchReject = async function (serialNumber) {
+            const confirmed = await showDangerConfirm(
+                `确定要拒绝所有使用序列号 "${serialNumber}" 的申请吗？`,
+                { title: '批量拒绝', confirmText: '确定拒绝' }
+            );
+            if (!confirmed) return;
+
+            try {
+                const response = await fetch(`${API_BASE}/admin/batch-reject`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify({
+                        serial_number: serialNumber
+                    })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    await showSuccess(data.message || '批量拒绝成功');
+                    loadPendingList();
+                    loadStats();
+                } else {
+                    await showError(data.detail || '操作失败');
+                }
+            } catch (error) {
+                await showError('请求失败：' + error.message);
+            }
+        };
+
+        // 批量拒绝相同场地+时间的申请
+        window.batchRejectCourt = async function (courtId, startDate, startHour, endHour) {
+            const confirmed = await showDangerConfirm(
+                `确定要拒绝所有申请场地 #${courtId} ${startDate} ${startHour}:00-${endHour}:00 的申请吗？`,
+                { title: '批量拒绝', confirmText: '确定拒绝' }
+            );
+            if (!confirmed) return;
+
+            try {
+                const response = await fetch(`${API_BASE}/admin/batch-reject-court`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify({
+                        court_id: courtId,
+                        start_date: startDate,
+                        start_hour: startHour,
+                        end_hour: endHour
+                    })
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    await showSuccess(data.message || '批量拒绝成功');
+                    loadPendingList();
+                    loadStats();
+                } else {
+                    await showError(data.detail || '操作失败');
+                }
+            } catch (error) {
+                await showError('请求失败：' + error.message);
+            }
+        };
+
+        // 加载全部记录
+        window.loadAllRecords = async function () {
+            document.querySelector('.table-title').textContent = '全部审核记录';
+            const tbody = document.getElementById('pendingTableBody');
+
+            try {
+                const response = await fetch(`${API_BASE}/admin/all-pending`, {
+                    headers: { "Authorization": `Bearer ${token}` }
+                });
+                const data = await response.json();
+
+                if (!data || data.length === 0) {
+                    tbody.innerHTML = `
+                        <tr>
+                            <td colspan="7">
+                                <div class="empty-state">
+                                    <div class="empty-icon">📭</div>
+                                    <div class="empty-text">暂无记录</div>
+                                </div>
+                            </td>
+                        </tr>
+                    `;
+                    return;
+                }
+
+                tbody.innerHTML = data.map(item => {
+                    const statusMap = {
+                        'pending': '<span style="color: #ff9800;">⏳ 待审核</span>',
+                        'approved': '<span style="color: #4caf50;">✓ 已通过</span>',
+                        'rejected': '<span style="color: #f44336;">✗ 已拒绝</span>'
+                    };
+                    return `
+                        <tr>
+                            <td>
+                                <div class="user-cell">
+                                    <div class="user-avatar-small">${item.username.charAt(0).toUpperCase()}</div>
+                                    <span>${item.username}</span>
+                                </div>
+                            </td>
+                            <td><strong>#${item.court_id}</strong></td>
+                            <td>${item.start_date}</td>
+                            <td>${item.start_hour}:00 - ${item.end_hour}:00</td>
+                            <td><span class="serial-badge">${item.serial_number}</span></td>
+                            <td class="time-cell">${formatTime(item.created_at)}</td>
+                            <td>${statusMap[item.status] || item.status}</td>
+                        </tr>
+                    `;
+                }).join('');
+            } catch (error) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="7">
+                            <div class="empty-state">
+                                <div class="empty-text">加载失败: ${error.message}</div>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+            }
+        };
+
+        // 初始化
+        loadPendingList();
+        loadStats();
+    </script>
+</body>
+
+</html>

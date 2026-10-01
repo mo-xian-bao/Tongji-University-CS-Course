@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>提交场地 - ExCourt</title>
+  <link rel="stylesheet" href="/frontend/assets/css/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <nav>
+      <div class="brand">ExCourt</div>
+      <div class="spacer"></div>
+      <a href="/frontend/pages/dashboard.html" style="color:#93c5fd;text-decoration:none">返回主页</a>
+    </nav>
+
+    <div id="message" class="message" style="margin-top:16px"></div>
+
+    <div class="row">
+      <div class="card" style="flex:1;min-width:300px;">
+        <h3>发布已有场地</h3>
+        <label>场地ID</label>
+        <input id="owned-court-id" type="number" placeholder="例如 1">
+        <label>日期</label>
+        <input id="owned-start-date" type="date">
+        <label>开始时间</label>
+        <input id="owned-start-time" type="time">
+        <label>结束时间</label>
+        <input id="owned-end-time" type="time">
+        <button id="owned-submit">提交已有</button>
+      </div>
+
+      <div class="card" style="flex:1;min-width:300px;">
+        <h3>发布需求场地</h3>
+        <label>场地ID</label>
+        <input id="wanted-court-id" type="number" placeholder="例如 1">
+        <label>日期</label>
+        <input id="wanted-start-date" type="date">
+        <label>开始时间</label>
+        <input id="wanted-start-time" type="time">
+        <label>结束时间</label>
+        <input id="wanted-end-time" type="time">
+        <button id="wanted-submit">提交需求</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card" style="flex:1;min-width:300px;">
+        <h3>搜索已有场地</h3>
+        <label>场地ID（可选）</label>
+        <input id="owned-q-court-id" type="number" placeholder="例如 1">
+        <label>日期（可选）</label>
+        <input id="owned-q-date" type="date">
+        <label>开始时间（可选）</label>
+        <input id="owned-q-start" type="time">
+        <label>结束时间（可选）</label>
+        <input id="owned-q-end" type="time">
+        <button id="owned-search">搜索已有</button>
+        <div id="owned-results" style="margin-top:8px"></div>
+      </div>
+
+      <div class="card" style="flex:1;min-width:300px;">
+        <h3>搜索需求场地</h3>
+        <label>场地ID（可选）</label>
+        <input id="wanted-q-court-id" type="number" placeholder="例如 1">
+        <label>日期（可选）</label>
+        <input id="wanted-q-date" type="date">
+        <label>开始时间（可选）</label>
+        <input id="wanted-q-start" type="time">
+        <label>结束时间（可选）</label>
+        <input id="wanted-q-end" type="time">
+        <button id="wanted-search">搜索需求</button>
+        <div id="wanted-results" style="margin-top:8px"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/frontend/assets/js/courts.js"></script>
+</body>
+</html>
+
+

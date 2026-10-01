@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ExCourt - 个人中心</title>
+    <link rel="stylesheet" href="/frontend/assets/css/styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- 主内容区域 -->
+        <div class="main-content">
+            <div class="profile-container">
+                <!-- 个人信息卡片 -->
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <div class="profile-avatar" id="userAvatar">U</div>
+                        <div class="profile-info">
+                            <div class="profile-name" id="displayName">加载中...</div>
+                            <div class="profile-username" id="username">@username</div>
+                        </div>
+                    </div>
+
+                    <!-- 个人信息管理 -->
+                    <div class="profile-section">
+                        <div class="section-title">个人信息</div>
+                        <div class="form-group">
+                            <label>用户名</label>
+                            <input type="text" id="usernameDisplay" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label>昵称</label>
+                            <input type="text" id="nicknameInput" placeholder="设置你的昵称">
+                        </div>
+                        <button onclick="updateNickname()">保存昵称</button>
+                    </div>
+                </div>
+
+                <!-- 修改密码卡片 -->
+                <div class="profile-card">
+                    <div class="profile-section">
+                        <div class="section-title">修改密码</div>
+                        <div class="form-group">
+                            <label>当前密码</label>
+                            <input type="password" id="currentPassword" placeholder="输入当前密码">
+                        </div>
+                        <div class="form-group">
+                            <label>新密码</label>
+                            <input type="password" id="newPassword" placeholder="输入新密码">
+                        </div>
+                        <div class="form-group">
+                            <label>确认新密码</label>
+                            <input type="password" id="confirmPassword" placeholder="再次输入新密码">
+                        </div>
+                        <button onclick="changePassword()">修改密码</button>
+                        <div id="passwordMessage" class="message" style="display: none;"></div>
+                    </div>
+                </div>
+
+                <!-- 退出登录 -->
+                <div class="profile-card">
+                    <button class="secondary" onclick="logout()" style="width: 100%;">退出登录</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <nav class="bottom-nav">
+            <a href="/frontend/pages/dashboard.html" class="nav-item">
+                <div class="nav-icon">🏠</div>
+                <span>主页</span>
+            </a>
+            <a href="/frontend/pages/post.html" class="nav-item">
+                <div class="nav-icon">➕</div>
+                <span>发布场地</span>
+            </a>
+            <a href="/frontend/pages/search.html" class="nav-item">
+                <div class="nav-icon">🔍</div>
+                <span>搜索场地</span>
+            </a>
+            <a href="#" class="nav-item" onclick="showMessages(event)">
+                <div class="nav-icon">💬</div>
+                <span>消息</span>
+            </a>
+            <a href="/frontend/pages/profile.html" class="nav-item active">
+                <div class="nav-icon">👤</div>
+                <span>个人中心</span>
+            </a>
+        </nav>
+    </div>
+
+    <script>
+        function showMessages(event) {
+            event.preventDefault();
+            alert('消息功能正在开发中...\n\n将用于显示：\n- 收到的交换请求\n- 交换状态通知\n- 系统消息');
+        }
+    </script>
+    <script type="module">
+        import { requireAuthOrRedirect, getAuth, clearAuth } from "/frontend/assets/js/auth.js";
+        import { API_BASE } from "/frontend/assets/js/api.js";
+
+        const username = requireAuthOrRedirect();
+        const token = getAuth()?.token;
+
+        // 初始化用户信息
+        function initUserInfo() {
+            document.getElementById("username").textContent = `@${username}`;
+            document.getElementById("usernameDisplay").value = username;
+
+            // 设置头像首字母
+            const avatar = document.getElementById("userAvatar");
+            avatar.textContent = username.charAt(0).toUpperCase();
+
+            // 从本地存储加载昵称（如果有）
+            const savedNickname = localStorage.getItem(`nickname_${username}`);
+            if (savedNickname) {
+                document.getElementById("displayName").textContent = savedNickname;
+                document.getElementById("nicknameInput").value = savedNickname;
+            } else {
+                document.getElementById("displayName").textContent = username;
+            }
+        }
+
+        // 更新昵称（本地存储，后端暂无接口）
+        window.updateNickname = function () {
+            const nickname = document.getElementById("nicknameInput").value.trim();
+            if (!nickname) {
+                alert("请输入昵称");
+                return;
+            }
+
+            // 保存到本地存储
+            localStorage.setItem(`nickname_${username}`, nickname);
+            document.getElementById("displayName").textContent = nickname;
+            alert("昵称已保存！");
+        };
+
+        // 修改密码（后端暂无接口，预留）
+        window.changePassword = function () {
+            const currentPassword = document.getElementById("currentPassword").value;
+            const newPassword = document.getElementById("newPassword").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+            const messageDiv = document.getElementById("passwordMessage");
+
+            // 验证输入
+            if (!currentPassword || !newPassword || !confirmPassword) {
+                messageDiv.textContent = "请填写所有密码字段";
+                messageDiv.className = "message error";
+                messageDiv.style.display = "block";
+                return;
+            }
+
+            if (newPassword !== confirmPassword) {
+                messageDiv.textContent = "两次输入的新密码不一致";
+                messageDiv.className = "message error";
+                messageDiv.style.display = "block";
+                return;
+            }
+
+            if (newPassword.length < 6) {
+                messageDiv.textContent = "新密码长度至少为6位";
+                messageDiv.className = "message error";
+                messageDiv.style.display = "block";
+                return;
+            }
+
+            // 提示：后端接口暂未实现
+            messageDiv.textContent = "修改密码功能暂未开放，请等待后端接口实现";
+            messageDiv.className = "message";
+            messageDiv.style.display = "block";
+
+            // 预留接口调用代码
+            /*
+            fetch(`${API_BASE}/auth/change-password`, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                "Authorization": `Bearer ${token}`
+              },
+              body: JSON.stringify({
+                current_password: currentPassword,
+                new_password: newPassword
+              })
+            })
+            .then(response => response.json())
+            .then(data => {
+              if (data.message) {
+                messageDiv.textContent = data.message;
+                messageDiv.className = "message success";
+                messageDiv.style.display = "block";
+                // 清空表单
+                document.getElementById("currentPassword").value = "";
+                document.getElementById("newPassword").value = "";
+                document.getElementById("confirmPassword").value = "";
+              }
+            })
+            .catch(error => {
+              messageDiv.textContent = "修改失败：" + error.message;
+              messageDiv.className = "message error";
+              messageDiv.style.display = "block";
+            });
+            */
+        };
+
+        // 退出登录
+        window.logout = function () {
+            if (confirm("确定要退出登录吗？")) {
+                clearAuth();
+                window.location.href = "/";
+            }
+        };
+
+        // 页面加载时初始化
+        initUserInfo();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ExCourt - 主页</title>
+  <link rel="stylesheet" href="/frontend/assets/css/styles.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <div class="main-content">
+      <div class="dual-panel">
+        <!-- 左侧：我的场地 -->
+        <div class="my-courts-panel">
+          <div class="panel-header">
+            <span>🏟️</span>
+            <span>我的场地</span>
+          </div>
+          <div class="courts-grid" id="myCourts">
+            <div class="loading">加载中...</div>
+          </div>
+
+          <div class="panel-header" style="margin-top: 24px;">
+            <span>🔍</span>
+            <span>我的需求场地</span>
+          </div>
+          <div class="courts-grid" id="myWanted">
+            <div class="loading">加载中...</div>
+          </div>
+        </div>
+
+        <!-- 右侧：场地广场 -->
+        <div class="court-plaza-panel">
+          <div class="panel-header">
+            <span>🌐</span>
+            <span>场地广场</span>
+          </div>
+          <div class="court-list" id="courtPlaza">
+            <div class="loading">加载中...</div>
+          </div>
+
+          <div class="panel-header" style="margin-top: 24px;">
+            <span>💭</span>
+            <span>需求广场</span>
+          </div>
+          <div class="court-list" id="wantedPlaza">
+            <div class="loading">加载中...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="/frontend/pages/dashboard.html" class="nav-item active">
+        <div class="nav-icon">🏠</div>
+        <span>主页</span>
+      </a>
+      <a href="/frontend/pages/post.html" class="nav-item">
+        <div class="nav-icon">➕</div>
+        <span>发布场地</span>
+      </a>
+      <a href="/frontend/pages/search.html" class="nav-item">
+        <div class="nav-icon">🔍</div>
+        <span>搜索场地</span>
+      </a>
+      <a href="#" class="nav-item" onclick="showMessages(event)">
+        <div class="nav-icon">💬</div>
+        <span>消息</span>
+      </a>
+      <a href="/frontend/pages/profile.html" class="nav-item">
+        <div class="nav-icon">👤</div>
+        <span>个人中心</span>
+      </a>
+    </nav>
+  </div>
+
+  <script type="module">
+    import { requireAuthOrRedirect, getAuth } from "/frontend/assets/js/auth.js";
+    import { API_BASE } from "/frontend/assets/js/api.js";
+
+    const username = requireAuthOrRedirect();
+    const token = getAuth()?.token;
+
+    // 加载我的场地
+    async function loadMyCourts() {
+      const container = document.getElementById("myCourts");
+      try {
+        const response = await fetch(`${API_BASE}/courts/owned/search`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
+          },
+          body: JSON.stringify({})
+        });
+
+        if (!response.ok) throw new Error("加载失败");
+
+        const data = await response.json();
+        const myCourts = data.filter(court => court.owned_user_name === username);
+
+        if (myCourts.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state" style="grid-column: 1 / -1;">
+              <div class="empty-icon">📭</div>
+              <div class="empty-text">暂无场地</div>
+              <div class="empty-hint">去发布一个场地吧</div>
+            </div>
+          `;
+          return;
+        }
+
+        container.innerHTML = myCourts.map(court => `
+          <div class="court-card">
+            <div class="court-card-header">
+              <div class="court-id">场地 ${court.court_id}</div>
+              <div class="court-status">已发布</div>
+            </div>
+            <div class="court-details">
+              <div class="court-detail-item">
+                <span class="detail-icon">📅</span>
+                <span>${court.start_date}</span>
+              </div>
+              <div class="court-detail-item">
+                <span class="detail-icon">⏰</span>
+                <span>${court.start_hour}:00 - ${court.end_hour}:00</span>
+              </div>
+            </div>
+            <div class="court-card-actions">
+              <button class="btn-delete" onclick="deleteOwnedCourt(${court.court_id}, '${court.start_date}', ${court.start_hour})">🗑️ 删除</button>
+            </div>
+          </div>
+        `).join('');
+      } catch (error) {
+        container.innerHTML = `
+          <div class="empty-state" style="grid-column: 1 / -1;">
+            <div class="empty-text">加载失败</div>
+            <div class="empty-hint">${error.message}</div>
+          </div>
+        `;
+      }
+    }
+
+    // 加载场地广场
+    async function loadCourtPlaza() {
+      const container = document.getElementById("courtPlaza");
+      try {
+        const response = await fetch(`${API_BASE}/courts/owned/search`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({})
+        });
+
+        if (!response.ok) throw new Error("加载失败");
+
+        const data = await response.json();
+
+        if (data.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state">
+              <div class="empty-icon">📭</div>
+              <div class="empty-text">暂无场地信息</div>
+            </div>
+          `;
+          return;
+        }
+
+        container.innerHTML = data.map(court => `
+          <div class="court-list-item">
+            <div class="court-list-info">
+              <div class="court-list-id">场地 ${court.court_id}</div>
+              <div class="court-list-details">
+                <div class="court-list-detail">
+                  <span class="detail-label">发布者</span>
+                  <span class="detail-value">${court.owned_user_name}</span>
+                </div>
+                <div class="court-list-detail">
+                  <span class="detail-label">日期</span>
+                  <span class="detail-value">${court.start_date}</span>
+                </div>
+                <div class="court-list-detail">
+                  <span class="detail-label">时间</span>
+                  <span class="detail-value">${court.start_hour}:00 - ${court.end_hour}:00</span>
+                </div>
+              </div>
+            </div>
+            ${court.owned_user_name !== username ? `
+              <div class="court-list-action">
+                <button onclick="requestExchange('${court.owned_user_name}', '${court.court_id}')">申请交换</button>
+              </div>
+            ` : ''}
+          </div>
+        `).join('');
+      } catch (error) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-text">加载失败</div>
+            <div class="empty-hint">${error.message}</div>
+          </div>
+        `;
+      }
+    }
+
+    // 加载我的需求场地
+    async function loadMyWanted() {
+      const container = document.getElementById("myWanted");
+      try {
+        const response = await fetch(`${API_BASE}/courts/wanted/search`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
+          },
+          body: JSON.stringify({})
+        });
+
+        if (!response.ok) throw new Error("加载失败");
+
+        const data = await response.json();
+        const myWanted = data.filter(court => court.wanted_user_name === username);
+
+        if (myWanted.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state" style="grid-column: 1 / -1;">
+              <div class="empty-icon">📭</div>
+              <div class="empty-text">暂无需求</div>
+              <div class="empty-hint">去发布一个需求吧</div>
+            </div>
+          `;
+          return;
+        }
+
+        container.innerHTML = myWanted.map(court => `
+          <div class="court-card">
+            <div class="court-card-header">
+              <div class="court-id">场地 ${court.court_id}</div>
+              <div class="court-status" style="background: #fef3c7; color: #d97706;">需求中</div>
+            </div>
+            <div class="court-details">
+              <div class="court-detail-item">
+                <span class="detail-icon">📅</span>
+                <span>${court.start_date}</span>
+              </div>
+              <div class="court-detail-item">
+                <span class="detail-icon">⏰</span>
+                <span>${court.start_hour}:00 - ${court.end_hour}:00</span>
+              </div>
+            </div>
+            <div class="court-card-actions">
+              <button class="btn-delete" onclick="deleteWantedCourt(${court.court_id}, '${court.start_date}', ${court.start_hour})">🗑️ 删除</button>
+            </div>
+          </div>
+        `).join('');
+      } catch (error) {
+        container.innerHTML = `
+          <div class="empty-state" style="grid-column: 1 / -1;">
+            <div class="empty-text">加载失败</div>
+            <div class="empty-hint">${error.message}</div>
+          </div>
+        `;
+      }
+    }
+
+    // 加载需求广场
+    async function loadWantedPlaza() {
+      const container = document.getElementById("wantedPlaza");
+      try {
+        const response = await fetch(`${API_BASE}/courts/wanted/search`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({})
+        });
+
+        if (!response.ok) throw new Error("加载失败");
+
+        const data = await response.json();
+
+        if (data.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state">
+              <div class="empty-icon">📭</div>
+              <div class="empty-text">暂无需求信息</div>
+            </div>
+          `;
+          return;
+        }
+
+        container.innerHTML = data.map(court => `
+          <div class="court-list-item">
+            <div class="court-list-info">
+              <div class="court-list-id">场地 ${court.court_id}</div>
+              <div class="court-list-details">
+                <div class="court-list-detail">
+                  <span class="detail-label">需求者</span>
+                  <span class="detail-value">${court.wanted_user_name}</span>
+                </div>
+                <div class="court-list-detail">
+                  <span class="detail-label">日期</span>
+                  <span class="detail-value">${court.start_date}</span>
+                </div>
+                <div class="court-list-detail">
+                  <span class="detail-label">时间</span>
+                  <span class="detail-value">${court.start_hour}:00 - ${court.end_hour}:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      } catch (error) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-text">加载失败</div>
+            <div class="empty-hint">${error.message}</div>
+          </div>
+        `;
+      }
+    }
+
+    // 申请交换
+    window.requestExchange = async function (postUserName, courtId) {
+      try {
+        const response = await fetch(`${API_BASE}/exchange/request`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
+          },
+          body: JSON.stringify({
+            post_user_name: postUserName,
+            court_id: courtId
+          })
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+          alert(result.message || "申请成功！");
+        } else {
+          alert(result.detail || "申请失败");
+        }
+      } catch (error) {
+        alert("请求失败：" + error.message);
+      }
+    };
+
+    // 删除已有场地
+    window.deleteOwnedCourt = async function (courtId, startDate, startHour) {
+      if (!confirm(`确定要删除场地 ${courtId} 吗？`)) return;
+
+      try {
+        const response = await fetch(`${API_BASE}/courts/owned/delete?court_id=${courtId}&start_date=${startDate}&start_hour=${startHour}`, {
+          method: "DELETE",
+          headers: { "Authorization": `Bearer ${token}` }
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+          alert(result.message || "删除成功！");
+          loadMyCourts();
+          loadCourtPlaza();
+        } else {
+          alert(result.detail || "删除失败");
+        }
+      } catch (error) {
+        alert("请求失败：" + error.message);
+      }
+    };
+
+    // 删除需求场地
+    window.deleteWantedCourt = async function (courtId, startDate, startHour) {
+      if (!confirm(`确定要删除需求场地 ${courtId} 吗？`)) return;
+
+      try {
+        const response = await fetch(`${API_BASE}/courts/wanted/delete?court_id=${courtId}&start_date=${startDate}&start_hour=${startHour}`, {
+          method: "DELETE",
+          headers: { "Authorization": `Bearer ${token}` }
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+          alert(result.message || "删除成功！");
+          loadMyWanted();
+          loadWantedPlaza();
+        } else {
+          alert(result.detail || "删除失败");
+        }
+      } catch (error) {
+        alert("请求失败：" + error.message);
+      }
+    };
+
+    window.showMessages = function (event) {
+      event.preventDefault();
+      alert('消息功能正在开发中...');
+    };
+
+    // 初始化加载
+    loadMyCourts();
+    loadMyWanted();
+    loadCourtPlaza();
+    loadWantedPlaza();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ExCourt - 搜索场地</title>
+    <link rel="stylesheet" href="/frontend/assets/css/styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="main-content">
+            <div class="form-container">
+                <div class="form-title">搜索场地</div>
+
+                <div class="tabs">
+                    <div class="tab active" onclick="switchTab('owned')">已有场地</div>
+                    <div class="tab" onclick="switchTab('wanted')">需求场地</div>
+                </div>
+
+                <!-- 搜索已有场地 -->
+                <div id="ownedPanel" class="panel">
+                    <div class="form-group">
+                        <label>场地ID（可选）</label>
+                        <input type="text" id="ownedCourtId" placeholder="留空则搜索所有场地">
+                    </div>
+
+                    <div class="form-group">
+                        <label>日期（可选）</label>
+                        <input type="date" id="ownedDate">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>开始时间（可选）</label>
+                            <select id="ownedStartHour">
+                                <option value="">不限</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>结束时间（可选）</label>
+                            <select id="ownedEndHour">
+                                <option value="">不限</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button onclick="searchOwnedCourts()">搜索</button>
+
+                    <div class="search-results">
+                        <div class="result-count" id="ownedResultCount" style="display: none;"></div>
+                        <div class="court-list" id="ownedResults"></div>
+                    </div>
+                </div>
+
+                <!-- 搜索需求场地 -->
+                <div id="wantedPanel" class="panel hidden">
+                    <div class="form-group">
+                        <label>场地ID（可选）</label>
+                        <input type="text" id="wantedCourtId" placeholder="留空则搜索所有场地">
+                    </div>
+
+                    <div class="form-group">
+                        <label>日期（可选）</label>
+                        <input type="date" id="wantedDate">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>开始时间（可选）</label>
+                            <select id="wantedStartHour">
+                                <option value="">不限</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>结束时间（可选）</label>
+                            <select id="wantedEndHour">
+                                <option value="">不限</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button onclick="searchWantedCourts()">搜索</button>
+
+                    <div class="search-results">
+                        <div class="result-count" id="wantedResultCount" style="display: none;"></div>
+                        <div class="court-list" id="wantedResults"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="bottom-nav">
+            <a href="/frontend/pages/dashboard.html" class="nav-item">
+                <div class="nav-icon">🏠</div>
+                <span>主页</span>
+            </a>
+            <a href="/frontend/pages/post.html" class="nav-item">
+                <div class="nav-icon">➕</div>
+                <span>发布场地</span>
+            </a>
+            <a href="/frontend/pages/search.html" class="nav-item active">
+                <div class="nav-icon">🔍</div>
+                <span>搜索场地</span>
+            </a>
+            <a href="#" class="nav-item" onclick="showMessages(event)">
+                <div class="nav-icon">💬</div>
+                <span>消息</span>
+            </a>
+            <a href="/frontend/pages/profile.html" class="nav-item">
+                <div class="nav-icon">👤</div>
+                <span>个人中心</span>
+            </a>
+        </nav>
+    </div>
+
+    <script>
+        // 生成整点时间选项
+        function populateHourSelects() {
+            const selects = ['ownedStartHour', 'ownedEndHour', 'wantedStartHour', 'wantedEndHour'];
+            selects.forEach(id => {
+                const select = document.getElementById(id);
+                // 保留第一个"不限"选项
+                for (let h = 6; h <= 22; h++) {
+                    const option = document.createElement('option');
+                    option.value = h;
+                    option.textContent = `${h}:00`;
+                    select.appendChild(option);
+                }
+            });
+        }
+        populateHourSelects();
+
+        function showMessages(event) {
+            event.preventDefault();
+            alert('消息功能正在开发中...');
+        }
+    </script>
+    <script type="module">
+        import { requireAuthOrRedirect, getAuth } from "/frontend/assets/js/auth.js";
+        import { API_BASE } from "/frontend/assets/js/api.js";
+
+        const username = requireAuthOrRedirect();
+        const token = getAuth()?.token;
+
+        window.switchTab = function (type) {
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            if (type === 'owned') {
+                tabs[0].classList.add('active');
+                document.getElementById('ownedPanel').classList.remove('hidden');
+                document.getElementById('wantedPanel').classList.add('hidden');
+            } else {
+                tabs[1].classList.add('active');
+                document.getElementById('ownedPanel').classList.add('hidden');
+                document.getElementById('wantedPanel').classList.remove('hidden');
+            }
+        };
+
+        window.searchOwnedCourts = async function () {
+            const courtId = document.getElementById('ownedCourtId').value.trim();
+            const date = document.getElementById('ownedDate').value;
+            const startHour = document.getElementById('ownedStartHour').value;
+            const endHour = document.getElementById('ownedEndHour').value;
+
+            const resultsContainer = document.getElementById('ownedResults');
+            const countContainer = document.getElementById('ownedResultCount');
+
+            resultsContainer.innerHTML = '<div class="loading">搜索中...</div>';
+            countContainer.style.display = 'none';
+
+            const searchParams = {};
+            if (courtId) searchParams.court_id = parseInt(courtId);
+            if (date) searchParams.start_date = date;
+            if (startHour) searchParams.start_hour = parseInt(startHour);
+            if (endHour) searchParams.end_hour = parseInt(endHour);
+
+            try {
+                const response = await fetch(`${API_BASE}/courts/owned/search`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(searchParams)
+                });
+
+                if (!response.ok) throw new Error('搜索失败');
+
+                const data = await response.json();
+
+                if (data.length === 0) {
+                    resultsContainer.innerHTML = `
+                        <div class="empty-state">
+                            <div class="empty-icon">🔍</div>
+                            <div class="empty-text">未找到匹配的场地</div>
+                        </div>
+                    `;
+                    return;
+                }
+
+                countContainer.textContent = `找到 ${data.length} 个结果`;
+                countContainer.style.display = 'block';
+
+                resultsContainer.innerHTML = data.map(court => `
+                    <div class="court-list-item">
+                        <div class="court-list-info">
+                            <div class="court-list-id">场地 ${court.court_id}</div>
+                            <div class="court-list-details">
+                                <div class="court-list-detail">
+                                    <span class="detail-label">发布者</span>
+                                    <span class="detail-value">${court.owned_user_name}</span>
+                                </div>
+                                <div class="court-list-detail">
+                                    <span class="detail-label">日期</span>
+                                    <span class="detail-value">${court.start_date}</span>
+                                </div>
+                                <div class="court-list-detail">
+                                    <span class="detail-label">时间</span>
+                                    <span class="detail-value">${court.start_hour}:00 - ${court.end_hour}:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            } catch (error) {
+                resultsContainer.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-text">搜索失败: ${error.message}</div>
+                    </div>
+                `;
+            }
+        };
+
+        window.searchWantedCourts = async function () {
+            const courtId = document.getElementById('wantedCourtId').value.trim();
+            const date = document.getElementById('wantedDate').value;
+            const startHour = document.getElementById('wantedStartHour').value;
+            const endHour = document.getElementById('wantedEndHour').value;
+
+            const resultsContainer = document.getElementById('wantedResults');
+            const countContainer = document.getElementById('wantedResultCount');
+
+            resultsContainer.innerHTML = '<div class="loading">搜索中...</div>';
+            countContainer.style.display = 'none';
+
+            const searchParams = {};
+            if (courtId) searchParams.court_id = parseInt(courtId);
+            if (date) searchParams.start_date = date;
+            if (startHour) searchParams.start_hour = parseInt(startHour);
+            if (endHour) searchParams.end_hour = parseInt(endHour);
+
+            try {
+                const response = await fetch(`${API_BASE}/courts/wanted/search`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(searchParams)
+                });
+
+                if (!response.ok) throw new Error('搜索失败');
+
+                const data = await response.json();
+
+                if (data.length === 0) {
+                    resultsContainer.innerHTML = `
+                        <div class="empty-state">
+                            <div class="empty-icon">🔍</div>
+                            <div class="empty-text">未找到匹配的需求</div>
+                        </div>
+                    `;
+                    return;
+                }
+
+                countContainer.textContent = `找到 ${data.length} 个结果`;
+                countContainer.style.display = 'block';
+
+                resultsContainer.innerHTML = data.map(court => `
+                    <div class="court-list-item">
+                        <div class="court-list-info">
+                            <div class="court-list-id">场地 ${court.court_id}</div>
+                            <div class="court-list-details">
+                                <div class="court-list-detail">
+                                    <span class="detail-label">需求者</span>
+                                    <span class="detail-value">${court.wanted_user_name}</span>
+                                </div>
+                                <div class="court-list-detail">
+                                    <span class="detail-label">日期</span>
+                                    <span class="detail-value">${court.start_date}</span>
+                                </div>
+                                <div class="court-list-detail">
+                                    <span class="detail-label">时间</span>
+                                    <span class="detail-value">${court.start_hour}:00 - ${court.end_hour}:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            } catch (error) {
+                resultsContainer.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-text">搜索失败: ${error.message}</div>
+                    </div>
+                `;
+            }
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ExCourt - 主页</title>
+  <link rel="stylesheet" href="/frontend/assets/css/styles.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <div class="main-content">
+      <div class="dual-panel">
+        <!-- 左侧：我的场地 -->
+        <div class="my-courts-panel">
+          <!-- 双向匹配提示区域 -->
+          <div id="mutualMatchBanner" class="match-banner" style="display: none;">
+            <div class="match-banner-content">
+              <span class="match-icon">✨</span>
+              <span class="match-text">发现 <strong id="matchCount">0</strong> 个完美匹配！</span>
+              <button class="match-btn" onclick="showMutualMatches()">查看详情</button>
+            </div>
+          </div>
+
+          <div class="section-box">
+            <div class="panel-header">
+              <span>🏟️</span>
+              <span>我的场地</span>
+            </div>
+            <div class="courts-grid scrollable-section" id="myCourts">
+              <div class="loading">加载中...</div>
+            </div>
+          </div>
+
+          <div class="section-box">
+            <div class="panel-header">
+              <span>🔍</span>
+              <span>我的需求场地</span>
+            </div>
+            <div class="courts-grid scrollable-section" id="myWanted">
+              <div class="loading">加载中...</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右侧：场地广场 -->
+        <div class="court-plaza-panel">
+          <div class="section-box">
+            <div class="panel-header">
+              <span>🌐</span>
+              <span>场地广场</span>
+            </div>
+            <div class="court-list scrollable-section" id="courtPlaza">
+              <div class="loading">加载中...</div>
+            </div>
+          </div>
+
+          <div class="section-box">
+            <div class="panel-header">
+              <span>💭</span>
+              <span>需求广场</span>
+            </div>
+            <div class="court-list scrollable-section" id="wantedPlaza">
+              <div class="loading">加载中...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="/frontend/pages/dashboard.html" class="nav-item active">
+        <div class="nav-icon">🏠</div>
+        <span>主页</span>
+      </a>
+      <a href="/frontend/pages/post.html" class="nav-item">
+        <div class="nav-icon">➕</div>
+        <span>发布场地</span>
+      </a>
+      <a href="/frontend/pages/search.html" class="nav-item">
+        <div class="nav-icon">🔍</div>
+        <span>搜索场地</span>
+      </a>
+      <a href="/frontend/pages/messages.html" class="nav-item">
+        <div class="nav-icon">💬</div>
+        <span>消息</span>
+      </a>
+      <a href="/frontend/pages/profile.html" class="nav-item">
+        <div class="nav-icon">👤</div>
+        <span>个人中心</span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- 积分交换模态框 -->
+  <div id="exchangeModal" class="modal-overlay">
+      <div class="modal-container">
+          <div class="modal-header">
+              <div class="modal-title">积分交换</div>
+          </div>
+          <div class="modal-body">
+              <div class="modal-input-group">
+                  <label class="modal-input-label">请输入您愿意支付的积分</label>
+                  <input type="number" id="exchangePointsInput" class="modal-input" placeholder="例如：10" min="1">
+                  <div class="modal-hint">积分必须大于 0</div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button class="secondary" onclick="closeExchangeModal()">取消</button>
+              <button onclick="confirmExchange()">确认交换</button>
+          </div>
+      </div>
+  </div>
+
+  <!-- 场地选择模态框 -->
+  <div id="courtSelectionModal" class="modal-overlay">
+      <div class="modal-container">
+          <div class="modal-header">
+              <div class="modal-title">选择您的场地进行交换</div>
+          </div>
+          <div class="modal-body">
+              <div id="myCourtOptions" class="court-options-list">
+                  <div class="loading">加载中...</div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button class="secondary" onclick="closeCourtSelectionModal()">取消</button>
+          </div>
+      </div>
+  </div>
+
+  <!-- 双向匹配详情模态框 -->
+  <div id="mutualMatchModal" class="modal-overlay">
+      <div class="modal-container" style="max-width: 500px;">
+          <div class="modal-header">
+              <div class="modal-title">✨ 发现完美匹配</div>
+          </div>
+          <div class="modal-body">
+              <div id="mutualMatchList" class="mutual-match-list">
+                  <div class="loading">加载中...</div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button class="secondary" onclick="closeMutualMatchModal()">关闭</button>
+          </div>
+      </div>
+  </div>
+
+  <script type="module">
+    import { requireAuthOrRedirect, getAuth } from "/frontend/assets/js/auth.js";
+    import { API_BASE, postJSON } from "/frontend/assets/js/api.js";
+    import { showAlert, showSuccess, showError, showConfirm, showDangerConfirm } from "/frontend/assets/js/dialog.js";
+
+    const username = requireAuthOrRedirect();
+    const token = getAuth()?.token;
+
+    // 加载我的场地（包括待审核）
+    async function loadMyCourts() {
+      const container = document.getElementById("myCourts");
+      try {
+        // 并行加载已审核通过的场地和待审核的场地
+        // 注意：这里 approvedRes 改为调用 /courts/owned/my
+        const [approvedRes, pendingRes] = await Promise.all([
+          fetch(`${API_BASE}/courts/owned/my`, {
+            method: "GET",
+            headers: { "Authorization": `Bearer ${token}` }
+          }),
+          fetch(`${API_BASE}/courts/owned/pending`, {
+            headers: { "Authorization": `Bearer ${token}` }
+          })
+        ]);
+
+        if (!approvedRes.ok) throw new Error("加载已发布场地失败");
+        
+        const myCourts = await approvedRes.json();
+        
+        let pendingCourts = [];
+        if (pendingRes.ok) {
+          pendingCourts = await pendingRes.json();
+        }
+
+        if (myCourts.length === 0 && pendingCourts.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state" style="grid-column: 1 / -1;">
+              <div class="empty-icon">📭</div>
+              <div class="empty-text">暂无场地</div>
+              <div class="empty-hint">去发布一个场地吧</div>
+            </div>
+          `;
+          return;
+        }
+
+        // 渲染待审核场地
+        const pendingHtml = pendingCourts.map(court => `
+          <div class="court-card">
+            <div class="court-card-header">
+              <div class="court-id">场地 ${court.court_id}</div>
+              <div class="court-status" style="background: #fef3c7; color: #d97706;">待审核</div>
+            </div>
+            <div class="court-details">
+              <div class="court-detail-item">
+                <span class="detail-icon">📅</span>
+                <span>${court.start_date}</span>
+              </div>
+              <div class="court-detail-item">
+                <span class="detail-icon">⏰</span>
+                <span>${court.start_hour}:00 - ${court.end_hour}:00</span>
+              </div>
+            </div>
+          </div>
+        `).join('');
+
+        // 渲染已发布场地
+        const approvedHtml = myCourts.map(court => {
+          // 判断状态和样式
+          let statusStyle, statusText;
+          if (court.is_expired) {
+            statusStyle = 'background: #fecaca; color: #dc2626;';
+            statusText = '已失效';
+          } else if (court.is_public) {
+            statusStyle = 'background: #d1fae5; color: #059669;';
+            statusText = '已上架';
+          } else {
+            statusStyle = 'background: #f3f4f6; color: #6b7280;';
+            statusText = '未上架';
+          }
+          
+          return `
+          <div class="court-card">
+            <div class="court-card-header">
+              <div class="court-id">场地 ${court.court_id}</div>
+              <div class="court-status" style="${statusStyle}">${statusText}</div>
+            </div>
+            <div class="court-details">
+              <div class="court-detail-item">
+                <span class="detail-icon">📅</span>
+                <span>${court.start_date}</span>
+              </div>
+              <div class="court-detail-item">
+                <span class="detail-icon">⏰</span>
+                <span>${court.start_hour}:00 - ${court.end_hour}:00</span>
+              </div>
+              <div class="court-detail-item">
+                <span class="detail-icon">🔑</span>
+                <span style="font-family: monospace; color: #6366f1;">${court.serial_number || '无'}</span>
+              </div>
+            </div>
+            <div class="court-card-actions" style="display: flex; gap: 8px; margin-top: 12px;">
+              ${court.is_expired ? '' : `
+              <button 
+                class="btn-action" 
+                style="flex: 1; padding: 6px; border-radius: 6px; border: 1px solid #ddd; background: white; cursor: pointer; color: ${court.is_public ? '#666' : '#4a90e2'}; font-weight: 600;"
+                onclick="togglePublic(${court.court_id}, '${court.start_date}', ${court.start_hour}, ${!court.is_public})"
+              >
+                ${court.is_public ? '⬇️ 下架' : '⬆️ 发布'}
+              </button>
+              `}
+              <button 
+                class="btn-delete" 
+                style="flex: 1; padding: 6px; border-radius: 6px; border: none; background: #fee2e2; color: #dc2626; cursor: pointer;"
+                onclick="deleteOwnedCourt(${court.court_id}, '${court.start_date}', ${court.start_hour})"
+              >
+                🗑️ 删除
+              </button>
+            </div>
+          </div>
+        `}).join('');
+
+        container.innerHTML = pendingHtml + approvedHtml;
+      } catch (error) {
+        container.innerHTML = `
+          <div class="empty-state" style="grid-column: 1 / -1;">
+            <div class="empty-text">加载失败</div>
+            <div class="empty-hint">${error.message}</div>
+          </div>
+        `;
+      }
+    }
+
+    // 加载场地广场
+    async function loadCourtPlaza() {
+      const container = document.getElementById("courtPlaza");
+      try {
+        const response = await fetch(`${API_BASE}/courts/owned/search`, {
+          method: "POST",
+          headers: { 
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
+          },
+          body: JSON.stringify({})
+        });
+
+        if (!response.ok) throw new Error("加载失败");
+
+        const data = await response.json();
+
+        if (data.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state">
+              <div class="empty-icon">📭</div>
+              <div class="empty-text">暂无场地信息</div>
+            </div>
+          `;
+          return;
+        }
+
+        container.innerHTML = data.map(court => {
+          // 安全转义
+          const safeUser = court.owned_user_name.replace(/'/g, "\\'");
+          
+          return `
+          <div class="court-list-item">
+            <div class="court-list-info">
+              <div class="court-list-id">场地 ${court.court_id}</div>
+              <div class="court-list-details">
+                <div class="court-list-detail">
+                  <span class="detail-label">发布者</span>
+                  <span class="detail-value">${court.owned_user_name}</span>
+                </div>
+                <div class="court-list-detail">
+                  <span class="detail-label">日期</span>
+                  <span class="detail-value">${court.start_date}</span>
+                </div>
+                <div class="court-list-detail">
+                  <span class="detail-label">时间</span>
+                  <span class="detail-value">${court.start_hour}:00 - ${court.end_hour}:00</span>
+                </div>
+              </div>
+            </div>
+            ${court.owned_user_name !== username ? `
+              <div class="court-list-action" style="display:flex; gap:8px; flex-wrap:wrap;">
+                <button onclick="window.requestExchange('${safeUser}', ${court.court_id}, '${court.start_date}', ${court.start_hour}, ${court.end_hour})">积分交换</button>
+                <button onclick="window.directExchange('${safeUser}', ${court.court_id}, '${court.start_date}', ${court.start_hour})" style="background:#9b59b6;">场地交换</button>
+                <button onclick="goChat('${safeUser}')" style="background:#2ecc71;">私聊</button>
+              </div>
+            ` : ''}
+          </div>
+        `}).join('');
+      } catch (error) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-text">加载失败</div>
+            <div class="empty-hint">${error.message}</div>
+          </div>
+        `;
+      }
+    }
+
+    // 加载我的需求场地
+    async function loadMyWanted() {
+      const container = document.getElementById("myWanted");
+      try {
+        const response = await fetch(`${API_BASE}/courts/wanted/search`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
+          },
+          body: JSON.stringify({})
+        });
+
+        if (!response.ok) throw new Error("加载失败");
+
+        const data = await response.json();
+        const myWanted = data.filter(court => court.wanted_user_name === username);
+
+        if (myWanted.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state" style="grid-column: 1 / -1;">
+              <div class="empty-icon">📭</div>
+              <div class="empty-text">暂无需求</div>
+              <div class="empty-hint">去发布一个需求吧</div>
+            </div>
+          `;
+          return;
+        }
+
+        container.innerHTML = myWanted.map(court => `
+          <div class="court-card">
+            <div class="court-card-header">
+              <div class="court-id">场地 ${court.court_id}</div>
+              <div class="court-status" style="background: #fef3c7; color: #d97706;">需求中</div>
+            </div>
+            <div class="court-details">
+              <div class="court-detail-item">
+                <span class="detail-icon">📅</span>
+                <span>${court.start_date}</span>
+              </div>
+              <div class="court-detail-item">
+                <span class="detail-icon">⏰</span>
+                <span>${court.start_hour}:00 - ${court.end_hour}:00</span>
+              </div>
+            </div>
+            <div class="court-card-actions">
+              <button class="btn-delete" onclick="deleteWantedCourt(${court.court_id}, '${court.start_date}', ${court.start_hour})">🗑️ 删除</button>
+            </div>
+          </div>
+        `).join('');
+      } catch (error) {
+        container.innerHTML = `
+          <div class="empty-state" style="grid-column: 1 / -1;">
+            <div class="empty-text">加载失败</div>
+            <div class="empty-hint">${error.message}</div>
+          </div>
+        `;
+      }
+    }
+
+    // 加载需求广场
+    async function loadWantedPlaza() {
+      const container = document.getElementById("wantedPlaza");
+      try {
+        const response = await fetch(`${API_BASE}/courts/wanted/search`, {
+          method: "POST",
+          headers: { 
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}` // <--- 建议也加上这一行
+          }, 
+          body: JSON.stringify({})
+        });
+
+        if (!response.ok) throw new Error("加载失败");
+
+        const data = await response.json();
+
+        if (data.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state">
+              <div class="empty-icon">📭</div>
+              <div class="empty-text">暂无需求信息</div>
+            </div>
+          `;
+          return;
+        }
+
+        container.innerHTML = data.map(court => `
+          <div class="court-list-item">
+            <div class="court-list-info">
+              <div class="court-list-id">场地 ${court.court_id}</div>
+              <div class="court-list-details">
+                <div class="court-list-detail">
+                  <span class="detail-label">需求者</span>
+                  <span class="detail-value">${court.wanted_user_name}</span>
+                </div>
+                <div class="court-list-detail">
+                  <span class="detail-label">日期</span>
+                  <span class="detail-value">${court.start_date}</span>
+                </div>
+                <div class="court-list-detail">
+                  <span class="detail-label">时间</span>
+                  <span class="detail-value">${court.start_hour}:00 - ${court.end_hour}:00</span>
+                </div>
+              </div>
+            </div>
+            ${court.wanted_user_name !== username ? `
+              <div class="court-list-action">
+                <button onclick="goChat('${court.wanted_user_name}')" style="background:#9b59b6;">私聊</button>
+              </div>
+            ` : ''}
+          </div>
+        `).join('');
+      } catch (error) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-text">加载失败</div>
+            <div class="empty-hint">${error.message}</div>
+          </div>
+        `;
+      }
+    }
+
+    // 申请交换
+    let currentExchangeParams = null;
+
+    window.requestExchange = function (postUserName, courtId, date, startHour, endHour) {
+        currentExchangeParams = { postUserName, courtId, date, startHour, endHour };
+        document.getElementById('exchangePointsInput').value = '';
+        document.getElementById('exchangeModal').classList.add('open');
+        document.getElementById('exchangePointsInput').focus();
+    };
+
+    window.closeExchangeModal = function() {
+        document.getElementById('exchangeModal').classList.remove('open');
+        currentExchangeParams = null;
+    };
+
+    window.confirmExchange = async function() {
+        const pointsStr = document.getElementById('exchangePointsInput').value;
+        const points = parseInt(pointsStr);
+        
+        if (isNaN(points) || points <= 0) {
+            await showError("请输入有效的积分（必须大于0）");
+            return;
+        }
+        
+        if (!currentExchangeParams) return;
+        
+        const { postUserName, courtId, date, startHour, endHour } = currentExchangeParams;
+        
+        try {
+            const response = await fetch(`${API_BASE}/exchange/request`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${token}`
+                },
+                body: JSON.stringify({
+                    post_user_name: postUserName,
+                    court_id: courtId,
+                    date: date,
+                    start_hour: startHour,
+                    end_hour: endHour,
+                    points: points
+                })
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                await showSuccess(result.message || "申请成功！");
+                closeExchangeModal();
+            } else {
+                const errMsg = typeof result.detail === 'string' ? result.detail : JSON.stringify(result.detail) || "申请失败";
+                await showError(errMsg);
+            }
+        } catch (error) {
+            await showError("请求失败：" + error.message);
+        }
+    };
+
+    // 直接交换（用我的场地换对方的场地）
+    let directExchangeTarget = null;
+
+    window.directExchange = async function(targetUser, theirCourtId, theirDate, theirStartHour) {
+        directExchangeTarget = { targetUser, theirCourtId, theirDate, theirStartHour };
+        
+        const modal = document.getElementById('courtSelectionModal');
+        const listContainer = document.getElementById('myCourtOptions');
+        
+        modal.classList.add('open');
+        listContainer.innerHTML = '<div class="loading">正在寻找匹配场地...</div>';
+        
+        try {
+            const response = await fetch(`${API_BASE}/exchange/my-options?target_user=${targetUser}`, {
+                headers: { "Authorization": `Bearer ${token}` }
+            });
+            
+            if (!response.ok) throw new Error("获取场地列表失败");
+            
+            const options = await response.json();
+            
+            if (options.length === 0) {
+                listContainer.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-text">您没有可用的场地</div>
+                        <div class="empty-hint">请先发布场地</div>
+                    </div>
+                `;
+                return;
+            }
+            
+            listContainer.innerHTML = options.map(opt => `
+                <div class="court-option-item ${opt.is_match ? 'match-highlight' : ''}" 
+                     onclick="confirmDirectExchange(${opt.court_id}, '${opt.date}', ${opt.start_hour})">
+                    <div class="court-option-info">
+                        <div class="court-id">场地 ${opt.court_id}</div>
+                        <div class="court-time">
+                            <span>${opt.date}</span>
+                            <span>${opt.start_hour}:00 - ${opt.end_hour}:00</span>
+                        </div>
+                    </div>
+                    ${opt.is_match ? '<div class="match-badge">✨ 完美匹配</div>' : ''}
+                </div>
+            `).join('');
+            
+        } catch (error) {
+            listContainer.innerHTML = `<div class="error-message">${error.message}</div>`;
+        }
+    };
+
+    window.closeCourtSelectionModal = function() {
+        document.getElementById('courtSelectionModal').classList.remove('open');
+        directExchangeTarget = null;
+    };
+
+    window.confirmDirectExchange = async function(myCourtId, myDate, myStartHour) {
+        const confirmed = await showConfirm(
+            `确定使用 场地${myCourtId} (${myDate} ${myStartHour}:00) 进行交换吗？`,
+            { title: '确认交换', confirmText: '确定交换', type: 'info' }
+        );
+        if (!confirmed) return;
+        
+        try {
+            const response = await fetch(`${API_BASE}/exchange/direct`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify({
+                    target_user: directExchangeTarget.targetUser,
+                    my_court_id: myCourtId,
+                    my_date: myDate,
+                    my_start_hour: myStartHour,
+                    their_court_id: directExchangeTarget.theirCourtId,
+                    their_date: directExchangeTarget.theirDate,
+                    their_start_hour: directExchangeTarget.theirStartHour
+                })
+            });
+            
+            const result = await response.json();
+            if (response.ok) {
+                await showSuccess(result.message || '交换成功！');
+                closeCourtSelectionModal();
+                loadMyCourts();
+                loadCourtPlaza();
+            } else {
+                await showError(typeof result.detail === 'string' ? result.detail : JSON.stringify(result.detail));
+            }
+        } catch (e) {
+            await showError('请求失败：' + e.message);
+        }
+    };
+
+    // 切换上下架状态
+    window.togglePublic = async function(id, date, hour, isPublic) {
+      try {
+        await postJSON("/courts/owned/toggle-public", {
+            court_id: id,
+            start_date: date,
+            start_hour: hour,
+            is_public: isPublic
+        }, token);
+        // 刷新列表
+        loadMyCourts();
+        loadCourtPlaza();
+      } catch(e) { 
+        await showError(e.message); 
+      }
+    };
+
+    // 删除已有场地
+    window.deleteOwnedCourt = async function (courtId, startDate, startHour) {
+      const confirmed = await showDangerConfirm(
+        `确定要删除场地 ${courtId} 吗？\n此操作不可撤销`,
+        { title: '删除场地', confirmText: '确定删除' }
+      );
+      if (!confirmed) return;
+
+      try {
+        const response = await fetch(`${API_BASE}/courts/owned/delete?court_id=${courtId}&start_date=${startDate}&start_hour=${startHour}`, {
+          method: "DELETE",
+          headers: { "Authorization": `Bearer ${token}` }
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+          await showSuccess(result.message || "删除成功！");
+          loadMyCourts();
+          loadCourtPlaza();
+        } else {
+          await showError(result.detail || "删除失败");
+        }
+      } catch (error) {
+        await showError("请求失败：" + error.message);
+      }
+    };
+
+    // 删除需求场地
+    window.deleteWantedCourt = async function (courtId, startDate, startHour) {
+      const confirmed = await showDangerConfirm(
+        `确定要删除需求场地 ${courtId} 吗？`,
+        { title: '删除需求', confirmText: '确定删除' }
+      );
+      if (!confirmed) return;
+
+      try {
+        const response = await fetch(`${API_BASE}/courts/wanted/delete?court_id=${courtId}&start_date=${startDate}&start_hour=${startHour}`, {
+          method: "DELETE",
+          headers: { "Authorization": `Bearer ${token}` }
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+          await showSuccess(result.message || "删除成功！");
+          loadMyWanted();
+          loadWantedPlaza();
+        } else {
+          await showError(result.detail || "删除失败");
+        }
+      } catch (error) {
+        await showError("请求失败：" + error.message);
+      }
+    };
+
+    // 跳转到私聊
+    window.goChat = function(targetUser) {
+      // 存储目标用户到 sessionStorage，消息页面会读取并打开聊天
+      sessionStorage.setItem('openChatWith', targetUser);
+      window.location.href = '/frontend/pages/messages.html';
+    };
+
+    // 初始化加载
+    loadMyCourts();
+    loadMyWanted();
+    loadCourtPlaza();
+    loadWantedPlaza();
+    loadMutualMatches();
+
+    // 加载双向匹配
+    let mutualMatchData = [];
+    
+    async function loadMutualMatches() {
+      try {
+        const response = await fetch(`${API_BASE}/courts/match/mutual`, {
+          headers: { "Authorization": `Bearer ${token}` }
+        });
+        
+        if (!response.ok) return;
+        
+        const data = await response.json();
+        mutualMatchData = data.matches || [];
+        
+        const banner = document.getElementById('mutualMatchBanner');
+        const countEl = document.getElementById('matchCount');
+        
+        if (mutualMatchData.length > 0) {
+          countEl.textContent = mutualMatchData.length;
+          banner.style.display = 'block';
+        } else {
+          banner.style.display = 'none';
+        }
+      } catch (e) {
+        console.error('加载双向匹配失败:', e);
+      }
+    }
+
+    window.showMutualMatches = function() {
+      const modal = document.getElementById('mutualMatchModal');
+      const listContainer = document.getElementById('mutualMatchList');
+      
+      modal.classList.add('open');
+      
+      if (mutualMatchData.length === 0) {
+        listContainer.innerHTML = '<div class="empty-state"><div class="empty-text">暂无匹配</div></div>';
+        return;
+      }
+      
+      listContainer.innerHTML = mutualMatchData.map(match => `
+        <div class="mutual-match-item">
+          <div class="match-user">
+            <span class="user-icon">👤</span>
+            <span class="user-name">${match.target_user}</span>
+          </div>
+          <div class="match-exchange">
+            <div class="match-court your-court">
+              <div class="court-label">你有</div>
+              <div class="court-info">场地 ${match.i_have.court_id}</div>
+              <div class="court-time">${match.i_have.date} ${match.i_have.start_hour}:00</div>
+            </div>
+            <div class="exchange-arrow">⇄</div>
+            <div class="match-court their-court">
+              <div class="court-label">TA有</div>
+              <div class="court-info">场地 ${match.i_want.court_id}</div>
+              <div class="court-time">${match.i_want.date} ${match.i_want.start_hour}:00</div>
+            </div>
+          </div>
+          <div class="match-actions">
+            <button onclick="goChat('${match.target_user}')" style="background:#2ecc71;">💬 私聊协商</button>
+            <button onclick="quickDirectExchange('${match.target_user}', ${match.i_have.court_id}, '${match.i_have.date}', ${match.i_have.start_hour}, ${match.i_want.court_id}, '${match.i_want.date}', ${match.i_want.start_hour})" style="background:#9b59b6;">🔄 直接交换</button>
+          </div>
+        </div>
+      `).join('');
+    };
+
+    window.closeMutualMatchModal = function() {
+      document.getElementById('mutualMatchModal').classList.remove('open');
+    };
+
+    // 快速直接交换（从双向匹配）
+    window.quickDirectExchange = async function(targetUser, myCourtId, myDate, myStartHour, theirCourtId, theirDate, theirStartHour) {
+      const confirmed = await showConfirm(
+        `确定要用 场地${myCourtId} 交换 ${targetUser} 的 场地${theirCourtId} 吗？`,
+        { title: '确认交换', confirmText: '确定交换', type: 'info' }
+      );
+      if (!confirmed) return;
+      
+      try {
+        const response = await fetch(`${API_BASE}/exchange/direct`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`
+          },
+          body: JSON.stringify({
+            target_user: targetUser,
+            my_court_id: myCourtId,
+            my_date: myDate,
+            my_start_hour: myStartHour,
+            their_court_id: theirCourtId,
+            their_date: theirDate,
+            their_start_hour: theirStartHour
+          })
+        });
+        
+        const result = await response.json();
+        if (response.ok) {
+          await showSuccess(result.message || '交换成功！');
+          closeMutualMatchModal();
+          loadMyCourts();
+          loadCourtPlaza();
+          loadMutualMatches();
+        } else {
+          await showError(typeof result.detail === 'string' ? result.detail : JSON.stringify(result.detail));
+        }
+      } catch (e) {
+        await showError('请求失败：' + e.message);
+      }
+    };
+  </script>
+</body>
+
+</html>
