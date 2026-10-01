@@ -1,0 +1,388 @@
+.wemeet_poupe{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 66;
+}
+.wemeet_p_top{
+    position: relative;
+}
+.w_p_content{
+    position: absolute;
+    top: 227px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 20px 24px 24px 24px;
+    width: 400px;
+    height: 237px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid rgba(0.15, 0.18, 0.24, 0.15);
+    background: rgba(255,255,255,1);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16);
+}
+.wemeet_title{
+    text-align: left;
+    height: 25px;
+    color: #212930;
+    font-size: 18px; 
+}
+.wemeet_delect_image{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: -2px;
+    right: 0;
+    cursor:pointer;
+}
+
+.wemeet_p_middle{
+    width: 352px;
+    height: 91px;
+    margin-top: 24px;
+    border-radius: 8px;
+    background: rgba(246,248,251,1);
+    padding: 12px 13px 12px 15px;
+    box-sizing: border-box;
+    display: flex;
+}
+.wemeet_m_logo{
+    width: 64px;
+    height: 64px;
+    float: left;
+}
+.wemeet_right_textContent{
+    margin-left: 17px;
+
+}
+.wemeet_r_black_text{
+    width: 64px;
+    height: 22px;
+    color: #212930;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+}
+.wemeet_r_light_text{
+    height: 40px;
+    color: #6C7D8F;
+    font-size: 13px;
+    text-align: left;
+}
+.wemeet_p_bottom{
+    margin-top:24px;
+    float: right;
+}
+.w_p_b_cancel{
+    /*width: 68px;*/
+    height: 30px;
+    padding: 4px 20px;
+    border-radius: 4px;
+    border: 1px solid #E9EDF2;
+    color: rgba(33,41,48,1);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "PingFang SC";
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    cursor:pointer;
+}
+.w_p_b_confirm{
+    /*width: 68px;*/
+    height: 30px;
+    padding: 4px 20px;
+    border-radius: 4px;
+    background: rgba(6,123,239,1);
+    color: rgba(255,255,255,1);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "PingFang SC";
+    cursor:pointer;
+}
+.wemeet_left_alert{
+    display: none;
+    position: absolute;
+    top: 105px;
+    right: 10px;
+    width: 400px;
+    height: 228px;
+    border-radius: 4px;
+    border: 1px solid #E9EDF2;
+    background: rgba(255,255,255,1);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.16);
+    padding: 20px 24px 24px 24px;
+    box-sizing: border-box;
+    z-index: 66;
+}
+.wemeet_alert_top_content{
+    position: relative;
+}
+.wemeet_alert_title{
+    width: 112px;
+    height: 25px;
+    color: #212930;
+    font-size: 18px;
+}
+.wemeet_alert_delect_image{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    cursor:pointer;
+}
+.wemeet_left_alert_middle_content{
+
+}
+.wemeet_alert_middle_text_one{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 12px 0;
+}
+.wemeet_alert_middle_text_two{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.wemeet_alert_middle_text_three{
+    display: flex;
+    align-items: center;
+    margin-top:4px;
+}
+.wemeet_left_alert_userHeader{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    border-radius: 100%;
+}
+.wemeet_alert_b_text{
+    width: 246px;
+    height: 22px;
+    color: rgba(51,51,51,1);
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+.wemeet_alert_b_text_name{
+    margin: 0 5px;
+    height: 22px;
+    color: rgba(51,51,51,1);
+    font-size: 14px;
+}
+.wemeet_alert_lignt_text{
+    /*width: 271px;*/
+    height: 20px;
+    color: rgba(136,136,136,1);
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "PingFang SC";
+}
+.wemeet_alert_logo{
+    width: 16px;
+    height: 16px;
+}
+.wemeet_alert_blue_text{
+    /*width: 271px;*/
+    height: 20px;
+    color: #067BEF;
+    font-size: 13px;
+}
+.wemeet_alert_black_text{
+    height: 20px;
+    line-height: 20px;
+    color: rgba(51,51,51,1);
+    font-size: 13px;
+    margin: 0 8px;
+}
+
+.wemeet_alert_bottom{
+    float: right;
+    margin-top: 28px
+}
+.wemeet_alert_left_butt_l{
+    width: 96px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #E9EDF2;
+    padding: 4px 20px;
+    color: rgba(33,41,48,1);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "PingFang SC";
+    text-align: left;
+    line-height: 22px;
+    margin-right: 16px;
+    cursor:pointer;
+}
+.wemeet_alert_left_butt_r{
+    width: 96px;
+    height: 30px;
+    border-radius: 4px;
+    background: rgba(6,123,239,1);
+    padding: 4px 20px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "PingFang SC";
+    text-align: left;
+    line-height: 22px;
+    cursor:pointer;
+}
+.wemeet_alert_copy{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    cursor:pointer;
+}
+.wemeet_toast{
+    background: rgba(0,0,0,0.6);
+    width: auto;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: 180px;
+    right: 0;
+    margin: auto;
+    left: 0;
+    z-index: 99999;
+    border-radius: 4px;
+    display: none;
+    color: white;
+    padding: 1px 16px;
+}
+
+/**
+屏蔽支付弹窗
+*/
+.wemeet_poupe_pay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0,0,0,0.3);
+    display: none;
+    z-index: 999;
+}
+.wemeet_poupe_pay_content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 400px;
+    height: 190px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    padding: 16px 24px;
+    box-shadow: 0 12px 42px 0 rgb(0 0 0 / 10%);
+}
+.wemeet_poupe_pay_title{
+    width: 150px;
+    height: 30px;
+    color: rgba(0,0,0,1);
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "PingFang SC";
+    text-align: left;
+    line-height: 30px;
+}
+.wemeet_poupe_pay_delect{
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.wemeet_poupe_pay_right_butt{
+    margin-top: 24px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    background: #067BEF;
+    float: right;
+    cursor: pointer;
+}
+.wemeet_poupe_pay_middle_text{
+    margin-top: 24px;
+    width: 352px;
+    color: rgba(33,41,48,1);
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "PingFang SC";
+    text-align: left;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wemeet_address_blue{
+    color: #067bef;
+}
+.wemeet_address_copy{
+    margin:0 5px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+/**
+屏蔽支付弹窗
+*/
+
+/*
+po端分享文件
+*/
+.wemeet_file_share_content{
+    position: absolute;
+    top: 40px;
+    left: -60px;
+    display: none;
+    z-index: 2;
+    width: 138px;
+    height: 74px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    box-shadow: 0 9px 28px 8px rgba(0,0,0,0.05), 0 6px 16px 0 rgba(0,0,0,0.08);
+    padding: 5px 12px;
+    box-sizing: border-box;
+}
+.share_outline_content{
+    position: absolute;
+    top: 50px;
+    left: '';
+    right: 60px;
+}
+.wemeet_file_share_item{
+    display: flex;
+    align-items: center;
+    color: #212930;
+    height: 32px;
+    cursor: pointer;
+}
+.wemeet_file_share_image{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.wemeet_file_share_text{
+    font-size: 13px;
+}
+/*
+po端分享文件
+*/

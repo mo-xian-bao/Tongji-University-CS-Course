@@ -1,0 +1,94 @@
+1、子网技术
+    计算机配置
+    网络层（3层）
+2、vlan技术
+    交换机
+    2层
+步骤：
+ 1、拓扑图的设计
+ 2、交换机的配置
+ 3、测试
+ 4、保存
+
+私有地址：
+  A：10.0.0.0/8
+  B：172.16.0.0/16--172.16.31.0.0/16
+  C：192.168.0.0/16
+你们设计IP：192.168.x.0/24,x:学会的最后2位
+我的1900011
+
+vlan ID ：12位 0-4095 
+1、0 4095系统
+2、1：本证vlan,
+3、2-1001：基本vlan
+4、1002-1005：FDDI和令牌环
+5、1006-1024：保留
+6、1025-4094：扩展
+
+4层模式：
+  1、一般用户配置模式
+  2、特权用户配置模式
+  3、全局配置模式
+  4、很多种模式
+
+命令：
+1、show vlan
+2、show int fa 0/5
+3、show int fa 0/24 sw
+4、show mac-address-table
+5、enable
+6、write
+
+作业发到蒋海鹰的邮箱：
+92847@tongji.edu.cn
+
+enable ?
+enable 14
+configure terminal
+vlan 10
+name sales
+exit
+interface fastethernet0/5
+switchport access vlan 10
+exit
+exit
+show vlan id 10
+conf t
+vlan 20
+name technical
+exit
+interface fastethernet0/15
+switchport access vlan 20
+exit
+exit
+show vlan id 20
+
+
+interface fastethernet0/24
+switchport mode trunk
+exit
+exit
+show interfaces fastEthernet 0/24 switchport
+show running-config
+
+configure terminal
+vlan 10
+name sales
+exit
+interface fastethernet0/5
+switchport access vlan 10
+show vlan id 10
+
+
+interface fastethernet0/24
+switchport mode trunk
+show interfaces fastEthernet 0/24 switchport
+
+ping 192.168.10.30
+
+
+
+
+
+
+
