@@ -1,0 +1,15 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "0..63": true,
+        "%{$mem[$_]=0}": true,
+        "GW": true,
+        "SW": true,
+        "0..20": true,
+        "%{$reg[$_]=$_}": true,
+        "SWL": true,
+        "SWR": true,
+        "LWL2": true,
+        "LWR2": true,
+        "Test-Path": true
+    }
+}

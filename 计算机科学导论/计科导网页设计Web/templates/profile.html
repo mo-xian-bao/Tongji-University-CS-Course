@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>个人中心 - 奶龙影评网站</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-links left">
+                <a href="{{ url_for('home') }}">首页</a>
+            </div>
+            <div class="site-logo">
+                <a href="{{ url_for('home') }}">奶龙电影网</a>
+            </div>
+            <div class="nav-links right">
+                <!-- <a href="{{ url_for('profile') }}">个人中心</a> -->
+                <span>欢迎, {{ session['username'] }}</span>
+                <a href="{{ url_for('logout') }}">退出</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="profile-container">
+        <div class="profile-section">
+            <h2>个人信息</h2>
+            <div class="info-display">
+                <p>用户名：{{ user.username }}</p>
+                <p>当前邮箱：{{ user.email }}</p>
+                <div class="buttons-section">
+                    <a href="{{ url_for('change_username_page') }}" class="update-btn">修改用户名</a>
+                    <a href="{{ url_for('change_email_page') }}" class="update-btn">修改邮箱</a>
+                    <a href="{{ url_for('change_password_page') }}" class="change-password-btn">修改密码</a>
+                </div>
+            </div>
+
+            <!-- 用户名修改弹窗 -->
+            <div id="usernameModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>修改用户名</h3>
+                    {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                            {% for message in messages %}
+                                <div class="alert fade-out">{{ message }}</div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                    <form action="{{ url_for('update_username') }}" method="POST">
+                        <div class="form-group">
+                            <label>新用户名：</label>
+                            <input type="text" name="new_username" required>
+                        </div>
+                        <button type="submit">确认修改</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 邮箱修改弹窗 -->
+            <div id="emailModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeEmailModal()">&times;</span>
+                    <h3>修改邮箱</h3>
+                    {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                            {% for message in messages %}
+                                <div class="alert fade-out">{{ message }}</div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                    <form action="{{ url_for('update_email') }}" method="POST">
+                        <div class="form-group">
+                            <label>原邮箱：</label>
+                            <input type="email" name="old_email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>新邮箱：</label>
+                            <input type="email" name="new_email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>确认新邮箱：</label>
+                            <input type="email" name="confirm_email" required>
+                        </div>
+                        <button type="submit">确认修改</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 密码修改弹窗 -->
+            <div id="passwordModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>修改密码</h3>
+                    <!-- 添加消息提示区域 -->
+                    {% with messages = get_flashed_messages() %}
+                        {% if messages %}
+                            {% for message in messages %}
+                                <div class="alert fade-out">{{ message }}</div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                    <form action="{{ url_for('change_password') }}" method="POST">
+                        <div class="form-group">
+                            <label>原密码：</label>
+                            <input type="password" name="old_password" required>
+                        </div>
+                        <div class="form-group">
+                            <label>新密码：</label>
+                            <input type="password" name="new_password" required>
+                        </div>
+                        <div class="form-group">
+                            <label>确认新密码：</label>
+                            <input type="password" name="confirm_password" required>
+                        </div>
+                        <button type="submit">确认修改</button>
+                    </form>
+                </div>
+            </div>
+
+            <script>
+            // 显示密码修改弹窗
+            function showPasswordModal() {
+                document.getElementById('passwordModal').style.display = 'block';
+            }
+
+            // 显示邮箱修改弹窗
+            function showEmailModal() {
+                document.getElementById('emailModal').style.display = 'block';
+            }
+
+            // 显示用户名修改弹窗
+            function showUsernameModal() {
+                document.getElementById('usernameModal').style.display = 'block';
+            }
+
+            // 关闭弹窗的通用函数
+            function closeModal(modalId) {
+                document.getElementById(modalId).style.display = 'none';
+            }
+
+            // 为所有关闭按钮添加事件监听
+            document.addEventListener('DOMContentLoaded', function() {
+                // 获取所有关闭按钮
+                var closeButtons = document.getElementsByClassName('close');
+                for (var i = 0; i < closeButtons.length; i++) {
+                    closeButtons[i].onclick = function() {
+                        // 找到最近的 modal 父元素
+                        var modal = this.closest('.modal');
+                        if (modal) {
+                            modal.style.display = 'none';
+                        }
+                    }
+                }
+
+                // 点击弹窗外部关闭弹窗
+                window.onclick = function(event) {
+                    if (event.target.classList.contains('modal')) {
+                        event.target.style.display = 'none';
+                    }
+                }
+
+                // 自动隐藏提示消息
+                const alerts = document.getElementsByClassName('alert');
+                for (let alert of alerts) {
+                    setTimeout(() => {
+                        alert.style.opacity = '0';
+                        setTimeout(() => {
+                            alert.style.display = 'none';
+                        }, 300);
+                    }, 3000);
+                }
+
+                // 检查是否需要显示弹窗
+                const urlParams = new URLSearchParams(window.location.search);
+                const showModal = urlParams.get('show_modal');
+                const modalType = urlParams.get('modal_type');
+                
+                if (showModal === 'true') {
+                    if (modalType === 'password') {
+                        showPasswordModal();
+                    } else if (modalType === 'email') {
+                        showEmailModal();
+                    } else if (modalType === 'username') {
+                        showUsernameModal();
+                    }
+                }
+            });
+            </script>
+        </div>
+
+        <div class="favorites-section">
+            <h2>我的收藏</h2>
+            <div class="movie-grid">
+                {% for movie in favorite_movies %}
+                <div class="movie-card">
+                    <a href="{{ url_for('movie_detail', movie_id=movie.id) }}">
+                        <img src="{{ movie.poster_url }}" alt="{{ movie.title }}">
+                        <div class="movie-info">
+                            <h3>{{ movie.title }}</h3>
+                            <div class="rating">评分：{{ movie.rating }}</div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="my-comments-section">
+            <h2>我的评论</h2>
+            <div class="comments-list">
+                {% for comment in user_comments %}
+                    <div class="comment-item" id="comment-{{ comment.id }}">
+                        <div class="comment-header">
+                            <a href="{{ url_for('movie_detail', movie_id=comment.movie_id) }}" class="comment-movie">{{ comment.movie_title }}</a>
+                            <div class="comment-actions">
+                                <span class="comment-time">{{ comment.created_at.strftime('%Y-%m-%d %H:%M') }}</span>
+                                <button class="delete-comment-btn" onclick="deleteComment('{{ comment.id }}')">删除</button>
+                            </div>
+                        </div>
+                        <div class="comment-content">{{ comment.content }}</div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+
+    <!-- 添加删除评论的 JavaScript -->
+    <script>
+    function deleteComment(commentId) {
+        if (confirm('确定要删除这条评论吗？')) {
+            fetch('/delete_comment/' + commentId, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    document.getElementById('comment-' + commentId).remove();
+                } else {
+                    alert(data.message || '删除失败');
+                }
+            });
+        }
+    }
+    </script>
+</body>
+</html> 

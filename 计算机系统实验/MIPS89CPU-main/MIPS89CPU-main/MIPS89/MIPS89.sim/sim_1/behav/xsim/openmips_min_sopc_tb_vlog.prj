@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../MIPS89.srcs/sources_1/new" \
+"../../../../MIPS89.srcs/sources_1/new/LLbit_reg.v" \
+"../../../../MIPS89.srcs/sources_1/new/cp0_reg.v" \
+"../../../../MIPS89.srcs/sources_1/new/ctrl.v" \
+"../../../../MIPS89.srcs/sources_1/new/data_ram.v" \
+"../../../../MIPS89.srcs/sources_1/new/div.v" \
+"../../../../MIPS89.srcs/sources_1/new/ex.v" \
+"../../../../MIPS89.srcs/sources_1/new/ex_mem.v" \
+"../../../../MIPS89.srcs/sources_1/new/hilo_reg.v" \
+"../../../../MIPS89.srcs/sources_1/new/id.v" \
+"../../../../MIPS89.srcs/sources_1/new/id_ex.v" \
+"../../../../MIPS89.srcs/sources_1/new/if_id.v" \
+"../../../../MIPS89.srcs/sources_1/new/inst_rom.v" \
+"../../../../MIPS89.srcs/sources_1/new/mem.v" \
+"../../../../MIPS89.srcs/sources_1/new/mem_wb.v" \
+"../../../../MIPS89.srcs/sources_1/new/openmips.v" \
+"../../../../MIPS89.srcs/sources_1/new/openmips_min_sopc.v" \
+"../../../../MIPS89.srcs/sources_1/new/pc_reg.v" \
+"../../../../MIPS89.srcs/sources_1/new/regfile.v" \
+"../../../../MIPS89.srcs/sources_1/new/seg7x16.v" \
+"../../../../MIPS89.srcs/sources_1/new/openmips_min_sopc_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

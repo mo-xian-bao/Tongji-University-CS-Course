@@ -1,0 +1,758 @@
+Vivado Simulator 2019.1
+Time resolution is 1 fs
+(openmips_min_sopc_tb.openmips_min_sopc0.uart_top0) UART INFO: Data bus width is 32. Debug Interface present.
+
+(openmips_min_sopc_tb.openmips_min_sopc0.uart_top0) UART INFO: Doesn't have baudrate output
+
+############# Write Clocks PLLE2_ADV Parameters #############
+
+nCK_PER_CLK      =       4
+CLK_PERIOD       =    4999
+CLKIN1_PERIOD    =   4.999
+DIVCLK_DIVIDE    =       1
+CLKFBOUT_MULT    =       6
+VCO_PERIOD       =   833.0
+CLKOUT0_DIVIDE_F =       2
+CLKOUT1_DIVIDE   =       4
+CLKOUT2_DIVIDE   =      64
+CLKOUT3_DIVIDE   =      16
+CLKOUT0_PERIOD   =    1666
+CLKOUT1_PERIOD   =    3332
+CLKOUT2_PERIOD   =   53312
+CLKOUT3_PERIOD   =   13328
+CLKOUT4_PERIOD   =    6664
+############################################################
+
+############# MMCME2_ADV Parameters #############
+
+MMCM_MULT_F           =          15
+MMCM_VCO_FREQ (MHz)   = 1200.000
+MMCM_VCO_PERIOD       = 833.333
+#################################################
+
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : BYTE_LANES_B0 = f BYTE_LANES_B1 = 0 DATA_CTL_B0 = 5 DATA_CTL_B1 = 0
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_LANE =           4 HIGHEST_LANE_B0 =           4 HIGHEST_LANE_B1 =           0
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_BANK =           1
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : FREQ_REF_PERIOD         = 1666.00 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DDR_TCK                 = 3333 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_S2_TAPS_SIZE         = 13.02 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_EARLY       = 1 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_OFFSET      = 1783.43 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_META_ZONE   = 200.00 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_FINE_INTR_DLY   = 944.72 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_COARSE_INTR_DLY = 604.85 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_INTRINSIC_DELAY = 1549.57 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_DELAY       = 60 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_INTRINSIC_DELAY      = 1549.57 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_DELAY                = 2330.51 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_OCLK_DELAY           = 0 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : L_PHY_0_PO_FINE_DELAY   = 60 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG1_INTRINSIC_DELAY = 0.00 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_INTRINSIC_DELAY = 919.47 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_INTRINSIC_DELAY      = 919.47 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_MAX_STG2_DELAY       = 819.98 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_OFFSET               = 212.00 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_DELAY           = 212.00 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy :PI_STG2_DELAY_CAND       = 212.00 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DEFAULT_RCLK_DELAY      = 16 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : RCLK_SELECT_EDGE        = 111 
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 2195862.0 ps WARNING: 200 us is required before CKE goes active.
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 7235485.0 ps INFO: Precharge All
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 8968819.0 ps INFO: Load Mode 2
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 8968819.0 ps INFO: Load Mode 2 High Temperature Self Refresh rate = 1X (0C-85C)
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 10702152.0 ps INFO: Load Mode 3
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 DLL Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 Output Drive Strength = Full
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 ODT Rtt = 50 Ohm
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 Additive Latency =           0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 OCD Program = OCD Exit
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 DQS_N Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 RDQS Enable = Disabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 Output Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0 Burst Length =  8
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0 Burst Order = Sequential
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0 CAS Latency =           5
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0 Test Mode = Normal
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0 DLL Reset = Reset DLL
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0 Write Recovery =           5
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0 Power Down Mode = Fast Exit
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 15902152.0 ps INFO: Precharge All
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 17635485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 19368819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 21102152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 22835485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0 Burst Length =  8
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0 Burst Order = Sequential
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0 CAS Latency =           5
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0 Test Mode = Normal
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0 DLL Reset = Normal
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0 Write Recovery =           5
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0 Power Down Mode = Fast Exit
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0 Burst Length =  8
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0 Burst Order = Sequential
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0 CAS Latency =           5
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0 Test Mode = Normal
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0 DLL Reset = Normal
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0 Write Recovery =           5
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0 Power Down Mode = Fast Exit
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 DLL Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 Output Drive Strength = Full
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 ODT Rtt = 50 Ohm
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 Additive Latency =           0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 OCD Program = OCD Default
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 DQS_N Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 RDQS Enable = Disabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 Output Enable = Enabled
+PHY_INIT: Memory Initialization completed at 29681766.0 ps
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 DLL Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 Output Drive Strength = Full
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 ODT Rtt = 50 Ohm
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 Additive Latency =           0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 OCD Program = OCD Exit
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 DQS_N Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 RDQS Enable = Disabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 Output Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Initialization Sequence is complete
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 31502152.0 ps INFO: Activate  bank 0 row 0000
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33235485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33248819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33250485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33252152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33253819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33255485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33257152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33258819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33260485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33262152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33262152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33263819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33265485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33267152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33268819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33270485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33272152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33273819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33275485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33275485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33277152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33278819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33280485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33282152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33283819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33285485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33287152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33288819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33288819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33290485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33292152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33293819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33295485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33297152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33298819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33300485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33302152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33302152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33303819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33305485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33307152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33308819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33310485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33312152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33313819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33315485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33315485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33317152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33318819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33320485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33322152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33323819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33325485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33327152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33328819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33328819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33330485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33332152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33333819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33335485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33337152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33338819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33340485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33342152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33342152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33343819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33345485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33347152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33348819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33350485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33352152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33353819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33355485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33355485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33357152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33358819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33360485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33362152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33363819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33365485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33367152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33368819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33368819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33370485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33372152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33373819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33375485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33377152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33378819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33380485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33382152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33382152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33383819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33385485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33387152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33388819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33390485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33392152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33393819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33395485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33395485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33397152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33398819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33400485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33402152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33403819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33405485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33407152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33408819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33408819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33410485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33412152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33413819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33415485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33417152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33418819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33420485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33422152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33422152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33423819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33425485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33427152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33428819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33430485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33432152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33433819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33435485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33435485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33437152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33438819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33440485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33442152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33443819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33445485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33447152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33448819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33448819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33450485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33452152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33453819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33455485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33457152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33458819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33460485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33462152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33462152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33463819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33465485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33467152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33468819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33470485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33472152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33473819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33475485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33475485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33477152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33478819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33480485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33482152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33483819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33485485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33487152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33488819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33488819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33490485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33492152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33493819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33495485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33497152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33498819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33500485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33502152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33502152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33503819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33505485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33507152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33508819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33510485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33512152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33513819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33515485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33515485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33517152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33518819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33520485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33522152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33523819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33525485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33527152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33528819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33528819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33530485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33532152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33533819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33535485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33537152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33538819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33540485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33542152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33542152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33543819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33545485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33547152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33548819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33550485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33552152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33553819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33555485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33555485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33557152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33558819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33560485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33562152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33563819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33565485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33567152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33568819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33568819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33570485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33572152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33573819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+PHY_INIT: Phaser_In Phase Locked at 33575099.0 ps
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33575485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33577152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33578819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33580485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33582152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33582152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33583819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33585485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33587152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33588819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33590485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33592152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33593819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33595485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33595485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33597152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33598819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33600485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33602152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33603819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33605485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33607152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33608819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33608819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33610485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33612152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33613819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33615485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33617152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33618819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33620485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33622152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33622152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33623819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33625485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33627152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33628819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33630485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33632152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33633819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33635485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33635485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33637152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33638819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33640485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33642152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33643819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33645485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33647152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33648819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33648819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33650485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33652152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33653819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33655485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33657152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33658819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33660485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33662152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33663819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33665485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33667152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33668819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33670485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33672152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33673819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33675485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 35382152.0 ps INFO: Precharge All
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 37115485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 38848819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 40582152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 42315485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 44048819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 45782152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 47515485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 49248819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 50982152.0 ps INFO: Activate  bank 0 row 0000
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 52715485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 52728819.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52730485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52732152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52733819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52735485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52737152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52738819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52740485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52742152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 52742152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52743819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52745485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52747152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52748819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52750485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52752152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52753819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52755485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 52755485.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52757152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52758819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52760485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52762152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52763819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52765485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52767152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52768819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52770485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52772152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52773819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52775485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52777152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52778819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52780485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52782152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 54488819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 54502152.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54503819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54505485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54507152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54508819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54510485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54512152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54513819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54515485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 54515485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54517152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54518819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54520485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54522152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54523819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54525485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54527152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54528819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 54528819.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54530485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54532152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54533819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54535485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54537152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54538819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54540485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54542152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54543819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54545485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54547152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54548819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54550485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54552152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54553819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54555485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 56262152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 56275485.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56277152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56278819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56280485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56282152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56283819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56285485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56287152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56288819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 56288819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56290485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56292152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56293819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56295485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56297152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56298819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56300485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56302152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 56302152.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56303819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56305485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56307152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56308819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56310485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56312152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56313819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56315485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56317152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56318819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56320485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56322152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56323819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56325485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56327152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56328819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 58035485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 58048819.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58050485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58052152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58053819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58055485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58057152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58058819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58060485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58062152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 58062152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58063819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58065485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58067152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58068819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58070485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58072152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58073819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58075485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 58075485.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58077152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58078819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58080485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58082152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58083819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58085485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58087152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58088819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58090485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58092152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58093819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58095485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58097152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58098819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58100485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58102152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 59808819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 59822152.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59823819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59825485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59827152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59828819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59830485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59832152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59833819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59835485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 59835485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59837152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59838819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59840485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59842152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59843819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59845485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59847152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59848819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 59848819.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59850485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59852152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59853819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59855485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59857152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59858819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59860485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59862152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59863819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59865485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59867152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59868819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59870485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59872152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59873819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59875485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 61582152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 61595485.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61597152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61598819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61600485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61602152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61603819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61605485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61607152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61608819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 61608819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61610485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61612152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61613819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61615485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61617152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61618819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61620485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61622152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 61622152.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61623819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61625485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61627152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61628819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61630485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61632152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61633819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61635485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61637152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61638819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61640485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61642152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61643819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61645485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61647152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61648819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 63355485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 63368819.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63370485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63372152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63373819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63375485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63377152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63378819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63380485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63382152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 63382152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63383819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63385485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63387152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63388819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63390485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63392152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63393819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63395485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 63395485.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63397152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63398819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63400485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63402152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63403819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63405485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63407152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63408819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63410485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63412152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63413819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63415485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63417152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63418819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63420485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63422152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+PHY_INIT: Phaser_In DQSFOUND completed at 63548433.0 ps
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 65128819.0 ps INFO: Precharge All
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 66862152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 68595485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 70328819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 72062152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 73795485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 75528819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 77262152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 78995485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 80728819.0 ps INFO: Activate  bank 0 row 0000
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 82462152.0 ps INFO: Write     bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.main: at time 82468819.0 ps INFO: Sync On Die Termination = 1
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 82475485.0 ps INFO: Write     bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82477152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000000 data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82478819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000001 data = 3333
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82480485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000002 data = 7777
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82482152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000003 data = eeee
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82483819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000004 data = cccc
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82485485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000005 data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82487152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000006 data = 2222
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82488819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000007 data = 4444
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 82488819.0 ps INFO: Write     bank 0 col 010, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82490485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000008 data = bbbb
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82492152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000009 data = 1111
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82493819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000a data = 7777
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82495485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000b data = eeee
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82497152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000c data = cccc
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82498819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000d data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82500485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000e data = 2222
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82502152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000f data = 4444
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 82502152.0 ps INFO: Write     bank 0 col 018, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82503819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000010 data = bbbb
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82505485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000011 data = 1111
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82507152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000012 data = 7777
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82508819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000013 data = eeee
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82510485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000014 data = cccc
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82512152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000015 data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82513819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000016 data = 2222
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82515485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000017 data = 4444
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82517152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000018 data = bbbb
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82518819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000019 data = 1111
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82520485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001a data = 7777
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82522152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001b data = eeee
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82523819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001c data = cccc
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82525485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001d data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82527152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001e data = 2222
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82528819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001f data = 4444
+openmips_min_sopc_tb.ddr2_model.main: at time 84243819.0 ps INFO: Sync On Die Termination = 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 86248819.0 ps INFO: Precharge All
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 87982152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 89715485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 91448819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 93182152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 94915485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 96648819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 98382152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 100115485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 101848819.0 ps INFO: Activate  bank 0 row 0000
+PHY_INIT: Read Leveling Stage 1 completed at 103708433.0 ps
+PHY_INIT : PRBS/PER_BIT calibration completed at 103708433.0 ps
+PHY_INIT : COMPLEX OCLKDELAY calibration completed at 103708433.0 ps
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 106995485.0 ps INFO: Precharge All
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 108865485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 108998819.0 ps INFO: Activate  bank 0 row 0000
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 109075485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 109088819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109090485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109092152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = 3333
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109093819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = 7777
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109095485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = eeee
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109097152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = cccc
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109098819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109100485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = 2222
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109102152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = 4444
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109103819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109105485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = 3333
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109107152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = 7777
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109108819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = eeee
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109110485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = cccc
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109112152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109113819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = 2222
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109115485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = 4444
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 109135485.0 ps INFO: Precharge bank 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 116278819.0 ps INFO: Refresh  

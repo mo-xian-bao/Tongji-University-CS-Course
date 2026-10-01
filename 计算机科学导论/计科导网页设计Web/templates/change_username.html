@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>修改用户名 - 奶龙影评网站</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-links left">
+                <a href="{{ url_for('home') }}">首页</a>
+            </div>
+            <div class="site-logo">
+                <a href="{{ url_for('home') }}">奶龙电影网</a>
+            </div>
+            <div class="nav-links right">
+                <span>欢迎, {{ session['username'] }}</span>
+                <a href="{{ url_for('logout') }}">退出</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="login-container">
+        <h2>修改用户名</h2>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="alert">{{ messages[0] }}</div>
+            {% endif %}
+        {% endwith %}
+        <form action="{{ url_for('update_username') }}" method="POST">
+            <div class="form-group">
+                <label>新用户名：</label>
+                <input type="text" name="new_username" required>
+            </div>
+            <button type="submit">确认修改</button>
+        </form>
+        <p><a href="{{ url_for('profile') }}">返回个人中心</a></p>
+    </div>
+</body>
+</html> 

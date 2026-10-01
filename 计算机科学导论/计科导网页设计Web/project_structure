@@ -1,0 +1,14 @@
+movie_booking/
+  ├── static/
+  │   ├── css/
+  │   │   └── style.css
+  │   ├── js/
+  │   │   └── main.js
+  │   └── images/
+  ├── templates/
+  │   ├── shouye.html
+  │   ├── denglu.html
+  │   └── zhuce.html
+  ├── app.py
+  ├── config.py
+  └── README.md 

@@ -1,0 +1,55 @@
+os_flag.o: os_flag.c /mnt/hgfs/code/ucosii_OpenMIPS/include/ucos_ii.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/app_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cpu.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/cpu.h
+os_mbox.o: os_mbox.c /mnt/hgfs/code/ucosii_OpenMIPS/include/ucos_ii.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/app_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cpu.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/cpu.h
+os_mem.o: os_mem.c /mnt/hgfs/code/ucosii_OpenMIPS/include/ucos_ii.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/app_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cpu.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/cpu.h
+os_mutex.o: os_mutex.c /mnt/hgfs/code/ucosii_OpenMIPS/include/ucos_ii.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/app_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cpu.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/cpu.h
+os_q.o: os_q.c /mnt/hgfs/code/ucosii_OpenMIPS/include/ucos_ii.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/app_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cpu.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/cpu.h
+os_sem.o: os_sem.c /mnt/hgfs/code/ucosii_OpenMIPS/include/ucos_ii.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/app_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cpu.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/cpu.h
+os_task.o: os_task.c /mnt/hgfs/code/ucosii_OpenMIPS/include/ucos_ii.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/app_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cpu.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/cpu.h
+os_time.o: os_time.c /mnt/hgfs/code/ucosii_OpenMIPS/include/ucos_ii.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/app_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cpu.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/cpu.h
+os_tmr.o: os_tmr.c /mnt/hgfs/code/ucosii_OpenMIPS/include/ucos_ii.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/app_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cpu.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/cpu.h
+os_dbg_r.o: os_dbg_r.c /mnt/hgfs/code/ucosii_OpenMIPS/include/ucos_ii.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/app_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cpu.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/cpu.h
+os_core.o: os_core.c /mnt/hgfs/code/ucosii_OpenMIPS/include/ucos_ii.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/app_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cfg.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/os_cpu.h \
+  /mnt/hgfs/code/ucosii_OpenMIPS/include/cpu.h

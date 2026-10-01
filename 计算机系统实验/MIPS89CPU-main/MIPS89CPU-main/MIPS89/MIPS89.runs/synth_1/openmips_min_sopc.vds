@@ -1,0 +1,106 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Apr 26 15:29:45 2025
+# Process ID: 28996
+# Current directory: D:/TJU/ComputerSystem/MIPS89/MIPS89.runs/synth_1
+# Command line: vivado.exe -log openmips_min_sopc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source openmips_min_sopc.tcl
+# Log file: D:/TJU/ComputerSystem/MIPS89/MIPS89.runs/synth_1/openmips_min_sopc.vds
+# Journal file: D:/TJU/ComputerSystem/MIPS89/MIPS89.runs/synth_1\vivado.jou
+# Running On: LAPTOP-MGRUHPKO, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 14, Host memory: 16780 MB
+#-----------------------------------------------------------
+source openmips_min_sopc.tcl -notrace
+Command: synth_design -top openmips_min_sopc -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28580
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/temp_wyc/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1236.738 ; gain = 408.074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'openmips_min_sopc' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:3]
+INFO: [Synth 8-6157] synthesizing module 'openmips' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pc_reg' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/pc_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pc_reg' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/pc_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'if_id' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/if_id.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'if_id' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/if_id.v:3]
+INFO: [Synth 8-6157] synthesizing module 'id' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/id.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'id' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/id.v:3]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/regfile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/regfile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'id_ex' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/id_ex.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/id_ex.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ex' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/ex.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ex' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/ex.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ex_mem' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/ex_mem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ex_mem' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/ex_mem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mem' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/mem.v:1]
+INFO: [Synth 8-226] default block is never used [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/mem.v:146]
+INFO: [Synth 8-226] default block is never used [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/mem.v:172]
+INFO: [Synth 8-226] default block is never used [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/mem.v:242]
+INFO: [Synth 8-226] default block is never used [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/mem.v:265]
+INFO: [Synth 8-226] default block is never used [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/mem.v:297]
+INFO: [Synth 8-226] default block is never used [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/mem.v:343]
+INFO: [Synth 8-226] default block is never used [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/mem.v:369]
+INFO: [Synth 8-6155] done synthesizing module 'mem' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/mem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mem_wb' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/mem_wb.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mem_wb' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/mem_wb.v:3]
+INFO: [Synth 8-6157] synthesizing module 'hilo_reg' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/hilo_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hilo_reg' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/hilo_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/ctrl.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/ctrl.v:3]
+INFO: [Synth 8-6157] synthesizing module 'div' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/div.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'div' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'LLbit_reg' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/LLbit_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'LLbit_reg' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/LLbit_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'cp0_reg' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/cp0_reg.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/cp0_reg.v:73]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/cp0_reg.v:95]
+INFO: [Synth 8-6155] done synthesizing module 'cp0_reg' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/cp0_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'wishbone_bus_if' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/wishbone_bus_if.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'wishbone_bus_if' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/wishbone_bus_if.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'openmips' (0#1) [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips.v:3]
+ERROR: [Synth 8-448] named port connection 'rom_addr_o' does not exist for instance 'openmips0' of module 'openmips' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:49]
+ERROR: [Synth 8-448] named port connection 'rom_data_i' does not exist for instance 'openmips0' of module 'openmips' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:50]
+ERROR: [Synth 8-448] named port connection 'rom_ce_o' does not exist for instance 'openmips0' of module 'openmips' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:51]
+ERROR: [Synth 8-448] named port connection 'ram_we_o' does not exist for instance 'openmips0' of module 'openmips' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:55]
+ERROR: [Synth 8-448] named port connection 'ram_addr_o' does not exist for instance 'openmips0' of module 'openmips' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:56]
+ERROR: [Synth 8-448] named port connection 'ram_sel_o' does not exist for instance 'openmips0' of module 'openmips' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:57]
+ERROR: [Synth 8-448] named port connection 'ram_data_o' does not exist for instance 'openmips0' of module 'openmips' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:58]
+ERROR: [Synth 8-448] named port connection 'ram_data_i' does not exist for instance 'openmips0' of module 'openmips' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:59]
+ERROR: [Synth 8-448] named port connection 'ram_ce_o' does not exist for instance 'openmips0' of module 'openmips' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:60]
+WARNING: [Synth 8-7071] port 'iwishbone_data_i' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7071] port 'iwishbone_ack_i' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7071] port 'iwishbone_addr_o' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7071] port 'iwishbone_data_o' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7071] port 'iwishbone_we_o' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7071] port 'iwishbone_sel_o' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7071] port 'iwishbone_stb_o' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7071] port 'iwishbone_cyc_o' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7071] port 'dwishbone_data_i' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7071] port 'dwishbone_ack_i' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7071] port 'dwishbone_addr_o' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7071] port 'dwishbone_data_o' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7071] port 'dwishbone_we_o' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7071] port 'dwishbone_sel_o' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7071] port 'dwishbone_stb_o' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7071] port 'dwishbone_cyc_o' of module 'openmips' is unconnected for instance 'openmips0' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+WARNING: [Synth 8-7023] instance 'openmips0' of module 'openmips' has 20 connections declared, but only 4 given [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:46]
+INFO: [Synth 8-6157] synthesizing module 'inst_rom' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/inst_rom.v:3]
+INFO: [Synth 8-3876] $readmem data file 'D:/TJU/ComputerSystem/MIPS89/inst_rom.data' is read successfully [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/inst_rom.v:12]
+ERROR: [Synth 8-6156] failed synthesizing module 'inst_rom' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/inst_rom.v:3]
+ERROR: [Synth 8-6156] failed synthesizing module 'openmips_min_sopc' [D:/TJU/ComputerSystem/MIPS89/MIPS89.srcs/sources_1/new/openmips_min_sopc.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1332.898 ; gain = 504.234
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 17 Warnings, 0 Critical Warnings and 12 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 26 15:30:22 2025...

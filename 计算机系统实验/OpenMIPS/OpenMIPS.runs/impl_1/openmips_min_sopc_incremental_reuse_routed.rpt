@@ -1,0 +1,146 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sat Jun 20 14:06:14 2026
+| Host         : LAPTOP-V0AHCU9H running 64-bit major release  (build 9200)
+| Command      : report_incremental_reuse -file openmips_min_sopc_incremental_reuse_routed.rpt
+| Design       : openmips_min_sopc
+| Device       : xc7a100t
+| Design State : Routed
+-----------------------------------------------------------------------------------------------
+
+Incremental Implementation Information
+
+Table of Contents
+-----------------
+1. Incremental Flow Summary
+2. Reuse Summary
+3. Reference Checkpoint Information
+4. Comparison with Reference Run
+5. Optimization Comparison With Reference Run
+5.1 iphys_opt_replay Optimizations
+5.2 QoR Suggestion Optimizations
+6. Command Comparison with Reference Run
+6.1 Reference:
+6.2 Incremental:
+7. Non Reuse Information
+
+1. Incremental Flow Summary
+---------------------------
+
++-----------------------+------------------+
+|    Flow Information   |       Value      |
++-----------------------+------------------+
+| Synthesis Flow        |          Default |
+| Auto Incremental      |              Yes |
+| Incremental Directive | RuntimeOptimized |
+| Reuse mode            |             High |
+| Target WNS            |              0.0 |
+| QoR Suggestions       |                0 |
++-----------------------+------------------+
+
+
+2. Reuse Summary
+----------------
+
++-------+------------------------------+------------------------------------+----------------------------+--------------------+-------+
+|  Type | Matched % (of Initial Total) | Initial Reuse % (of Initial Total) | Current Reuse % (of Total) | Fixed % (of Total) | Total |
++-------+------------------------------+------------------------------------+----------------------------+--------------------+-------+
+| Cells |                        99.41 |                              99.54 |                      99.37 |               1.32 | 16790 |
+| Nets  |                        99.55 |                              96.72 |                      96.22 |               0.00 | 12841 |
+| Pins  |                            - |                              95.20 |                      89.33 |                  - | 69855 |
+| Ports |                       100.00 |                             100.00 |                     100.00 |             100.00 |   104 |
++-------+------------------------------+------------------------------------+----------------------------+--------------------+-------+
+
+
+3. Reference Checkpoint Information
+-----------------------------------
+
++----------------+---------------------------------------------------------------------------------------+
+| DCP Location:  | D:/desktop/OpenMIPS/OpenMIPS.srcs/utils_1/imports/impl_1/openmips_min_sopc_routed.dcp |
++----------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------------+----------------------------+
+|         DCP Information        |            Value           |
++--------------------------------+----------------------------+
+| Vivado Version                 |                     2022.2 |
+| DCP State                      |                 POST_ROUTE |
+| Recorded WNS                   |                      1.456 |
+| Recorded WHS                   |                      0.028 |
+| Reference Speed File Version   | PRODUCTION 1.23 2018-06-13 |
+| Incremental Speed File Version | PRODUCTION 1.23 2018-06-13 |
++--------------------------------+----------------------------+
+* Recorded WNS/WHS timing numbers are estimated timing numbers. They may vary slightly from sign-off timing numbers.
+
+
+4. Comparison with Reference Run
+--------------------------------
+
++-----------------+---------------------------+---------------------------+---------------------------+
+|                 |          WNS(ns)          |  Runtime(elapsed)(hh:mm)  |    Runtime(cpu)(hh:mm)    |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|      Stage      |  Reference  | Incremental |  Reference  | Incremental |  Reference  | Incremental |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+| synth_design    |             |             |       00:02 |       00:03 |       00:02 |       00:03 |
+| opt_design      |             |             |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
+| read_checkpoint |             |             |             |     < 1 min |             |     < 1 min |
+| place_design    |       1.457 |       1.456 |     < 1 min |     < 1 min |     < 1 min |     < 1 min |
+| route_design    |       1.456 |       1.456 |     < 1 min |       00:01 |     < 1 min |       00:01 |
++-----------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+
+5. Optimization Comparison With Reference Run
+---------------------------------------------
+
+5.1 iphys_opt_replay Optimizations
+----------------------------------
+
++-------------------------+--------+------------+
+| iphys_opt_design replay | Reused | Not Reused |
++-------------------------+--------+------------+
+
+
+5.2 QoR Suggestion Optimizations
+--------------------------------
+
++-----------------+-------+
+| QoR Suggestions | Value |
++-----------------+-------+
+
+
+6. Command Comparison with Reference Run
+----------------------------------------
+
+6.1 Reference:
+--------------
+synth_design-verilog_define default::[not_specified] -top  openmips_min_sopc -part  xc7a100tcsg324-1 
+opt_design
+read_checkpoint -incremental -auto_incremental D:/desktop/OpenMIPS/OpenMIPS.srcs/utils_1/imports/impl_1/openmips_min_sopc_routed.dcp
+place_design
+route_design
+
+6.2 Incremental:
+----------------
+synth_design-verilog_define default::[not_specified] -top  openmips_min_sopc -part  xc7a100tcsg324-1 
+opt_design
+read_checkpoint -directive RuntimeOptimized  -incremental -auto_incremental D:/desktop/OpenMIPS/OpenMIPS.srcs/utils_1/imports/impl_1/openmips_min_sopc_routed.dcp
+place_design
+route_design
+
+7. Non Reuse Information
+------------------------
+
++------------------------------------------------------+------+
+|                         Type                         |   %  |
++------------------------------------------------------+------+
+| Non-Reused Cells                                     | 0.62 |
+|   New                                                | 0.39 |
+|   Discarded illegal placement due to netlist changes | 0.05 |
+|   Discarded to improve timing                        | 0.17 |
+| Partially reused nets                                | 0.00 |
+| Non-Reused nets                                      | 3.77 |
+| Non-Reused Ports                                     | 0.00 |
++------------------------------------------------------+------+
+
+

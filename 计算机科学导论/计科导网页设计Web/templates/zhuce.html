@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>注册 - 奶龙影评网站</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-links left">
+                <a href="{{ url_for('home') }}">首页</a>
+            </div>
+            <div class="site-logo">
+                <a href="{{ url_for('home') }}">奶龙电影网</a>
+            </div>
+            <div class="nav-links right">
+                <a href="{{ url_for('denglu') }}">登录</a>
+                <a href="{{ url_for('zhuce') }}">注册</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="login-container">
+        <h2>用户注册</h2>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div id="errorModal" class="modal">
+                    <div class="modal-content error-modal">
+                        <span class="close">&times;</span>
+                        {% for message in messages %}
+                            <p class="error-message">{{ message }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        {% endwith %}
+        <form action="{{ url_for('zhuce') }}" method="post">
+            <div class="form-group">
+                <label>用户名：</label>
+                <input type="text" name="username" required>
+            </div>
+            <div class="form-group">
+                <label>密码：</label>
+                <input type="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label>邮箱：</label>
+                <input type="email" name="email" required>
+            </div>
+            <button type="submit">注册</button>
+        </form>
+        <p>已有账号？<a href="{{ url_for('denglu') }}">立即登录</a></p>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 显示错误弹窗
+        var errorModal = document.getElementById('errorModal');
+        if (errorModal) {
+            errorModal.style.display = 'block';
+            
+            // 关闭按钮功能
+            var closeBtn = errorModal.querySelector('.close');
+            closeBtn.onclick = function() {
+                errorModal.style.display = 'none';
+            }
+
+            // 点击弹窗外部关闭
+            window.onclick = function(event) {
+                if (event.target == errorModal) {
+                    errorModal.style.display = 'none';
+                }
+            }
+
+            // 3秒后自动关闭
+            setTimeout(function() {
+                errorModal.style.display = 'none';
+            }, 3000);
+        }
+    });
+    </script>
+
+    <style>
+    /* 错误弹窗样式 */
+    .error-modal {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        max-width: 400px;
+        position: relative;
+    }
+
+    .error-message {
+        color: #FA5D63;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        animation: fadeIn 0.3s ease;
+    }
+
+    .modal-content {
+        margin: 15% auto;
+        animation: slideIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    </style>
+</body>
+</html>

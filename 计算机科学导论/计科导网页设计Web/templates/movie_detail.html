@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ movie.title }} - 电影详情</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-links left">
+            <a href="{{ url_for('home') }}">首页</a>
+        </div>
+        <div class="site-logo"></div>
+            <a href="{{ url_for('home') }}">奶龙电影网</a>
+        </div>
+        <div class="nav-links right">
+            {% if session['loggedin'] %}
+            <a href="{{ url_for('profile') }}">个人中心</a>
+            <span>欢迎, {{ session['username'] }}</span>
+            <a href="{{ url_for('logout') }}">退出</a>
+            {% else %}
+            <a href="{{ url_for('denglu') }}">登录</a>
+            <a href="{{ url_for('zhuce') }}">注册</a>
+            {% endif %}
+        </div>
+       </nav>
+    </header>
+    
+    <main class="movie-detail">
+        <div class="movie-content">
+            <div class="movie-poster">
+                <img src="{{ movie.poster_url }}" alt="{{ movie.title }}">
+            </div>
+            <div class="movie-info">
+                <h1>{{ movie.title }}</h1>
+                <div class="rating">评分：{{ movie.rating }}</div>
+                {% if session['loggedin'] %}
+                <button id="favoriteBtn" class="favorite-btn" onclick="toggleFavorite('{{ movie.id }}')">
+                    收藏电影
+                </button>
+                {% endif %}
+                <div class="meta">
+                    <p>导演：{{ movie.director }}</p>
+                    <p>主演：{{ movie.actors }}</p>
+                    <p>上映日期：{{ movie.release_date }}</p>
+                </div>
+                <div class="description">
+                    <h2>剧情简介</h2>
+                    <p>{{ movie.description }}</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="comments-section">
+        <h2>评论区</h2>
+        {% if session['loggedin'] %}
+            <form class="comment-form" action="{{ url_for('add_comment', movie_id=movie.id) }}" method="POST">
+                <div class="form-group">
+                    <textarea name="content" placeholder="写下你的评论..." required></textarea>
+                </div>
+                <button type="submit" class="comment-btn">发表评论</button>
+            </form>
+        {% else %}
+            <p class="login-tip">请<a href="{{ url_for('denglu') }}">登录</a>后发表评论</p>
+        {% endif %}
+
+        <div class="comments-list">
+            {% for comment in comments %}
+                <div class="comment-item" id="comment-{{ comment.id }}">
+                    <div class="comment-header">
+                        <span class="comment-user">{{ comment.username }}</span>
+                        <div class="comment-actions">
+                            <span class="comment-time">{{ comment.created_at.strftime('%Y-%m-%d %H:%M') }}</span>
+                            {% if session['username'] == comment.username %}
+                                <button class="delete-comment-btn" onclick="deleteComment('{{ comment.id }}')">删除</button>
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="comment-content">{{ comment.content }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script>
+    // 检查电影是否已收藏
+    function checkFavoriteStatus(movieId) {
+        fetch('/check_favorite/' + movieId)
+            .then(response => response.json())
+            .then(data => {
+                const btn = document.getElementById('favoriteBtn');
+                if (data.is_favorite) {
+                    btn.textContent = '取消收藏';
+                    btn.classList.add('favorited');
+                }
+            });
+    }
+
+    // 页面加载时检查收藏状态
+    document.addEventListener('DOMContentLoaded', function() {
+        checkFavoriteStatus('{{ movie.id }}');
+    });
+
+    function toggleFavorite(movieId) {
+        fetch('/toggle_favorite/' + movieId, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success') {
+                const btn = document.getElementById('favoriteBtn');
+                if (data.action === 'favorited') {
+                    btn.textContent = '取消收藏';
+                    btn.classList.add('favorited');
+                } else {
+                    btn.textContent = '收藏电影';
+                    btn.classList.remove('favorited');
+                }
+            }
+        });
+    }
+
+    function deleteComment(commentId) {
+        if (confirm('确定要删除这条评论吗？')) {
+            fetch('/delete_comment/' + commentId, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    // 删除成功，移除评论元素
+                    document.getElementById('comment-' + commentId).remove();
+                } else {
+                    alert(data.message || '删除失败');
+                }
+            });
+        }
+    }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,1426 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon May 27 19:00:11 2024
+# Process ID: 30524
+# Current directory: E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28836 E:\cOMPUTERaRCHITECTURE\EXP2\zrx\MipsOS\Project\OpenMIPS\OpenMIPS.xpr
+# Log file: E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/vivado.log
+# Journal file: E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado_2019_1_files/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/doc/mig_7series_v4_2_changelog.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_common.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_buf.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_dec_fix.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_gen.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_merge_enc.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_fi_xor.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_std.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_oclkdelay_cal.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_prbs_rdlvl.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_lim.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_top.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_mux.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_data.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_samp.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_edge.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_cntlr.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_po_cntlr.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_pd.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_tap_base.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_meta.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_edge_store.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_cc.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_top.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig_sim.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'e:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/.Xil/Vivado-41868-LAPTOP-C8SFM804/coregen/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0.v'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 752.590 ; gain = 153.641
+update_compile_order -fileset sources_1
+set_property -name {xsim.simulate.runtime} -value {120000ns} -objects [get_filesets sim_1]
+generate_target Simulation [get_files E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mig_7series_0'...
+generate_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1009.148 ; gain = 13.320
+export_ip_user_files -of_objects [get_files E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -directory E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.ip_user_files/sim_scripts -ip_user_files_dir E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.ip_user_files -ipstatic_source_dir E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.cache/compile_simlib/modelsim} {questa=E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.cache/compile_simlib/questa} {riviera=E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.cache/compile_simlib/riviera} {activehdl=E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/vivado_2019_1_files/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj openmips_min_sopc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_clk_ibuf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_infrastructure
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_iodelay_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_tempmon
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_arb_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_arb_row_col
+WARNING: [VRFC 10-2654] begin/end is required for generate-for in this mode of verilog [E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:252]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_arb_select
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_cntrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_queue
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_bank_state
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_col_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_mc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_rank_cntrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_rank_common
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_rank_mach
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_round_robin_arb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_buf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_buf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_dec_fix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_dec_fix
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_merge_enc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ecc_merge_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_fi_xor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_fi_xor
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_mem_intfc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_std.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_memc_ui_top_std
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_byte_group_io
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_byte_lane
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_tempmon
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_calib_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_if_post_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_mc_phy
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_mc_phy_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_of_pre_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_4lanes
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_dqs_found_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_dqs_found_cal_hr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_oclkdelay_cal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_oclkdelay_cal
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_prbs_rdlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_prbs_rdlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_rdlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_wrcal
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_wrlvl_off_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_prbs_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_wrlvl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_lim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_lim
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_samp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_samp
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_edge.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_edge
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_cntlr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_cntlr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_po_cntlr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ddr_phy_ocd_po_cntlr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_pd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_pd
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_tap_base.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_tap_base
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_meta.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_meta
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_edge_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_edge_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_cc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_poc_cc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_cmd
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_rd_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_v4_2_ui_wr_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_0_mig
+INFO: [VRFC 10-2458] undeclared symbol dbg_sel_po_incdec, assumed default net type wire [E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig_sim.v:1022]
+INFO: [VRFC 10-2458] undeclared symbol dbg_po_f_inc, assumed default net type wire [E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig_sim.v:1026]
+INFO: [VRFC 10-2458] undeclared symbol dbg_po_f_stg23_sel, assumed default net type wire [E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig_sim.v:1027]
+INFO: [VRFC 10-2458] undeclared symbol dbg_po_f_dec, assumed default net type wire [E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig_sim.v:1028]
+INFO: [VRFC 10-2458] undeclared symbol dbg_poc, assumed default net type wire [E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig_sim.v:1082]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mig_7series_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/ddr/DDR2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDR2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/LLbit_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LLbit_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/cp0_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sim_1/new/ddr2_model.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr2_model
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/ex_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/flash_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flash_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/gpio/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/hilo_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hilo_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/id_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/if_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/mem_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/pc_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/uart/raminfr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raminfr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/uart/uart_debug_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_debug_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/uart/uart_receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/uart/uart_regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_regs
+INFO: [VRFC 10-2458] undeclared symbol rf_overrun, assumed default net type wire [E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/uart/uart_regs.v:400]
+INFO: [VRFC 10-2458] undeclared symbol rf_push_pulse, assumed default net type wire [E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/uart/uart_regs.v:400]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/uart/uart_rfifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rfifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/uart/uart_sync_flops.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_sync_flops
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/uart/uart_tfifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tfifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/uart/uart_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/uart/uart_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/uart/uart_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/wb_conmax/wb_conmax_arb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_conmax_arb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_conmax_master_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/wb_conmax/wb_conmax_msel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_conmax_msel
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/wb_conmax/wb_conmax_pri_dec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_conmax_pri_dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/wb_conmax/wb_conmax_pri_enc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_conmax_pri_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/wb_conmax/wb_conmax_rf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_conmax_rf
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_conmax_slave_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/wb_conmax/wb_conmax_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_conmax_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/new/OpenMIPS/wishbone_bus_if.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wishbone_bus_if
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sim_1/new/openmips_min_sopc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_tb
+"xvhdl --incr --relax -prj openmips_min_sopc_tb_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 1009.148 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '20' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.sim/sim_1/behav/xsim'
+"xelab -wto 4c9d15a03076431c966d8e493222eb77 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado_2019_1_files/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 4c9d15a03076431c966d8e493222eb77 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 1024 for port 'dbg_poc' [E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig_sim.v:1082]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_dqs_found_lanes' [E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1671]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_phase_locked_lanes' [E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1679]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'pi_dqs_found_lanes' [E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v:1340]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'fine_adjust_lane_cnt' [E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1963]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1fs
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.hilo_reg
+Compiling module xil_defaultlib.ctrl
+Compiling module xil_defaultlib.div
+Compiling module xil_defaultlib.LLbit_reg
+Compiling module xil_defaultlib.cp0_reg
+Compiling module xil_defaultlib.wishbone_bus_if
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.uart_wb
+Compiling module xil_defaultlib.raminfr
+Compiling module xil_defaultlib.uart_tfifo
+Compiling module xil_defaultlib.uart_transmitter
+Compiling module xil_defaultlib.uart_sync_flops(width=1,init_val...
+Compiling module xil_defaultlib.uart_rfifo(fifo_width=11)
+Compiling module xil_defaultlib.uart_receiver
+Compiling module xil_defaultlib.uart_regs
+Compiling module xil_defaultlib.uart_debug_if
+Compiling module xil_defaultlib.uart_top
+Compiling module xil_defaultlib.gpio_top
+Compiling module unisims_ver.STARTUPE2(SIM_CCLK_FREQ=10.0)
+Compiling module xil_defaultlib.flash_rom
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module unisims_ver.IDELAYCTRL_default
+Compiling module xil_defaultlib.mig_7series_v4_2_iodelay_ctrl(IO...
+Compiling module xil_defaultlib.mig_7series_v4_2_clk_ibuf(SYSCLK...
+Compiling module xil_defaultlib.mig_7series_v4_2_tempmon(TEMP_MO...
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=6,CLKIN1...
+Compiling module unisims_ver.BUFH
+Compiling module unisims_ver.MMCME2_ADV(BANDWIDTH="HIGH",CLKF...
+Compiling module xil_defaultlib.mig_7series_v4_2_infrastructure(...
+Compiling module unisims_ver.SRLC32E_default
+Compiling module xil_defaultlib.mig_7series_v4_2_rank_cntrl(DQRD...
+Compiling module xil_defaultlib.mig_7series_v4_2_round_robin_arb...
+Compiling module xil_defaultlib.mig_7series_v4_2_round_robin_arb...
+Compiling module xil_defaultlib.mig_7series_v4_2_rank_common(DRA...
+Compiling module xil_defaultlib.mig_7series_v4_2_rank_mach(CS_WI...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_compare(CO...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(CWL=...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue(ORDE...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(CWL=...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue(ORDE...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(CWL=...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue(ORDE...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_state(CWL=...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_queue(ORDE...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_cntrl(COL_...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_common(LOW...
+Compiling module xil_defaultlib.mig_7series_v4_2_round_robin_arb...
+Compiling module xil_defaultlib.mig_7series_v4_2_arb_row_col(CWL...
+Compiling module xil_defaultlib.mig_7series_v4_2_arb_select(CS_W...
+Compiling module xil_defaultlib.mig_7series_v4_2_arb_mux(CS_WIDT...
+Compiling module xil_defaultlib.mig_7series_v4_2_bank_mach(COL_W...
+Compiling module unisims_ver.RAM32M
+Compiling module xil_defaultlib.mig_7series_v4_2_col_mach(COL_WI...
+Compiling module xil_defaultlib.mig_7series_v4_2_mc(COL_WIDTH=10...
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.OBUFT
+Compiling module unisims_ver.IOBUF_INTERMDISABLE(IBUF_LOW_PWR...
+Compiling module unisims_ver.IOBUFDS_INTERMDISABLE(DQS_BIAS="...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_of_pre_fifo...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_of_pre_fifo...
+Compiling module unisims_ver.BUFIO
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_if_post_fif...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_of_pre_fifo...
+Compiling module unisims_ver.PHASER_IN_PHY(BURST_MODE="TRUE",...
+Compiling module unisims_ver.PHASER_OUT_PHY(CLKOUT_DIV=2,DATA...
+Compiling module unisims_ver.IN_FIFO
+Compiling module unisims_ver.OUT_FIFO
+Compiling module unisims_ver.ISERDESE2(INTERFACE_TYPE="MEMORY...
+Compiling module unisims_ver.IDELAYE2(HIGH_PERFORMANCE_MODE="...
+Compiling module unisims_ver.OSERDESE2(INIT_OQ=1'b1,INIT_TQ=1...
+Compiling module unisims_ver.OSERDESE2(INIT_OQ=1'b1,INIT_TQ=1...
+Compiling module unisims_ver.ODDR(DDR_CLK_EDGE="SAME_EDGE")
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_group_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(P...
+Compiling module unisims_ver.PHASER_OUT_PHY(FINE_DELAY=60,MEM...
+Compiling module unisims_ver.OUT_FIFO(ARRAY_MODE="ARRAY_MODE_...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_OQ="SDR",DAT...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_group_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(A...
+Compiling module unisims_ver.PHASER_IN_PHY(BURST_MODE="TRUE",...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_group_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(A...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_group_...
+Compiling module unisims_ver.OBUFDS
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_byte_lane(A...
+Compiling module unisims_ver.PHY_CONTROL(AO_TOGGLE=1,BURST_MO...
+Compiling module unisims_ver.PHASER_REF
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_4lanes(...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_mc_phy(DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_mc_phy_wrap...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_prbs_gen(DQ...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_init(tC...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_wrcal(n...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_wrlvl_o...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_dqs_fou...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_rdlvl(n...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_tempmon...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_calib_top(n...
+Compiling module xil_defaultlib.mig_7series_v4_2_ddr_phy_top(DDR...
+Compiling module xil_defaultlib.mig_7series_v4_2_mem_intfc(PAYLO...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_cmd(ADDR_WID...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_wr_data(APP_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_rd_data(APP_...
+Compiling module xil_defaultlib.mig_7series_v4_2_ui_top(APP_DATA...
+Compiling module xil_defaultlib.mig_7series_v4_2_memc_ui_top_std...
+Compiling module xil_defaultlib.mig_7series_0_mig_default
+Compiling module xil_defaultlib.mig_7series_0
+Compiling architecture behavioral of entity xil_defaultlib.Ram2Ddr [ram2ddr_default]
+Compiling module xil_defaultlib.DDR2
+Compiling module xil_defaultlib.wb_conmax_master_if(sw=4)
+Compiling module xil_defaultlib.wb_conmax_arb
+Compiling module xil_defaultlib.wb_conmax_pri_dec(pri_sel=2'b10)
+Compiling module xil_defaultlib.wb_conmax_pri_enc(pri_sel=2'b10)
+Compiling module xil_defaultlib.wb_conmax_msel(pri_sel=2'b10)
+Compiling module xil_defaultlib.wb_conmax_slave_if(sw=4)
+Compiling module xil_defaultlib.wb_conmax_rf(sw=4)
+Compiling module xil_defaultlib.wb_conmax_top_default
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.ddr2_model_default
+Compiling module xil_defaultlib.openmips_min_sopc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot openmips_min_sopc_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.sim/sim_1/behav/xsim/xsim.dir/openmips_min_sopc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 27 19:04:39 2024...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:37 . Memory (MB): peak = 1009.148 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '37' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "openmips_min_sopc_tb_behav -key {Behavioral:sim_1:Functional:openmips_min_sopc_tb} -tclbatch {openmips_min_sopc_tb.tcl} -view {E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/openmips_min_sopc_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 fs
+open_wave_config E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/openmips_min_sopc_tb_behav.wcfg
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/clk_R was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/dtube_cs_n was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/dtube_data was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/dtube_cs_n_temp was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/rst_count was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/rst_n_in was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/openmips0/mem_reg1_i was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/openmips0/rom_addr_o was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/wb_clk_i was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/wb_rst_i was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/wb_cyc_i was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/wb_stb_i was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/wb_we_i was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/wb_sel_i was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/wb_adr_i was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/wb_dat_i was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/wb_dat_o was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/wb_ack_o was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/VGA_HS_O was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/VGA_VS_O was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/VGA_R was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/VGA_G was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/VGA_B was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/rst was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/inputAddrShowRam was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/inputDataShowRam was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/inputDataOuputShowRam was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/inputDataOuputShowRamW was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/weaShowRam was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/instate was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/cnt was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/pix_stb was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/y was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/AsciiAddr was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/AsciiDataW was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/AsciiData was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/vgaAddrShowRam was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/vgaDataShowRamW was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/vgaDataShowRam was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/vgaWriteEnable was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/DrawAscii was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/lineNow was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/lineNowX was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/lineBuffer was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/state was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/next_state was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/drawX was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/drawY was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/drawHeight was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/drawWidth was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/wordbuf was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/lineNowCount was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/isDrawPoint was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/x was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/loadAsciiAddr was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/nowYInShowRam was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/nowXInShowRam was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/writeAddr was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/screenlinebuf was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/vga_r_data was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/vga_g_data was not found in the design.
+WARNING: Simulation object /openmips_min_sopc_tb/openmips_min_sopc0/GraphicsController/vga_b_data was not found in the design.
+open_wave_config: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1037.629 ; gain = 0.000
+source openmips_min_sopc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 120000ns
+(openmips_min_sopc_tb.openmips_min_sopc0.uart_top0) UART INFO: Data bus width is 32. Debug Interface present.
+
+(openmips_min_sopc_tb.openmips_min_sopc0.uart_top0) UART INFO: Doesn't have baudrate output
+
+############# Write Clocks PLLE2_ADV Parameters #############
+
+nCK_PER_CLK      =       4
+CLK_PERIOD       =    4999
+CLKIN1_PERIOD    =   4.999
+DIVCLK_DIVIDE    =       1
+CLKFBOUT_MULT    =       6
+VCO_PERIOD       =   833.0
+CLKOUT0_DIVIDE_F =       2
+CLKOUT1_DIVIDE   =       4
+CLKOUT2_DIVIDE   =      64
+CLKOUT3_DIVIDE   =      16
+CLKOUT0_PERIOD   =    1666
+CLKOUT1_PERIOD   =    3332
+CLKOUT2_PERIOD   =   53312
+CLKOUT3_PERIOD   =   13328
+CLKOUT4_PERIOD   =    6664
+############################################################
+
+############# MMCME2_ADV Parameters #############
+
+MMCM_MULT_F           =          15
+MMCM_VCO_FREQ (MHz)   = 1200.000
+MMCM_VCO_PERIOD       = 833.333
+#################################################
+
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : BYTE_LANES_B0 = f BYTE_LANES_B1 = 0 DATA_CTL_B0 = 5 DATA_CTL_B1 = 0
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_LANE =           4 HIGHEST_LANE_B0 =           4 HIGHEST_LANE_B1 =           0
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_BANK =           1
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : FREQ_REF_PERIOD         = 1666.00 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DDR_TCK                 = 3333 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_S2_TAPS_SIZE         = 13.02 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_EARLY       = 1 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_OFFSET      = 1783.43 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_META_ZONE   = 200.00 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_FINE_INTR_DLY   = 944.72 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_COARSE_INTR_DLY = 604.85 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_INTRINSIC_DELAY = 1549.57 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_DELAY       = 60 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_INTRINSIC_DELAY      = 1549.57 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_DELAY                = 2330.51 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_OCLK_DELAY           = 0 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : L_PHY_0_PO_FINE_DELAY   = 60 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG1_INTRINSIC_DELAY = 0.00 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_INTRINSIC_DELAY = 919.47 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_INTRINSIC_DELAY      = 919.47 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_MAX_STG2_DELAY       = 819.98 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_OFFSET               = 212.00 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_DELAY           = 212.00 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy :PI_STG2_DELAY_CAND       = 212.00 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DEFAULT_RCLK_DELAY      = 16 
+openmips_min_sopc_tb.openmips_min_sopc0.DDR2.Ram.Inst_DDR.u_mig_7series_0_mig.u_memc_ui_top_std.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : RCLK_SELECT_EDGE        = 111 
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 2195862.0 ps WARNING: 200 us is required before CKE goes active.
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 7235485.0 ps INFO: Precharge All
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 8968819.0 ps INFO: Load Mode 2
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 8968819.0 ps INFO: Load Mode 2 High Temperature Self Refresh rate = 1X (0C-85C)
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 10702152.0 ps INFO: Load Mode 3
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 DLL Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 Output Drive Strength = Full
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 ODT Rtt = 50 Ohm
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 Additive Latency =           0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 OCD Program = OCD Exit
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 DQS_N Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 RDQS Enable = Disabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 12435485.0 ps INFO: Load Mode 1 Output Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0 Burst Length =  8
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0 Burst Order = Sequential
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0 CAS Latency =           5
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0 Test Mode = Normal
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0 DLL Reset = Reset DLL
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0 Write Recovery =           5
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 14168819.0 ps INFO: Load Mode 0 Power Down Mode = Fast Exit
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 15902152.0 ps INFO: Precharge All
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 17635485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 19368819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 21102152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 22835485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0 Burst Length =  8
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0 Burst Order = Sequential
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0 CAS Latency =           5
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0 Test Mode = Normal
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0 DLL Reset = Normal
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0 Write Recovery =           5
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 24568819.0 ps INFO: Load Mode 0 Power Down Mode = Fast Exit
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0 Burst Length =  8
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0 Burst Order = Sequential
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0 CAS Latency =           5
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0 Test Mode = Normal
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0 DLL Reset = Normal
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0 Write Recovery =           5
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 26302152.0 ps INFO: Load Mode 0 Power Down Mode = Fast Exit
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 DLL Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 Output Drive Strength = Full
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 ODT Rtt = 50 Ohm
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 Additive Latency =           0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 OCD Program = OCD Default
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 DQS_N Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 RDQS Enable = Disabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 28035485.0 ps INFO: Load Mode 1 Output Enable = Enabled
+PHY_INIT: Memory Initialization completed at 29681766.0 ps
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 DLL Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 Output Drive Strength = Full
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 ODT Rtt = 50 Ohm
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 Additive Latency =           0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 OCD Program = OCD Exit
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 DQS_N Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 RDQS Enable = Disabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Load Mode 1 Output Enable = Enabled
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 29768819.0 ps INFO: Initialization Sequence is complete
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 31502152.0 ps INFO: Activate  bank 0 row 0000
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33235485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33248819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33250485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33252152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33253819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33255485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33257152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33258819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33260485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33262152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33262152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33263819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33265485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33267152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33268819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33270485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33272152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33273819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33275485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33275485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33277152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33278819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33280485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33282152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33283819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33285485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33287152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33288819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33288819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33290485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33292152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33293819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33295485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33297152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33298819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33300485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33302152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33302152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33303819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33305485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33307152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33308819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33310485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33312152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33313819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33315485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33315485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33317152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33318819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33320485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33322152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33323819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33325485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33327152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33328819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33328819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33330485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33332152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33333819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33335485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33337152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33338819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33340485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33342152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33342152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33343819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33345485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33347152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33348819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33350485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33352152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33353819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33355485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33355485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33357152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33358819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33360485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33362152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33363819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33365485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33367152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33368819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33368819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33370485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33372152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33373819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33375485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33377152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33378819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33380485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33382152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33382152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33383819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33385485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33387152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33388819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33390485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33392152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33393819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33395485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33395485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33397152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33398819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33400485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33402152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33403819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33405485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33407152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33408819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33408819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33410485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33412152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33413819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33415485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33417152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33418819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33420485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33422152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33422152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33423819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33425485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33427152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33428819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33430485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33432152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33433819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33435485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33435485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33437152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33438819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33440485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33442152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33443819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33445485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33447152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33448819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33448819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33450485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33452152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33453819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33455485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33457152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33458819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33460485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33462152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33462152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33463819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33465485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33467152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33468819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33470485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33472152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33473819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33475485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33475485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33477152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33478819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33480485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33482152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33483819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33485485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33487152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33488819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33488819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33490485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33492152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33493819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33495485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33497152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33498819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33500485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33502152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33502152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33503819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33505485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33507152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33508819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33510485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33512152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33513819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33515485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33515485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33517152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33518819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33520485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33522152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33523819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33525485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33527152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33528819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33528819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33530485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33532152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33533819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33535485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33537152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33538819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33540485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33542152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33542152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33543819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33545485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33547152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33548819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33550485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33552152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33553819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33555485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33555485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33557152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33558819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33560485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33562152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33563819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33565485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33567152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33568819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33568819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33570485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33572152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33573819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+PHY_INIT: Phaser_In Phase Locked at 33575099.0 ps
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33575485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33577152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33578819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33580485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33582152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33582152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33583819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33585485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33587152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33588819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33590485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33592152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33593819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33595485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33595485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33597152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33598819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33600485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33602152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33603819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33605485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33607152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33608819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33608819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33610485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33612152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33613819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33615485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33617152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33618819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33620485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33622152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33622152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33623819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33625485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33627152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33628819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33630485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33632152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33633819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33635485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33635485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33637152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33638819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33640485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33642152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33643819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33645485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33647152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33648819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 33648819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33650485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33652152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33653819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33655485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33657152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33658819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33660485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33662152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33663819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33665485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33667152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33668819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33670485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33672152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33673819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 33675485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 35382152.0 ps INFO: Precharge All
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 37115485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 38848819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 40582152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 42315485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 44048819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 45782152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 47515485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 49248819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 50982152.0 ps INFO: Activate  bank 0 row 0000
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 52715485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 52728819.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52730485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52732152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52733819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52735485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52737152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52738819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52740485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52742152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 52742152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52743819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52745485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52747152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52748819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52750485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52752152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52753819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52755485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 52755485.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52757152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52758819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52760485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52762152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52763819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52765485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52767152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52768819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52770485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52772152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52773819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52775485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52777152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52778819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52780485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 52782152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 54488819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 54502152.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54503819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54505485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54507152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54508819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54510485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54512152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54513819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54515485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 54515485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54517152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54518819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54520485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54522152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54523819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54525485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54527152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54528819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 54528819.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54530485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54532152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54533819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54535485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54537152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54538819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54540485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54542152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54543819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54545485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54547152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54548819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54550485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54552152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54553819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 54555485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 56262152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 56275485.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56277152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56278819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56280485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56282152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56283819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56285485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56287152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56288819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 56288819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56290485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56292152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56293819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56295485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56297152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56298819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56300485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56302152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 56302152.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56303819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56305485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56307152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56308819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56310485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56312152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56313819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56315485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56317152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56318819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56320485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56322152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56323819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56325485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56327152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 56328819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 58035485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 58048819.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58050485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58052152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58053819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58055485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58057152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58058819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58060485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58062152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 58062152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58063819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58065485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58067152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58068819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58070485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58072152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58073819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58075485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 58075485.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58077152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58078819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58080485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58082152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58083819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58085485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58087152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58088819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58090485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58092152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58093819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58095485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58097152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58098819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58100485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 58102152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 59808819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 59822152.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59823819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59825485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59827152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59828819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59830485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59832152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59833819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59835485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 59835485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59837152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59838819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59840485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59842152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59843819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59845485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59847152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59848819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 59848819.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59850485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59852152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59853819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59855485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59857152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59858819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59860485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59862152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59863819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59865485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59867152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59868819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59870485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59872152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59873819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 59875485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 61582152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 61595485.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61597152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61598819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61600485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61602152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61603819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61605485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61607152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61608819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 61608819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61610485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61612152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61613819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61615485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61617152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61618819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61620485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61622152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 61622152.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61623819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61625485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61627152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61628819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61630485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61632152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61633819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61635485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61637152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61638819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61640485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61642152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61643819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61645485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61647152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 61648819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 63355485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 63368819.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63370485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63372152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63373819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63375485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63377152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63378819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63380485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63382152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 63382152.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63383819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63385485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63387152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63388819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63390485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63392152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63393819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63395485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 63395485.0 ps INFO: Read      bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63397152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63398819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63400485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63402152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63403819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63405485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63407152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63408819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63410485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000008 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63412152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000009 data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63413819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000a data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63415485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000b data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63417152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000c data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63418819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000d data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63420485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000e data = xxxx
+openmips_min_sopc_tb.ddr2_model.data_task: at time 63422152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 0000000f data = xxxx
+PHY_INIT: Phaser_In DQSFOUND completed at 63548433.0 ps
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 65128819.0 ps INFO: Precharge All
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 66862152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 68595485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 70328819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 72062152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 73795485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 75528819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 77262152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 78995485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 80728819.0 ps INFO: Activate  bank 0 row 0000
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 82462152.0 ps INFO: Write     bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.main: at time 82468819.0 ps INFO: Sync On Die Termination = 1
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 82475485.0 ps INFO: Write     bank 0 col 008, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82477152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000000 data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82478819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000001 data = 3333
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82480485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000002 data = 7777
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82482152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000003 data = eeee
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82483819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000004 data = cccc
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82485485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000005 data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82487152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000006 data = 2222
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82488819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000007 data = 4444
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 82488819.0 ps INFO: Write     bank 0 col 010, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82490485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000008 data = bbbb
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82492152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000009 data = 1111
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82493819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000a data = 7777
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82495485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000b data = eeee
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82497152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000c data = cccc
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82498819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000d data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82500485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000e data = 2222
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82502152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000000f data = 4444
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 82502152.0 ps INFO: Write     bank 0 col 018, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82503819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000010 data = bbbb
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82505485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000011 data = 1111
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82507152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000012 data = 7777
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82508819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000013 data = eeee
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82510485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000014 data = cccc
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82512152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000015 data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82513819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000016 data = 2222
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82515485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000017 data = 4444
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82517152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000018 data = bbbb
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82518819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 00000019 data = 1111
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82520485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001a data = 7777
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82522152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001b data = eeee
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82523819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001c data = cccc
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82525485.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001d data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82527152.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001e data = 2222
+openmips_min_sopc_tb.ddr2_model.data_task: at time 82528819.0 ps INFO: WRITE @ DQS= bank = 0 row = 0000 col = 0000001f data = 4444
+openmips_min_sopc_tb.ddr2_model.main: at time 84243819.0 ps INFO: Sync On Die Termination = 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 86248819.0 ps INFO: Precharge All
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 87982152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 89715485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 91448819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 93182152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 94915485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 96648819.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 98382152.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 100115485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 101848819.0 ps INFO: Activate  bank 0 row 0000
+PHY_INIT: Read Leveling Stage 1 completed at 103708433.0 ps
+PHY_INIT : PRBS/PER_BIT calibration completed at 103708433.0 ps
+PHY_INIT : COMPLEX OCLKDELAY calibration completed at 103708433.0 ps
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 106995485.0 ps INFO: Precharge All
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 108865485.0 ps INFO: Refresh  
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 108998819.0 ps INFO: Activate  bank 0 row 0000
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 109075485.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 109088819.0 ps INFO: Read      bank 0 col 000, auto precharge 0
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109090485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109092152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = 3333
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109093819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = 7777
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109095485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = eeee
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109097152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = cccc
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109098819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109100485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = 2222
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109102152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = 4444
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109103819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000000 data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109105485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000001 data = 3333
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109107152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000002 data = 7777
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109108819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000003 data = eeee
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109110485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000004 data = cccc
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109112152.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000005 data = 9999
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109113819.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000006 data = 2222
+openmips_min_sopc_tb.ddr2_model.data_task: at time 109115485.0 ps INFO: READ @ DQS= bank = 0 row = 0000 col = 00000007 data = 4444
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 109135485.0 ps INFO: Precharge bank 0
+openmips_min_sopc_tb.ddr2_model.cmd_task: at time 116278819.0 ps INFO: Refresh  
+run: Time (s): cpu = 00:00:28 ; elapsed = 00:03:37 . Memory (MB): peak = 1143.559 ; gain = 105.930
+xsim: Time (s): cpu = 00:00:49 ; elapsed = 00:03:55 . Memory (MB): peak = 1143.559 ; gain = 134.410
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'openmips_min_sopc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 120000ns
+launch_simulation: Time (s): cpu = 00:00:55 ; elapsed = 00:04:55 . Memory (MB): peak = 1143.559 ; gain = 134.410
+reset_run synth_1
+INFO: [Project 1-974] Auto Incremental Compile:: New reference dcp wns is less than threshold, current reference dcp will not be replaced
+INFO: [filemgmt 20-762] Replacing file 'E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/utils_1/imports/synth_1/openmips_min_sopc.dcp' with file 'E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.runs/synth_1/openmips_min_sopc.dcp'.
+INFO: [filemgmt 20-1080] Importing file from 'E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.runs/synth_1/openmips_min_sopc.dcp' to 'E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.srcs/utils_1/imports/synth_1/openmips_min_sopc.dcp'.
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Mon May 27 19:20:31 2024] Launched synth_1...
+Run output will be captured here: E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon May 27 19:24:45 2024] Launched impl_1...
+Run output will be captured here: E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon May 27 19:29:48 2024] Launched impl_1...
+Run output will be captured here: E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292742715A
+set_property PROGRAM.FILE {E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.runs/impl_1/openmips_min_sopc.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [get_hw_devices xc7a100t_0] -mem_dev [lindex [get_cfgmem_parts {s25fl128sxxxxxx0-spi-x1_x2_x4}] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.FILES [list "E:/cOMPUTERaRCHITECTURE/EXP2/source_code/OS.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.FILES [list "E:/cOMPUTERaRCHITECTURE/EXP2/source_code/OS.bin" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7a100t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7a100t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0];
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 SPI core(s).
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7a100t_0] 0]]
+Mfg ID : 1   Memory Type : 20   Memory Capacity : 18   Device ID 1 : 0   Device ID 2 : 0
+Performing Erase Operation...
+Erase Operation successful.
+Performing Program and Verify Operations...
+Program/Verify Operation successful.
+INFO: [Labtoolstcl 44-377] Flash programming completed successfully
+endgroup
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.runs/impl_1/openmips_min_sopc.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {E:/cOMPUTERaRCHITECTURE/EXP2/zrx/MipsOS/Project/OpenMIPS/OpenMIPS.runs/impl_1/openmips_min_sopc.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292742715A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 27 19:49:21 2024...

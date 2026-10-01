@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>奶龙影评网站</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-images">
+            <img src="{{ url_for('static', filename='images/nailong3.gif') }}" alt="奶龙动画3" class="banner-gif">
+            <img src="{{ url_for('static', filename='images/nailong2.gif') }}" alt="奶龙动画2" class="banner-gif">
+            <img src="{{ url_for('static', filename='images/nailong4.gif') }}" alt="奶龙动画4" class="banner-gif">
+        </div>
+    </div>
+    <header>
+        <nav>
+            <!-- <div class="nav-links left">
+                <a href="{{ url_for('home') }}">首页</a>
+            </div> -->
+            <div class="site-logo">
+                <a href="{{ url_for('home') }}">奶龙电影网</a>
+            </div>
+            <div class="nav-links right">
+                {% if session['loggedin'] %}
+                <a href="{{ url_for('profile') }}">个人中心</a>
+                <span>欢迎, {{ session['username'] }}</span>
+                <a href="{{ url_for('logout') }}">退出</a>
+                {% else %}
+                <a href="{{ url_for('denglu') }}">登录</a>
+                <a href="{{ url_for('zhuce') }}">注册</a>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>正在热映 ({{ movies|length }}部)</h1>
+        <div class="movie-grid">
+            {% for movie in movies %}
+            <div class="movie-card">
+                <a href="{{ url_for('movie_detail', movie_id=movie.id) }}">
+                    <img src="{{ movie.poster_url }}" alt="{{ movie.title }}">
+                    <div class="movie-info">
+                        <h3>{{ movie.title }}</h3>
+                        <div class="rating">评分：{{ movie.rating }}</div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+</body>
+</html> 

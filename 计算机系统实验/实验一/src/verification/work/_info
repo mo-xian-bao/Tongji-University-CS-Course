@@ -1,0 +1,400 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dV:/verification
+vALU
+Z1 !s110 1773286378
+!i10b 1
+!s100 gb@2i@3Y]fSK`=gh47I?X2
+IcIbd_L;CDK6Xe;?V4]E@;0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1773228088
+8..\ALU.v
+F..\ALU.v
+L0 3
+Z4 OP;L;10.4c;61
+r1
+!s85 0
+31
+Z5 !s108 1773286378.000000
+Z6 !s107 tb_alu_trap_compare.v|..\ALU.v|
+Z7 !s90 ..\ALU.v|tb_alu_trap_compare.v|
+!i113 1
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@a@l@u
+vController
+Z9 !s110 1773286398
+!i10b 1
+!s100 MF>MA`e=l1EKZ48Ni`4IS0
+I6WWIEdPPXacn8k8C`cSMi0
+R2
+R0
+w1773231456
+8..\Controller.v
+F..\Controller.v
+L0 3
+R4
+r1
+!s85 0
+31
+Z10 !s108 1773286398.000000
+Z11 !s107 tb_controller_decode.v|..\Controller.v|
+Z12 !s90 ..\Controller.v|tb_controller_decode.v|
+!i113 1
+R8
+n@controller
+vCPO
+Z13 !s110 1773286256
+!i10b 1
+!s100 ?^g=GlC434]3_Lk7[Q6`J3
+IjaK`d9P>[kzRd94dZ6S4R2
+R2
+R0
+w1765729949
+8..\CP0.v
+F..\CP0.v
+L0 1
+R4
+r1
+!s85 0
+31
+Z14 !s108 1773286255.000000
+Z15 !s107 tb_dcpu_unaligned.v|tb_dcpu_llsc.v|tb_dcpu_trap.v|tb_dcpu_branch.v|tb_dcpu_smoke.v|..\RegFile.v|..\MDU.v|..\HazardUnit.v|..\ForwardUnit.v|..\DMEM.v|..\DCPU.v|..\CP0.v|..\Controller.v|..\ALU.v|IMEM_sim.v|
+Z16 !s90 IMEM_sim.v|..\ALU.v|..\Controller.v|..\CP0.v|..\DCPU.v|..\DMEM.v|..\ForwardUnit.v|..\HazardUnit.v|..\MDU.v|..\RegFile.v|tb_dcpu_smoke.v|tb_dcpu_branch.v|tb_dcpu_trap.v|tb_dcpu_llsc.v|tb_dcpu_unaligned.v|
+!i113 1
+R8
+n@c@p@o
+vDCPU
+R13
+!i10b 1
+!s100 FKC1gWAoIaNhCbZVZD^lB1
+IS_@ch9mK]P`;;?NJ09Sba0
+R2
+R0
+w1773231301
+8..\DCPU.v
+F..\DCPU.v
+L0 12
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R8
+n@d@c@p@u
+vDMEM
+R13
+!i10b 1
+!s100 <fHnY;ihfcMa[LIEoYk>a1
+IL@:`FDC[iNz:7GVLj:B2e2
+R2
+R0
+w1773230722
+8..\DMEM.v
+F..\DMEM.v
+L0 1
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R8
+n@d@m@e@m
+vForwardUnit
+Z17 !s110 1773286341
+!i10b 1
+!s100 1kUCO<X];16[HbBzg0o`=0
+ImEnz_hXfh8<RJI8E:JCN>2
+R2
+R0
+w1765970749
+8..\ForwardUnit.v
+F..\ForwardUnit.v
+L0 9
+R4
+r1
+!s85 0
+31
+Z18 !s108 1773286341.000000
+Z19 !s107 tb_forward_unit.v|..\ForwardUnit.v|
+Z20 !s90 ..\ForwardUnit.v|tb_forward_unit.v|
+!i113 1
+R8
+n@forward@unit
+vHazardUnit
+Z21 !s110 1773286359
+!i10b 1
+!s100 U`4C0jS2;FRZf8_i5bb^D2
+IO?JGnYCLP5=jnlLb_<FgG2
+R2
+R0
+w1765969179
+8..\HazardUnit.v
+F..\HazardUnit.v
+L0 11
+R4
+r1
+!s85 0
+31
+Z22 !s108 1773286359.000000
+Z23 !s107 tb_hazard_unit.v|..\HazardUnit.v|
+Z24 !s90 ..\HazardUnit.v|tb_hazard_unit.v|
+!i113 1
+R8
+n@hazard@unit
+vIMEM
+R13
+!i10b 1
+!s100 j7]mYYNQL`AM7o[`fPK@P0
+IW0eS9^<Wg0ZPlkj099ZG42
+R2
+R0
+Z25 w1773286101
+8IMEM_sim.v
+FIMEM_sim.v
+L0 3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R8
+n@i@m@e@m
+vMDU
+R13
+!i10b 1
+!s100 UKW7SzcmIg<f<c`h_I8c40
+ICLlLaB`Iieoe]0KFGaJTH2
+R2
+R0
+R3
+8..\MDU.v
+F..\MDU.v
+L0 1
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R8
+n@m@d@u
+vRegFile
+R13
+!i10b 1
+!s100 jaOU?3f<SV:194AYU87ef3
+Inc<A9HKcmM@kRaIe0`gW33
+R2
+R0
+w1765893009
+8..\RegFile.v
+F..\RegFile.v
+L0 3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R8
+n@reg@file
+vtb_alu_trap_compare
+R1
+!i10b 1
+!s100 @=oQ8]T16M:YoiF>LN5Gk2
+IHfiOZ@>g87Wh^XGHSTLdV1
+R2
+R0
+Z26 w1773285604
+8tb_alu_trap_compare.v
+Ftb_alu_trap_compare.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vtb_controller_decode
+R9
+!i10b 1
+!s100 [S71HjFg]zWa9H0bU@1V[3
+I`cjJo]HC3IKlM>d_zIU4z1
+R2
+R0
+w1773284175
+8tb_controller_decode.v
+Ftb_controller_decode.v
+L0 3
+R4
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 1
+R8
+vtb_dcpu_branch
+R13
+!i10b 1
+!s100 ^6Hc5UAZlSgRV0On5;DH53
+IYhBSBMH;ENcejcgggM`_c1
+R2
+R0
+R25
+8tb_dcpu_branch.v
+Ftb_dcpu_branch.v
+L0 3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R8
+vtb_dcpu_llsc
+R13
+!i10b 1
+!s100 jDQ3zcgA6Z]z4Idgho^<z2
+I4OOkH[;1@e`lLGRHaA2h?0
+R2
+R0
+Z27 w1773285745
+8tb_dcpu_llsc.v
+Ftb_dcpu_llsc.v
+L0 3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R8
+vtb_dcpu_smoke
+R13
+!i10b 1
+!s100 30W0_2Zb5`zo[kVIOUe7U2
+I1Lb>f>4ABN7d3V;]OQVYf1
+R2
+R0
+R26
+8tb_dcpu_smoke.v
+Ftb_dcpu_smoke.v
+L0 3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R8
+vtb_dcpu_trap
+R13
+!i10b 1
+!s100 0dNbHEm`YJcX_b@j1AC`W2
+I7Wm=M:B>9OdE^@cCI<DRi0
+R2
+R0
+R27
+8tb_dcpu_trap.v
+Ftb_dcpu_trap.v
+L0 3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R8
+vtb_dcpu_unaligned
+R13
+!i10b 1
+!s100 kA52J92a6jiShh9USKR200
+IU6Z>g]P?17HMJT[N0OV?;3
+R2
+R0
+R25
+8tb_dcpu_unaligned.v
+Ftb_dcpu_unaligned.v
+L0 3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R8
+vtb_forward_unit
+R17
+!i10b 1
+!s100 d[XJKcJEF5aeaX[Z?V72S0
+I1c65P14:Y59Ihj2kNTX6H3
+R2
+R0
+R26
+8tb_forward_unit.v
+Ftb_forward_unit.v
+L0 3
+R4
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R8
+vtb_hazard_unit
+R21
+!i10b 1
+!s100 IiDd^QOa2CbT=b4E4BZ0[1
+IaBBGbK_JL?dIhaF[b37YX0
+R2
+R0
+R26
+8tb_hazard_unit.v
+Ftb_hazard_unit.v
+L0 3
+R4
+r1
+!s85 0
+31
+R22
+R23
+R24
+!i113 1
+R8

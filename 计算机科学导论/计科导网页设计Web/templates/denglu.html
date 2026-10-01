@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登录</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-links left">
+                <a href="{{ url_for('home') }}">首页</a>
+            </div>
+            <div class="site-logo">
+                <a href="{{ url_for('home') }}">奶龙电影网</a>
+            </div>
+            <div class="nav-links right">
+                <a href="{{ url_for('denglu') }}">登录</a>
+                <a href="{{ url_for('zhuce') }}">注册</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="login-container">
+        <h2>用户登录</h2>
+        {% if session.pop('register_success', None) %}
+            <div id="successModal" class="modal">
+                <div class="modal-content success-modal">
+                    <span class="close">&times;</span>
+                    <p class="success-message">注册成功！请登录</p>
+                </div>
+            </div>
+        {% endif %}
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div id="errorModal" class="modal">
+                    <div class="modal-content error-modal">
+                        <span class="close">&times;</span>
+                        <p class="error-message">{{ messages[0] }}</p>
+                    </div>
+                </div>
+            {% endif %}
+        {% endwith %}
+        <form method="POST" action="{{ url_for('denglu') }}">
+            <div class="form-group">
+                <input type="text" name="username" placeholder="用户名" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="密码" required>
+            </div>
+            <button type="submit">登录</button>
+        </form>
+        <p>还没有账号？<a href="{{ url_for('zhuce') }}">立即注册</a></p>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 处理成功弹窗
+        var successModal = document.getElementById('successModal');
+        if (successModal) {
+            showModal(successModal);
+        }
+
+        // 处理错误弹窗
+        var errorModal = document.getElementById('errorModal');
+        if (errorModal) {
+            showModal(errorModal);
+        }
+
+        function showModal(modal) {
+            modal.style.display = 'block';
+            
+            var closeBtn = modal.querySelector('.close');
+            closeBtn.onclick = function() {
+                fadeOutModal(modal);
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    fadeOutModal(modal);
+                }
+            }
+
+            // 2秒后自动关闭
+            setTimeout(function() {
+                fadeOutModal(modal);
+            }, 2000);
+        }
+
+        function fadeOutModal(modal) {
+            modal.style.opacity = '1';
+            modal.style.transition = 'opacity 0.5s ease';
+            modal.style.opacity = '0';
+            
+            setTimeout(function() {
+                modal.style.display = 'none';
+            }, 500);
+        }
+    });
+    </script>
+</body>
+</html> 
+

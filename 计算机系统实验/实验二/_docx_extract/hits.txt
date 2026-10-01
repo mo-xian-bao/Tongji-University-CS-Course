@@ -1,0 +1,103 @@
+                      实验目的                 �?/w:t>           N       exy    S4DDRAtrix-7       开发板�?/w:t>      实现     μ       C        /       OS-II       操作系统的移�?/w:t>           ·               
+  Office Word 2021          �?/w:t>           开发板�?/w:t>                NEXYS4DDRAtrix-7             (2)        实验方案         参考《自己动手写    CPU    》，       在上一次实验的       MIPS 89       条指令动态�
+��接口                  ·增加       Wishbone       总线                  ·增加       GPIO                  ·增加       UART       控制�?/w:t>                 ·增加       Flash       控制�?/w:t>                 ·增�
+�验存储器不再合�?/w:t>      �?/w:t>      故我们使用在       FPGA       外部�?/w:t>      Flash       作为指令存储器，使用       SDRAM       作为数据存储�?/w:t>      ，所以我们需要添�?/w:t>      Flash       控制器和       SDRAM  
+��试以�?/w:t>      系统的正确�?/w:t>      进行检�?/w:t>      ，我们还需要添�?/w:t>      UART       控制器和       GPIO       控制器�?/w:t>            总的来看，为了更好更方便地接入、移除和管理设备，我们需要增�?/w:t>      Wishbone
+�别占据       Wishbone       总线的两个主设备接口�?/w:t>      SDRAM       �?/w:t>      Flash       �?/w:t>      UART       �?/w:t>      GPIO       的控制器分别作为从设备连接至总线�?/w:t>                    -1417    19729
+  ·修改部分         2         �?/w:t>      由于修改�?/w:t>      取指       是从       Flash       芯片       中取、访存是通过       SDRAM       芯片，拿到数据的周期都超过一个时钟周�?/w:t>      ，故需要对流水�?/w:t>      CPU     
+�?/w:t>        添加    Wishbone    总线接口后，指令会存储在    FPGA    芯片外部�?/w:t>   Flash    中，导致取指时间多于    1    个时钟周期。在指令没有取到时，需要暂停流水线，所以在取指阶段添加�?/w:t>   Wishbone    接口模块有一个输出接�?/w:t
+    4       .         pc_reg.v               ·                  修改部分�?/w:t>   Flash     对应的是从地址       0x30000000    开始的    256M    字节空间，所以需要修�?/w:t>    OpenMIPS     处理器，使得其在复位结束后从地址   
+                   SDRAM       控制器连接到从设备接�?/w:t>      0       �?/w:t>      UART       控制器连接到从设备接�?/w:t>      1       �?/w:t>      GPIO       连接到从         设备接口       2       �?/w:t>      Flas
+                 SDRAM                0x00000000-0x0FFFFFFF                     UART                0x       1    0000000-0x       1    FFFFFFF                     GPIO                0x       2    000000
+0-0x       2    FFFFFFF                     Flash                0x       3    0000000-0x       3    FFFFFFF                (4)        增加       GPIO       模块          
+��己动手写    CPU    》的附件       �?/w:t>             ·        功能    �?/w:t>      GPIO       �?/w:t>      General Purpose Input Output       ）是以位为单位进行数字输入输出的       I/O       接口，作为单纯的通用输入      
+  输出        I/O       ，输入时从外部读取输入信号，输出时将写入的值输出到外部。处理器通过       GPIO       可以与各种设备相连接，如       LED       、开关、七段数码管�?/w:t>      �?/w:t>                 ·模块设计                    
+                                     �?/w:t>         8          �?/w:t>         GPIO          模块设计�?/w:t>                 ·接口定义                              module                    gpio_top         
+_o          ,                                                   `ifdef          GPIO_AUX_IMPLEMENT                                          // Auxiliary inputs interface                                   
+     aux_i          ,                              `endif                   //  GPIO_AUX_IMPLEMENT                                                              // External GPIO Interface                  
+          ,           ext_padoe_o                               `ifdef          GPIO_CLKPAD                                ,           clk_pad_i                                         `endif             
+                 );             其中�?/w:t>      本次实验       GPIO       将控制七段数码管       �?/w:t>      GPIO       中的主要寄存器如下：                                        寄存器名�?/w:t>  
+                    访问方式                           作用描述                    RGPIO_IN                  Base + 0x0                  1~32                  只读                  输入�?/w:t>   GPIO    的信�?/w
+:t>                   RGPIO_OUT                  Base + 0x4                  1~32                  可读可写                  GPIO    输出的信�?/w:t>   
+                RGPIO_OE                  Base + 0x8                  1~32                  可读可写                  GPIO    输出接口使能信号     
+               RGPIO_INTE                  Base + 0xC                  1~32                  可读可写                  中断使能信号              
+  (5)        增加       UART       模块               代码来自    《自己动手写    CPU    》的附件       �?/w:t>             ·        功能�?/w:t>   UART    即�
+                                     �?/w:t>         9          �?/w:t>         UART          模块设计�?/w:t>                  ·接口定义                              module                    uart_top        
+rrupt request                                                                // UART signals                                           // serial input/output                                            stx
+_i          ,           dcd_pad_i                               `ifdef          UART_HAS_BAUDRATE_OUTPUT                                  ,           baud_o                               `endif           
+                       );                         ·        UART        的数据传�?/w:t>                                                                  �?/w:t>         10          �?/w:
+t>        UART          的数据传�?/w:t>         过程         UART    在传输的时候，将待传输数据的每个字符一位一位地传输       �?/w:t>   依次传输起始位、数据位、奇偶校验位、停止位    �?/w:t>   UART     常用的波
+t>   1.5    位�?/w:t>   2    位的高电平信号�?/w:t>                        ·        UART        的数据接�?/w:t>                                                           �?/w:t>         1          1          �?
+/w:t>        UART          的数�?/w:t>         接收过程         UART     的数据接收部分采用比波特率高的采样频率实现。实际使用中，一般使用比波特率高    16    倍的接收时钟进行采样�?/w:t>             当接收信号由高电平�
+   位写入寄存器    Divisor Latch Byte 1    �?/w:t>            (6)        增加       Flash       模块            本模块未采用《自己动手写       CPU       》中的代码，书中    设计�?/w:t>   Flash    控制器针对的�?/w:t>   S29AL0
+32D70TFI04    芯片       ，本次实验的       Nexys4 DDR       对应�?/w:t>      Flash       芯片�?/w:t>   板载�?/w:t>   SPI       -    FLASH    模块       ，具体型号是    S25FL128S    芯片       ，如下图所示�?/w:t>
+�操作系统需�?/w:t>      Bootloader       ，以及操作系统中的内核指令，这些指令需要存储在       Flash       中，后续进行取指�?/w:t>                       ·模块设计                                                                
+ �?/w:t>         13          �?/w:t>         Flash          模块设计�?/w:t>                       ·接口定义                              module                    flash_rom  
+                                input                   wire                    flash_continue          ,          // Flash          继续操作信号                                                                // SPI F
+              sdi          ,                 // SPI          数据输入（从          Flash          �?/w:t>         FPGA         �?/w:t>                                          output                   reg    
+ ,             // SPI          数据输出（从          FPGA          �?/w:t>         Flash         �?/w:t>                                          output                   reg                    wp_n          
+     保持信号，低有效                                  );              �?/w:t>      Flash       采用       SPI       协议       �?/w:t>      SPI    协议是一种串行总线，即数据用一根线一位一位的传，这里需要用的的�?/w:t>       s
+芯片开始工�?/w:t>           ·        si     是输入到主设备的信号线，       �?/w:t>      Flash    芯片读取数据       �?/w:t>      起作�?/w:t>           ·       so    是输入到       Flash    的信号线�?/w:t>      �?/w:t>    
+  Flash    芯片写入数据       �?/w:t>      起作�?/w:t>                                                        �?/w:t>         14   
+       �?/w:t>         Flash          快速读取时序图            查阅    S25FL128S       官方文档可以得知       24-bit       地址的读取时序图�?/w:t>      我们在本�
+�实验中实现的也�?/w:t>      24       位地址�?/w:t>      Flash       模块。尽�?/w:t>       OpenMIPS        -CPU       中的地址线是       32       位的�?/w:t>      但是后续交叉编译得到的操作系统二�
+，故        sck     可选的频率在（    0    �?/w:t>   50M]    之间，由�?/w:t>   Nexys4 DDR    的板载晶振频率是    100MHz    ，这里用    50MHz    会比较好分频       �?/w:t>                                                
+芯片就会通过        si     信号线一位一位的输出数据       �?/w:t>           下面作出       Flash       模块的状态机�?/w:t>                                                                 �?/w:t>         1          6    
+      �?/w:t>         Flash          模块的状态机            各状态的转换关系解释如下�?/w:t>           ·                IDLE (        空闲状�?/w:t>       )  
+t>    IDLE     状态下，会清零             wait_count          计数器。若             flash_continue          信号为高电平，状态机将转换到     START     状态以启动一次新�?/w:t>    Flash     操作；若             flash_continue       
+ (        开始状�?/w:t>       )         此状态由     IDLE     状态在                flash_continue             为高时进入。在     START     状态，模块会执�?/w:t>    SPI     操作的初始化，包括保�?/w:t>    Wishbone     总线传入�?/w:t
+w:t>    SPI     片选信�?/w:t>    (        cs_n_d        [0]         置低以选中     Flash     芯片    )    ，并将读计数�?/w:t>            read_count          �?/w:t>    1    。完成这些准备工作后，状态机自动转换�?/w:t>    I
+        addr_req      (    地址请求    )     标志为高，表示操作需要地址，则状态转换到     ADDR1_OUT    �?/w:t>        �?/w:t>            addr_req          为低，则根据             wrh_rdl      (    �?/w:t>   /    读标�
+    )    ，则也直接进�?/w:t>    ENDING     状态�?/w:t>           ·                ADDR1_OUT (        地址高位输出状�?/w:t>       )         此状态由     INST_OUT     状态在需要发送地址时进入�?/w:t>    �?/w:t>    ADDR
+         wb_clk_i          周期。地址�?/w:t>   8    位发送完成后，状态机转换�?/w:t>    ADDR2_OUT     状态�?/w:t>           ·        ADDR2_OUT (        地址中位输出状�?/w:t>       )         该状态从     ADDR1_OUT     
+状态转换而来。在     ADDR2_OUT     状态，模块继续串行输出地址             addr          的中�?/w:t>   8    �?/w:t>    (    �?/w:t>            addr      
+         wb_clk_i          周期。地址�?/w:t>   8    位发送完成后，状态机转换�?/w:t>    ADDR3_OUT     状态�?/w:t>           ·        ADDR3_OUT (        地址低位输出状�?/w:t>       )         此状态由     ADDR2_OUT     
+状态转换而来。在     ADDR3_OUT     状态，模块串行输出地址             addr          的最�?/w:t>   8    �?/w:t>    (    �?/w:t>            addr        [
+ (        写数据状�?/w:t>       )         该状态可�?/w:t>    INST_OUT    �?/w:t>   ADDR3_OUT     �?/w:t>    WRITE_DATA     自身     (    当写入多个字节时    )     进入。在     WRITE_DATA     状态，模块串行输出一个字节的�
+   1        状�?/w:t>       )         此状态可�?/w:t>    INST_OUT     �?/w:t>    ADDR3_OUT     在确定为读操作且有数据要读时进入。在     READ_DATA1     状态，模块通过     SPI     接口串行接收一个字节的数据，并存入临时�?/w:t>   
+    SPI     片选信�?/w:t>    (        cs_n_d        [0]         置高以释�?/w:t>    Flash     芯片    )    ，并清零             sdo_count     。完成这些收尾工作后，状态机转换�?/w:t>    ENDING     状态�?/w:t>           · 
+         此状态是     SPI     操作（读或写）完成后的状态，可由     INST_OUT    �?/w:t>   ADDR3_OUT (    在无数据操作�?/w:t>   )    �?/w:t>   WRITE_DATA (    所有字节写完后    )     �?/w:t>    WAITING (    所有字节读完并处理
+   本模块未采用《自己动手写       CPU       》中的代码，       本次实验使用    的是    Nexys4DDR    板载�?/w:t>   DDR2    模块       �?/w:t>   使用    DDR2    模拟一块一次最小读写宽�?/w:t>    8bits    ，最大读写宽�?/w:t>    32b
+its    的内存�?/w:t>        NEYXS4DDR     里的     DDR2SDRAM     型号�?/w:t>    MT47H64M16HR-25:H    ，由�?/w:t>    DDR     协议比较复杂�?/w:t>   Xilinx     提供了一个简化控�?/w:t>   
+ DDR     的内存控制器     IP     核，    Memory            Interface Generator(MIG)    ，此次实验中就使用这�?/w:t>    IP     核来进行操�
+入配置，       �?/w:t>      Memory         Seletion        �?/w:t>      选择       DDR2 SDRAM       �?/w:t>      以下步骤中未作提示说明的部分，一律是默认配置�?/w:t>                                                     
+  Seletion        中，点击       Read XDC/UCF       �?/w:t>      使用        Nexys4DDR_DMA_controller/PROJECT/Nexys4DDRmemorypinout.ucf at master · HackLinux/Nexys4DDR_DMA_controller        中下载的文件，导入后�
+  我们还需一个转换接口，       充当静�?/w:t>       RAM (SRAM)        接口�?/w:t>       DDR2 SDRAM        接口的转换器。简单来说，它允许一个系统像与简单的        SRAM        交互那样，去访问和控制实际连接的        DDR2        内存�?
+entinc.com/_media/nexys4-ddr/nexys4ddrmemorypinout.zip       ，并�?/w:t>    Inst_DDR        后的名称改成刚刚生成       IP       核的名称�?/w:t>                             ---------------------------------------
+---------------------------------                              -- DDR controller instance                              ----------------------------------------------------------------------
+--                                           Inst_DDR          :          mig_7series_0                                          port                   map          (       
+                                    �?/w:t>         24          �?/w:t>         DDR2          模块设计�?/w:t>           ·         接口定义                              module                   DDR2         (
+              reg                    init_calib_complete          ,          // DDR2          初始化完成标�?/w:t>                                                                            // DDR2 SDRAM    
+                  );                 ·         状态机设计            �?/w:t>      DDR2       模块作出状态机图：                                                                 �?/w:t>         2          5     
+     �?/w:t>         DDR2          模块          状态机          �?/w:t>           ·        IDLE (        空闲状�?/w:t>       )         该状态是系统的�
+PS        处理器�?/w:t>      Wishbone       总线互联       1       矩阵�?/w:t>      GPIO       模块�?/w:t>      UART       控制器�?/w:t>      Flash       控制器�?/w:t>      SDRAM       控制器连接起�?/w:t>      �?/w
+                        input                    wire                           flash_continue          ,                                                                 //          新增          UART          接口  
+                                              //          新增与外�?/w:t>         Flash          相连的接�?/w:t>                                                    // Flash                                     
+AM          相连的接�?/w:t>                                                    // DDR2                                             inout           [         15         :         0         ]            ddr2
+ 可以用于模拟操作系统加载的过�?/w:t>      �?/w:t>    BootLoader          存放�?/w:t>    Flash     �?/w:t>    0x0     处开始的空间�?/w:t>      操作系统存放�?/w:t>   Flash    �?/w:t>   0x304    处开始的空间�?/w:t>      另外�?
+/w:t>   �?/w:t>   Flash     �?/w:t>   0x300     处存放的�?/w:t>      操作系统    的长度信�?/w:t>      �?/w:t>    OpenMIPS          启动后，会首先执�?/w:t
+>         BootLoader     �?/w:t>    BootLoader          读取存放�?/w:t>    Flash     �?/w:t>    0x300     处的长度信息    length    ，根据该信息，将    Flash     �?/w:t>   0x304    处开始的    length     个字，�
+ 0x0    地址，将控制权交�?/w:t>      操作系统       �?/w:t>           本处只实现了       UART       的回显，    �?/w:t>   PC    通过    UART    发送数据给小型    SOPC    时，会引�?/w:t>   UART    控制器的中断�?/w:t>      操作
+系统    中的中断处理程序会读取传递过来的数据，然后回送给    PC    ，从而实�?/w:t>   UART     的回显�?/w:t>             ·模块设计         �?/w:t>      �?/w:t>       BootLoader        含有       九个模块，分别是�?/w:t>
+            UART    控制器初始化       ：设置分频系数的高低字节       ，并设置数据格式�?/w:t>      8       位数据位、没有奇偶校验位�?/w:t>      1       位停
+止位�?/w:t>               GPIO        模块初始�?/w:t>      �?/w:t>      使能所�?/w:t>       GPIO        输出端口       �?/w:t>      禁止        GPIO        
+             等待        SDRAM        初始化完�?/w:t>      �?/w:t>      获取        GPIO        的输�?/w:t>      �?/w:t>      判断�?/w:t>       16        位是否为        1       �?/w:t>               显示启动开始字�
+>               获取        OS        的长度信�?/w:t>      �?/w:t>      获取        Flash        �?/w:t>       0x300        处存放的        OS        长度信息       �?/w:t>   保存到寄存器     $1       �?/w:t>        
+/w:t>      将分频系数修改为适合当前实现�?/w:t>      CPU       的主频�?/w:t>      Nexys4 DDR       对应       E3       管脚的时钟频率为       100MHz       �?/w:t>      根据分频系数计算公式       �?/w:t>                分频�
+                             * Note(s)    : 1) Interrupts may or may not be ENABLED during this call.                              ************************************************************************
+  CPU    �?/w:t>      附件，在此基础上修改�?/w:t>      修改系统时钟�?/w:t>      Nexys4 DDR       的系统时钟，频率�?/w:t>      100Hz       �?/w:t>                             /***************************************
+D LVCMOS33         }                   [          get_ports                     flash_continue          ]                               set_property                    -          dict                    {         P
+   15         ]         }]                                                   ## LEDs                               set_property                    -          dict                    {          PACKAGE_PI
+rt_out          ]                                                   ## Quad SPI Flash                               set_property                    -          dict                    {         PACKAGE_PIN 
+�讯                在下板载�?/w:t>      bit       流的那一步之前，我们需要配�?/w:t>      Flash       ，将刚刚编译得到�?/w:t>       OS.bin        文件载入       �?/w:t>      右键开发板，选择       Add Configuration Memory De
+         �?/w:t>         3          3          �?/w:t>         配置          SPI-Flash                选中       s25fl128sxxxxxx0-spi-x1_x2_x4       �?/w:t>                                                   
+         �?/w:t>         3          4          ：配�?/w:t>         SPI-Flash                选择编译得到�?/w:t>      bin       二进制文�?/w:t>      下板�?/w:t>                                           
+                   �?/w:t>         3          5          ：配�?/w:t>         SPI-Flash            下板后打开       SSCOM V5.13.1       串口       /       网络数据调试�?/w:t>      （必应搜索下载即可）       ，选择对应的端
+  37          �?/w:t>         下板结果演示         可以看到数码�?/w:t>      是由       GPIO       控制，不断闪�?/w:t>   �?/w:t>      右侧开关上拨表示使�?/w:t>   �?/w:t>      按下上方红色按钮可以复位�?/w:t>   验证结果正确，这证明�
+��见的错误�?/w:t>                             /*          循环等待，直�?/w:t>         UART          控制器的发�?/w:t>         FIFO          为空、移位寄存器为空，表示数据发送完�?/w:t>         */                           
+                       lsr                    =                   REG8         (UART_BASE          +          UART_LS_REG);          \                                      }          while          ((    
+t>       OS.bin        的生�?/w:t>      ，对我来说都是陌生且有难度的       。尤其是       Flash       控制器和       SDRAM       控制�?/w:t>      ，这两个芯片因开发板而异       ，这将是对我们资料检索能力、阅读能力和学习能力的考验       
+核调用教程：        FPGA       基础入门�?/w:t>      9       】开发板外部存储�?/w:t>      DDR2       访问       _fpga       �?/w:t>      pin       �?/w:t>      nc       后缀什么意�?/w:t>      -CSDN       博客         
+ [5]        Flash       整体设计参考：        SPI FLASH        读取模块       [verilog]          [6]        Ram2Ddr.vhd       库文件说明：       
+ SRAM to DDR Component - Digilent Reference          [7]        SPI-Flash       教程�?/w:t>       FPGA       基础入门�?/w:t>      8       】开发板外部存储�?/w:t>      SPI flash       访问       _chipsc
+芯片说明文档�?/w:t>       S25FL128S, S25FL256S, 128 Mb (16 MB)/256 Mb (32 MB) FL-S Flash SPI Multi-I/O, 3.0V               [9]        DDR       接口使用手册       �?/w:t>       7 Series FPGAs Memory Interface So
