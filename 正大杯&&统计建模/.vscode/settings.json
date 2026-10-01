@@ -1,0 +1,11 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.pythonProjects": [],
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "chat.tools.terminal.autoApprove": {
+        "/^python -m py_compile \\.\\\\questionnaire_simulation\\\\fetch_shanghai_spatial_data\\.py$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

@@ -1,0 +1,73 @@
+digraph SEM_Model {
+	rankdir=LR splines=true
+	node [fontname="Microsoft YaHei"]
+	edge [fontname="Microsoft YaHei" fontsize=10]
+	node [color="#6C8EBF" fillcolor="#DAE8FC" shape=ellipse style=filled]
+	Hardware [label="硬件设施"]
+	Service [label="软性服务"]
+	Smart [label="数智体验"]
+	Convenience [label="便利程度"]
+	node [color="#B85450" fillcolor="#F8CECC"]
+	Satisfy [label="满意度"]
+	node [color=black fillcolor=white shape=box style=filled]
+	Q14 [label="Q14
+设施种类"]
+	Q15 [label="Q15
+器材维护"]
+	Q16 [label="Q16
+场馆环境"]
+	Q23 [label="Q23
+配套设施"]
+	Q21 [label="Q21
+营业时间"]
+	Q22 [label="Q22
+价格费用"]
+	Q24_SV [label="Q24
+人员服务"]
+	Q25_SV [label="Q25
+信息发布"]
+	Q16_Dev [label="智能设备"]
+	Q16_Dat [label="数据服务"]
+	Q13a [label="Q13a
+距离便利性"]
+	Q13b [label="Q13b
+交通通达性"]
+	Q24_Sat [label="整体满意度"]
+	Q25_Rev [label="重访意愿"]
+	Q26_Rec [label="推荐意愿"]
+	edge [color="#FF0000" dir=forward penwidth=2.0 style=solid]
+	Hardware -> Satisfy [label=" 0.468***"]
+	Service -> Satisfy [label=" 0.392***"]
+	Smart -> Satisfy [label=" 0.273***"]
+	Convenience -> Satisfy [label=" 0.246***"]
+	edge [color=black penwidth=1.0]
+	Hardware -> Q14 [label=" 1.000"]
+	Hardware -> Q15 [label=" 0.960"]
+	Hardware -> Q16 [label=" 0.872"]
+	Hardware -> Q23 [label=" 0.827"]
+	Service -> Q21 [label=" 1.000"]
+	Service -> Q22 [label=" 0.872"]
+	Service -> Q24_SV [label=" 1.432"]
+	Service -> Q25_SV [label=" 1.320"]
+	Smart -> Q16_Dev [label=" 1.000"]
+	Smart -> Q16_Dat [label=" 0.938"]
+	Convenience -> Q13a [label=" 1.000"]
+	Convenience -> Q13b [label=" 0.926"]
+	Satisfy -> Q24_Sat [label=" 1.000"]
+	Satisfy -> Q25_Rev [label=" 1.008"]
+	Satisfy -> Q26_Rec [label=" 1.026"]
+	edge [color=gray dir=both style=dashed]
+	Hardware -> Service
+	Hardware -> Smart
+	Hardware -> Convenience
+	Service -> Smart
+	Service -> Convenience
+	Smart -> Convenience
+	Q14 -> Q23 [label=" MI修正" constraint=false]
+	node [shape=plaintext style=""]
+	FitInfo [label="模型拟合度：
+CMIN/DF = 1.84
+RMSEA = 0.010
+GFI = 0.989
+CFI = 0.999"]
+}
