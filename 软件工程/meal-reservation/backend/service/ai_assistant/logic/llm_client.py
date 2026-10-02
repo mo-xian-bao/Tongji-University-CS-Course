@@ -6,7 +6,7 @@ import requests
 
 
 def _call_modelscope_llm(question: str) -> Tuple[Optional[str], Optional[str]]:
-    api_key = os.getenv("DASHSCOPE_API_KEY", "ms-e4029a7f-088e-4b1d-9f93-4b887f8b9bf6")
+    api_key = os.getenv("DASHSCOPE_API_KEY", "")
     if not api_key or "YOUR_" in api_key:
         return None, "API Key not configured"
     url = "https://api-inference.modelscope.cn/v1/chat/completions"

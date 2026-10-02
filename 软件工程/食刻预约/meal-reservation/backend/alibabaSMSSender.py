@@ -15,8 +15,6 @@ from alibabacloud_tea_util.client import Client as UtilClient
 
 
 # 服务账号定义
-_ALIBABA_CLOUD_ACCESS_KEY_ID = 'LTAI5t5uaEsUs7Dh7KV1pvzm'
-_ALIBABA_CLOUD_ACCESS_KEY_SECRET = 'NztM8myDK6uHuTZ9dZFjdI1MivwFrH'
 """
 模板代码：
 100001:
@@ -55,8 +53,10 @@ class AlibabaSMSSender:
         @throws Exception
         """
         # 从环境变量获取AK信息
-        access_key_id = _ALIBABA_CLOUD_ACCESS_KEY_ID
-        access_key_secret = _ALIBABA_CLOUD_ACCESS_KEY_SECRET
+        access_key_id = os.getenv("ALIBABA_CLOUD_ACCESS_KEY_ID", "")
+        access_key_secret = os.getenv("ALIBABA_CLOUD_ACCESS_KEY_SECRET", "")
+        if not access_key_id or not access_key_secret:
+            raise ValueError("请设置 ALIBABA_CLOUD_ACCESS_KEY_ID 和 ALIBABA_CLOUD_ACCESS_KEY_SECRET 环境变量")
             
         credentialsConfig = CredentialConfig(
             type='access_key',

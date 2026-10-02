@@ -147,7 +147,7 @@ def call_modelscope_llm(question: str) -> Tuple[str, str]:
     # TODO: 请在此处直接粘贴您的 DashScope API Key
     # 例如: api_key = "sk-1234567890abcdef1234567890abcdef"
     # ============================================================
-    api_key = "ms-e4029a7f-088e-4b1d-9f93-4b887f8b9bf6" 
+    api_key = os.getenv("MODELSCOPE_API_KEY", "")
 
     # 如果上面没有修改，尝试从环境变量获取
     if "YOUR_REAL_API_KEY_HERE" in api_key:
